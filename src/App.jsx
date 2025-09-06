@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,13 +9,22 @@ import Nexus from "./pages/nexus/nexus";
 import DinasNexus from "./pages/nexus/dinasnexus";
 import Inti from "./pages/nexus/dinas/inti";
 import NotFound from "./notfound";
+import Loading from "./components/loading fti";
+
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
     });
+    // Tampilkan loading selama 1.5 detik
+    const timer = setTimeout(() => setIsLoading(false), 1500);
+    return () => clearTimeout(timer);
   }, []);
+
+  if (isLoading) return <Loading />;
 
   return (
     <Router>
@@ -27,7 +36,7 @@ function App() {
 
         {/* Kabinet Nexus */}
         <Route path="/dinasnexus" element={<DinasNexus />} />
-          <Route path="/dinasnexus/inti" element={<Inti />} />
+        <Route path="/dinasnexus/inti" element={<Inti />} />
 
         {/* 404 Not Found - harus di paling bawah */}
         <Route path="*" element={<NotFound />} />

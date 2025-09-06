@@ -30,7 +30,7 @@ export const Nexus = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h1 className="text-4xl md:text-6xl font-bold font-[Montserrat] text-white text-center drop-shadow-lg mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold font-[Carena] text-white text-center drop-shadow-lg mb-8">
               Welcome to <br />
               Nexus Inspirasi
             </h1>

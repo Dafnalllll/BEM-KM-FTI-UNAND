@@ -7,7 +7,10 @@ export const NavbarNexus = () => {
   const currentPath = window.location.pathname;
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full" data-aos="fade-down">
+    <nav
+      className="fixed top-0 left-0 z-50 shadow-md backdrop-blur w-full"
+      data-aos="fade-down"
+    >
       <div className="flex items-center justify-between px-8 py-3">
         {/* Logo dan Info */}
         <div className="flex items-center gap-3">
@@ -27,6 +30,7 @@ export const NavbarNexus = () => {
             { label: "Beranda", path: "beranda" }, // scroll di nexus.jsx
             { label: "Tentang", path: "tentangnexus" }, // scroll di nexus.jsx
             { label: "Dinas", path: "/dinasnexus" },
+            { label: "Program Kerja", path: "programkerja" },
             { label: "Galeri", path: "/galeri" },
           ].map((item) => (
             <button
