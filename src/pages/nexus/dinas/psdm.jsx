@@ -4,13 +4,15 @@ import FooterNexus from '../../../components/nexus/footernexus';
 import PSDM from '../../../assets/dinas nexus/press release/psdm/psdm.png';
 export const Psdm = () => {
   return (
-    <div>
-      <NavbarNexus />
-      <img src={PSDM} alt="Psdm" />
-      {/* Overlay hitam dengan opacity */}
-      <div className="absolute inset-0 w-full h-[773px] bg-black opacity-50"></div>
-      <FooterNexus />
-    </div>
+    <div className="min-h-screen flex flex-col">
+          <NavbarNexus />
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <img src={PSDM} alt="Psdm" />
+            {/* Overlay hitam */}
+            <div className="absolute inset-0 w-full h-[773px] bg-black opacity-50 pointer-events-none z-0"></div>
+          </div>
+          <FooterNexus />
+        </div>
   )
 }
 
