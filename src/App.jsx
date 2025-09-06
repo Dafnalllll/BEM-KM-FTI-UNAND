@@ -8,6 +8,7 @@ import Sinergi from "./pages/sinergi/sinergi";
 import Nexus from "./pages/nexus/nexus";
 import DinasNexus from "./pages/nexus/dinasnexus";
 import Inti from "./pages/nexus/dinas/inti";
+import Ristek from "./pages/nexus/dinas/ristek";
 import NotFound from "./notfound";
 import Loading from "./components/loading fti";
 
@@ -37,6 +38,7 @@ function App() {
         {/* Kabinet Nexus */}
         <Route path="/dinasnexus" element={<DinasNexus />} />
         <Route path="/dinasnexus/inti" element={<Inti />} />
+        <Route path="/dinasnexus/ristek" element={<Ristek />} />
 
         {/* 404 Not Found - harus di paling bawah */}
         <Route path="*" element={<NotFound />} />

@@ -71,15 +71,15 @@ export const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/tentang")}
+                  onClick={() => navigate("/nexus")}
                   className="hover:text-white bg-transparent text-inherit text-left w-full cursor-pointer hover:underline"
                 >
-                  Tentang Kami
+                  Tentang
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => navigate("/dinas")}
+                  onClick={() => navigate("/dinasnexus")}
                   className="hover:text-white bg-transparent text-inherit text-left w-full cursor-pointer hover:underline"
                 >
                   Dinas
