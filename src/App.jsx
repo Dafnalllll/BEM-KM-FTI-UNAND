@@ -9,6 +9,12 @@ import Nexus from "./pages/nexus/nexus";
 import DinasNexus from "./pages/nexus/dinasnexus";
 import Inti from "./pages/nexus/dinas/inti";
 import Ristek from "./pages/nexus/dinas/ristek";
+import Audkes from "./pages/nexus/dinas/audkes";
+import Sosmasling from "./pages/nexus/dinas/sosmasling";
+import Kastrat from "./pages/nexus/dinas/kastrat";
+import Adkesma from "./pages/nexus/dinas/adkesma";
+import Psdm from "./pages/nexus/dinas/psdm";
+import Internal from "./pages/nexus/dinas/internal";
 import NotFound from "./notfound";
 import Loading from "./components/loading fti";
 
@@ -39,6 +45,12 @@ function App() {
         <Route path="/dinasnexus" element={<DinasNexus />} />
         <Route path="/dinasnexus/inti" element={<Inti />} />
         <Route path="/dinasnexus/ristek" element={<Ristek />} />
+        <Route path="/dinasnexus/audkes" element={<Audkes />} />
+        <Route path="/dinasnexus/sosmasling" element={<Sosmasling />} />
+        <Route path="/dinasnexus/kastrat" element={<Kastrat />} />
+        <Route path="/dinasnexus/adkesma" element={<Adkesma />} />
+        <Route path="/dinasnexus/psdm" element={<Psdm />} />
+        <Route path="/dinasnexus/internal" element={<Internal />} />
 
         {/* 404 Not Found - harus di paling bawah */}
         <Route path="*" element={<NotFound />} />

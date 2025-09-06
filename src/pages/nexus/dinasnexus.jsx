@@ -90,7 +90,7 @@ const galleryImages = [
     src: Sosmas,
     alt: "Sosmas",
     gridClass: "md:col-start-3 md:row-start-4",
-    route: "/dinasnexus/sosmas",
+    route: "/dinasnexus/sosmasling",
   },
 ];
 
