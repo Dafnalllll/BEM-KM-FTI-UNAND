@@ -1,7 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import KASTRAT from "../../../assets/dinas nexus/press release/kastrat/kastrat.png";
+import KastartLogo from "../../../assets/dinas nexus/logo/kastrat.png";
 export const Kastrat = () => {
   useEffect(() => {
     document.title = "Kastrat || Nexus Inspirasi";
@@ -11,6 +12,18 @@ export const Kastrat = () => {
       <NavbarNexus />
       <div className="relative z-10 flex flex-col min-h-screen">
         <img src={KASTRAT} alt="Kastrat" />
+        {/* Gambar Nexus di tengah */}
+        <div
+          className="absolute inset-0 flex items-center justify-start z-10"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <img
+            src={KastartLogo}
+            alt="KastartLogo"
+            className="w-1/4 object-contain ml-[14rem] mb-[6rem]"
+          />
+        </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[843px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
