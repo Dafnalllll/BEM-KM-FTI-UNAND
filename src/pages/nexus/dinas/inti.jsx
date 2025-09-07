@@ -14,11 +14,24 @@ const Inti = () => {
       <div className="relative z-10 flex flex-col min-h-screen">
         <img src={INTI} alt="INTI" className="w-full h-auto" />
         {/* Gambar Nexus di tengah */}
-        <div className="absolute inset-0 flex items-center justify-start z-10"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
+        <div
+          className="absolute inset-0 flex items-center justify-start z-10"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         >
-          <img src={Nexus} alt="Nexus" className="w-1/6 object-contain ml-[18rem]"/>
+          <img
+            src={Nexus}
+            alt="Nexus"
+            className="w-1/6 object-contain ml-[18rem]"
+          />
+          <div className="ml-8 max-w-xl text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+          data-aos="fade-up"
+          data-aos-duration="1200">
+            Poros manajerial dan eksekutif yang menjamin keberlangsungan fungsi
+            organisasi secara administratif, finansial, dan strategis, serta
+            memastikan seluruh kebijakan dan program kerja BEM berjalan sesuai
+            visi-misi yang telah ditetapkan.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-full bg-black opacity-50 pointer-events-none z-0"></div>

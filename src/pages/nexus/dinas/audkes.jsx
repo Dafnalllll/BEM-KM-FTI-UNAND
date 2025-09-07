@@ -23,6 +23,17 @@ export const Audkes = () => {
             alt="Nexus"
             className="w-1/4 object-contain ml-[13rem] mb-[6rem]"
           />
+          <div
+            className="ml-8 max-w-xl text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Mengelola administrasi kelembagaan, menjaga kedisiplinan pengurus,
+            serta mempererat hubungan internal organisasi, menjaga keharmonisan
+            antar anggota serta mengatur kebijakan demi terciptanya kedisiplinan
+            dalam kepengurusan,pengarsipan dokumen, pengelolaan surat-menyurat,
+            dan memastikan sekretariat tetap nyaman dan tertata.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[739px] bg-black opacity-50 pointer-events-none z-0"></div>

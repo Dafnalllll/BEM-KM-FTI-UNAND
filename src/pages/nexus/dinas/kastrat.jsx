@@ -23,6 +23,19 @@ export const Kastrat = () => {
             alt="KastartLogo"
             className="w-1/4 object-contain ml-[14rem] mb-[6rem]"
           />
+          <div
+            className="ml-[5rem] max-w-xl mb-[3rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Bertanggung jawab sebagai motor penggerak kajian intelektual dan
+            aksi strategis mahasiswa, bergerak di bidang analisis isu,
+            pemberdayaan mahasiswa dan perempuan, serta pengorganisasian aksi
+            dalam rangka menyuarakan aspirasi, berperan dalam mengkaji isu-isu
+            strategis kampus, regional, maupun nasional, mengorganisir aksi
+            damai, serta mengedukasi mahasiswa melalui diskusi publik dan
+            kampanye digital.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[843px] bg-black opacity-50 pointer-events-none z-0"></div>

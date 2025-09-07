@@ -23,6 +23,19 @@ export const Internal = () => {
             alt="InternalLogo"
             className="w-1/4 object-contain ml-[10rem] "
           />
+          <div
+            className="ml-[5rem] max-w-xl mb-[1rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Bergerak di bidang sosial dengan fokus utama pada masyarakat
+            Fakultas Teknologi Informasi Universitas Andalas, meningkatkan jiwa
+            sosial mahasiswa FTI agar mampu membangun komunikasi yang baik, baik
+            di antara sesama mahasiswa, lembaga di FTI, maupun pihak dekanat.
+            Dengan pendekatan yang inklusif dan berorientasi pada kebersamaan
+            untuk mengupayakan terciptanya lingkungan yang harmonis dan
+            penuh solidaritas di dalam komunitas FTI.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[757px] bg-black opacity-50 pointer-events-none z-0"></div>

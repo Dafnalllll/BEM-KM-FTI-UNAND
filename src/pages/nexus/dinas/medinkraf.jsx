@@ -23,6 +23,18 @@ export const Medinkraf = () => {
             alt="MedinkrafLogo"
             className="w-1/4 object-contain ml-[13rem] mb-[10rem]"
           />
+          <div
+            className="ml-[5rem] max-w-xl mb-[9rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Mengelola seluruh aspek komunikasi visual dan digital serta
+            menyediakan platform untuk publikasi informasi seputar kegiatan BEM
+            KM FTI Universitas Andalas, kepada seluruh civitas akademika di
+            dalam dan diluar lingkungan Fakultas Teknologi Informasi, menyajikan
+            konten yang menarik, kreatif, dan inspiratif untuk civitas akademika
+            FTI melalui media sosial.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-full bg-black opacity-50 pointer-events-none z-0"></div>

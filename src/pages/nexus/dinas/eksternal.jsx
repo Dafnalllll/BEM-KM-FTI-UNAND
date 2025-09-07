@@ -23,6 +23,17 @@ export const Eksternal = () => {
             alt="EksternalLogo"
             className="w-1/4 object-contain ml-[10rem] mb-[8rem]"
           />
+          <div
+            className="ml-[5rem] max-w-xl mb-[8rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Meningkatkan eksistensi FTI dan membangun relasi dengan pihak luar,
+            seperti fakultas yang ada di UNAND, BEM KM UNAND, serta pihak
+            eksternal kampus,menjadi jembatan yang memperkuat relasi dan
+            kolaborasi BEM KM FTI serta merepresentasikan wajah BEM KM FTI
+            dengan profesionalisme dan inovasi.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[725px] bg-black opacity-50 pointer-events-none z-0"></div>

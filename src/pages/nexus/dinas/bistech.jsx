@@ -21,8 +21,18 @@ export const Bistech = () => {
           <img
             src={BistechLogo}
             alt="BistechLogo"
-            className="w-1/5 object-contain ml-[10rem] mb-[10rem]"
+            className="w-1/5 object-contain ml-[12rem] mb-[10rem]"
           />
+          <div
+            className="ml-[6rem] max-w-xl mb-[10rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Berfokus pada pengelolaan kewirausahaan dan penggalangan dana
+            mandiri,mendukung mahasiswa serta membangun kemandirian organisasi
+            dengan menciptakan peluang bisnis yang inovatif,membantu mahasiswa
+            menjadi kreatif, mandiri, dan berdaya saing di era digital.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[888px] bg-black opacity-50 pointer-events-none z-0"></div>

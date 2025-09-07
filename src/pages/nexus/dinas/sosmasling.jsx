@@ -21,8 +21,19 @@ export const Sosmasling = () => {
           <img
             src={SosmaslingLogo}
             alt="SosmaslingLogo"
-            className="w-1/4 object-contain ml-[7rem] mb-[15rem]"
+            className="w-1/4 object-contain ml-[9rem] mb-[15rem]"
           />
+          <div
+            className="ml-[5rem] max-w-xl mb-[14rem] text-white text-center text-lg font-bold font-[Montserrat] drop-shadow-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Bergerak dalam bidang sosial dan lingkungan dengan sasaran
+            masyarakat, bertujuan untuk meningkat jiwa-jiwa sosial KM FTI UNAND
+            agar tanggap terhadap fenomena sosial dan lingkungan yang terjadi di
+            masyarakat, serta mendukung tujuan pembangunan yang berkelanjutan
+            untuk kehidupan masyarakat yang lebih baik.
+          </div>
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[994px] bg-black opacity-50 pointer-events-none z-0"></div>
