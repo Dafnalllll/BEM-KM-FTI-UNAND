@@ -3,8 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Mail } from "lucide-react";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import Tiktok from "../../assets/socialmedia/tiktok.png";
+import X from "../../assets/socialmedia/x.png";
+import Youtube from "../../assets/socialmedia/youtube.png";
 import Nexus from "../../assets/kabinet/nexusinspirasi.png";
 import Ristek from "../../assets/dinas nexus/logo/ristek.png";
+
 export const Footer = () => {
   const navigate = useNavigate();
 
@@ -50,6 +53,22 @@ export const Footer = () => {
                 className="hover:scale-110 transition-transform"
               >
                 <img src={Tiktok} alt="TikTok" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://twitter.com/bemkmftiunand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={X} alt="X" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.youtube.com/@bemkmftiunand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={Youtube} alt="Youtube" className="w-6 h-6" />
               </a>
             </div>
             <p className="text-gray-300 mt-2 text-sm select-all flex items-center gap-2">

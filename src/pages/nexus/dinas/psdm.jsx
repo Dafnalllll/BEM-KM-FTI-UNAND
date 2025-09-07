@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavbarNexus from '../../../components/nexus/navbarnexus';
 import FooterNexus from '../../../components/nexus/footernexus';
 import PSDM from '../../../assets/dinas nexus/press release/psdm/psdm.png';
 export const Psdm = () => {
+  useEffect(() => {
+    document.title = "Psdm || Nexus Inspirasi";
+  } , []);
   return (
     <div className="min-h-screen flex flex-col">
           <NavbarNexus />

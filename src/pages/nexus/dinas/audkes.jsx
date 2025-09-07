@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import FooterNexus from '../../../components/nexus/footernexus';
 import AUDKES from '../../../assets/dinas nexus/press release/audkes/audkes.png';
 import NavbarNexus from '../../../components/nexus/navbarnexus';
 export const Audkes = () => {
+  useEffect(() => {
+    document.title = "Audkes || Nexus Inspirasi";
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <NavbarNexus />

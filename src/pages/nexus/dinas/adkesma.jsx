@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavbarNexus from '../../../components/nexus/navbarnexus';
 import FooterNexus from '../../../components/nexus/footernexus';
 import ADKESMA from '../../../assets/dinas nexus/press release/adkesma/ma.png';
 export const Adkesma = () => {
+  useEffect(() => {
+    document.title = "Adkesma || Nexus Inspirasi";
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
           <NavbarNexus />

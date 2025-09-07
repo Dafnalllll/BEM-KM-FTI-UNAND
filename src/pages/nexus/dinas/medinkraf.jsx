@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.png";
 export const Medinkraf = () => {
+  useEffect(() => {
+    document.title = "Medinkraf || Nexus Inspirasi";
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <NavbarNexus />

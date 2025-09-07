@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavbarNexus from '../../../components/nexus/navbarnexus'
 import FooterNexus from '../../../components/nexus/footernexus'
 import BISTECH from '../../../assets/dinas nexus/press release/bistech/tech.png'
 export const Bistech = () => {
+  useEffect(() => {
+    document.title = "Bistech || Nexus Inspirasi";
+  }, []);
   return (
      <div className="min-h-screen flex flex-col">
           <NavbarNexus />

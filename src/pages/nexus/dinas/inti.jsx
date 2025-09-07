@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import INTI from "../../../assets/dinas nexus/press release/inti/inti.png";
 import IntiGrid from "../../../components/nexus/grid/intigrid";
 const Inti = () => {
+  useEffect(() => {
+    document.title = " Inti || Nexus Inspirasi";
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <NavbarNexus />

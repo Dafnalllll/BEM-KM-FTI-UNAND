@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.png";
-
 const Ristek = () => {
+  useEffect(() => {
+    document.title = "Ristek || Nexus Inspirasi";
+  } , []);
   return (
     <div className="min-h-screen flex flex-col">
       <NavbarNexus />

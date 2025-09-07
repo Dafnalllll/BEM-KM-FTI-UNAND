@@ -12,7 +12,6 @@ const gridData = [
     jurusan: "Teknik Komputer",
     angkatan: "2022",
     border: "border-green-800",
-    size: "w-44 h-44",
   },
   {
     img: WakilGubernur,
@@ -21,7 +20,6 @@ const gridData = [
     jurusan: "Sistem Informasi",
     angkatan: "2022",
     border: "border-blue-500",
-    size: "w-44 h-44",
   },
   {
     img: SekretarisDaerah,
@@ -30,7 +28,6 @@ const gridData = [
     jurusan: "Teknik Komputer",
     angkatan: "2022",
     border: "border-green-500",
-    size: "w-44 h-44",
   },
   {
     img: BendaharaDaerah,
@@ -39,58 +36,38 @@ const gridData = [
     jurusan: "Sistem Informasi",
     angkatan: "2023",
     border: "border-green-500",
-    size: "w-44 h-44",
   },
 ];
 
 const IntiGrid = () => {
   return (
-    <div className="flex flex-col items-center gap-12 p-8">
-      {/* Baris 1 */}
-      <div className="flex justify-center gap-20">
-        {gridData.slice(0, 2).map((item, idx) => (
+    <div className="flex flex-col items-center gap-10 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 cursor-pointer">
+        {gridData.map((item, idx) => (
           <div
             key={idx}
-            className="backdrop-blur-lg bg-white/30 border border-white/40 rounded-xl shadow-lg flex flex-col items-center px-8 py-6 w-[320px] min-h-[380px]"
+            className={`relative rounded-2xl shadow-md w-[280px] h-[340px] border-2 ${item.border} overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+            style={{
+              backgroundImage: `url(${item.img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            <img
-              src={item.img}
-              alt={item.title}
-              className={`${item.size} object-cover rounded-full shadow-lg border-4 ${item.border}`}
-            />
-            <span className="mt-4 font-bold text-xl text-gray-800">
-              {item.title}
-            </span>
-            <span className="mt-2 font-semibold text-lg text-gray-700">
-              {item.nama}
-            </span>
-            <span className="mt-1 text-base text-gray-600">{item.jurusan}</span>
-            <span className="mt-1 text-base text-gray-600">
-              {item.angkatan}
-            </span>
-          </div>
-        ))}
-      </div>
-      {/* Baris 2 */}
-      <div className="flex justify-between gap-20 w-full p-8">
-        {gridData.slice(2, 4).map((item, idx) => (
-          <div
-            key={idx}
-            className="backdrop-blur-lg bg-white/30 border border-white/40 rounded-xl shadow-lg flex flex-col items-center px-8 py-6 w-[320px] min-h-[380px]"
-          >
-            <img
-              src={item.img}
-              alt={item.title}
-              className={`${item.size} object-cover rounded-full shadow-lg border-4 ${item.border}`}
-            />
-            <span className="mt-4 font-bold text-lg text-gray-800">
-              {item.title}
-            </span>
-            <span className="mt-2 font-semibold text-base text-gray-700">
-              {item.nama}
-            </span>
-            <span className="mt-1 text-sm text-gray-600">{item.jurusan}</span>
-            <span className="mt-1 text-sm text-gray-600">{item.angkatan}</span>
+            {/* Glass effect overlay */}
+            <div className="absolute inset-0 "></div>
+            {/* Konten di atas glass */}
+            <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 py-8">
+              <span className="font-semibold text-base text-gray-700 tracking-wide mb-1">
+                {item.title}
+              </span>
+              <span className="font-bold text-lg text-gray-900 mb-1">
+                {item.nama}
+              </span>
+              <span className="text-sm text-gray-500 mb-1">{item.jurusan}</span>
+              <span className="text-xs text-gray-400">
+                Angkatan {item.angkatan}
+              </span>
+            </div>
           </div>
         ))}
       </div>
