@@ -15,6 +15,8 @@ import Kastrat from "./pages/nexus/dinas/kastrat";
 import Adkesma from "./pages/nexus/dinas/adkesma";
 import Psdm from "./pages/nexus/dinas/psdm";
 import Internal from "./pages/nexus/dinas/internal";
+import Bistech from "./pages/nexus/dinas/bistech";
+import Medinkraf from "./pages/nexus/dinas/medinkraf";
 import NotFound from "./notfound";
 import Loading from "./components/loading fti";
 
@@ -51,6 +53,8 @@ function App() {
         <Route path="/dinasnexus/adkesma" element={<Adkesma />} />
         <Route path="/dinasnexus/psdm" element={<Psdm />} />
         <Route path="/dinasnexus/internal" element={<Internal />} />
+        <Route path="/dinasnexus/bistech" element={<Bistech />} />
+        <Route path="/dinasnexus/medinkraf" element={<Medinkraf />} />
 
         {/* 404 Not Found - harus di paling bawah */}
         <Route path="*" element={<NotFound />} />
