@@ -4,7 +4,9 @@ import { Footer } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
 import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.png";
 import StatsNexus from "../../components/nexus/statsnexus";
-import TentangNexus from "./tentangnexus"; // pastikan path sudah benar
+import TentangNexus from "./tentangnexus";
+import KataKataGub from "../../components/nexus/katakatagub";
+import KataKataWagub from "../../components/nexus/katakatawagub";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -14,7 +16,7 @@ export const Nexus = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Section Beranda dengan background pelantikan */}
-      <section id="beranda" className="relative w-full min-h-screen">
+      <section id="beranda" className="relative w-auto min-h-screen">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${Pelantikan})` }}
@@ -51,14 +53,29 @@ export const Nexus = () => {
           </div>
         </div>
       </section>
-      {/* StatsNexus di antara section beranda dan tentangnexus */}
-      <div className="w-full z-50 justify-center ">
-        <StatsNexus />
+
+      {/* StatsNexus mengambang di antara dua section */}
+      <div className="relative w-full flex justify-center">
+        <div className="absolute left-1/2 -translate-x-1/2 -top-16 z-20 w-[90vw] max-w-5xl">
+          <StatsNexus />
+        </div>
       </div>
+
       {/* Section Tentang Nexus */}
-      <section id="tentangnexus" className="w-full">
+      <section id="tentangnexus" className="w-full mt-24">
         <TentangNexus />
       </section>
+
+      {/* KataKataGub di bawah section tentangnexus */}
+      <div className="w-full flex justify-center py-12 bg-white">
+        <KataKataGub />
+      </div>
+
+      {/* KataKataGub di bawah section tentangnexus */}
+      <div className="w-full flex justify-center py-12 bg-white">
+        <KataKataWagub />
+      </div>
+
       <Footer />
     </div>
   );

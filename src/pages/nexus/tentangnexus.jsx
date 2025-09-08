@@ -10,7 +10,7 @@ export const TentangNexus = () => {
     <div className="min-h-screen flex flex-col bg-[#1E2A38]">
       <div className="flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
         {/* Logo di kiri */}
-        <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[6rem]">
+        <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[8rem]">
           <img
             src={Nexus}
             alt="Logo Nexus"
@@ -23,7 +23,7 @@ export const TentangNexus = () => {
         <div className="flex flex-col w-full max-w-3xl gap-8">
           {/* VISI */}
           <div
-            className="flex flex-col items-center"
+            className="flex flex-col items-center mt-[4rem]"
             data-aos="fade-down"
             data-aos-duration="800"
           >

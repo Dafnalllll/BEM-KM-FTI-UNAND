@@ -23,28 +23,29 @@ const stats = [
 
 const StatsNexus = () => (
   <div
-    className="w-full flex justify-center py-8 bg-transparent"
+    className="w-full flex justify-center py-6 bg-transparent"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div className="flex flex-row w-[95vw] max-w-6xl gap-0 shadow-lg rounded-xl overflow-hidden">
+    <div className="flex flex-row w-[35vw] max-w-xl gap-0 shadow-lg rounded-xl overflow-hidden">
       {stats.map((stat) => (
         <div
           key={stat.title}
-          className={`flex-1 flex flex-col items-center justify-center py-10 ${stat.bg}`}
+          className={`flex-1 flex flex-col items-center justify-center py-6 ${stat.bg}`}
         >
-          <div className="mb-4 bg-white bg-opacity-90 rounded-md p-4">
-            {stat.icon}
+          <div className="mb-3 bg-white bg-opacity-90 rounded-md p-2">
+            {/* Perkecil icon */}
+            {React.cloneElement(stat.icon, { size: 24 })}
           </div>
           <div
-            className={`text-xl font-semibold mb-2 ${
+            className={`text-base font-semibold mb-1 ${
               stat.titleColor || "text-white"
             }`}
           >
             {stat.title}
           </div>
-          <div className={`text-5xl font-bold ${stat.text}`}>
-            <CountUp end={stat.value} duration={3} />
+          <div className={`text-3xl font-bold ${stat.text}`}>
+            <CountUp end={stat.value} duration={1} />
           </div>
         </div>
       ))}
