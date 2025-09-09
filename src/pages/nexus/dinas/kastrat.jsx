@@ -38,7 +38,7 @@ export const Kastrat = () => {
           </div>
         </div>
         {/* Overlay hitam */}
-        <div className="absolute inset-0 w-full h-[843px] bg-black opacity-50 pointer-events-none z-0"></div>
+        <div className="absolute inset-0 w-full h-[966px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
       <FooterNexus />
     </div>
