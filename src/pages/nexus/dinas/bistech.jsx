@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import BISTECH from "../../../assets/dinas nexus/press release/bistech/tech.png";
+import BISTECH from "../../../assets/dinas nexus/press release/bistech/bistech.png";
 import BistechLogo from "../../../assets/dinas nexus/logo/bistech.png";
 export const Bistech = () => {
   useEffect(() => {

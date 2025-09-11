@@ -3,7 +3,7 @@ import KataGub from "../../assets/dinas nexus/press release/inti/katagub.png";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 const KataKataGub = () => (
-  <div className="min-h-screen flex flex-row items-center w-full bg-gray-200 px-16 py-12">
+  <div className=" flex flex-row items-center w-full mx-auto bg-gray-200 px-4 md:px-16 py-12">
     {/* Kolom kiri: Teks */}
     <div className="flex-1">
       <h2
@@ -92,11 +92,13 @@ const KataKataGub = () => (
       </div>
     </div>
     {/* Kolom kanan: Foto */}
-    <div className="flex-1 flex justify-end">
+    <div className="flex-1 flex justify-end mt-8"
+    data-aos="zoom-in"
+    data-aos-duration="800">
       <img
         src={KataGub}
         alt="Kata Gubernur"
-        className="w-[350px] h-auto rounded-xl shadow-lg object-cover"
+        className="w-[550px] h-auto object-cover"
       />
     </div>
   </div>

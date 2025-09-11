@@ -5,7 +5,7 @@ import LinkedIn from "../../assets/socialmedia/linkedln.png";
 
 export const KataKataWagub = () => {
   return (
-    <div className="flex flex-row items-center max-w-7xl mx-auto bg-white px-4 md:px-16 py-12">
+    <div className="flex flex-row items-center max-w-7xl mx-auto bg-gray-200 px-4 md:px-16 py-12">
       {/* Kolom kiri: Foto */}
       <div className="flex-1 flex justify-start">
         <img
@@ -17,7 +17,7 @@ export const KataKataWagub = () => {
       {/* Kolom kanan: Konten (tambahkan di sini jika ada) */}
       <div className="flex-1">
         <h2
-          className="text-4xl font-bold font-[Carena] text-right text-[#243A1A] mb-2"
+          className="text-4xl font-bold font-[Carena] text-right text-[#243A1A] mb-2 "
           data-aos="fade-down"
           data-aos-duration="700"
         >
