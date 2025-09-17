@@ -3,6 +3,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import AUDKES from "../../../assets/dinas nexus/press release/audkes/audkes.png";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import AudkesLogo from "../../../assets/dinas nexus/logo/audkes.png";
+import AudkesGrid from "../../../components/nexus/grid/audkesgrid";
 export const Audkes = () => {
   useEffect(() => {
     document.title = "Audkes || Nexus Inspirasi";
@@ -37,6 +38,10 @@ export const Audkes = () => {
         </div>
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[739px] bg-black opacity-50 pointer-events-none z-0"></div>
+      </div>
+      {/* Section AudkesGrid di bawah background */}
+      <div className="flex-1 flex flex-col items-center justify-center bg-white py-12">
+        <AudkesGrid />
       </div>
       <FooterNexus />
     </div>
