@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/eksternal.png";
 import EksternalLogo from "../../../assets/dinas nexus/logo/eksternal.png";
+import EksternalGrid from "../../../components/nexus/grid/eksternalgrid";
 export const Eksternal = () => {
   useEffect(() => {
     document.title = "Eksternal || Nexus Inspirasi";
@@ -38,6 +39,7 @@ export const Eksternal = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[725px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <EksternalGrid />
       <FooterNexus />
     </div>
   );

@@ -39,7 +39,7 @@ const gridData = [
     desc: "Sistem Informasi 2023",
     border: "border-green-500",
     instagram: "https://www.instagram.com/_friiddd/",
-    linkedin: "https://www.linkedin.com/in/kabir/",
+    linkedin: "https://www.linkedin.com/in/williamhgates/",
   },
 
   {

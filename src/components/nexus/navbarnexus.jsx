@@ -28,7 +28,6 @@ export const NavbarNexus = () => {
         <div className="flex items-center gap-8">
           {[
             { label: "Beranda", path: "beranda" }, // scroll di nexus.jsx
-            { label: "Tentang", path: "tentangnexus" }, // scroll di nexus.jsx
             { label: "Dinas", path: "/dinasnexus" },
             { label: "Program Kerja", path: "programkerja" },
             { label: "Galeri", path: "/galeri" },
@@ -45,10 +44,6 @@ export const NavbarNexus = () => {
                 } else {
                   // Beranda selalu ke /nexus jika bukan di /nexus
                   if (item.label === "Beranda") {
-                    navigate("/nexus");
-                  }
-                  // Tentang selalu ke /tentangnexus jika bukan di /nexus
-                  else if (item.label === "Tentang") {
                     navigate("/nexus");
                   }
                   // Tombol lain navigate seperti biasa

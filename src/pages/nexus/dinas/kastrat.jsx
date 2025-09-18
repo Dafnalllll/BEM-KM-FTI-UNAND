@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import KASTRAT from "../../../assets/dinas nexus/press release/kastrat/kastrat.png";
 import KastartLogo from "../../../assets/dinas nexus/logo/kastrat.png";
+import KastratGrid from "../../../components/nexus/grid/kastratgrid";
 export const Kastrat = () => {
   useEffect(() => {
     document.title = "Kastrat || Nexus Inspirasi";
@@ -40,6 +41,7 @@ export const Kastrat = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[966px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <KastratGrid />
       <FooterNexus />
     </div>
   );

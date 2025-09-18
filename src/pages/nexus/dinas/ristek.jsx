@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.png";
 import RistekLogo from "../../../assets/dinas nexus/logo/ristek.png";
+import RistekGrid from "../../../components/nexus/grid/ristekgrid";
 const Ristek = () => {
   useEffect(() => {
     document.title = "Ristek || Nexus Inspirasi";
@@ -41,6 +42,7 @@ const Ristek = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[758px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <RistekGrid />
       <FooterNexus />
     </div>
   );
