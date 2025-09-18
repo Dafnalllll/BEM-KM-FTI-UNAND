@@ -7,7 +7,7 @@ export const TentangNexus = () => {
     document.title = "Tentang || Nexus";
   }, []);
   return (
-    <div className="min-h-screen flex flex-col bg-[#1E2A38]">
+    <div className="min-h-screen flex flex-col bg-gray-400">
       <div className="flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
         {/* Logo di kiri */}
         <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[8rem]">

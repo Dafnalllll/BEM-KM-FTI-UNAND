@@ -46,7 +46,6 @@ export const Nexus = () => {
                 className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold font-[Montserrat] hover:bg-white hover:text-[#25364a] transition duration-300 cursor-pointer transform hover:scale-105"
                 type="button"
                 onClick={() => navigate("/tentangnexus")}
-                
               >
                 Get Started
               </button>
@@ -67,15 +66,21 @@ export const Nexus = () => {
         <TentangNexus />
       </section>
 
-      {/* KataKataGub di bawah section tentangnexus */}
-      <div className="w-full flex justify-center py-12 bg-gray-200">
+      {/* Section KataKataGub */}
+      <section
+        id="katakatagub"
+        className="w-full flex justify-center py-12 bg-gray-200"
+      >
         <KataKataGub />
-      </div>
+      </section>
 
-      {/* KataKataGub di bawah section tentangnexus */}
-      <div className="w-full flex justify-center py-12 bg-gray-200">
+      {/* Section KataKataWagub */}
+      <section
+        id="katakatawagub"
+        className="w-full flex justify-center py-12 bg-gray-400"
+      >
         <KataKataWagub />
-      </div>
+      </section>
 
       <Footer />
     </div>
@@ -83,4 +88,3 @@ export const Nexus = () => {
 };
 
 export default Nexus;
-

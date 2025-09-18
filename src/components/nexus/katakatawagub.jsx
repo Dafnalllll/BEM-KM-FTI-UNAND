@@ -1,17 +1,20 @@
 import React from "react";
-import KataWagub from "../../assets/dinas nexus/press release/inti/katawagub.png";
+import KataWagub from "../../assets/dinas nexus/press release/inti/wagub.png";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 
 export const KataKataWagub = () => {
   return (
-    <div className="flex flex-row items-center max-w-7xl mx-auto bg-gray-200 px-4 md:px-16 py-12">
+    <div className="flex flex-row items-center max-w-7xl mx-auto bg-gray-400 px-4 md:px-16 py-12">
       {/* Kolom kiri: Foto */}
-      <div className="flex-1 flex justify-start">
+      <div className="flex-1 flex justify-start"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      >
         <img
           src={KataWagub}
           alt="Kata Wakil Gubernur"
-          className="w-[350px] h-auto rounded-xl shadow-lg object-cover"
+          className="w-[550px] h-auto  object-cover"
         />
       </div>
       {/* Kolom kanan: Konten (tambahkan di sini jika ada) */}

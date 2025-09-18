@@ -1,5 +1,5 @@
 import React from "react";
-import KataGub from "../../assets/dinas nexus/press release/inti/katagub.png";
+import KataGub from "../../assets/dinas nexus/press release/inti/gub.png";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 const KataKataGub = () => (
@@ -92,9 +92,9 @@ const KataKataGub = () => (
       </div>
     </div>
     {/* Kolom kanan: Foto */}
-    <div className="flex-1 flex justify-end mt-8"
-    data-aos="zoom-in"
-    data-aos-duration="800">
+    <div className="flex-1 flex justify-end mb-[14rem]"
+    data-aos="fade-right"
+    data-aos-duration="1000">
       <img
         src={KataGub}
         alt="Kata Gubernur"
