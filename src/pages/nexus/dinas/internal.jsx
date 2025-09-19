@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import INTERNAL from "../../../assets/dinas nexus/press release/internal/internal.png";
 import InternalLogo from "../../../assets/dinas nexus/logo/internal.png";
+import InternalGrid from "../../../components/nexus/grid/internalgrid";
 export const Internal = () => {
   useEffect(() => {
     document.title = "Internal || Nexus Inspirasi";
@@ -40,6 +41,7 @@ export const Internal = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[757px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <InternalGrid />
       <FooterNexus />
     </div>
   );

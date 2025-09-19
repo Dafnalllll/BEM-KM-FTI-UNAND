@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import BISTECH from "../../../assets/dinas nexus/press release/bistech/bistech.png";
 import BistechLogo from "../../../assets/dinas nexus/logo/bistech.png";
+import BistechGrid from "../../../components/nexus/grid/bistechgrid";
 export const Bistech = () => {
   useEffect(() => {
     document.title = "Bistech || Nexus Inspirasi";
@@ -37,6 +38,7 @@ export const Bistech = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[888px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <BistechGrid />
       <FooterNexus />
     </div>
   );

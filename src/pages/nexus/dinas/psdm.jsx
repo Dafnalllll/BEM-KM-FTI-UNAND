@@ -3,6 +3,7 @@ import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import PSDM from "../../../assets/dinas nexus/press release/psdm/psdm.png";
 import PsdmLogo from "../../../assets/dinas nexus/logo/psdm.png";
+import PsdmGrid from "../../../components/nexus/grid/psdmgrid";
 export const Psdm = () => {
   useEffect(() => {
     document.title = "Psdm || Nexus Inspirasi";
@@ -39,6 +40,7 @@ export const Psdm = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-[773px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      <PsdmGrid />
       <FooterNexus />
     </div>
   );
