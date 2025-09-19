@@ -7,6 +7,7 @@ import StatsNexus from "../../components/nexus/statsnexus";
 import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
 import KataKataWagub from "../../components/nexus/katakatawagub";
+import ProgramKerja from "./programkerja";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -80,6 +81,11 @@ export const Nexus = () => {
         className="w-full flex justify-center py-12 bg-gray-400"
       >
         <KataKataWagub />
+      </section>
+
+      {/* Section Program Kerja */}
+      <section id="programkerja" className="w-full py-12 bg-gray-200">
+        <ProgramKerja />
       </section>
 
       <Footer />

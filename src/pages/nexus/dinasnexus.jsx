@@ -82,7 +82,7 @@ const galleryImages = [
     id: 10,
     src: Ristek,
     alt: "Ristek",
-    gridClass: "md:col-start-2 md:row-start-4",
+    gridClass: "md:col-start-2 md:row-start-3",
     route: "/dinasnexus/ristek",
   },
   {
@@ -125,11 +125,11 @@ const SlideshowImage = ({ slides }) => {
 const DinasNexus = () => {
   const navigate = useNavigate();
   return (
-    <div className="bg-gray-500 min-h-screen flex flex-col">
+    <div className="bg-gray-400 min-h-screen flex flex-col">
       <NavbarNexus />
       <div className="flex-1">
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-20 px-4"
+          className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
