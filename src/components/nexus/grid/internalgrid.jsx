@@ -63,7 +63,7 @@ const gridData = [
   {
     img: Aufa,
     title: "Staff Dinas",
-    nama: "Ahmad Rasha Radya Aufa Lubis",
+    nama: "Ahmad Rasha Radya Aufa L",
     desc: "Sistem Informasi 2023",
     border: "border-green-800",
     instagram: "https://www.instagram.com/aufaalbs/",
