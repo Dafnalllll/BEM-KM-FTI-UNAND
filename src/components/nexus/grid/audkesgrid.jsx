@@ -25,7 +25,7 @@ const gridData = [
   {
     img: Sekbir,
     title: "Sekretaris Biro",
-    nama: "Miftah   ul Jannah",
+    nama: "Miftahul Jannah",
     desc: "Sistem Informasi 2022",
     border: "border-green-500",
     instagram: "https://www.instagram.com/mifth.mip/",

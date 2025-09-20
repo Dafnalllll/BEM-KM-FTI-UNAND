@@ -130,7 +130,7 @@ const DinasNexus = () => {
       <div className="flex-1">
         <div
           className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4"
-          data-aos="zoom-in"
+          data-aos="flip-left"
           data-aos-duration="1000"
         >
           {galleryImages.map((image) => (
