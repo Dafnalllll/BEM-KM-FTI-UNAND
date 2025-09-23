@@ -69,7 +69,7 @@ const gridData = [
     img: Kevin,
     title: "Staff Dinas",
     nama: "Kevin Rahmat Illahi",
-    desc: "Teknik Komputer 2023",
+    desc: "Sistem Informasi 2024",
     border: "border-green-500",
     instagram: "https://www.instagram.com/kevinnrahmat/",
     linkedin: "https://www.linkedin.com/in/kevin-rahmat-illahi-13a092288/",

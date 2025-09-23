@@ -3,6 +3,7 @@ import Instagram from "../../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../../assets/socialmedia/linkedln.png";
 import Kadin from "../../../assets/dinas nexus/press release/eksternal/ijon.png";
 import Sekdin from "../../../assets/dinas nexus/press release/eksternal/kiya.png";
+import Rintan from "../../../assets/dinas nexus/staff release/eksternal/rintan.png";
 import Eksternal from "../../../assets/dinas nexus/logo/eksternal.png";
 
 const gridData = [
@@ -23,6 +24,15 @@ const gridData = [
     border: "border-green-800",
     instagram: "https://www.instagram.com/ervizonf/",
     linkedin: "https://www.linkedin.com/in/ervizon-fariz-106477288/",
+  },
+  {
+    img: Rintan,
+    title: "Staff Dinas",
+    nama: "Rintan Amorade",
+    desc: "Teknik Komputer 2023",
+    border: "border-red-500",
+    instagram: "https://www.instagram.com/rintanamorade_/",
+    linkedin: "https://www.linkedin.com/in/rintan-amorade-09240a280/",
   },
 ];
 

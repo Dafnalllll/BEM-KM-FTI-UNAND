@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import Tiktok from "../../assets/socialmedia/tiktok.png";
 import X from "../../assets/socialmedia/x.png";
@@ -68,13 +68,19 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img src={Youtube} alt="Youtube" className="w-6 h-6" />
+                <img src={Youtube} alt="Youtube" className="w-8 h-6" />
               </a>
             </div>
-            <p className="text-gray-300 mt-2 text-sm select-all flex items-center gap-2">
-              <Mail size={16} className="inline" />
-              bemkmfti@gmail.com
-            </p>
+            <div className="text-gray-300 mt-2 text-sm space-y-1">
+              <p className="select-all flex items-center gap-2">
+                <Mail size={16} className="inline" />
+                bemkmfti@gmail.com
+              </p>
+              <p className="select-all flex items-center gap-2">
+                <Phone size={16} className="inline" />
+                +62 812-3456-7890
+              </p>
+            </div>
           </div>
           {/* Navigasi Cepat */}
           <div className="flex-1">
