@@ -31,7 +31,7 @@ const gridData = [
     img: Kadin,
     title: "Kepala Dinas",
     nama: "Nori Dwi Yulianti",
-    desc: "Sistem Informasi 2023",
+    desc: "Teknik Komputer 2023",
     border: "border-red-500",
     instagram: "https://www.instagram.com/_nori.d.y_/",
     linkedin: "https://www.linkedin.com/in/shaza-nurul-123456789/",

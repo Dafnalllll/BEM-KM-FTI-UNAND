@@ -52,7 +52,7 @@ const gridData = [
   {
     img: Rapip,
     title: "Staff Dinas",
-    nama: "Naufal Rafii Irwan",
+    nama: "Naufal Rafiif Irwan",
     desc: "Teknik Komputer 2023",
     border: "border-purple-500",
     instagram: "https://www.instagram.com/rapip_n/",
@@ -87,6 +87,7 @@ const gridData = [
     border: "border-pink-500",
     instagram: "https://www.instagram.com/dzakiirra/",
     linkedin: "https://www.linkedin.com/in/dzakira-hapsarini-060b0231b/",
+    github: "https://github.com/Dzakira23",
   },
 ];
 
