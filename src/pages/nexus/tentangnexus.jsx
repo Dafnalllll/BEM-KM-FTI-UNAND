@@ -7,7 +7,7 @@ export const TentangNexus = () => {
     document.title = "Tentang || Nexus";
   }, []);
   return (
-    <div className="min-h-screen flex flex-col bg-gray-400">
+    <div className="min-h-screen flex flex-col bg-gray-200">
       <div className="flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
         {/* Logo di kiri */}
         <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[8rem]">
@@ -33,7 +33,7 @@ export const TentangNexus = () => {
             <div className="flex items-center mb-6 ">
               <div className="w-32 h-1 bg-[#a67c2d] rounded"></div>
             </div>
-            <p className="text-xl text-white font-[Carena] font-medium text-start ml-12 ">
+            <p className="text-xl text-black font-[Carena] font-medium text-start ml-12 ">
               Mewujudkan Badan Eksekutif Mahasiswa yang inovatif, inspiratif,
               dan progresif dalam mendorong pengembangan pelayanan dan
               pergerakan yang proaktif terhadap KM FTI
@@ -51,7 +51,7 @@ export const TentangNexus = () => {
             <div className="flex items-center mb-6">
               <div className="w-32 h-1 bg-[#a67c2d] rounded"></div>
             </div>
-            <ol className="text-xl text-white font-medium font-[Carena] list-decimal list-inside space-y-6 text-left w-full max-w-2xl">
+            <ol className="text-xl text-black font-medium font-[Carena] list-decimal list-inside space-y-6 text-left w-full max-w-2xl">
               <li>Mereformasi marwah BEM KM FTI</li>
               <li>
                 Menjadi garda terdepan dalam memperjuangkan aspirasi mahasiswa

@@ -37,7 +37,7 @@ const gridData = [
     border: "border-green-800",
     instagram: "https://www.instagram.com/daf_nal/",
     linkedin: "https://www.linkedin.com/in/daffa-naldi-935b55341/",
-    github: "https://github.com/Dafnalllll", 
+    github: "https://github.com/Dafnalllll",
   },
   {
     img: Farid,
@@ -47,7 +47,7 @@ const gridData = [
     border: "border-green-500",
     instagram: "https://www.instagram.com/faridhatul29/",
     linkedin: "https://www.linkedin.com/in/faridhatul-azhari-9749b6287/",
-    github: "https://github.com/faridhatul", 
+    github: "https://github.com/Ridhhhs",
   },
 
   {

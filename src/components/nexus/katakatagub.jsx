@@ -3,7 +3,7 @@ import KataGub from "../../assets/dinas nexus/press release/inti/gub.png";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 const KataKataGub = () => (
-  <div className=" flex flex-row items-center w-full mx-auto bg-gray-200 px-4 md:px-16 py-12">
+  <div className=" flex flex-row items-center w-full mx-auto bg-white px-4 md:px-16 py-12">
     {/* Kolom kiri: Teks */}
     <div className="flex-1">
       <h2

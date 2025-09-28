@@ -34,7 +34,7 @@ const gridData = [
     desc: "Teknik Komputer 2023",
     border: "border-red-500",
     instagram: "https://www.instagram.com/_nori.d.y_/",
-    linkedin: "https://www.linkedin.com/in/shaza-nurul-123456789/",
+    linkedin: "https://www.linkedin.com/in/nori-dwi-a80285387/",
   },
   {
     img: Zhafira,

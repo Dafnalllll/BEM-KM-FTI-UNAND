@@ -8,6 +8,7 @@ import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
 import KataKataWagub from "../../components/nexus/katakatawagub";
 import ProgramKerja from "./programkerja";
+import Himpunan from "./himpunan";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -70,7 +71,7 @@ export const Nexus = () => {
       {/* Section KataKataGub */}
       <section
         id="katakatagub"
-        className="w-full flex justify-center py-12 bg-gray-200"
+        className="w-full flex justify-center py-12 "
       >
         <KataKataGub />
       </section>
@@ -78,15 +79,21 @@ export const Nexus = () => {
       {/* Section KataKataWagub */}
       <section
         id="katakatawagub"
-        className="w-full flex justify-center py-12 bg-gray-400"
+        className="w-full flex justify-center py-12 bg-gray-200 "
       >
         <KataKataWagub />
       </section>
 
-      {/* Section Program Kerja */}
-      <section id="programkerja" className="w-full py-12 bg-gray-200">
-        <ProgramKerja />
-      </section>
+        {/* Section Program Kerja */}
+        <section id="programkerja" className="w-full py-12 ">
+          <ProgramKerja />
+        </section>
+
+        {/* Section Himpunan */}
+        <section id="himpunan" className="w-full py-12 bg-gray-200 ">
+          <Himpunan />
+        </section>
+      {/* Footer */}
 
       <Footer />
     </div>

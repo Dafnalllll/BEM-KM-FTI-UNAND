@@ -5,7 +5,7 @@ import LinkedIn from "../../assets/socialmedia/linkedln.png";
 
 export const KataKataWagub = () => {
   return (
-    <div className="flex flex-row items-center max-w-7xl mx-auto bg-gray-400 px-4 md:px-16 py-12">
+    <div className="flex flex-row items-center max-w-7xl mx-auto bg-gray-200 px-4 md:px-16 py-12">
       {/* Kolom kiri: Foto */}
       <div className="flex-1 flex justify-start"
       data-aos="fade-right"
