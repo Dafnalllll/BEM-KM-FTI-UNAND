@@ -5,6 +5,7 @@ import Bakti2 from "../../assets/dinas nexus/kegiatan/internal/bakti2.png";
 import Bemvisit from "../../assets/dinas nexus/kegiatan/eksternal/bemvisit.png";
 import Bemvisit1 from "../../assets/dinas nexus/kegiatan/eksternal/bemvisit1.png";
 import Hackathon from "../../assets/dinas nexus/kegiatan/ristek/hackathon.png";
+import BinaDesa from "../../assets/dinas nexus/kegiatan/sosmasling/binadesa.png";
 export const ProgramKerja = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState({});
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -51,7 +52,7 @@ export const ProgramKerja = () => {
       nama: "FTI Bina Desa",
       deskripsi:
         "Program pengabdian masyarakat dengan berbagai kegiatan sosial untuk membantu masyarakat kurang mampu.",
-      foto: ["/api/placeholder/400/200"], // Array untuk konsistensi
+      foto: [BinaDesa], // Array untuk konsistensi
       kategori: [
         { nama: "Sosial", color: "bg-red-100 text-red-800" },
         { nama: "Pengabdian", color: "bg-yellow-100 text-yellow-800" },

@@ -11,8 +11,6 @@ import Medinkraf from "../../assets/dinas nexus/logo/medin.png";
 import PSDM from "../../assets/dinas nexus/logo/psdm.png";
 import Ristek from "../../assets/dinas nexus/logo/ristek.png";
 import Sosmas from "../../assets/dinas nexus/logo/sosmas.png";
-import NavbarNexus from "../../components/nexus/navbarnexus";
-import FooterNexus from "../../components/nexus/footernexus";
 // Data galeri
 const galleryImages = [
   {
@@ -128,12 +126,10 @@ const DinasNexus = () => {
   }, []);
   const navigate = useNavigate();
   return (
-    <div className="bg-gray-400 min-h-screen flex flex-col">
-      <NavbarNexus />
+    <div className="min-h-screen flex flex-col">
       <div className="flex-1">
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4">
           {galleryImages.map((image, index) => (
-            // Wrapper untuk AOS
             <div
               key={image.id}
               className={image.gridClass || ""}
@@ -141,13 +137,17 @@ const DinasNexus = () => {
               data-aos-duration="1000"
               data-aos-delay={index * 100}
             >
-              {/* Card untuk hover effect */}
+              {/* Glassmorphism Card */}
               <div
                 className="
-                relative overflow-hidden rounded-2xl shadow-xl 
-                transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl
-                h-[140px] group flex items-center justify-center cursor-pointer bg-white
-              "
+                  relative overflow-hidden rounded-2xl shadow-xl
+                  transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl
+                  h-[140px] group flex items-center justify-center cursor-pointer
+                  bg-gray-200/20 backdrop-blur-md border border-gray-200/30
+                "
+                style={{
+                  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
+                }}
               >
                 <button
                   type="button"
@@ -182,10 +182,15 @@ const DinasNexus = () => {
                 </button>
                 <div
                   className="
-                  absolute inset-x-0 bottom-0 w-full p-2 text-center text-[#F6EDDD] font-['Titan_One'] text-ultrabold bg-gray-600/60
-                  opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
-                  transition-all duration-300 ease-in-out
-                "
+                    absolute inset-x-0 bottom-0 w-full p-2 text-center text-[#F6EDDD] font-['Titan_One'] text-ultrabold
+                    bg-gray-700/40 backdrop-blur-sm
+                    opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
+                    transition-all duration-300 ease-in-out
+                  "
+                  style={{
+                    borderBottomLeftRadius: "1rem",
+                    borderBottomRightRadius: "1rem",
+                  }}
                 >
                   {image.alt}
                 </div>
@@ -194,7 +199,6 @@ const DinasNexus = () => {
           ))}
         </div>
       </div>
-      <FooterNexus className="mt-auto" />
     </div>
   );
 };

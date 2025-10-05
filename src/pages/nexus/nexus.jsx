@@ -9,6 +9,7 @@ import KataKataGub from "../../components/nexus/katakatagub";
 import KataKataWagub from "../../components/nexus/katakatawagub";
 import ProgramKerja from "./programkerja";
 import Himpunan from "./himpunan";
+import DinasNexus from "./dinasnexus";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -84,13 +85,18 @@ export const Nexus = () => {
         <KataKataWagub />
       </section>
 
+      {/* Section Dinas */}
+      <section id="dinasnexus" className="w-full  py-12">
+        <DinasNexus />
+      </section>
+
         {/* Section Program Kerja */}
-        <section id="programkerja" className="w-full py-12 ">
+        <section id="programkerja" className="w-full py-12 bg-gray-200">
           <ProgramKerja />
         </section>
 
         {/* Section Himpunan */}
-        <section id="himpunan" className="w-full py-12 bg-gray-200 ">
+        <section id="himpunan" className="w-full py-12">
           <Himpunan />
         </section>
       {/* Footer */}

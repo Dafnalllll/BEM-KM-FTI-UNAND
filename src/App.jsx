@@ -6,7 +6,6 @@ import Bemfti from "./bemfti";
 import Kabinet from "./kabinet";
 import Sinergi from "./pages/sinergi/sinergi";
 import Nexus from "./pages/nexus/nexus";
-import DinasNexus from "./pages/nexus/dinasnexus";
 import Inti from "./pages/nexus/dinas/inti";
 import Ristek from "./pages/nexus/dinas/ristek";
 import Audkes from "./pages/nexus/dinas/audkes";
@@ -45,7 +44,6 @@ function App() {
         <Route path="/nexus" element={<Nexus />} />
 
         {/* Kabinet Nexus */}
-        <Route path="/dinasnexus" element={<DinasNexus />} />
         <Route path="/dinasnexus/inti" element={<Inti />} />
         <Route path="/dinasnexus/ristek" element={<Ristek />} />
         <Route path="/dinasnexus/audkes" element={<Audkes />} />

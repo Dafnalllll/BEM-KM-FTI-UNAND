@@ -72,7 +72,7 @@ export const Himpunan = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-200 py-16 px-6">
+    <div className="min-h-screen py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
