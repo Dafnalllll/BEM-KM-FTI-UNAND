@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.png";
+import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.webp";
 import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.png";
+import MedinGrid from "../../../components/nexus/grid/medingrid";
 export const Medinkraf = () => {
   useEffect(() => {
     document.title = "Medinkraf || Nexus Inspirasi";
@@ -39,6 +40,8 @@ export const Medinkraf = () => {
         {/* Overlay hitam */}
         <div className="absolute inset-0 w-full h-full bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
+      {/* Bagian Grid */}
+      <MedinGrid />
 
       <FooterNexus />
     </div>

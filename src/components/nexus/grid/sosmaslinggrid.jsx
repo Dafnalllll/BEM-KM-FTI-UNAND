@@ -1,12 +1,11 @@
 import React from "react";
-import Instagram from "../../../assets/socialmedia/instagram.png";
-import LinkedIn from "../../../assets/socialmedia/linkedln.png";
 import Sosmasling from "../../../assets/dinas nexus/logo/sosmas.png";
-import Kadin from "../../../assets/dinas nexus/press release/sosmasling/nori.png";
-import Sekdin from "../../../assets/dinas nexus/press release/sosmasling/sovia.png";
-import Bendin from "../../../assets/dinas nexus/staff release/sosmasling/shaza.png";
-import Zhafira from "../../../assets/dinas nexus/staff release/sosmasling/zhafira.png";
-import Faiz from "../../../assets/dinas nexus/staff release/sosmasling/faiz.png";
+import Kadin from "../../../assets/dinas nexus/press release/sosmasling/nori.webp";
+import Sekdin from "../../../assets/dinas nexus/press release/sosmasling/sovia.webp";
+import Bendin from "../../../assets/dinas nexus/staff release/sosmasling/shaza.webp";
+import Zhafira from "../../../assets/dinas nexus/staff release/sosmasling/zhafira.webp";
+import Faiz from "../../../assets/dinas nexus/staff release/sosmasling/faiz.webp";
+import Social from "../../social"; // Import Social component
 
 const gridData = [
   {
@@ -101,38 +100,11 @@ export const SosmaslingGrid = () => {
                   {item.desc}
                 </p>
                 {/* Social icons */}
-                <div className="flex gap-4">
-                  <a
-                    href={item.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Instagram}
-                      alt="Instagram"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(46%) sepia(94%) saturate(748%) hue-rotate(314deg) brightness(97%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                  <a
-                    href={item.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={LinkedIn}
-                      alt="LinkedIn"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(34%) sepia(99%) saturate(1867%) hue-rotate(181deg) brightness(94%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                </div>
+                <Social
+                  instagram={item.instagram}
+                  linkedin={item.linkedin}
+                  github={item.github}
+                />
               </div>
             </div>
           </div>

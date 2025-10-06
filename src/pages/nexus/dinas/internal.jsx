@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import INTERNAL from "../../../assets/dinas nexus/press release/internal/internal.png";
+import INTERNAL from "../../../assets/dinas nexus/press release/internal/internal.webp";
 import InternalLogo from "../../../assets/dinas nexus/logo/internal.png";
 import InternalGrid from "../../../components/nexus/grid/internalgrid";
 export const Internal = () => {

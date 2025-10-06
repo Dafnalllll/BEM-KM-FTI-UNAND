@@ -1,14 +1,13 @@
 import React from "react";
-import Instagram from "../../../assets/socialmedia/instagram.png";
-import LinkedIn from "../../../assets/socialmedia/linkedln.png";
-import Kadin from "../../../assets/dinas nexus/press release/kastrat/okta.png";
-import Sekdin from "../../../assets/dinas nexus/press release/kastrat/anggun.png";
-import Bendin from "../../../assets/dinas nexus/staff release/kastrat/afelia.png";
-import Wahid from "../../../assets/dinas nexus/staff release/kastrat/wahid.png";
-import Ahmad from "../../../assets/dinas nexus/staff release/kastrat/ahmad.png";
-import Bayu from "../../../assets/dinas nexus/staff release/kastrat/bayu.png";
-import Faiz from "../../../assets/dinas nexus/staff release/kastrat/faiz.png";
+import Kadin from "../../../assets/dinas nexus/press release/kastrat/okta.webp";
+import Sekdin from "../../../assets/dinas nexus/press release/kastrat/anggun.webp";
+import Bendin from "../../../assets/dinas nexus/staff release/kastrat/afelia.webp";
+import Wahid from "../../../assets/dinas nexus/staff release/kastrat/wahid.webp";
+import Ahmad from "../../../assets/dinas nexus/staff release/kastrat/ahmad.webp";
+import Bayu from "../../../assets/dinas nexus/staff release/kastrat/bayu.webp";
+import Faiz from "../../../assets/dinas nexus/staff release/kastrat/faiz.webp";
 import Kastrat from "../../../assets/dinas nexus/logo/kastrat.png";
+import Social from "../../social"; // Import Social component
 
 const gridData = [
   {
@@ -47,7 +46,6 @@ const gridData = [
     instagram: "https://www.instagram.com/whiid._/",
     linkedin: "https://www.linkedin.com/in/wahid-dio-saputra-8a3010288/",
   },
-
   {
     img: Ahmad,
     title: "Staff Dinas",
@@ -57,7 +55,6 @@ const gridData = [
     instagram: "https://www.instagram.com/ahmdsaidi_/",
     linkedin: "https://www.linkedin.com/in/ahmdsaidi/",
   },
-
   {
     img: Bayu,
     title: "Staff Dinas",
@@ -67,7 +64,6 @@ const gridData = [
     instagram: "https://www.instagram.com/just._.bayu/",
     linkedin: "https://www.linkedin.com/in/bayu-mutawakkil-386373283/",
   },
-
   {
     img: Faiz,
     title: "Staff Dinas",
@@ -123,38 +119,11 @@ const KastratGrid = () => {
                   {item.desc}
                 </p>
                 {/* Social icons */}
-                <div className="flex gap-4">
-                  <a
-                    href={item.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Instagram}
-                      alt="Instagram"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(46%) sepia(94%) saturate(748%) hue-rotate(314deg) brightness(97%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                  <a
-                    href={item.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={LinkedIn}
-                      alt="LinkedIn"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(34%) sepia(99%) saturate(1867%) hue-rotate(181deg) brightness(94%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                </div>
+                <Social
+                  instagram={item.instagram}
+                  linkedin={item.linkedin}
+                  github={item.github}
+                />
               </div>
             </div>
           </div>

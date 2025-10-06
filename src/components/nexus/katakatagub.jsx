@@ -1,5 +1,5 @@
 import React from "react";
-import KataGub from "../../assets/dinas nexus/press release/inti/gub.png";
+import KataGub from "../../assets/dinas nexus/press release/inti/gub.webp";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 const KataKataGub = () => (

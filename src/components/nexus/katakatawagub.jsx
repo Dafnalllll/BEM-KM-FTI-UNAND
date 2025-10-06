@@ -1,5 +1,5 @@
 import React from "react";
-import KataWagub from "../../assets/dinas nexus/press release/inti/wagub.png";
+import KataWagub from "../../assets/dinas nexus/press release/inti/wagub.webp";
 import Instagram from "../../assets/socialmedia/instagram.png";
 import LinkedIn from "../../assets/socialmedia/linkedln.png";
 

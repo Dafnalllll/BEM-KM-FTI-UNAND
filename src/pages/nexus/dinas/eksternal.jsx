@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/eksternal.png";
+import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/eksternal.webp";
 import EksternalLogo from "../../../assets/dinas nexus/logo/eksternal.png";
 import EksternalGrid from "../../../components/nexus/grid/eksternalgrid";
 export const Eksternal = () => {

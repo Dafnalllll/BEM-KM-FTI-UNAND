@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import INTI from "../../../assets/dinas nexus/press release/inti/inti.png";
+import INTI from "../../../assets/dinas nexus/press release/inti/inti.webp";
 import IntiGrid from "../../../components/nexus/grid/intigrid";
 import Nexus from "../../../assets/kabinet/nexusinspirasi.png";
 const Inti = () => {

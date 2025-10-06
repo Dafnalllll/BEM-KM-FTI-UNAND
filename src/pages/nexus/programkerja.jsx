@@ -1,73 +1,101 @@
 import React, { useState } from "react";
-import Bakti from "../../assets/dinas nexus/kegiatan/internal/bakti.png";
-import Bakti1 from "../../assets/dinas nexus/kegiatan/internal/bakti1.png";
-import Bakti2 from "../../assets/dinas nexus/kegiatan/internal/bakti2.png";
-import Bemvisit from "../../assets/dinas nexus/kegiatan/eksternal/bemvisit.png";
-import Bemvisit1 from "../../assets/dinas nexus/kegiatan/eksternal/bemvisit1.png";
+import FTIPARADE from "../../assets/dinas nexus/kegiatan/internal/FTI Parade.png";
+import Technofest from "../../assets/dinas nexus/kegiatan/eksternal/technofest.png";
 import Hackathon from "../../assets/dinas nexus/kegiatan/ristek/hackathon.png";
 import BinaDesa from "../../assets/dinas nexus/kegiatan/sosmasling/binadesa.png";
+import Funtime from "../../assets/dinas nexus/kegiatan/audkes/funtime.png";
+import Nexmud from "../../assets/dinas nexus/kegiatan/psdm/nexmud.png";
+import Warnex from "../../assets/dinas nexus/kegiatan/bistech/warnex.webp";
+
 export const ProgramKerja = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState({});
-  const [hoveredCard, setHoveredCard] = useState(null);
-
-  const handleImageChange = (programId, direction) => {
-    setCurrentImageIndex((prev) => {
-      const current = prev[programId] || 0;
-      const program = programData.find((p) => p.id === programId);
-      const maxIndex = program.foto.length - 1;
-
-      if (direction === "next") {
-        return { ...prev, [programId]: current >= maxIndex ? 0 : current + 1 };
-      } else {
-        return { ...prev, [programId]: current <= 0 ? maxIndex : current - 1 };
-      }
-    });
-  };
+  const [currentImageIndex] = useState({});
 
   const programData = [
     {
       id: 1,
-      nama: "BEM VISIT",
+      nama: "TECHNOFEST",
       deskripsi:
-        "Melakukan kegiatan mengunjungi dan dikunjungi oleh BEM KM FTI ke BEM KM lain yang ada di kampus maupun luar kampus dan melakukan diskusi untuk memperkenalkan masing-masing fakultas, BEM fakultas dan menjalin silaturahmi untuk mempererat hubungan kedepannya.",
-      foto: [Bemvisit, Bemvisit1], // Array untuk konsistensi
+        "Merayakan hari ulang tahun Fakultas Teknologi Informasi dengan mengadakan beberapa lomba seperti olimpiade komputer, cerdas cermat, karya tulis ilmiah dan desain grafis yang mana target pesertanya merupakan siswa/i SLTA se-sederajat. ",
+      foto: [Technofest],
       kategori: [
-        { nama: "Networking", color: "bg-blue-100 text-blue-800" },
-        { nama: "Benchmarking", color: "bg-green-100 text-green-800" },
+        { nama: "Networking", color: "bg-cyan-100 text-cyan-800" },
+        { nama: "Creativity", color: "bg-pink-100 text-pink-800" },
+        { nama: "Competition", color: "bg-indigo-100 text-indigo-800" },
+        { nama: "Teamwork", color: "bg-lime-100 text-lime-800" },
       ],
     },
     {
       id: 2,
-      nama: "BAKTI FTI",
+      nama: "FTI PARADE",
       deskripsi:
-        "Mengembangkan mahasiswa serta pembekalan kepada mahasiswa baru terkait perkuliahan, fakultas, serta pengembangan diri.",
-      foto: [Bakti, Bakti1, Bakti2], // Multiple images
+        "Mengantarkan wisudawan dari Ruang Audit menuju Seminar F oleh warga FTI, kegiatan ini bertujuan untuk sarana silaturahmi antara warga FTI dan juga wisudawan yang akan dilepas.",
+      foto: [FTIPARADE],
       kategori: [
-        { nama: "Orientation", color: "bg-purple-100 text-purple-800" },
-        { nama: "Leadership", color: "bg-gray-100 text-gray-800" },
+        { nama: "Graduation", color: "bg-emerald-100 text-emerald-800" },
+        { nama: "Celebration", color: "bg-yellow-200 text-yellow-900" },
+        { nama: "Togetherness", color: "bg-sky-100 text-sky-800" },
+        { nama: "Tradition", color: "bg-fuchsia-100 text-fuchsia-800" },
       ],
     },
     {
       id: 3,
-      nama: "FTI Bina Desa",
+      nama: "FTI BINA DESA",
       deskripsi:
         "Program pengabdian masyarakat dengan berbagai kegiatan sosial untuk membantu masyarakat kurang mampu.",
-      foto: [BinaDesa], // Array untuk konsistensi
+      foto: [BinaDesa],
       kategori: [
-        { nama: "Sosial", color: "bg-red-100 text-red-800" },
-        { nama: "Pengabdian", color: "bg-yellow-100 text-yellow-800" },
+        { nama: "Social", color: "bg-red-100 text-red-800" },
+        { nama: "Empowerment", color: "bg-teal-100 text-teal-800" },
       ],
     },
     {
       id: 4,
-      nama: "Hackathon",
+      nama: "HACKATHON",
       deskripsi:
-        "Acara atau kompetisi di bidang IT untuk mengembangkan kemampuan mahasiswa.",
-      foto: [Hackathon], // Array untuk konsistensi
+        "Sebuah acara atau kompetisi yang melibatkan para programmer, pengembang perangkat lunak, desainer, dan individu lain yang memiliki keahlian terkait teknologi untuk bekerja sama dalam tim.",
+      foto: [Hackathon],
       kategori: [
-        { nama: "Programming", color: "bg-green-800 text-green-100" },
-        { nama: "Competition", color: "bg-amber-100 text-amber-800" },
-        { nama: "Teamwork", color: "bg-orange-100 text-orange-800" },
+        { nama: "Programming", color: "bg-green-200 text-green-900" },
+        { nama: "Challenge", color: "bg-orange-200 text-orange-900" },
+        { nama: "Innovation", color: "bg-violet-100 text-violet-800" },
+      ],
+    },
+    {
+      id: 5,
+      nama: "FUN TIME",
+      deskripsi:
+        "Sarana refreshing untuk memberikan hiburan dan lebih mendekatkan antar sesama pengurus BEM KM FTI UNAND 2025",
+      foto: [Funtime],
+      kategori: [
+        { nama: "Entertainment", color: "bg-rose-100 text-rose-800" },
+        { nama: "Togetherness", color: "bg-amber-100 text-amber-800" },
+        { nama: "Team Building", color: "bg-blue-200 text-blue-900" },
+      ],
+    },
+    {
+      id: 6,
+      nama: "NEXMUD",
+      deskripsi:
+        "Sekolah kepemimpinan untuk mahasiswa baru FTI agar bisa merasakan kehidupan berorganisasi di BEM KM FTI, dimana didalamnya terdapat serangkaian kegiatan yang meliputi: Pemberian materi, Simulasi, FGD serta magang di kedinasan masing-masing dengan SOP yang telah ditetapkan.",
+      foto: [Nexmud],
+      kategori: [
+        { nama: "Leadership", color: "bg-indigo-200 text-indigo-900" },
+        { nama: "Training", color: "bg-lime-200 text-lime-900" },
+        { nama: "Organization", color: "bg-cyan-200 text-cyan-900" },
+        { nama: "Mentoring", color: "bg-pink-200 text-pink-900" },
+      ],
+    },
+    {
+      id: 7,
+      nama: "WARNEX",
+      deskripsi:
+        "Kegiatan penjualan kebutuhan KM FTI UNAND secara offline di sekretariatan BEM KM FTI, maupun secara online melalui platform Instagram, serta event-event  FTI dengan tujuan agar KM FTI UNAND mudah mendapatkan apa yang mereka butuhkan.",
+      foto: [Warnex],
+      kategori: [
+        { nama: "Entrepreneurship", color: "bg-orange-300 text-orange-900" },
+        { nama: "Service", color: "bg-teal-200 text-teal-900" },
+        { nama: "Marketplace", color: "bg-yellow-300 text-yellow-900" },
+        { nama: "Innovation", color: "bg-purple-200 text-purple-900" },
       ],
     },
   ];
@@ -82,15 +110,14 @@ export const ProgramKerja = () => {
         {programData.map((program) => {
           const currentIndex = currentImageIndex[program.id] || 0;
           const currentImage = program.foto[currentIndex];
-          const hasMultipleImages = program.foto.length > 1;
-          const isHovered = hoveredCard === program.id;
 
           return (
             <div
               key={program.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition-all hover:scale-102 duration-300"
-              onMouseEnter={() => setHoveredCard(program.id)}
-              onMouseLeave={() => setHoveredCard(null)}
+              className="bg-white shadow-xl rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:scale-102 duration-300"
+              style={{
+                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
+              }}
             >
               <div className="relative">
                 <img
@@ -98,68 +125,6 @@ export const ProgramKerja = () => {
                   alt={`${program.nama} - Image ${currentIndex + 1}`}
                   className="w-full h-48 object-cover"
                 />
-
-                {/* Navigation arrows - hanya muncul saat hover dan ada multiple images */}
-                {hasMultipleImages && isHovered && (
-                  <>
-                    <button
-                      onClick={() => handleImageChange(program.id, "prev")}
-                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all animate-fade-in cursor-pointer"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 19l-7-7 7-7"
-                        />
-                      </svg>
-                    </button>
-                    <button
-                      onClick={() => handleImageChange(program.id, "next")}
-                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all animate-fade-in cursor-pointer"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </button>
-
-                    {/* Dots indicator - hanya muncul saat hover dan ada multiple images */}
-                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                      {program.foto.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() =>
-                            setCurrentImageIndex((prev) => ({
-                              ...prev,
-                              [program.id]: index,
-                            }))
-                          }
-                          className={`w-2 h-2 rounded-full transition-all ${
-                            index === currentIndex
-                              ? "bg-white"
-                              : "bg-white bg-opacity-50"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </>
-                )}
               </div>
 
               <div className="p-6">

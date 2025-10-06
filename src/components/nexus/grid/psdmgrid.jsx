@@ -1,14 +1,13 @@
 import React from "react";
-import Instagram from "../../../assets/socialmedia/instagram.png";
-import LinkedIn from "../../../assets/socialmedia/linkedln.png";
-import Kadin from "../../../assets/dinas nexus/press release/psdm/rhodes.png";
-import Sekdin from "../../../assets/dinas nexus/press release/psdm/bunga.png";
-import Bendin from "../../../assets/dinas nexus/staff release/psdm/khalda.png";
-import Alfat from "../../../assets/dinas nexus/staff release/psdm/alfat.png";
-import Nabila from "../../../assets/dinas nexus/staff release/psdm/nabila.png";
-import Diva from "../../../assets/dinas nexus/staff release/psdm/diva.png";
-import Rizky from "../../../assets/dinas nexus/staff release/psdm/rizky.png";
+import Kadin from "../../../assets/dinas nexus/press release/psdm/rhodes.webp";
+import Sekdin from "../../../assets/dinas nexus/press release/psdm/bunga.webp";
+import Bendin from "../../../assets/dinas nexus/staff release/psdm/khalda.webp";
+import Alfat from "../../../assets/dinas nexus/staff release/psdm/alfat.webp";
+import Nabila from "../../../assets/dinas nexus/staff release/psdm/nabila.webp";
+import Diva from "../../../assets/dinas nexus/staff release/psdm/diva.webp";
+import Rizky from "../../../assets/dinas nexus/staff release/psdm/rizky.webp";
 import Psdm from "../../../assets/dinas nexus/logo/psdm.png";
+import Social from "../../social"; // Import Social component
 
 const gridData = [
   {
@@ -120,38 +119,11 @@ export const PsdmGrid = () => {
                   {item.desc}
                 </p>
                 {/* Social icons */}
-                <div className="flex gap-4">
-                  <a
-                    href={item.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={Instagram}
-                      alt="Instagram"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(46%) sepia(94%) saturate(748%) hue-rotate(314deg) brightness(97%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                  <a
-                    href={item.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={LinkedIn}
-                      alt="LinkedIn"
-                      className="w-6 h-6 transition-transform duration-200 hover:scale-125"
-                      style={{
-                        filter:
-                          "invert(34%) sepia(99%) saturate(1867%) hue-rotate(181deg) brightness(94%) contrast(101%)",
-                      }}
-                    />
-                  </a>
-                </div>
+                <Social
+                  instagram={item.instagram}
+                  linkedin={item.linkedin}
+                  github={item.github}
+                />
               </div>
             </div>
           </div>

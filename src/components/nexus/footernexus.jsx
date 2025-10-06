@@ -8,6 +8,7 @@ import Youtube from "../../assets/socialmedia/youtube.png";
 import Nexus from "../../assets/kabinet/nexusinspirasi.png";
 import Ristek from "../../assets/dinas nexus/logo/ristek.png";
 
+
 const quickLinks = [
   { label: "Beranda", section: "beranda" },
   { label: "Tentang", section: "tentangnexus" },
@@ -20,6 +21,7 @@ export const Footer = () => {
   const location = useLocation();
 
   useEffect(() => {
+
     if (location.state && location.state.scrollTo) {
       const section = document.getElementById(location.state.scrollTo);
       if (section) {
