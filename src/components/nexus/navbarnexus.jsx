@@ -62,6 +62,13 @@ export const NavbarNexus = () => {
     } else {
       if (item.label === "Beranda") {
         navigate("/nexus");
+      } else if (
+        item.path === "dinasnexus" ||
+        item.path === "programkerja" ||
+        item.path === "galeri"
+      ) {
+        // Scroll ke section jika di luar halaman /nexus
+        navigate("/nexus", { state: { scrollTo: item.path } });
       } else {
         navigate(item.path?.startsWith("/") ? item.path : `/${item.path}`);
       }

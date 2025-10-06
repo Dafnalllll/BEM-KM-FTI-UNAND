@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Footer } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
 import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.png";
@@ -16,6 +16,19 @@ export const Nexus = () => {
     document.title = "Nexus Inspirasi || BEM KM FTI UNAND";
   }, []);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state && location.state.scrollTo) {
+      const section = document.getElementById(location.state.scrollTo);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Section Beranda dengan background pelantikan */}
@@ -70,10 +83,7 @@ export const Nexus = () => {
       </section>
 
       {/* Section KataKataGub */}
-      <section
-        id="katakatagub"
-        className="w-full flex justify-center py-12 "
-      >
+      <section id="katakatagub" className="w-full flex justify-center py-12 ">
         <KataKataGub />
       </section>
 
@@ -90,15 +100,15 @@ export const Nexus = () => {
         <DinasNexus />
       </section>
 
-        {/* Section Program Kerja */}
-        <section id="programkerja" className="w-full py-12 bg-gray-200">
-          <ProgramKerja />
-        </section>
+      {/* Section Program Kerja */}
+      <section id="programkerja" className="w-full py-12 bg-gray-200">
+        <ProgramKerja />
+      </section>
 
-        {/* Section Himpunan */}
-        <section id="himpunan" className="w-full py-12">
-          <Himpunan />
-        </section>
+      {/* Section Himpunan */}
+      <section id="himpunan" className="w-full py-12">
+        <Himpunan />
+      </section>
       {/* Footer */}
 
       <Footer />
