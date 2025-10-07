@@ -76,10 +76,14 @@ export const Himpunan = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
-          <h1 className="text-5xl font-bold text-gray-800 font-[Carena] mb-4 tracking-wide">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-black font-[Carena] mb-4 tracking-wide drop-shadow-lg">
             Himpunan Mahasiswa
           </h1>
-          <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-black mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg md:text-xl text-gray-700 font-[Montserrat] font-extralight max-w-2xl mx-auto mt-2">
+            Temukan profil, jejaring, dan karya dari setiap Himpunan Mahasiswa
+            di Fakultas Teknologi Informasi Universitas Andalas.
+          </p>
         </div>
 
         {/* Logo Cards */}
