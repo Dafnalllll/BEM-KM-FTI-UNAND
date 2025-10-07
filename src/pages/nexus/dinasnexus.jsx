@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Nexus from "../../assets/kabinet/nexusinspirasi.png";
-import Audkes from "../../assets/dinas nexus/logo/audkes.png";
-import Adkesma from "../../assets/dinas nexus/logo/adkesma.png";
-import Bistech from "../../assets/dinas nexus/logo/bistech.png";
-import Eksternal from "../../assets/dinas nexus/logo/eksternal.png";
-import Internal from "../../assets/dinas nexus/logo/internal.png";
-import Kastrat from "../../assets/dinas nexus/logo/kastrat.png";
-import Medinkraf from "../../assets/dinas nexus/logo/medin.png";
-import PSDM from "../../assets/dinas nexus/logo/psdm.png";
-import Ristek from "../../assets/dinas nexus/logo/ristek.png";
-import Sosmas from "../../assets/dinas nexus/logo/sosmas.png";
+import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
+import Audkes from "../../assets/dinas nexus/logo/audkes.webp";
+import Adkesma from "../../assets/dinas nexus/logo/adkesma.webp";
+import Bistech from "../../assets/dinas nexus/logo/bistech.webp";
+import Eksternal from "../../assets/dinas nexus/logo/eksternal.webp";
+import Internal from "../../assets/dinas nexus/logo/internal.webp";
+import Kastrat from "../../assets/dinas nexus/logo/kastrat.webp";
+import Medinkraf from "../../assets/dinas nexus/logo/medin.webp";
+import PSDM from "../../assets/dinas nexus/logo/psdm.webp";
+import Ristek from "../../assets/dinas nexus/logo/ristek.webp";
+import Sosmas from "../../assets/dinas nexus/logo/sosmas.webp";
 // Data galeri
 const galleryImages = [
   {
@@ -128,6 +128,14 @@ const DinasNexus = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex-1">
+        <div className="max-w-4xl mx-auto pt-10 pb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-center text-[#25364a] drop-shadow-lg tracking-wide font-[Montserrat]">
+            Dinas & Biro 
+          </h1>
+          <p className="text-center text-gray-600 mt-4 text-lg font-[Poppins]">
+            Temukan profil, program kerja, dan karya dari setiap Dinas & Biro.
+          </p>
+        </div>
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4">
           {galleryImages.map((image, index) => (
             <div

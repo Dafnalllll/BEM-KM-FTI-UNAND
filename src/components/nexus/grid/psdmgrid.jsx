@@ -6,7 +6,7 @@ import Alfat from "../../../assets/dinas nexus/staff release/psdm/alfat.webp";
 import Nabila from "../../../assets/dinas nexus/staff release/psdm/nabila.webp";
 import Diva from "../../../assets/dinas nexus/staff release/psdm/diva.webp";
 import Rizky from "../../../assets/dinas nexus/staff release/psdm/rizky.webp";
-import Psdm from "../../../assets/dinas nexus/logo/psdm.png";
+import Psdm from "../../../assets/dinas nexus/logo/psdm.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

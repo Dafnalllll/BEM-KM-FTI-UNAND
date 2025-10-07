@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Nexus from "../../assets/kabinet/nexusinspirasi.png";
+import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
 
 export const NavbarNexus = () => {
   const navigate = useNavigate();

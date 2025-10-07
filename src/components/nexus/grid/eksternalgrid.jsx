@@ -7,7 +7,7 @@ import Ima from "../../../assets/dinas nexus/staff release/eksternal/ima.webp";
 import Diaz from "../../../assets/dinas nexus/staff release/eksternal/diaz.webp";
 import Bendin from "../../../assets/dinas nexus/staff release/eksternal/ghina.webp";
 import Hapsa from "../../../assets/dinas nexus/staff release/eksternal/hapsa.webp";
-import Eksternal from "../../../assets/dinas nexus/logo/eksternal.png";
+import Eksternal from "../../../assets/dinas nexus/logo/eksternal.webp";
 import Social from "../../social"; // Tambahkan import ini
 
 const gridData = [

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
-import Instagram from "../../assets/socialmedia/instagram.png";
-import Tiktok from "../../assets/socialmedia/tiktok.png";
-import X from "../../assets/socialmedia/x.png";
-import Youtube from "../../assets/socialmedia/youtube.png";
-import Nexus from "../../assets/kabinet/nexusinspirasi.png";
-import Ristek from "../../assets/dinas nexus/logo/ristek.png";
+import Instagram from "../../assets/socialmedia/instagram.webp";
+import Tiktok from "../../assets/socialmedia/tiktok.webp";
+import X from "../../assets/socialmedia/x.webp";
+import Youtube from "../../assets/socialmedia/youtube.webp";
+import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
+import Ristek from "../../assets/dinas nexus/logo/ristek.webp";
 
 
 const quickLinks = [

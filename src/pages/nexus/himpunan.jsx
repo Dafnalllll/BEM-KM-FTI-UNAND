@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Himatekom from "../../assets/himpunan/himatekom.png";
-import Hmsi from "../../assets/himpunan/hmsi.png";
-import Hmif from "../../assets/himpunan/hmif.png";
-import Instagram from "../../assets/socialmedia/instagram.png";
-import LinkedIn from "../../assets/socialmedia/linkedln.png";
-import Web from "../../assets/socialmedia/web.png";
+import Himatekom from "../../assets/himpunan/himatekom.webp";
+import Hmsi from "../../assets/himpunan/hmsi.webp";
+import Hmif from "../../assets/himpunan/hmif.webp";
+import Instagram from "../../assets/socialmedia/instagram.webp";
+import LinkedIn from "../../assets/socialmedia/linkedln.webp";
+import Web from "../../assets/socialmedia/web.webp";
 
 export const Himpunan = () => {
   const [activeCard, setActiveCard] = useState(null);

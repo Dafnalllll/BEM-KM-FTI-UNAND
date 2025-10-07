@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Footer } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
-import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.png";
+import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.webp";
 import StatsNexus from "../../components/nexus/statsnexus";
 import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
@@ -10,6 +10,7 @@ import KataKataWagub from "../../components/nexus/katakatawagub";
 import ProgramKerja from "./programkerja";
 import Himpunan from "./himpunan";
 import DinasNexus from "./dinasnexus";
+import UKM from "./ukm";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -109,8 +110,11 @@ export const Nexus = () => {
       <section id="himpunan" className="w-full py-12">
         <Himpunan />
       </section>
+      {/* Section UKM */}
+      <section id="ukm" className="w-full py-12 bg-gray-200">
+        <UKM />
+      </section>
       {/* Footer */}
-
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import KataWagub from "../../assets/dinas nexus/press release/inti/wagub.webp";
-import Instagram from "../../assets/socialmedia/instagram.png";
-import LinkedIn from "../../assets/socialmedia/linkedln.png";
+import Instagram from "../../assets/socialmedia/instagram.webp";
+import LinkedIn from "../../assets/socialmedia/linkedln.webp";
 
 export const KataKataWagub = () => {
   return (

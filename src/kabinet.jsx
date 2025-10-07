@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Nexus from "./assets/kabinet/nexusinspirasi.png";
-import Sinergi from "./assets/kabinet/sinergi.png";
-import Fakultas from "./assets/FTI.png";
+import Nexus from "./assets/kabinet/nexusinspirasi.webp";
+import Sinergi from "./assets/kabinet/sinergi.webp";
+import Fakultas from "./assets/FTI.webp";
 
 export const Kabinet = () => {
   const navigate = useNavigate();

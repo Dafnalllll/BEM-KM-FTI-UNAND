@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.webp";
-import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.png";
+import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.webp";
 import MedinGrid from "../../../components/nexus/grid/medingrid";
 export const Medinkraf = () => {
   useEffect(() => {

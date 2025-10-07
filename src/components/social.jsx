@@ -1,6 +1,6 @@
 import React from "react";
-import Instagram from "../assets/socialmedia/instagram.png";
-import LinkedIn from "../assets/socialmedia/linkedln.png";
+import Instagram from "../assets/socialmedia/instagram.webp";
+import LinkedIn from "../assets/socialmedia/linkedln.webp";
 
 export const SocialIcons = ({ instagram, linkedin, github }) => (
   <div className="flex gap-4">

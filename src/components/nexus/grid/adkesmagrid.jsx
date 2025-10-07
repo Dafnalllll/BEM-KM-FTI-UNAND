@@ -7,7 +7,7 @@ import Alfa from "../../../assets/dinas nexus/staff release/adkesma/alfa.webp";
 import Adhit from "../../../assets/dinas nexus/staff release/adkesma/adhit.webp";
 import Faiz from "../../../assets/dinas nexus/staff release/adkesma/faiz.webp";
 import Zahra from "../../../assets/dinas nexus/staff release/adkesma/zahra.webp";
-import Adkesma from "../../../assets/dinas nexus/logo/adkesma.png";
+import Adkesma from "../../../assets/dinas nexus/logo/adkesma.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

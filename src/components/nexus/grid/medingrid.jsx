@@ -1,5 +1,5 @@
 import React from "react";
-import Medinkraf from "../../../assets/dinas nexus/logo/medin.png";
+import Medinkraf from "../../../assets/dinas nexus/logo/medin.webp";
 import Social from "../../social";
 import Kadin from "../../../assets/dinas nexus/press release/medinkraf/adli.webp";
 import Sekdin from "../../../assets/dinas nexus/press release/medinkraf/abe.webp";

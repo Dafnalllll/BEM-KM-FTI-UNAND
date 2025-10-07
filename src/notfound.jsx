@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import BEM from "./assets/BEM.png";
+import BEM from "./assets/BEM.webp";
 
 export const NotFound = () => {
    useEffect(() => {

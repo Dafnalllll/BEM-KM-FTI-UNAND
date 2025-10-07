@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import ADKESMA from "../../../assets/dinas nexus/press release/adkesma/ma.webp";
-import AdkesmaLogo from "../../../assets/dinas nexus/logo/adkesma.png";
+import AdkesmaLogo from "../../../assets/dinas nexus/logo/adkesma.webp";
 import Adkesmagrid from "../../../components/nexus/grid/adkesmagrid";
 export const Adkesma = () => {
   useEffect(() => {

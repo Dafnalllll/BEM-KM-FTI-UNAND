@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import KASTRAT from "../../../assets/dinas nexus/press release/kastrat/kastrat.webp";
-import KastartLogo from "../../../assets/dinas nexus/logo/kastrat.png";
+import KastartLogo from "../../../assets/dinas nexus/logo/kastrat.webp";
 import KastratGrid from "../../../components/nexus/grid/kastratgrid";
 export const Kastrat = () => {
   useEffect(() => {

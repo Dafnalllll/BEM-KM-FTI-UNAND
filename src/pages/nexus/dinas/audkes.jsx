@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import FooterNexus from "../../../components/nexus/footernexus";
 import AUDKES from "../../../assets/dinas nexus/press release/audkes/audkes.webp";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
-import AudkesLogo from "../../../assets/dinas nexus/logo/audkes.png";
+import AudkesLogo from "../../../assets/dinas nexus/logo/audkes.webp";
 import AudkesGrid from "../../../components/nexus/grid/audkesgrid";
 export const Audkes = () => {
   useEffect(() => {

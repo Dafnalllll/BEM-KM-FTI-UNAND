@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BEM from "../assets/BEM.png";
+import BEM from "../assets/BEM.webp";
 
 const Loading = () => {
   const [dots, setDots] = useState("");

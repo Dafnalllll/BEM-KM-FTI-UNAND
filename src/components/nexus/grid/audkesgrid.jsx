@@ -7,7 +7,7 @@ import Shyra from "../../../assets/dinas nexus/staff release/audkes/shyra.webp";
 import Fadhi from "../../../assets/dinas nexus/staff release/audkes/fadhi.webp";
 import Farhan from "../../../assets/dinas nexus/staff release/audkes/farhan.webp";
 import Sasya from "../../../assets/dinas nexus/staff release/audkes/sasya.webp";
-import Audkes from "../../../assets/dinas nexus/logo/audkes.png";
+import Audkes from "../../../assets/dinas nexus/logo/audkes.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

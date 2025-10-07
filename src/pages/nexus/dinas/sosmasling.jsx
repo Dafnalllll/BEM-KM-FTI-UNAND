@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import SOSMASLING from "../../../assets/dinas nexus/press release/sosmasling/sosmasling.webp";
-import SosmaslingLogo from "../../../assets/dinas nexus/logo/sosmas.png";
+import SosmaslingLogo from "../../../assets/dinas nexus/logo/sosmas.webp";
 import SosmaslingGrid from "../../../components/nexus/grid/sosmaslinggrid";
 export const Sosmasling = () => {
   useEffect(() => {

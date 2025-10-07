@@ -6,7 +6,7 @@ import Fuad from "../../../assets/dinas nexus/staff release/bistech/fuad.webp";
 import Ghezy from "../../../assets/dinas nexus/staff release/bistech/ghezy.webp";
 import Ochi from "../../../assets/dinas nexus/staff release/bistech/ochi.webp";
 import Kevin from "../../../assets/dinas nexus/staff release/bistech/kevin.webp";
-import Bistech from "../../../assets/dinas nexus/logo/bistech.png";
+import Bistech from "../../../assets/dinas nexus/logo/bistech.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

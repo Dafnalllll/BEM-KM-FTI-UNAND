@@ -6,7 +6,7 @@ import Dawi from "../../../assets/dinas nexus/staff release/internal/dawi.webp";
 import Aufa from "../../../assets/dinas nexus/staff release/internal/aufa.webp";
 import Febi from "../../../assets/dinas nexus/staff release/internal/febi.webp";
 import Quenn from "../../../assets/dinas nexus/staff release/internal/quenn.webp";
-import Internal from "../../../assets/dinas nexus/logo/internal.png";
+import Internal from "../../../assets/dinas nexus/logo/internal.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

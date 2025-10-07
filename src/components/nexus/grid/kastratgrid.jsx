@@ -6,7 +6,7 @@ import Wahid from "../../../assets/dinas nexus/staff release/kastrat/wahid.webp"
 import Ahmad from "../../../assets/dinas nexus/staff release/kastrat/ahmad.webp";
 import Bayu from "../../../assets/dinas nexus/staff release/kastrat/bayu.webp";
 import Faiz from "../../../assets/dinas nexus/staff release/kastrat/faiz.webp";
-import Kastrat from "../../../assets/dinas nexus/logo/kastrat.png";
+import Kastrat from "../../../assets/dinas nexus/logo/kastrat.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

@@ -1,5 +1,5 @@
 import React from "react";
-import Sosmasling from "../../../assets/dinas nexus/logo/sosmas.png";
+import Sosmasling from "../../../assets/dinas nexus/logo/sosmas.webp";
 import Kadin from "../../../assets/dinas nexus/press release/sosmasling/nori.webp";
 import Sekdin from "../../../assets/dinas nexus/press release/sosmasling/sovia.webp";
 import Bendin from "../../../assets/dinas nexus/staff release/sosmasling/shaza.webp";

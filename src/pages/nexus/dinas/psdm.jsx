@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import PSDM from "../../../assets/dinas nexus/press release/psdm/psdm.webp";
-import PsdmLogo from "../../../assets/dinas nexus/logo/psdm.png";
+import PsdmLogo from "../../../assets/dinas nexus/logo/psdm.webp";
 import PsdmGrid from "../../../components/nexus/grid/psdmgrid";
 export const Psdm = () => {
   useEffect(() => {

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import NavbarNexus from "../../components/nexus/navbarnexus";
-import Nexus from "../../assets/kabinet/nexusinspirasi.png";
+import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
 
 export const TentangNexus = () => {
   useEffect(() => {

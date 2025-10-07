@@ -6,7 +6,7 @@ import Farid from "../../../assets/dinas nexus/staff release/ristek/farid.webp";
 import Zikri from "../../../assets/dinas nexus/staff release/ristek/zikri.webp";
 import Hafid from "../../../assets/dinas nexus/staff release/ristek/hafid.webp";
 import Arib from "../../../assets/dinas nexus/staff release/ristek/arib.webp";
-import Ristek from "../../../assets/dinas nexus/logo/ristek.png";
+import Ristek from "../../../assets/dinas nexus/logo/ristek.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

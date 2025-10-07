@@ -1,7 +1,7 @@
 import React from "react";
-import bem from "./assets/BEM.png";
+import bem from "./assets/BEM.webp";
 import { useNavigate } from "react-router-dom";
-import Fakultas from "./assets/FTI.png";
+import Fakultas from "./assets/FTI.webp";
 
 export const Bemfti = () => {
   const navigate = useNavigate();

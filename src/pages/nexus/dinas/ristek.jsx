@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
 import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.webp";
-import RistekLogo from "../../../assets/dinas nexus/logo/ristek.png";
+import RistekLogo from "../../../assets/dinas nexus/logo/ristek.webp";
 import RistekGrid from "../../../components/nexus/grid/ristekgrid";
 const Ristek = () => {
   useEffect(() => {

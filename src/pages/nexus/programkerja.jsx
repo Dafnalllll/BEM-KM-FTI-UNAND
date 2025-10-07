@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import FTIPARADE from "../../assets/dinas nexus/kegiatan/internal/FTI Parade.png";
-import Technofest from "../../assets/dinas nexus/kegiatan/eksternal/technofest.png";
-import Hackathon from "../../assets/dinas nexus/kegiatan/ristek/hackathon.png";
-import BinaDesa from "../../assets/dinas nexus/kegiatan/sosmasling/binadesa.png";
-import Funtime from "../../assets/dinas nexus/kegiatan/audkes/funtime.png";
-import Nexmud from "../../assets/dinas nexus/kegiatan/psdm/nexmud.png";
+import FTIPARADE from "../../assets/dinas nexus/kegiatan/internal/FTI Parade.webp";
+import Technofest from "../../assets/dinas nexus/kegiatan/eksternal/technofest.webp";
+import Hackathon from "../../assets/dinas nexus/kegiatan/ristek/hackathon.webp";
+import BinaDesa from "../../assets/dinas nexus/kegiatan/sosmasling/binadesa.webp";
+import Funtime from "../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
+import Nexmud from "../../assets/dinas nexus/kegiatan/psdm/nexmud.webp";
 import Warnex from "../../assets/dinas nexus/kegiatan/bistech/warnex.webp";
+import Sekawan from "../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
 
 export const ProgramKerja = () => {
   const [currentImageIndex] = useState({});
@@ -98,13 +99,31 @@ export const ProgramKerja = () => {
         { nama: "Innovation", color: "bg-purple-200 text-purple-900" },
       ],
     },
+    {
+      id: 8,
+      nama: "SEKAWAN",
+      deskripsi:
+        "Kegiatan seminar yang dilakukan untuk mahasiswa FTI terkait persiapan mengikuti program beasiswa dan seminar terkait prospek kerja lulusan FTI serta menyebar informasi seminar seputar kemahasiswaan di FTI UNAND.",
+      foto: [Sekawan],
+      kategori: [
+        { nama: "Scholarship", color: "bg-teal-300 text-teal-900" },
+        { nama: "Career", color: "bg-pink-300 text-pink-900" },
+        { nama: "Seminar", color: "bg-orange-200 text-orange-900" },
+        { nama: "Information", color: "bg-indigo-300 text-indigo-900" },
+      ],
+    },
   ];
 
   return (
     <div className="container min-h-screen mx-auto p-6">
-      <h1 className="text-3xl font-bold text-start font-[Montserrat] mb-8">
-        Program Kerja
-      </h1>
+      <div className="max-w-3xl mx-auto pt-8 pb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 drop-shadow-lg tracking-wide font-[Montserrat]">
+          Program Kerja
+        </h1>
+        <p className="text-center text-gray-600 mt-4 text-lg font-[Poppins]">
+          Jelajahi berbagai program kerja inovatif, inspiratif, dan kolaboratif.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {programData.map((program) => {
