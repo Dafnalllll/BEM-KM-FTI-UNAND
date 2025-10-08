@@ -11,6 +11,7 @@ import ProgramKerja from "./programkerja";
 import Himpunan from "./himpunan";
 import DinasNexus from "./dinasnexus";
 import UKM from "./ukm";
+import GaleriNexus from "./galerinexus";
 
 export const Nexus = () => {
   useEffect(() => {
@@ -113,6 +114,10 @@ export const Nexus = () => {
       {/* Section UKM */}
       <section id="ukm" className="w-full py-12 bg-gray-200">
         <UKM />
+      </section>
+      {/* Section Galeri Nexus */}
+      <section id="galerinexus" className="w-full py-12">
+        <GaleriNexus />
       </section>
       {/* Footer */}
       <Footer />

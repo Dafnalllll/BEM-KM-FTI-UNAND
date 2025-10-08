@@ -7,7 +7,8 @@ import Funtime from "../../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
 import Nexmud from "../../../assets/dinas nexus/kegiatan/psdm/nexmud.webp";
 import Warnex from "../../../assets/dinas nexus/kegiatan/bistech/warnex.webp";
 import Sekawan from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
-
+import DiskusiStrategis from "../../../assets/dinas nexus/kegiatan/kastrat/diskusistrategis.webp";
+import NexusHighlight from "../../../assets/dinas nexus/kegiatan/medin/nexushighlight.webp";
 const programData = [
   {
     id: 1,
@@ -111,28 +112,28 @@ const programData = [
   },
   {
     id: 9,
-    nama: "medin",
+    nama: "NEXUS HIGHLIGHT",
     deskripsi:
-      "Kegiatan seminar yang dilakukan untuk mahasiswa FTI terkait persiapan mengikuti program beasiswa dan seminar terkait prospek kerja lulusan FTI serta menyebar informasi seminar seputar kemahasiswaan di FTI UNAND.",
-    foto: [],
+      "Menyajikan rangkuman kegiatan BEM KM FTI dalam bentuk konten kreatif berupa unggahan foto setiap 3 bulan sekali, yang menjadi evaluasi, dokumentasi, serta kenang-kenangan kepengurusan. Pembuatan Buku Tahunan.",
+    foto: [NexusHighlight],
     kategori: [
-      { nama: "Scholarship", color: "bg-teal-300 text-teal-900" },
-      { nama: "Career", color: "bg-pink-300 text-pink-900" },
-      { nama: "Seminar", color: "bg-orange-200 text-orange-900" },
-      { nama: "Information", color: "bg-indigo-300 text-indigo-900" },
+      { nama: "Documentation", color: "bg-indigo-100 text-indigo-800" },
+      { nama: "Creative", color: "bg-pink-100 text-pink-800" },
+      { nama: "Evaluation", color: "bg-teal-100 text-teal-800" },
+      { nama: "Yearbook", color: "bg-yellow-100 text-yellow-800" },
     ],
   },
   {
     id: 10,
-    nama: "medin",
+    nama: "DISKUSI STRATEGIS",
     deskripsi:
-      "Kegiatan seminar yang dilakukan untuk mahasiswa FTI terkait persiapan mengikuti program beasiswa dan seminar terkait prospek kerja lulusan FTI serta menyebar informasi seminar seputar kemahasiswaan di FTI UNAND.",
-    foto: [],
+      "Mendiskusikan dengan metode Focus Group Discussion (FGD) tentang isu-isu yang terjadi.",
+    foto: [DiskusiStrategis],
     kategori: [
-      { nama: "Scholarship", color: "bg-teal-300 text-teal-900" },
-      { nama: "Career", color: "bg-pink-300 text-pink-900" },
-      { nama: "Seminar", color: "bg-orange-200 text-orange-900" },
-      { nama: "Information", color: "bg-indigo-300 text-indigo-900" },
+      { nama: "Discussion", color: "bg-blue-200 text-blue-900" },
+      { nama: "Strategy", color: "bg-green-200 text-green-900" },
+      { nama: "FGD", color: "bg-orange-100 text-orange-800" },
+      { nama: "Issue", color: "bg-gray-200 text-gray-800" },
     ],
   },
 ];

@@ -1,37 +1,37 @@
 import React from "react";
-
+import UKOS from "../../../assets/ukm/ukos.webp";
+import DPM from "../../../assets/ukm/dpm.webp";
+import FSI from "../../../assets/ukm/fsi.webp";
+import TECTONA from "../../../assets/ukm/tectona.webp";
+import Instagram from "../../../assets/socialmedia/instagram.webp";
 const ukmList = [
   {
     nama: "UKOS",
     deskripsi:
-      "Wadah pengembangan minat dan bakat mahasiswa di bidang robotika dan teknologi.",
-    logo: "https://img.icons8.com/ios-filled/50/robot-2.png",
-    instagram: "https://instagram.com/ukmrobotik",
-    color: "from-cyan-400 to-blue-400 border-cyan-400",
+      "Unit yang menampung minat dan bakat mahasiswa di bidang olahraga dan seni",
+    logo: UKOS,
+    instagram: "https://www.instagram.com/ukos_fti/",
   },
   {
     nama: "DPM",
     deskripsi:
       "Tempat berkumpulnya mahasiswa pecinta musik dan seni pertunjukan.",
-    logo: "https://img.icons8.com/ios-filled/50/musical-notes.png",
-    instagram: "https://instagram.com/ukmmusik",
-    color: "from-pink-400 to-fuchsia-400 border-pink-400",
+    logo: DPM,
+    instagram: "https://www.instagram.com/dpmftiunand/",
   },
   {
     nama: "FSI AL-FATIH",
     deskripsi:
       "Mendukung mahasiswa dalam kegiatan olahraga dan kompetisi antar fakultas.",
-    logo: "https://img.icons8.com/ios-filled/50/basketball.png",
-    instagram: "https://instagram.com/ukmolahraga",
-    color: "from-amber-400 to-orange-400 border-amber-400",
+    logo: FSI,
+    instagram: "https://www.instagram.com/fsialfatih/",
   },
   {
     nama: "MAPALA TECTONA",
     deskripsi:
       "Unit Kegiatan Mahasiswa yang bergerak di bidang sosial kemanusiaan dan kesehatan.",
-    logo: "https://img.icons8.com/ios-filled/50/first-aid-kit.png",
-    instagram: "https://instagram.com/ukmsosial",
-    color: "from-red-400 to-rose-400 border-red-400",
+    logo: TECTONA,
+    instagram: "https://www.instagram.com/mapala_tectona/",
   },
 ];
 
@@ -41,10 +41,9 @@ const UKMGrid = () => (
       <div
         key={idx}
         className={`
-          aspect-square bg-white/70 backdrop-blur-lg border-2 shadow-xl rounded-2xl p-7 flex flex-col justify-center items-center
-          hover:scale-105 hover:shadow-2xl hover:border-t-4 transition-all duration-300 group
-          border-white/60 ${ukm.color}
-          animate-fade-in-up
+          aspect-square bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl p-7 flex flex-col justify-center items-center
+          hover:scale-105 hover:shadow-2xl transition-all duration-300 group
+          animate-fade-in-up cursor-pointer
         `}
         style={{
           boxShadow: `0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 0 0 4px rgba(0,0,0,0.02)`,
@@ -53,17 +52,14 @@ const UKMGrid = () => (
           minHeight: "220px",
         }}
       >
-        <div
-          className={`bg-gradient-to-tr ${ukm.color} rounded-full p-3 mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-        >
-          <img
-            src={ukm.logo}
-            alt={ukm.nama}
-            className="w-14 h-14"
-            draggable={false}
-          />
-        </div>
-        <h2 className="text-xl font-bold text-green-900 mb-2 text-center font-[Montserrat] tracking-wide drop-shadow-sm">
+        {/* Logo UKM besar di atas */}
+        <img
+          src={ukm.logo}
+          alt={ukm.nama}
+          className="w-24 h-24 mb-6 object-contain drop-shadow-lg"
+          draggable={false}
+        />
+        <h2 className="text-xl font-bold text-black mb-2 text-center font-[Montserrat] tracking-wide drop-shadow-sm">
           {ukm.nama}
         </h2>
         <p className="text-gray-700 text-sm text-center mb-5 font-[Poppins]">
@@ -74,12 +70,24 @@ const UKMGrid = () => (
             href={ukm.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-orange-400 text-white font-semibold shadow hover:from-pink-600 hover:to-orange-500 transition"
+            className="
+      flex items-center justify-center mx-auto mt-2 w-11 h-11 rounded-full
+      bg-gray-800
+      shadow-lg ring-2 ring-transparent
+      hover:scale-110 hover:shadow-xl
+      transition-all duration-300
+      group
+    "
+            title="Instagram"
+            style={{ minWidth: "44px", minHeight: "44px" }}
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 2.75a5.75 5.75 0 1 1 0 11.5 5.75 5.75 0 0 1 0-11.5zm0 1.5a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5zm5.25 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-            </svg>
-            Instagram
+            <img
+              src={Instagram}
+              alt="Instagram"
+              className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
+              draggable={false}
+              style={{ minWidth: "24px", minHeight: "24px" }}
+            />
           </a>
         )}
       </div>

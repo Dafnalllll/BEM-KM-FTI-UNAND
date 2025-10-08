@@ -8,6 +8,7 @@ export const ProgramKerja = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-black drop-shadow-lg tracking-wide font-[Carena]">
           Program Kerja
         </h1>
+        <div className="w-24 h-1 bg-black mx-auto mb-6 rounded-full"></div>
         <p className="text-center font-extralight text-black mt-4 text-lg font-[Montserrat]">
           Jelajahi berbagai program kerja inovatif, inspiratif, dan kolaboratif.
         </p>
