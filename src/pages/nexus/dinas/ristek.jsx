@@ -4,6 +4,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.webp";
 import RistekLogo from "../../../assets/dinas nexus/logo/ristek.webp";
 import RistekGrid from "../../../components/nexus/grid/ristekgrid";
+import Risgrid from "../../../components/nexus/proker/risgrid";
 const Ristek = () => {
   useEffect(() => {
     document.title = "Ristek || Nexus Inspirasi";
@@ -43,6 +44,7 @@ const Ristek = () => {
         <div className="absolute inset-0 w-full h-[758px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
       <RistekGrid />
+      <Risgrid />
       <FooterNexus />
     </div>
   );

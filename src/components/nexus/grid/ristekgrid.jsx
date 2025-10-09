@@ -65,6 +65,7 @@ const gridData = [
     border: "border-green-500",
     instagram: "https://www.instagram.com/hafidfitrahramadhan/",
     linkedin: "https://www.linkedin.com/in/hafid-fitrah-ramadhan-682834315/",
+    github: "https://github.com/hafidfr0",
   },
   {
     img: Arib,
