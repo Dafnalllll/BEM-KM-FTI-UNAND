@@ -4,6 +4,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import ADKESMA from "../../../assets/dinas nexus/press release/adkesma/ma.webp";
 import AdkesmaLogo from "../../../assets/dinas nexus/logo/adkesma.webp";
 import Adkesmagrid from "../../../components/nexus/grid/adkesmagrid";
+import AdkesGrid from "../../../components/nexus/proker/adkesgrid";
 export const Adkesma = () => {
   useEffect(() => {
     document.title = "Adkesma || Nexus Inspirasi";
@@ -38,6 +39,7 @@ export const Adkesma = () => {
         <div className="absolute inset-0 w-full h-[966px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
       <Adkesmagrid />
+      <AdkesGrid />
       <FooterNexus />
     </div>
   );

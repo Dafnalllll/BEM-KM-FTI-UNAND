@@ -99,7 +99,7 @@ export const Footer = () => {
               </p>
               <p className="select-all flex items-center gap-2">
                 <Phone size={16} className="inline" />
-                +62 812-3456-7890
+                +62 82284367174
               </p>
             </div>
           </div>

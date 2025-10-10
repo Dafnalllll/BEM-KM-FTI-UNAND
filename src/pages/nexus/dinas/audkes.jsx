@@ -4,6 +4,7 @@ import AUDKES from "../../../assets/dinas nexus/press release/audkes/audkes.webp
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import AudkesLogo from "../../../assets/dinas nexus/logo/audkes.webp";
 import AudkesGrid from "../../../components/nexus/grid/audkesgrid";
+import AudGrid from "../../../components/nexus/proker/audgrid";
 export const Audkes = () => {
   useEffect(() => {
     document.title = "Audkes || Nexus Inspirasi";
@@ -43,6 +44,7 @@ export const Audkes = () => {
       <div className="flex-1 flex flex-col items-center justify-center bg-white py-12">
         <AudkesGrid />
       </div>
+      <AudGrid />
       <FooterNexus />
     </div>
   );
