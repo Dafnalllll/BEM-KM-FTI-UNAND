@@ -4,6 +4,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/eksternal.webp";
 import EksternalLogo from "../../../assets/dinas nexus/logo/eksternal.webp";
 import EksternalGrid from "../../../components/nexus/grid/eksternalgrid";
+import EksGrid from "../../../components/nexus/proker/eksgrid";
 export const Eksternal = () => {
   useEffect(() => {
     document.title = "Eksternal || Nexus Inspirasi";
@@ -40,6 +41,7 @@ export const Eksternal = () => {
         <div className="absolute inset-0 w-full h-[725px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
       <EksternalGrid />
+      <EksGrid />
       <FooterNexus />
     </div>
   );

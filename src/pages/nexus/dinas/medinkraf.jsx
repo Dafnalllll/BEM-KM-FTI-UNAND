@@ -4,6 +4,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.webp";
 import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.webp";
 import MedinGrid from "../../../components/nexus/grid/medingrid";
+import MedGrid from "../../../components/nexus/proker/medgrid";
 export const Medinkraf = () => {
   useEffect(() => {
     document.title = "Medinkraf || Nexus Inspirasi";
@@ -42,7 +43,7 @@ export const Medinkraf = () => {
       </div>
       {/* Bagian Grid */}
       <MedinGrid />
-
+      <MedGrid />
       <FooterNexus />
     </div>
   );

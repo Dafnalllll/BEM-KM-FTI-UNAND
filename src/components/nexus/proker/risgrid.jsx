@@ -3,7 +3,10 @@ import Hackathon from "../../../assets/dinas nexus/kegiatan/ristek/hackathon.web
 import TechHub from "../../../assets/dinas nexus/kegiatan/ristek/techhub.webp";
 import Italk from "../../../assets/dinas nexus/kegiatan/ristek/italk.webp";
 import CompeteHub from "../../../assets/dinas nexus/kegiatan/ristek/competehub.webp";
+import CompeteHub1 from "../../../assets/dinas nexus/kegiatan/ristek/competehub1.webp";
+import CompeteHub2 from "../../../assets/dinas nexus/kegiatan/ristek/competehub2.webp";
 import Techtonic from "../../../assets/dinas nexus/kegiatan/ristek/techtonic.webp";
+import Techtonic1 from "../../../assets/dinas nexus/kegiatan/ristek/techtonic1.webp";
 import ITSpectrum from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum.webp";
 import ITSpectrum1 from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum1.webp";
 import ITSpectrum2 from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum2.webp";
@@ -38,12 +41,12 @@ const prokerList = [
   {
     title: "COMPETEHUB",
     desc: "Memberikan informasi terkait lomba- lomba yang berkaitan dan juga bertemakan IT.",
-    img: CompeteHub,
+    img: [CompeteHub, CompeteHub1, CompeteHub2],
   },
   {
     title: "TECHTONIC",
     desc: "Pelatihan atau workshop yang dirancang untuk memberikan wawasan atau keterampilan tertentu melalui pendekatan praktis dengan materi yang dibutuhkan di masa yang akan datang",
-    img: Techtonic,
+    img: [Techtonic, Techtonic1],
   },
 ];
 
@@ -87,7 +90,9 @@ const RisGrid = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 p-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] ">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
+      data-aos="zoom-in"
+      data-aos-duration="1000">
         Proker Ristek
       </h1>
 

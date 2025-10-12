@@ -101,7 +101,9 @@ const AudGrid = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 p-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] ">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
+      data-aos="zoom-in"
+      data-aos-duration="1000">
         Proker Audkes
       </h1>
 

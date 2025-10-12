@@ -4,6 +4,7 @@ import FooterNexus from "../../../components/nexus/footernexus";
 import SOSMASLING from "../../../assets/dinas nexus/press release/sosmasling/sosmasling.webp";
 import SosmaslingLogo from "../../../assets/dinas nexus/logo/sosmas.webp";
 import SosmaslingGrid from "../../../components/nexus/grid/sosmaslinggrid";
+import SosGrid from "../../../components/nexus/proker/sosgrid";
 export const Sosmasling = () => {
   useEffect(() => {
     document.title = "Sosmasling || Nexus Inspirasi";
@@ -40,6 +41,7 @@ export const Sosmasling = () => {
         <div className="absolute inset-0 w-full h-[994px] bg-black opacity-50 pointer-events-none z-0"></div>
       </div>
       <SosmaslingGrid />
+      <SosGrid />
       <FooterNexus />
     </div>
   );
