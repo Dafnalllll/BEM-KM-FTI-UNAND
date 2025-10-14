@@ -10,8 +10,7 @@ import CiptaDunia2 from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadu
 import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
 import SosmasConnect from "../../../assets/dinas nexus/kegiatan/sosmasling/connect.webp";
 import SosmasConnect1 from "../../../assets/dinas nexus/kegiatan/sosmasling/connect1.webp";
-import Spotify from "../../../assets/socialmedia/spotify.webp";
-import Gdrive from "../../../assets/socialmedia/gdrive.webp";
+import HijauBersamaFti from "../../../assets/dinas nexus/kegiatan/sosmasling/hijaubersamafti.webp";
 
 const prokerList = [
   {
@@ -37,7 +36,7 @@ const prokerList = [
   {
     title: "HIJAU BERSAMA FTI ",
     desc: "Program ini berupa kegiatan yang bertujuan untuk meningkatkan kesadaran dan partisipasi dalam menjaga lingkungan sekitar.",
-    img: EvalPengurus,
+    img: HijauBersamaFti,
   },
   {
     title: "SOSMASLING CONNECT",
@@ -95,9 +94,11 @@ const SosGrid = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 p-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
-      data-aos="zoom-in"
-      data-aos-duration="1000">
+      <h1
+        className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         Proker Sosmasling
       </h1>
 
@@ -212,40 +213,6 @@ const SosGrid = () => {
                     <p className="text-sm text-gray-600 md:hidden">
                       {proker.desc}
                     </p>
-                  </div>
-
-                  {/* logo di bawah deskripsi */}
-                  <div className="flex items-center gap-3 mt-3">
-                    {proker.spotify && (
-                      <a
-                        href={proker.spotify}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 rounded-md hover:scale-105 transition-transform"
-                        title="Listen on Spotify"
-                      >
-                        <img
-                          src={Spotify}
-                          alt="Spotify"
-                          className="w-17 h-12 object-contain"
-                        />
-                      </a>
-                    )}
-                    {proker.googledrive && (
-                      <a
-                        href={proker.googledrive}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 rounded-md hover:scale-105 transition-transform"
-                        title="Open Google Drive"
-                      >
-                        <img
-                          src={Gdrive}
-                          alt="Google Drive"
-                          className="w-7 h-7 object-contain"
-                        />
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

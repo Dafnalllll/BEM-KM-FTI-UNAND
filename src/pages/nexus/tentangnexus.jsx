@@ -5,9 +5,11 @@ export const TentangNexus = () => {
   useEffect(() => {
     document.title = "Tentang || Nexus";
   }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-200">
-      <div className="flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
+      {/* DESKTOP: tetap seperti semula */}
+      <div className="hidden md:flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
         {/* Logo di kiri */}
         <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[8rem]">
           <img
@@ -18,6 +20,7 @@ export const TentangNexus = () => {
             data-aos-duration="1000"
           />
         </div>
+
         {/* Konten di kanan, VISI dan MISI benar-benar independen */}
         <div className="flex flex-col w-full max-w-3xl gap-8">
           {/* VISI */}
@@ -66,6 +69,75 @@ export const TentangNexus = () => {
               </li>
               <li>
                 Membangun ekosistem BEM yang inklusif,transparan, dan
+                berorientasi pada pemberdayaan KM FTI
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE: terpisah, tidak mengubah desktop */}
+      <div className="md:hidden flex flex-col items-center px-6 py-10 gap-8">
+        <div
+          className="w-full flex justify-center"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+        >
+          <img
+            src={Nexus}
+            alt="Logo Nexus"
+            className="w-60 sm:w-72 h-auto object-contain"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+        </div>
+
+        {/* VISI */}
+        <div className="w-full text-center max-w-xl">
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <h2 className="text-lg font-bold text-[#a67c2d] mb-2 tracking-wide">
+              VISI
+            </h2>
+            <div className="w-24 h-1 bg-[#a67c2d] mb-4 rounded mx-auto"></div>
+            <p className="text-base text-black font-[Carena] font-medium">
+              Mewujudkan Badan Eksekutif Mahasiswa yang inovatif, inspiratif,
+              dan progresif dalam mendorong pengembangan pelayanan dan
+              pergerakan yang proaktif terhadap KM FTI
+            </p>
+          </div>
+        </div>
+
+        {/* MISI */}
+        <div className="w-full text-center max-w-xl">
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <h2 className="text-lg font-bold text-[#a67c2d] mb-2 tracking-wide">
+              MISI
+            </h2>
+            <div className="w-24 h-1 bg-[#a67c2d] mb-4 rounded mx-auto"></div>
+            <ol className="text-base text-black font-medium font-[Carena] list-decimal list-inside space-y-4">
+              <li>Mereformasi marwah BEM KM FTI</li>
+              <li>
+                Menjadi garda terdepan dalam memperjuangkan aspirasi mahasiswa
+                dan mengadvokasi hak-hak KM FTI
+              </li>
+              <li>
+                Mengakselerasikan pergerakan yang dinamis dan memiliki dampak
+                yang berkelanjutan
+              </li>
+              <li>
+                Menjalin kolaborasi strategis dengan organisasi internal dan
+                eksternal FTI
+              </li>
+              <li>
+                Membangun ekosistem BEM yang inklusif, transparan, dan
                 berorientasi pada pemberdayaan KM FTI
               </li>
             </ol>

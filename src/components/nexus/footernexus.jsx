@@ -13,8 +13,8 @@ const quickLinks = [
   { label: "Beranda", section: "beranda" },
   { label: "Tentang", section: "tentangnexus" },
   { label: "Dinas", section: "dinasnexus" },
-  { label: "Program Kerja", section: "programkerja" },
-  { label: "Galeri", section: "galeri" },
+  { label: "Program Kerja", section: "programkerjanexus" },
+  { label: "Galeri", section: "galerinexus" },
 ];
 
 export const Footer = () => {
@@ -48,7 +48,7 @@ export const Footer = () => {
                 </h2>
                 <p
                   className="text-gray-300 text-2xl sm:text-3xl"
-                  style={{ fontFamily: "'Great Vibes', cursive" }}
+                  style={{ fontFamily: "'Great Vibes,cursive'" }}
                 >
                   Nexus Inspirasi
                 </p>

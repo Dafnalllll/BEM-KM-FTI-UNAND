@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
-import SOTM from "../../../assets/dinas nexus/kegiatan/audkes/sotm.webp";
-import BinaDesa from "../../../assets/dinas nexus/kegiatan/sosmasling/binadesa.webp";
+import IIT from "../../../assets/dinas nexus/kegiatan/eksternal/iit.webp";
 import MedPart from "../../../assets/dinas nexus/kegiatan/eksternal/medpart.webp";
 import MedPart1 from "../../../assets/dinas nexus/kegiatan/eksternal/medpart1.webp";
 import MedPart2 from "../../../assets/dinas nexus/kegiatan/eksternal/medpart2.webp";
 import BemVisit from "../../../assets/dinas nexus/kegiatan/eksternal/bemvisit.webp";
 import BemVisit1 from "../../../assets/dinas nexus/kegiatan/eksternal/bemvisit1.webp";
 import RamdahanBerkah from "../../../assets/dinas nexus/kegiatan/sosmasling/ramadhanberkah.webp";
-import CiptaDunia from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia.webp";
-import CiptaDunia1 from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia1.webp";
-import CiptaDunia2 from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia2.webp";
-import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
+import YouthImpact from "../../../assets/dinas nexus/kegiatan/eksternal/youthimpact.webp";
+import AlumniInsight from "../../../assets/dinas nexus/kegiatan/eksternal/alumniinsight.webp";
 import Technofest from "../../../assets/dinas nexus/kegiatan/eksternal/technofest.webp";
 import Spotify from "../../../assets/socialmedia/spotify.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
@@ -24,12 +21,12 @@ const prokerList = [
   {
     title: "INSIGHTFUL INDUSTRY TRIP (IIT)",
     desc: "Memperkenalkan FTI serta menjalin silaturahmi dan kerjasama serta mendapat gambaran mengenai perusahaan, budaya kerja perusahaan dan rekrutmen karyawan terutama untuk lulusan FTI.",
-    img: [CiptaDunia, CiptaDunia1, CiptaDunia2],
+    img: IIT,
   },
   {
     title: "ALUMNI INSIGHT",
     desc: "Menjalin tali silaturahmi bersama alumni serta mendapat insight baru mengenai dunia kerja/ kehidupan setelah menamatkan perkuliahan.",
-    img: RamdahanBerkah,
+    img: AlumniInsight,
   },
   {
     title: "MEDIA PARTNER",
@@ -39,7 +36,7 @@ const prokerList = [
   {
     title: "FTI YOUTH IMPACT",
     desc: "Memperkenalkan FTI kepada siswa sekolah dari akademis sampai non-akademis dan Memotivasi siswa untuk mau melanjutkan pendidikan ke jenjang berikutnya.",
-    img: EvalPengurus,
+    img: YouthImpact,
   },
   {
     title: "TECHNOFEST",

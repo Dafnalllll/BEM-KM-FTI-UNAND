@@ -6,10 +6,11 @@ export const NavbarNexus = () => {
   const navigate = useNavigate();
   const currentPath = window.location.pathname;
   const [isScrolled, setIsScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // track open state per dropdown label so they don't open serempak
+  const [openDropdown, setOpenDropdown] = useState({});
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Scroll detection
+  // Scroll detection'
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -19,14 +20,15 @@ export const NavbarNexus = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close dropdown on click outside
+  // Close dropdown on click outside (only when any dropdown open)
   useEffect(() => {
+    const anyOpen = Object.values(openDropdown).some(Boolean);
     const handleClick = (e) => {
-      if (!e.target.closest(".tentang-dropdown")) setDropdownOpen(false);
+      if (!e.target.closest(".dropdown-wrapper")) setOpenDropdown({});
     };
-    if (dropdownOpen) document.addEventListener("mousedown", handleClick);
+    if (anyOpen) document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
-  }, [dropdownOpen]);
+  }, [openDropdown]);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -46,14 +48,43 @@ export const NavbarNexus = () => {
         { label: "UKM", id: "ukm" },
       ],
     },
-    { label: "Dinas", path: "dinasnexus" },
-    { label: "Program Kerja", path: "programkerja" },
-    { label: "Galeri", path: "galeri" },
+    {
+      label: "Dinas",
+      isDropdown: true,
+      dropdown: [
+        { label: "Audkes", path: "/dinasnexus/audkes" },
+        { label: "Adkesma", path: "/dinasnexus/adkesma" },
+        { label: "Bistech", path: "/dinasnexus/bistech" },
+        { label: "Eksternal", path: "/dinasnexus/eksternal" },
+        { label: "Inti", path: "/dinasnexus/inti" },
+        { label: "Internal", path: "/dinasnexus/internal" },
+        { label: "Kastrat", path: "/dinasnexus/kastrat" },
+        { label: "Medinkraf", path: "/dinasnexus/medinkraf" },
+        { label: "PSDM", path: "/dinasnexus/psdm" },
+        { label: "Ristek", path: "/dinasnexus/ristek" },
+        { label: "Sosmasling", path: "/dinasnexus/sosmasling" },
+      ],
+    },
+    { label: "Program Kerja", path: "programkerjanexus" },
+    { label: "Galeri", path: "galerinexus" },
   ];
 
   const handleMenuClick = (item) => {
+    // jika item dropdown dan label == 'Dinas', treat label click as navigate/scroll ke section
     if (item.isDropdown) {
-      setDropdownOpen((prev) => !prev);
+      if (item.label === "Dinas") {
+        // kalau sedang di /nexus, scroll; kalau tidak, navigasi dengan state untuk scroll nanti
+        if (currentPath === "/nexus") {
+          const section = document.getElementById("dinasnexus");
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        } else {
+          navigate("/nexus", { state: { scrollTo: "dinasnexus" } });
+        }
+        setMobileMenuOpen(false);
+        return;
+      }
+      // untuk dropdown lain, tetap toggle jika klik label
+      setOpenDropdown((prev) => ({ ...prev, [item.label]: !prev[item.label] }));
       return;
     }
     if (currentPath === "/nexus" && !item.path?.startsWith("/")) {
@@ -64,8 +95,8 @@ export const NavbarNexus = () => {
         navigate("/nexus");
       } else if (
         item.path === "dinasnexus" ||
-        item.path === "programkerja" ||
-        item.path === "galeri"
+        item.path === "programkerjanexus" ||
+        item.path === "galerinexus"
       ) {
         // Scroll ke section jika di luar halaman /nexus
         navigate("/nexus", { state: { scrollTo: item.path } });
@@ -77,8 +108,20 @@ export const NavbarNexus = () => {
   };
 
   const handleDropdownClick = (dropdownItem) => {
-    setDropdownOpen(false);
+    // close all dropdowns after click
+    setOpenDropdown({});
     setMobileMenuOpen(false);
+    // kalau dropdownItem punya path, navigate langsung ke route
+    if (dropdownItem.path) {
+      navigate(
+        dropdownItem.path.startsWith("/")
+          ? dropdownItem.path
+          : `/${dropdownItem.path}`
+      );
+      return;
+    }
+
+    // kalau punya id (scroll ke section di /nexus)
     if (currentPath === "/nexus") {
       const section = document.getElementById(dropdownItem.id);
       if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -87,9 +130,14 @@ export const NavbarNexus = () => {
     }
   };
 
+  // helper to toggle one dropdown
+  const toggleDropdown = (label) => {
+    setOpenDropdown((prev) => ({ ...prev, [label]: !prev[label] }));
+  };
+
   return (
     <nav
-      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 overflow-visible ${
         isScrolled ? "bg-gray-400/90" : "bg-transparent"
       }`}
       data-aos="fade-down"
@@ -134,10 +182,14 @@ export const NavbarNexus = () => {
         <div className="hidden md:flex items-center gap-8">
           {menuItems.map((item) =>
             item.isDropdown ? (
-              <div key={item.label} className="relative tentang-dropdown">
+              <div
+                key={item.label}
+                className="relative dropdown-wrapper flex items-center"
+              >
+                {/* label: klik teks */}
                 <button
-                  onClick={() => setDropdownOpen((prev) => !prev)}
-                  className={`flex items-center gap-1 text-base font-medium font-[Carena] px-2 py-1 transition-colors cursor-pointer ${
+                  onClick={() => handleMenuClick(item)}
+                  className={`text-base font-medium font-[Carena] px-2 py-1 transition-colors cursor-pointer ${
                     isScrolled
                       ? "text-white hover:text-gray-200"
                       : "text-[#FFFFFF] hover:text-[#7c8a6e]"
@@ -145,10 +197,21 @@ export const NavbarNexus = () => {
                   style={{ background: "none" }}
                 >
                   {item.label}
+                </button>
+
+                {/* caret/arrow: klik untuk buka dropdown */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleDropdown(item.label);
+                  }}
+                  aria-label={`Toggle ${item.label} dropdown`}
+                  className={`ml-1 p-1 rounded-full transition-transform cursor-pointer ${
+                    openDropdown[item.label] ? "rotate-180" : ""
+                  }`}
+                >
                   <svg
-                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${
-                      dropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className="w-4 h-4 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -161,9 +224,10 @@ export const NavbarNexus = () => {
                     />
                   </svg>
                 </button>
+
                 {/* Dropdown */}
-                {dropdownOpen && (
-                  <div className="absolute left-0 mt-2 w-56 rounded-xl shadow-lg bg-white ring-1 ring-black/10 z-50 animate-fadeIn">
+                {openDropdown[item.label] && (
+                  <div className="absolute left-0 top-full mt-2 w-56 rounded-xl shadow-lg bg-white ring-1 ring-black/10 z-50 animate-fadeIn origin-top">
                     {item.dropdown.map((dropdownItem) => (
                       <button
                         key={dropdownItem.label}
@@ -200,29 +264,42 @@ export const NavbarNexus = () => {
           <div className="flex flex-col gap-2">
             {menuItems.map((item) =>
               item.isDropdown ? (
-                <div key={item.label} className="relative tentang-dropdown">
-                  <button
-                    onClick={() => setDropdownOpen((prev) => !prev)}
-                    className="flex items-center gap-1 text-base font-medium font-[Carena] px-2 py-2 w-full text-left text-white"
-                  >
-                    {item.label}
-                    <svg
-                      className={`w-4 h-4 ml-1 transition-transform duration-200 ${
-                        dropdownOpen ? "rotate-180" : ""
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                <div key={item.label} className="relative dropdown-wrapper">
+                  <div className="flex items-center w-full">
+                    {/* label klik navigasi/scroll (untuk Dinas akan menuju section) */}
+                    <button
+                      onClick={() => handleMenuClick(item)}
+                      className="text-base font-medium font-[Carena] px-2 py-2 w-full text-left text-white"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </button>
-                  {dropdownOpen && (
+                      {item.label}
+                    </button>
+                    {/* arrow to toggle */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleDropdown(item.label);
+                      }}
+                      className="p-2"
+                      aria-label={`Toggle ${item.label} dropdown`}
+                    >
+                      <svg
+                        className={`w-4 h-4 text-white transition-transform ${
+                          openDropdown[item.label] ? "rotate-180" : ""
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  {openDropdown[item.label] && (
                     <div className="mt-1 w-full  z-50 animate-fadeIn">
                       {item.dropdown.map((dropdownItem) => (
                         <button

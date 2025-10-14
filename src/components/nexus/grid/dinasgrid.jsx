@@ -97,76 +97,149 @@ const DinasGrid = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4">
-      {galleryImages.map((image, index) => (
-        <div
-          key={image.id}
-          className={image.gridClass || ""}
-          data-aos="flip-left"
-          data-aos-duration="1000"
-          data-aos-delay={index * 100}
-        >
-          {/* Glassmorphism Card */}
+    <>
+      {/* DESKTOP: tetap persis seperti semula (tidak diubah) */}
+      <div className="hidden md:grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 md:grid-rows-4 gap-4 max-w-4xl mx-auto py-30 px-4">
+        {galleryImages.map((image, index) => (
           <div
-            className="
-              relative overflow-hidden rounded-2xl shadow-xl
-              transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl
-              h-[140px] group flex items-center justify-center cursor-pointer
-              bg-gray-200/20 backdrop-blur-md border border-gray-200/30
-            "
-            style={{
-              boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
-            }}
+            key={image.id}
+            className={image.gridClass || ""}
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay={index * 100}
           >
-            <button
-              type="button"
-              className="w-full h-full flex items-center justify-center bg-transparent border-none outline-none cursor-pointer"
-              onClick={() => navigate(image.route)}
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover"
-                style={{
-                  objectFit: "cover",
-                  objectPosition:
-                    image.alt === "Inti"
-                      ? "center 80%"
-                      : image.alt === "Audkes"
-                      ? "center 65%"
-                      : image.alt === "Adkesma"
-                      ? "center 70%"
-                      : image.alt === "Bistech"
-                      ? "center 68%"
-                      : image.alt === "Sosmas"
-                      ? "center 55%"
-                      : image.alt === "PSDM"
-                      ? "center 65%"
-                      : "center",
-                  width: "60%",
-                  height: "100%",
-                  maxHeight: "140px",
-                }}
-              />
-            </button>
+            {/* Glassmorphism Card (DESKTOP ORIGINAL) */}
             <div
               className="
-                absolute inset-x-0 bottom-0 w-full p-2 text-center text-[#F6EDDD] font-['Titan_One'] text-ultrabold
-                bg-gray-700/40 backdrop-blur-sm
-                opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
-                transition-all duration-300 ease-in-out
+                relative overflow-hidden rounded-2xl shadow-xl
+                transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl
+                h-[140px] group flex items-center justify-center cursor-pointer
+                bg-gray-200/20 backdrop-blur-md border border-gray-200/30
               "
               style={{
-                borderBottomLeftRadius: "1rem",
-                borderBottomRightRadius: "1rem",
+                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
               }}
             >
-              {image.alt}
+              <button
+                type="button"
+                className="w-full h-full flex items-center justify-center bg-transparent border-none outline-none cursor-pointer"
+                onClick={() => navigate(image.route)}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition:
+                      image.alt === "Inti"
+                        ? "center 80%"
+                        : image.alt === "Audkes"
+                        ? "center 65%"
+                        : image.alt === "Adkesma"
+                        ? "center 70%"
+                        : image.alt === "Bistech"
+                        ? "center 68%"
+                        : image.alt === "Sosmas"
+                        ? "center 55%"
+                        : image.alt === "PSDM"
+                        ? "center 65%"
+                        : "center",
+                    width: "60%",
+                    height: "100%",
+                    maxHeight: "140px",
+                  }}
+                />
+              </button>
+              <div
+                className="
+                  absolute inset-x-0 bottom-0 w-full p-2 text-center text-[#F6EDDD] font-['Titan_One'] text-ultrabold
+                  bg-gray-700/40 backdrop-blur-sm
+                  opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
+                  transition-all duration-300 ease-in-out
+                "
+                style={{
+                  borderBottomLeftRadius: "1rem",
+                  borderBottomRightRadius: "1rem",
+                }}
+              >
+                {image.alt}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+
+      {/* MOBILE / SMALL: terpisah, tanpa mengubah desktop */}
+      <div className="md:hidden grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-4xl mx-auto py-8 px-4">
+        {galleryImages.map((image, index) => (
+          <div
+            key={image.id}
+            className=""
+            data-aos="flip-left"
+            data-aos-duration="900"
+            data-aos-delay={index * 80}
+          >
+            {/* Card khusus mobile: lebih pendek, image object-contain agar tidak terpotong */}
+            <div
+              className="
+                relative overflow-hidden rounded-2xl
+                transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-2xl
+                h-28 sm:h-36 group flex items-center justify-center cursor-pointer
+                bg-gray-200/20 backdrop-blur-md border border-gray-200/30
+              "
+              style={{
+                boxShadow: "0 8px 24px 0 rgba(31, 38, 135, 0.12)",
+              }}
+            >
+              <button
+                type="button"
+                className="w-full h-full flex items-center justify-center bg-transparent border-none outline-none cursor-pointer"
+                onClick={() => navigate(image.route)}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="max-w-[70%] max-h-[70%] object-contain p-2"
+                  style={{
+                    objectPosition:
+                      image.alt === "Inti"
+                        ? "center 80%"
+                        : image.alt === "Audkes"
+                        ? "center 65%"
+                        : image.alt === "Adkesma"
+                        ? "center 70%"
+                        : image.alt === "Bistech"
+                        ? "center 68%"
+                        : image.alt === "Sosmas"
+                        ? "center 55%"
+                        : image.alt === "PSDM"
+                        ? "center 65%"
+                        : "center",
+                  }}
+                  draggable={false}
+                />
+              </button>
+
+              <div
+                className="
+                  absolute inset-x-0 bottom-0 w-full p-1 text-center text-[#F6EDDD] font-['Titan_One'] text-sm
+                  bg-gray-700/36 backdrop-blur-sm
+                  opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
+                  transition-all duration-250 ease-in-out
+                "
+                style={{
+                  borderBottomLeftRadius: "1rem",
+                  borderBottomRightRadius: "1rem",
+                }}
+              >
+                {image.alt}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -10,11 +10,19 @@ const DinasNexus = () => {
     <div className="min-h-screen flex flex-col">
       <div className="flex-1">
         <div className="max-w-4xl mx-auto pt-10 pb-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-center text-black drop-shadow-lg tracking-wide font-[Carena]">
+          <h1
+            className="text-4xl md:text-5xl font-extrabold text-center text-black drop-shadow-lg tracking-wide font-[Carena]"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             Dinas & Biro
           </h1>
           <div className="w-24 h-1 bg-black mx-auto mb-6 rounded-full"></div>
-          <p className="text-center text-black font-extralight mt-4 text-lg font-[Montserrat]">
+          <p
+            className="text-center text-black font-extralight mt-4 text-lg font-[Montserrat]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Temukan profil, program kerja, dan karya dari setiap Dinas & Biro.
           </p>
         </div>

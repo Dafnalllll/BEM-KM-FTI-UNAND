@@ -15,6 +15,7 @@ const himpunanData = [
     color: "orange",
     instagram: "https://www.instagram.com/hmsi_unand/",
     linkedin: "https://www.linkedin.com/company/hmsi-unand/",
+    website: "https://hmsi.unand.cloud/",
   },
   {
     id: 2,
@@ -73,8 +74,14 @@ const HimpunanGrid = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-      {himpunanData.map((item) => (
-        <div key={item.id} className="group text-center">
+      {himpunanData.map((item, idx) => (
+        <div
+          key={item.id}
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay={idx * 80}
+          className="group text-center aos-wrapper h-full"
+        >
           {/* Logo Card */}
           <div
             className={`relative bg-white border-3 rounded-3xl p-12 transition-all duration-500 cursor-pointer mx-auto mb-6

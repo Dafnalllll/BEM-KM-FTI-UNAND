@@ -143,42 +143,53 @@ const ProkerGrid = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {programData.map((program) => {
+      {programData.map((program, idx) => {
         const currentIndex = currentImageIndex[program.id] || 0;
         const currentImage = program.foto[currentIndex];
 
         return (
+          // outer wrapper: handles hover scale & shadows (no AOS here)
           <div
             key={program.id}
-            className="bg-white shadow-xl rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:scale-102 duration-300"
-            style={{
-              boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
-            }}
+            className="group relative cursor-pointer transition-transform duration-300 hover:scale-102 "
+            style={{ WebkitTapHighlightColor: "transparent" }}
           >
-            <div className="relative">
-              <img
-                src={currentImage}
-                alt={`${program.nama} - Image ${currentIndex + 1}`}
-                className="w-full h-48 object-cover"
-              />
-            </div>
+            {/* inner wrapper: AOS animation applied here (translate/opacity only) */}
+            <div
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay={idx * 80}
+              className="bg-white rounded-lg overflow-hidden transition-all duration-300 aos-inner h-full"
+              style={{
+                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
+                willChange: "transform, opacity",
+              }}
+            >
+              <div className="relative">
+                <img
+                  src={currentImage}
+                  alt={`${program.nama} - Image ${currentIndex + 1}`}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
 
-            <div className="p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-2">
-                {program.nama}
-              </h2>
-              <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                {program.deskripsi}
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                {program.kategori.map((tag, index) => (
-                  <span
-                    key={index}
-                    className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${tag.color}`}
-                  >
-                    {tag.nama}
-                  </span>
-                ))}
+              <div className="p-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-2">
+                  {program.nama}
+                </h2>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  {program.deskripsi}
+                </p>
+                <div className="flex gap-2 flex-wrap">
+                  {program.kategori.map((tag, index) => (
+                    <span
+                      key={index}
+                      className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${tag.color}`}
+                    >
+                      {tag.nama}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

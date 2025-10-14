@@ -7,7 +7,7 @@ import StatsNexus from "../../components/nexus/statsnexus";
 import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
 import KataKataWagub from "../../components/nexus/katakatawagub";
-import ProgramKerja from "./programkerja";
+import ProgramKerjaNexus from "./programkerjanexus";
 import Himpunan from "./himpunan";
 import DinasNexus from "./dinasnexus";
 import UKM from "./ukm";
@@ -19,6 +19,16 @@ export const Nexus = () => {
   }, []);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const scrollToTentang = () => {
+    const el = document.getElementById("tentangnexus");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      // fallback: jika tidak ada pada halaman saat ini, buka route
+      navigate("/tentangnexus");
+    }
+  };
 
   useEffect(() => {
     if (location.state && location.state.scrollTo) {
@@ -63,7 +73,7 @@ export const Nexus = () => {
               <button
                 className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold font-[Montserrat] hover:bg-white hover:text-[#25364a] transition duration-300 cursor-pointer transform hover:scale-105"
                 type="button"
-                onClick={() => navigate("/tentangnexus")}
+                onClick={scrollToTentang}
               >
                 Get Started
               </button>
@@ -103,8 +113,8 @@ export const Nexus = () => {
       </section>
 
       {/* Section Program Kerja */}
-      <section id="programkerja" className="w-full py-12 bg-gray-200">
-        <ProgramKerja />
+      <section id="programkerjanexus" className="w-full py-12 bg-gray-200">
+        <ProgramKerjaNexus />
       </section>
 
       {/* Section Himpunan */}

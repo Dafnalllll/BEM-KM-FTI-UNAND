@@ -1,21 +1,24 @@
 import React from "react";
 import GaleriGrid from "../../components/nexus/grid/galerigrid";
+
 const GaleriNexus = () => {
   return (
-    <div className="relative w-full h-[70vh] mx-auto mt-10">
-      {/* Title dan Deskripsi */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 w-full flex flex-col items-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg text-center">
+    <div className="w-full mx-auto mt-10 max-w-6xl px-4">
+      {/* Title dan Deskripsi - sekarang di flow normal, di atas grid */}
+      <div className="text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-black drop-shadow-lg">
           Galeri Nexus
         </h1>
-        <p className="mt-2 text-base md:text-lg text-white/80 text-center max-w-2xl drop-shadow">
+        <p className="mt-2 text-base md:text-lg text-black text-center max-w-2xl mx-auto">
           Kumpulan dokumentasi kegiatan BEM KM FTI yang diabadikan dalam bentuk
-          foto-foto terbaik. Scroll otomatis dan navigasi manual tersedia untuk
-          melihat seluruh momen inspiratif.
+          foto-foto terbaik untuk melihat seluruh momen inspiratif.
         </p>
-        
       </div>
-      <GaleriGrid />   
+
+      {/* Grid galeri */}
+      <div className="relative">
+        <GaleriGrid />
+      </div>
     </div>
   );
 };

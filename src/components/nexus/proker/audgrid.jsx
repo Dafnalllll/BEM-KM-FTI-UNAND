@@ -8,7 +8,6 @@ import InspirasiUpgrade from "../../../assets/dinas nexus/kegiatan/audkes/inspir
 import NexusArchive from "../../../assets/dinas nexus/kegiatan/audkes/nexusarchive.webp";
 import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
 import FunTime from "../../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
-import Spotify from "../../../assets/socialmedia/spotify.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 
 const prokerList = [
@@ -101,9 +100,11 @@ const AudGrid = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 p-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
-      data-aos="zoom-in"
-      data-aos-duration="1000">
+      <h1
+        className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-12 text-center bg-clip-text font-[Carena] "
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         Proker Audkes
       </h1>
 
@@ -222,21 +223,6 @@ const AudGrid = () => {
 
                   {/* logo di bawah deskripsi */}
                   <div className="flex items-center gap-3 mt-3">
-                    {proker.spotify && (
-                      <a
-                        href={proker.spotify}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 rounded-md hover:scale-105 transition-transform"
-                        title="Listen on Spotify"
-                      >
-                        <img
-                          src={Spotify}
-                          alt="Spotify"
-                          className="w-17 h-12 object-contain"
-                        />
-                      </a>
-                    )}
                     {proker.googledrive && (
                       <a
                         href={proker.googledrive}
