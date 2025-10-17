@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Footer } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
 import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.webp";
+import Studio from "../../assets/dinas nexus/kegiatan/studio.webp";
 import StatsNexus from "../../components/nexus/statsnexus";
 import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
@@ -14,9 +15,22 @@ import UKM from "./ukm";
 import GaleriNexus from "./galerinexus";
 
 export const Nexus = () => {
+  // Tambahkan state untuk background index
+  const [bgIndex, setBgIndex] = useState(0);
+  const backgrounds = [Pelantikan, Studio];
+
   useEffect(() => {
     document.title = "Nexus Inspirasi || BEM KM FTI UNAND";
   }, []);
+
+  // Efek untuk slideshow background
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % backgrounds.length);
+    }, 3500); // ganti setiap 4 detik
+    return () => clearInterval(interval);
+  });
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -43,11 +57,11 @@ export const Nexus = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Section Beranda dengan background pelantikan */}
+      {/* Section Beranda dengan background slideshow */}
       <section id="beranda" className="relative w-auto min-h-screen">
         <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${Pelantikan})` }}
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-all duration-1000"
+          style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}
         />
         {/* Overlay hitam dengan opacity */}
         <div className="absolute inset-0 w-full h-full bg-black opacity-50"></div>

@@ -260,7 +260,7 @@ export const NavbarNexus = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-400/95 backdrop-blur-lg w-full px-4 pb-4 pt-2 z-40 animate-fadeIn">
+        <div className="md:hidden bg-gray-400/95 backdrop-blur-lg w-full px-4 pb-4 pt-2 z-10 animate-fadeIn max-h-[80vh] overflow-y-auto">
           <div className="flex flex-col gap-2">
             {menuItems.map((item) =>
               item.isDropdown ? (
@@ -300,7 +300,7 @@ export const NavbarNexus = () => {
                     </button>
                   </div>
                   {openDropdown[item.label] && (
-                    <div className="mt-1 w-full  z-50 animate-fadeIn">
+                    <div className="mt-1 w-full z-50 animate-fadeIn max-h-64 overflow-y-auto">
                       {item.dropdown.map((dropdownItem) => (
                         <button
                           key={dropdownItem.label}

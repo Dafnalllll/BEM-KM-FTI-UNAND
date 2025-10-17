@@ -8,6 +8,7 @@ import InspirasiUpgrade from "../../../assets/dinas nexus/kegiatan/audkes/inspir
 import NexusArchive from "../../../assets/dinas nexus/kegiatan/audkes/nexusarchive.webp";
 import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
 import FunTime from "../../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
+import FunTime1 from "../../../assets/dinas nexus/kegiatan/audkes/funtime1.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 
 const prokerList = [
@@ -41,7 +42,7 @@ const prokerList = [
   {
     title: "FUN TIME",
     desc: "Sebagai sarana refreshing untuk memberikan hiburan dan lebih mendekatkan antar sesama pengurus BEM KM FTI UNAND 2025.",
-    img: FunTime,
+    img: [FunTime, FunTime1],
   },
   {
     title: "SOTM",

@@ -3,8 +3,7 @@ import FtiParade from "../../../assets/dinas nexus/kegiatan/internal/FTI Parade.
 import Bakti from "../../../assets/dinas nexus/kegiatan/internal/bakti.webp";
 import JelajahLembaga from "../../../assets/dinas nexus/kegiatan/internal/jelajahlembaga.webp";
 import TemuKoordinasi from "../../../assets/dinas nexus/kegiatan/internal/temukoordinasi.webp";
-import Techtonic from "../../../assets/dinas nexus/kegiatan/ristek/techtonic.webp";
-import Techtonic1 from "../../../assets/dinas nexus/kegiatan/ristek/techtonic1.webp";
+import JelajahLembaga1 from "../../../assets/dinas nexus/kegiatan/internal/jelajahlembaga1.webp";
 import NexGO from "../../../assets/dinas nexus/kegiatan/internal/nexgo.webp";
 import NexGo1 from "../../../assets/dinas nexus/kegiatan/internal/nexgo1.webp";
 
@@ -17,7 +16,7 @@ const prokerList = [
   {
     title: "JELAJAH LEMBAGA",
     desc: "Kegiatan ini berupa kegiatan kunjungan dan pengenalan struktur organisasi serta program kerja HIMA dan UKMF yang ada di Lingkungan FTI.",
-    img: JelajahLembaga,
+    img: [JelajahLembaga, JelajahLembaga1],
   },
   {
     title: "NEXGO",
@@ -37,7 +36,7 @@ const prokerList = [
   {
     title: "INTIME FTI",
     desc: "Membuat sebuah kegiatan bersama yang diikuti oleh lembaga lembaga yang ada di FTI yang bertujuan untuk menjalin komunikasi dan koordinasi, serta sebagai sumber informasi untuk komunikasi antar lembaga FTI.",
-    img: [Techtonic, Techtonic1],
+    img: TemuKoordinasi,
   },
 ];
 
