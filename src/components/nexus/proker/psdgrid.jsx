@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Restart from "../../../assets/dinas nexus/kegiatan/kastrat/restart.webp";
-import WomenCare from "../../../assets/dinas nexus/kegiatan/kastrat/womencare.webp";
+import LKMMTD from "../../../assets/dinas nexus/kegiatan/psdm/lkmmtd.webp";
 import WisudaBak from "../../../assets/dinas nexus/kegiatan/psdm/wisudabak.webp";
 import Sekawan from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
 import Nexmud from "../../../assets/dinas nexus/kegiatan/psdm/nexmud.webp";
 import FAA from "../../../assets/dinas nexus/kegiatan/psdm/faa.webp";
-import Kpk from "../../../assets/dinas nexus/kegiatan/kastrat/kpk.webp";
+
 
 const prokerList = [
   {
@@ -16,7 +15,7 @@ const prokerList = [
   {
     title: "LKMM-TD FTI",
     desc: "Merupakan sebuah kegiatan untuk memberikan pembekalan dalam memahami prinsip-prinsip berorganisasi dan kepemimpinan, serta terampil dalam menyelenggarakan kegiatan kemahasiswaan secara sistematis kepada para mahasiswa.",
-    img: Kpk,
+    img: LKMMTD,
   },
   {
     title: "EDUNEX",
