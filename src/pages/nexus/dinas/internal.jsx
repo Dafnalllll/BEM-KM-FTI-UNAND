@@ -5,7 +5,7 @@ import INTERNAL from "../../../assets/dinas nexus/press release/internal/interna
 import InternalLogo from "../../../assets/dinas nexus/logo/internal.webp";
 import InternalGrid from "../../../components/nexus/grid/internalgrid";
 import IntGrid from "../../../components/nexus/proker/intgrid";
-
+import InternalGaleri from "../../../components/nexus/galeri/internalgaleri";
 export const Internal = () => {
   useEffect(() => {
     document.title = "Internal || Nexus Inspirasi";
@@ -95,6 +95,7 @@ export const Internal = () => {
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <InternalGrid />
       <IntGrid />
+      <InternalGaleri />
       <FooterNexus />
     </div>
   );

@@ -5,6 +5,7 @@ import SOSMASLING from "../../../assets/dinas nexus/press release/sosmasling/sos
 import SosmaslingLogo from "../../../assets/dinas nexus/logo/sosmas.webp";
 import SosmaslingGrid from "../../../components/nexus/grid/sosmaslinggrid";
 import SosGrid from "../../../components/nexus/proker/sosgrid";
+import SosmaslingGaleri from "../../../components/nexus/galeri/sosmaslinggaleri";
 
 export const Sosmasling = () => {
   useEffect(() => {
@@ -86,6 +87,7 @@ export const Sosmasling = () => {
 
       <SosmaslingGrid />
       <SosGrid />
+      <SosmaslingGaleri />
       <FooterNexus />
     </div>
   );

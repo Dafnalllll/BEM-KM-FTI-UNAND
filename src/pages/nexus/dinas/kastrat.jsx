@@ -5,6 +5,7 @@ import KASTRAT from "../../../assets/dinas nexus/press release/kastrat/kastrat.w
 import KastartLogo from "../../../assets/dinas nexus/logo/kastrat.webp";
 import KastratGrid from "../../../components/nexus/grid/kastratgrid";
 import KasGrid from "../../../components/nexus/proker/kasgrid";
+import KastratGaleri from "../../../components/nexus/galeri/kastratgaleri"; 
 
 export const Kastrat = () => {
   useEffect(() => {
@@ -91,6 +92,7 @@ export const Kastrat = () => {
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <KastratGrid />
       <KasGrid />
+      <KastratGaleri />
       <FooterNexus />
     </div>
   );

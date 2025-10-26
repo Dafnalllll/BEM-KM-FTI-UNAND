@@ -5,6 +5,7 @@ import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin
 import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.webp";
 import MedinGrid from "../../../components/nexus/grid/medingrid";
 import MedGrid from "../../../components/nexus/proker/medgrid";
+import MedinkrafGaleri from "../../../components/nexus/galeri/medinkrafgaleri";
 
 export const Medinkraf = () => {
   useEffect(() => {
@@ -89,6 +90,7 @@ export const Medinkraf = () => {
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <MedinGrid />
       <MedGrid />
+      <MedinkrafGaleri />
       <FooterNexus />
     </div>
   );

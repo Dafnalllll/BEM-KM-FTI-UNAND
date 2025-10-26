@@ -5,6 +5,7 @@ import ADKESMA from "../../../assets/dinas nexus/press release/adkesma/ma.webp";
 import AdkesmaLogo from "../../../assets/dinas nexus/logo/adkesma.webp";
 import Adkesmagrid from "../../../components/nexus/grid/adkesmagrid";
 import AdkesGrid from "../../../components/nexus/proker/adkesgrid";
+import AdkesmaGaleri from "../../../components/nexus/galeri/adkesmagaleri";
 
 export const Adkesma = () => {
   useEffect(() => {
@@ -90,6 +91,7 @@ export const Adkesma = () => {
       </div>
 
       <AdkesGrid />
+      <AdkesmaGaleri />
       <FooterNexus />
     </div>
   );

@@ -5,6 +5,7 @@ import PSDM from "../../../assets/dinas nexus/press release/psdm/psdm.webp";
 import PsdmLogo from "../../../assets/dinas nexus/logo/psdm.webp";
 import PsdmGrid from "../../../components/nexus/grid/psdmgrid";
 import PsdGrid from "../../../components/nexus/proker/psdgrid";
+import PsdmGaleri from "../../../components/nexus/galeri/psdmgaleri";
 
 export const Psdm = () => {
   useEffect(() => {
@@ -88,6 +89,7 @@ export const Psdm = () => {
 
       <PsdmGrid />
       <PsdGrid />
+      <PsdmGaleri />
       <FooterNexus />
     </div>
   );

@@ -5,6 +5,7 @@ import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/ekste
 import EksternalLogo from "../../../assets/dinas nexus/logo/eksternal.webp";
 import EksternalGrid from "../../../components/nexus/grid/eksternalgrid";
 import EksGrid from "../../../components/nexus/proker/eksgrid";
+import EksternalGaleri from "../../../components/nexus/galeri/eksternalgaleri";
 
 export const Eksternal = () => {
   useEffect(() => {
@@ -91,6 +92,7 @@ export const Eksternal = () => {
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <EksternalGrid />
       <EksGrid />
+      <EksternalGaleri />
       <FooterNexus />
     </div>
   );

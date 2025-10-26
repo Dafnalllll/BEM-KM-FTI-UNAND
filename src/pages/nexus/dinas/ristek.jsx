@@ -5,6 +5,8 @@ import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.web
 import RistekLogo from "../../../assets/dinas nexus/logo/ristek.webp";
 import RistekGrid from "../../../components/nexus/grid/ristekgrid";
 import Risgrid from "../../../components/nexus/proker/risgrid";
+import NexmudRistekGrid from "../../../components/nexus/grid/nexmudristekgrid";
+import RistekGaleri from "../../../components/nexus/galeri/ristekgaleri";
 
 const Ristek = () => {
   useEffect(() => {
@@ -92,7 +94,9 @@ const Ristek = () => {
 
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <RistekGrid />
+      <NexmudRistekGrid />
       <Risgrid />
+      <RistekGaleri />
       <FooterNexus />
     </div>
   );

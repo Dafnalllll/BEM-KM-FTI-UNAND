@@ -78,6 +78,13 @@ const gridData = [
 const KastratGrid = () => {
   return (
     <div className="flex flex-col items-center gap-10 p-8">
+      <h2
+        className="text-3xl font-bold text-[#25364a] mb-4 text-center font-[Carena]"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        The People Behind Kastrat
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {gridData.map((item, idx) => (
           // Wrapper untuk AOS

@@ -7,7 +7,7 @@ import Zikri from "../../../assets/dinas nexus/staff release/ristek/zikri.webp";
 import Hafid from "../../../assets/dinas nexus/staff release/ristek/hafid.webp";
 import Arib from "../../../assets/dinas nexus/staff release/ristek/arib.webp";
 import Ristek from "../../../assets/dinas nexus/logo/ristek.webp";
-import Social from "../../social"; // Import Social component
+import Social from "../../social";
 
 const gridData = [
   {
@@ -56,6 +56,7 @@ const gridData = [
     border: "border-green-500",
     instagram: "https://www.instagram.com/zikrialfi/",
     linkedin: "https://www.linkedin.com/in/alfizikri/",
+    github: "https://github.com/kugo-x",
   },
   {
     img: Hafid,
@@ -81,6 +82,11 @@ const gridData = [
 export const RistekGrid = () => {
   return (
     <div className="flex flex-col items-center gap-10 p-8">
+      <h2 className="text-3xl font-bold text-[#25364a] mb-4 text-center font-[Carena]"
+      data-aos="zoom-in"
+      data-aos-duration="1000">
+        The People Behind Ristek
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {gridData.map((item, idx) => (
           <div

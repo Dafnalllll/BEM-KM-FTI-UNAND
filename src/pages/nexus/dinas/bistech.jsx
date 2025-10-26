@@ -5,6 +5,7 @@ import BISTECH from "../../../assets/dinas nexus/press release/bistech/bistech.w
 import BistechLogo from "../../../assets/dinas nexus/logo/bistech.webp";
 import BistechGrid from "../../../components/nexus/grid/bistechgrid";
 import BisGrid from "../../../components/nexus/proker/bisgrid";
+import BistechGaleri from "../../../components/nexus/galeri/bistechgaleri";
 
 export const Bistech = () => {
   useEffect(() => {
@@ -87,6 +88,7 @@ export const Bistech = () => {
       {/* Konten grid & proker tetap di bawah background untuk kedua viewport */}
       <BistechGrid />
       <BisGrid />
+      <BistechGaleri />
       <FooterNexus />
     </div>
   );
