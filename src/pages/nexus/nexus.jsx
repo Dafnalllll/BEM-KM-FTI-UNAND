@@ -4,7 +4,6 @@ import { Footer } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
 import Pelantikan from "../../assets/dinas nexus/kegiatan/pelantikan.webp";
 import Studio from "../../assets/dinas nexus/kegiatan/studio.webp";
-import StatsNexus from "../../components/nexus/statsnexus";
 import TentangNexus from "./tentangnexus";
 import KataKataGub from "../../components/nexus/katakatagub";
 import KataKataWagub from "../../components/nexus/katakatawagub";
@@ -96,15 +95,8 @@ export const Nexus = () => {
         </div>
       </section>
 
-      {/* StatsNexus mengambang di antara dua section */}
-      <div className="relative w-full flex justify-center">
-        <div className="absolute left-1/2 -translate-x-1/2 -top-16 z-20 w-[90vw] max-w-5xl">
-          <StatsNexus />
-        </div>
-      </div>
-
       {/* Section Tentang Nexus */}
-      <section id="tentangnexus" className="w-full mt-24">
+      <section id="tentangnexus" className="w-full -mt-16">
         <TentangNexus />
       </section>
 

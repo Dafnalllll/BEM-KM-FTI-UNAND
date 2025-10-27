@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import StatsNexus from "../../components/nexus/statsnexus";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
 import Instagram from "../../assets/socialmedia/instagram.webp";
@@ -58,40 +59,6 @@ export const Footer = () => {
               Wadah kreativitas dan pengembangan diri mahasiswa Fakultas
               Teknologi Informasi.
             </p>
-            <div className="flex gap-3 text-xl sm:text-2xl mb-2">
-              <a
-                href="https://www.instagram.com/bemkmftiunand/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
-              >
-                <img src={Instagram} alt="Instagram" className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@bemkmftiunand"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
-              >
-                <img src={Tiktok} alt="TikTok" className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com/bemkmftiunand"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
-              >
-                <img src={X} alt="X" className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.youtube.com/@bemkmftiunand"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
-              >
-                <img src={Youtube} alt="Youtube" className="w-8 h-6" />
-              </a>
-            </div>
             <div className="text-gray-300 mt-2 text-xs sm:text-sm space-y-1">
               <p className="select-all flex items-center gap-2">
                 <Mail size={16} className="inline" />
@@ -137,36 +104,48 @@ export const Footer = () => {
               <li>Nexus Muda</li>
             </ul>
           </div>
-          {/* Berita Terbaru */}
+          {/* Sosial Media (pindah dari Info BEM) */}
           <div>
             <h3 className="font-bold text-lg sm:text-xl mb-2">
-              Berita Terbaru
+              Sosial Media
             </h3>
-            <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
-              <li>
-                <span className="font-semibold text-white">
-                  FTI Hackathon 2023 Telah Dibuka!
-                </span>
-                <br />
-                <span className="text-xs sm:text-sm">15 Oktober 2023</span>
-              </li>
-              <li>
-                <span className="font-semibold text-white">
-                  Hasil Leadership Seminar Minggu Lalu
-                </span>
-                <br />
-                <span className="text-xs sm:text-sm">8 Oktober 2023</span>
-              </li>
-              <li>
-                <span className="font-semibold text-white">
-                  Kegiatan FTI Peduli di Desa Sekitar
-                </span>
-                <br />
-                <span className="text-xs sm:text-sm">1 Oktober 2023</span>
-              </li>
-            </ul>
+            <div className="flex gap-3 text-xl sm:text-2xl mb-2">
+              <a
+                href="https://www.instagram.com/bemkmftiunand/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={Instagram} alt="Instagram" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@bemkmftiunand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={Tiktok} alt="TikTok" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://twitter.com/bemkmftiunand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={X} alt="X" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.youtube.com/@bemkmftiunand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <img src={Youtube} alt="Youtube" className="w-8 h-6" />
+              </a>
+            </div>
           </div>
         </div>
+        <StatsNexus />
         <div className="text-center mt-8 text-xs sm:text-base">
           Universitas Andalas, Limau Manis, Padang, Sumatra Barat, Indonesia
           <br />
