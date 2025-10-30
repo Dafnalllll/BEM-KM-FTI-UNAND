@@ -9,7 +9,6 @@ import Youtube from "../../assets/socialmedia/youtube.webp";
 import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
 import Ristek from "../../assets/dinas nexus/logo/ristek.webp";
 
-
 const quickLinks = [
   { label: "Beranda", section: "beranda" },
   { label: "Tentang", section: "tentangnexus" },
@@ -22,7 +21,6 @@ export const Footer = () => {
   const location = useLocation();
 
   useEffect(() => {
-
     if (location.state && location.state.scrollTo) {
       const section = document.getElementById(location.state.scrollTo);
       if (section) {
@@ -32,48 +30,48 @@ export const Footer = () => {
   }, [location]);
 
   return (
-    <footer className="w-full bg-[#243a1a] text-white pt-10 pb-4 mt-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="w-full bg-[#243a1a] text-white pt-10 pb-2 mt-4">
+      <div className="container mx-auto px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Info BEM */}
           <div>
-            <div className="flex items-center gap-4 mb-2">
+            <div className="flex items-center gap-2 mb-1">
               <img
                 src={Nexus}
                 alt="Logo BEM KM FTI"
-                className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                className="w-[36px] h-[36px] sm:w-[44px] sm:h-[44px]"
               />
               <div>
-                <h2 className="font-bold text-xl sm:text-2xl font-[Carena]">
+                <h2 className="font-bold text-lg sm:text-xl font-[Carena]">
                   BEM KM FTI
                 </h2>
                 <p
-                  className="text-gray-300 text-2xl sm:text-3xl"
+                  className="text-gray-300 text-lg sm:text-xl"
                   style={{ fontFamily: "'Great Vibes,cursive'" }}
                 >
                   Nexus Inspirasi
                 </p>
               </div>
             </div>
-            <p className="text-gray-300 mb-4 text-sm sm:text-base">
+            <p className="text-gray-300 mb-2 text-xs sm:text-sm">
               Wadah kreativitas dan pengembangan diri mahasiswa Fakultas
               Teknologi Informasi.
             </p>
-            <div className="text-gray-300 mt-2 text-xs sm:text-sm space-y-1">
-              <p className="select-all flex items-center gap-2">
-                <Mail size={16} className="inline" />
+            <div className="text-gray-300 mt-1 text-[10px] sm:text-xs space-y-1">
+              <p className="select-all flex items-center gap-1">
+                <Mail size={14} className="inline" />
                 bemkmfti@gmail.com
               </p>
-              <p className="select-all flex items-center gap-2">
-                <Phone size={16} className="inline" />
+              <p className="select-all flex items-center gap-1">
+                <Phone size={14} className="inline" />
                 +62 82284367174
               </p>
             </div>
           </div>
           {/* Navigasi Cepat */}
           <div>
-            <h3 className="font-bold text-lg sm:text-xl mb-2">Quick Links</h3>
-            <ul className="space-y-1 text-gray-300 text-sm sm:text-base">
+            <h3 className="font-bold text-base sm:text-lg mb-1">Quick Links</h3>
+            <ul className="space-y-1 text-gray-300 text-xs sm:text-sm">
               {quickLinks.map((item) => (
                 <li key={item.section}>
                   <button
@@ -93,10 +91,10 @@ export const Footer = () => {
           </div>
           {/* Program Unggulan */}
           <div>
-            <h3 className="font-bold text-lg sm:text-xl mb-2">
+            <h3 className="font-bold text-base sm:text-lg mb-1">
               Program Unggulan
             </h3>
-            <ul className="space-y-1 text-gray-300 text-sm sm:text-base">
+            <ul className="space-y-1 text-gray-300 text-xs sm:text-sm">
               <li>SEKAWAN</li>
               <li>Technofest</li>
               <li>Hackathon</li>
@@ -104,19 +102,19 @@ export const Footer = () => {
               <li>Nexus Muda</li>
             </ul>
           </div>
-          {/* Sosial Media (pindah dari Info BEM) */}
+          {/* Sosial Media */}
           <div>
-            <h3 className="font-bold text-lg sm:text-xl mb-2">
+            <h3 className="font-bold text-base sm:text-lg mb-1">
               Sosial Media
             </h3>
-            <div className="flex gap-3 text-xl sm:text-2xl mb-2">
+            <div className="flex gap-2 text-lg sm:text-xl mb-1">
               <a
                 href="https://www.instagram.com/bemkmftiunand/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img src={Instagram} alt="Instagram" className="w-6 h-6" />
+                <img src={Instagram} alt="Instagram" className="w-5 h-5" />
               </a>
               <a
                 href="https://www.tiktok.com/@bemkmftiunand"
@@ -124,7 +122,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img src={Tiktok} alt="TikTok" className="w-6 h-6" />
+                <img src={Tiktok} alt="TikTok" className="w-5 h-5" />
               </a>
               <a
                 href="https://twitter.com/bemkmftiunand"
@@ -132,7 +130,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img src={X} alt="X" className="w-6 h-6" />
+                <img src={X} alt="X" className="w-5 h-5" />
               </a>
               <a
                 href="https://www.youtube.com/@bemkmftiunand"
@@ -140,24 +138,24 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform"
               >
-                <img src={Youtube} alt="Youtube" className="w-8 h-6" />
+                <img src={Youtube} alt="Youtube" className="w-7 h-5" />
               </a>
             </div>
           </div>
         </div>
         <StatsNexus />
-        <div className="text-center mt-8 text-xs sm:text-base">
+        <div className="text-center mt-4 text-[10px] sm:text-xs">
           Universitas Andalas, Limau Manis, Padang, Sumatra Barat, Indonesia
           <br />
         </div>
-        <hr className="my-8 border-gray-500" />
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4">
+        <hr className="my-4 border-gray-500" />
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-2">
           <img
             src={Ristek}
             alt="Dinas Ristek"
-            className="h-16 sm:h-20 max-w-full object-contain mb-2 sm:mb-0"
+            className="h-10 sm:h-14 max-w-full object-contain mb-1 sm:mb-0"
           />
-          <p className="text-xs sm:text-sm text-white whitespace-nowrap text-center">
+          <p className="text-[10px] sm:text-xs text-white whitespace-nowrap text-center">
             © 2025 Dinas Ristek BEM KM FTI UNAND. All Rights Reserved
           </p>
         </div>
