@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import MEDINKRAF from "../../../assets/dinas nexus/press release/medinkraf/medin.webp";
-import MedinkrafLogo from "../../../assets/dinas nexus/logo/medin.webp";
+import MEDINKRAF from "../../../assets/dinasnexus/press release/medinkraf/medin.webp";
+import MedinkrafLogo from "../../../assets/dinasnexus/logo/medin.webp";
 import MedinGrid from "../../../components/nexus/grid/medingrid";
 import MedGrid from "../../../components/nexus/proker/medgrid";
 import MedinkrafGaleri from "../../../components/nexus/galeri/medinkrafgaleri";

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import LKMMTD from "../../../assets/dinas nexus/kegiatan/psdm/lkmmtd.webp";
-import WisudaBak from "../../../assets/dinas nexus/kegiatan/psdm/wisudabak.webp";
-import Sekawan from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
-import Nexmud from "../../../assets/dinas nexus/kegiatan/psdm/nexmud.webp";
-import FAA from "../../../assets/dinas nexus/kegiatan/psdm/faa.webp";
+import LKMMTD from "../../../assets/dinasnexus/kegiatan/psdm/lkmmtd.webp";
+import WisudaBak from "../../../assets/dinasnexus/kegiatan/psdm/wisudabak.webp";
+import Sekawan from "../../../assets/dinasnexus/kegiatan/adkesma/sekawan.webp";
+import Nexmud from "../../../assets/dinasnexus/kegiatan/psdm/nexmud.webp";
+import FAA from "../../../assets/dinasnexus/kegiatan/psdm/faa.webp";
 
 
 const prokerList = [

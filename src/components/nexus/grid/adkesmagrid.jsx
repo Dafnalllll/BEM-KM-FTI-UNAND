@@ -1,13 +1,13 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/adkesma/imam.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/adkesma/aqila.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/adkesma/ael.webp";
-import Fariz from "../../../assets/dinas nexus/staff release/adkesma/fariz.webp";
-import Alfa from "../../../assets/dinas nexus/staff release/adkesma/alfa.webp";
-import Adhit from "../../../assets/dinas nexus/staff release/adkesma/adhit.webp";
-import Faiz from "../../../assets/dinas nexus/staff release/adkesma/faiz.webp";
-import Zahra from "../../../assets/dinas nexus/staff release/adkesma/zahra.webp";
-import Adkesma from "../../../assets/dinas nexus/logo/adkesma.webp";
+import Kadin from "../../../assets/dinasnexus/press release/adkesma/imam.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/adkesma/aqila.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/adkesma/ael.webp";
+import Fariz from "../../../assets/dinasnexus/staff release/adkesma/fariz.webp";
+import Alfa from "../../../assets/dinasnexus/staff release/adkesma/alfa.webp";
+import Adhit from "../../../assets/dinasnexus/staff release/adkesma/adhit.webp";
+import Faiz from "../../../assets/dinasnexus/staff release/adkesma/faiz.webp";
+import Zahra from "../../../assets/dinasnexus/staff release/adkesma/zahra.webp";
+import Adkesma from "../../../assets/dinasnexus/logo/adkesma.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

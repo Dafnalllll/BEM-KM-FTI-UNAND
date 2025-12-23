@@ -1,13 +1,13 @@
 import React from "react";
-import Kabir from "../../../assets/dinas nexus/press release/audkes/ajo.webp";
-import Sekbir from "../../../assets/dinas nexus/press release/audkes/miftah.webp";
-import Benbir from "../../../assets/dinas nexus/staff release/audkes/alya.webp";
-import Ferdian from "../../../assets/dinas nexus/staff release/audkes/ferdian.webp";
-import Shyra from "../../../assets/dinas nexus/staff release/audkes/shyra.webp";
-import Fadhi from "../../../assets/dinas nexus/staff release/audkes/fadhi.webp";
-import Farhan from "../../../assets/dinas nexus/staff release/audkes/farhan.webp";
-import Sasya from "../../../assets/dinas nexus/staff release/audkes/sasya.webp";
-import Audkes from "../../../assets/dinas nexus/logo/audkes.webp";
+import Kabir from "../../../assets/dinasnexus/press release/audkes/ajo.webp";
+import Sekbir from "../../../assets/dinasnexus/press release/audkes/miftah.webp";
+import Benbir from "../../../assets/dinasnexus/staff release/audkes/alya.webp";
+import Ferdian from "../../../assets/dinasnexus/staff release/audkes/ferdian.webp";
+import Shyra from "../../../assets/dinasnexus/staff release/audkes/shyra.webp";
+import Fadhi from "../../../assets/dinasnexus/staff release/audkes/fadhi.webp";
+import Farhan from "../../../assets/dinasnexus/staff release/audkes/farhan.webp";
+import Sasya from "../../../assets/dinasnexus/staff release/audkes/sasya.webp";
+import Audkes from "../../../assets/dinasnexus/logo/audkes.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

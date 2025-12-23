@@ -1,10 +1,10 @@
 import React from "react";
-import Sosmasling from "../../../assets/dinas nexus/logo/sosmas.webp";
-import Kadin from "../../../assets/dinas nexus/press release/sosmasling/nori.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/sosmasling/sovia.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/sosmasling/shaza.webp";
-import Zhafira from "../../../assets/dinas nexus/staff release/sosmasling/zhafira.webp";
-import Faiz from "../../../assets/dinas nexus/staff release/sosmasling/faiz.webp";
+import Sosmasling from "../../../assets/dinasnexus/logo/sosmas.webp";
+import Kadin from "../../../assets/dinasnexus/press release/sosmasling/nori.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/sosmasling/sovia.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/sosmasling/shaza.webp";
+import Zhafira from "../../../assets/dinasnexus/staff release/sosmasling/zhafira.webp";
+import Faiz from "../../../assets/dinasnexus/staff release/sosmasling/faiz.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

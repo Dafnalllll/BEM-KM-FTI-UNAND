@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Sekawan from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
-import Sekawan1 from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan1.webp";
-import Advotalk from "../../../assets/dinas nexus/kegiatan/adkesma/advotalk.webp";
-import SahabatFTI from "../../../assets/dinas nexus/kegiatan/adkesma/sahabatfti.webp";
-import PublicHearing from "../../../assets/dinas nexus/kegiatan/adkesma/publichearing.webp";
-import NexCare from "../../../assets/dinas nexus/kegiatan/adkesma/nexcare.webp";
-import InterScholar from "../../../assets/dinas nexus/kegiatan/adkesma/interscholar.webp";
-import InterScholar1 from "../../../assets/dinas nexus/kegiatan/adkesma/interscholar1.webp";
-import Ipkplus from "../../../assets/dinas nexus/kegiatan/adkesma/ipkplus.webp";
-import Database from "../../../assets/dinas nexus/kegiatan/adkesma/database.webp";
-import MabaCare from "../../../assets/dinas nexus/kegiatan/adkesma/mabacare.webp";
+import Sekawan from "../../../assets/dinasnexus/kegiatan/adkesma/sekawan.webp";
+import Sekawan1 from "../../../assets/dinasnexus/kegiatan/adkesma/sekawan1.webp";
+import Advotalk from "../../../assets/dinasnexus/kegiatan/adkesma/advotalk.webp";
+import SahabatFTI from "../../../assets/dinasnexus/kegiatan/adkesma/sahabatfti.webp";
+import PublicHearing from "../../../assets/dinasnexus/kegiatan/adkesma/publichearing.webp";
+import NexCare from "../../../assets/dinasnexus/kegiatan/adkesma/nexcare.webp";
+import InterScholar from "../../../assets/dinasnexus/kegiatan/adkesma/interscholar.webp";
+import InterScholar1 from "../../../assets/dinasnexus/kegiatan/adkesma/interscholar1.webp";
+import Ipkplus from "../../../assets/dinasnexus/kegiatan/adkesma/ipkplus.webp";
+import Database from "../../../assets/dinasnexus/kegiatan/adkesma/database.webp";
+import MabaCare from "../../../assets/dinasnexus/kegiatan/adkesma/mabacare.webp";
 import Spotify from "../../../assets/socialmedia/spotify.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 

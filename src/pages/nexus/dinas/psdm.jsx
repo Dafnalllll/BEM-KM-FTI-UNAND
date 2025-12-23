@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import PSDM from "../../../assets/dinas nexus/press release/psdm/psdm.webp";
-import PsdmLogo from "../../../assets/dinas nexus/logo/psdm.webp";
+import PSDM from "../../../assets/dinasnexus/press release/psdm/psdm.webp";
+import PsdmLogo from "../../../assets/dinasnexus/logo/psdm.webp";
 import PsdmGrid from "../../../components/nexus/grid/psdmgrid";
 import PsdGrid from "../../../components/nexus/proker/psdgrid";
 import PsdmGaleri from "../../../components/nexus/galeri/psdmgaleri";

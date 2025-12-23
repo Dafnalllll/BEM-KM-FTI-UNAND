@@ -1,8 +1,8 @@
 import React from "react";
-import Gubernur from "../../../assets/dinas nexus/press release/inti/gub.webp";
-import WakilGubernur from "../../../assets/dinas nexus/press release/inti/wagub.webp";
-import SekretarisDaerah from "../../../assets/dinas nexus/press release/inti/sekda.webp";
-import BendaharaDaerah from "../../../assets/dinas nexus/press release/inti/benda.webp";
+import Gubernur from "../../../assets/dinasnexus/press release/inti/gub.webp";
+import WakilGubernur from "../../../assets/dinasnexus/press release/inti/wagub.webp";
+import SekretarisDaerah from "../../../assets/dinasnexus/press release/inti/sekda.webp";
+import BendaharaDaerah from "../../../assets/dinasnexus/press release/inti/benda.webp";
 import Nexus from "../../../assets/kabinet/nexusinspirasi.webp";
 import Social from "../../social"; // import Social component
 

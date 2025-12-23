@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import BISTECH from "../../../assets/dinas nexus/press release/bistech/bistech.webp";
-import BistechLogo from "../../../assets/dinas nexus/logo/bistech.webp";
+import BISTECH from "../../../assets/dinasnexus/press release/bistech/bistech.webp";
+import BistechLogo from "../../../assets/dinasnexus/logo/bistech.webp";
 import BistechGrid from "../../../components/nexus/grid/bistechgrid";
 import BisGrid from "../../../components/nexus/proker/bisgrid";
 import BistechGaleri from "../../../components/nexus/galeri/bistechgaleri";

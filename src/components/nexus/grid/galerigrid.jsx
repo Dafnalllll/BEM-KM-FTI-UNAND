@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Studio1 from "../../../assets/dinas nexus/kegiatan/studio1.webp";
-import Funtime1 from "../../../assets/dinas nexus/kegiatan/audkes/funtime1.webp";
-import Bakti from "../../../assets/dinas nexus/nexus dump/bakti.webp";
-import Nexgo from "../../../assets/dinas nexus/nexus dump/nexgo.webp";
-import SP from "../../../assets/dinas nexus/nexus dump/sp.webp";
-import SP2 from "../../../assets/dinas nexus/nexus dump/sp2.webp";
-import LKMM from "../../../assets/dinas nexus/nexus dump/lkmm.webp";
-import Bakti1 from "../../../assets/dinas nexus/nexus dump/bakti1.webp";
-import LKMM1 from "../../../assets/dinas nexus/nexus dump/lkmm1.webp";
-import Himatekom from "../../../assets/dinas nexus/nexus dump/himatekom.webp";
-import Zyrex from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
-import Bakti2 from "../../../assets/dinas nexus/nexus dump/bakti2.webp";
-import Sosmas from "../../../assets/dinas nexus/nexus dump/sosmas.webp";
-import BemVisit from "../../../assets/dinas nexus/kegiatan/eksternal/bemvisit.webp";
-import Parade from "../../../assets/dinas nexus/nexus dump/internal.webp";
+import Studio1 from "../../../assets/dinasnexus/kegiatan/studio1.webp";
+import Funtime1 from "../../../assets/dinasnexus/kegiatan/audkes/funtime1.webp";
+import Bakti from "../../../assets/dinasnexus/nexus dump/bakti.webp";
+import Nexgo from "../../../assets/dinasnexus/nexus dump/nexgo.webp";
+import SP from "../../../assets/dinasnexus/nexus dump/sp.webp";
+import SP2 from "../../../assets/dinasnexus/nexus dump/sp2.webp";
+import LKMM from "../../../assets/dinasnexus/nexus dump/lkmm.webp";
+import Bakti1 from "../../../assets/dinasnexus/nexus dump/bakti1.webp";
+import LKMM1 from "../../../assets/dinasnexus/nexus dump/lkmm1.webp";
+import Himatekom from "../../../assets/dinasnexus/nexus dump/himatekom.webp";
+import Zyrex from "../../../assets/dinasnexus/kegiatan/adkesma/sekawan.webp";
+import Bakti2 from "../../../assets/dinasnexus/nexus dump/bakti2.webp";
+import Sosmas from "../../../assets/dinasnexus/nexus dump/sosmas.webp";
+import BemVisit from "../../../assets/dinasnexus/kegiatan/eksternal/bemvisit.webp";
+import Parade from "../../../assets/dinasnexus/nexus dump/internal.webp";
 
 const images = [
   Studio1,

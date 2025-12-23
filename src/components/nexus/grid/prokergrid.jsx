@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import FTIPARADE from "../../../assets/dinas nexus/kegiatan/internal/FTI Parade.webp";
-import Technofest from "../../../assets/dinas nexus/kegiatan/eksternal/technofest.webp";
-import Hackathon from "../../../assets/dinas nexus/kegiatan/ristek/hackathon.webp";
-import BinaDesa from "../../../assets/dinas nexus/kegiatan/sosmasling/binadesa.webp";
-import Funtime from "../../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
-import Nexmud from "../../../assets/dinas nexus/kegiatan/psdm/nexmud.webp";
-import Warnex from "../../../assets/dinas nexus/kegiatan/bistech/warnex.webp";
-import Sekawan from "../../../assets/dinas nexus/kegiatan/adkesma/sekawan.webp";
-import DiskusiStrategis from "../../../assets/dinas nexus/kegiatan/kastrat/diskusistrategis.webp";
-import NexusHighlight from "../../../assets/dinas nexus/kegiatan/medin/nexushighlight.webp";
+import FTIPARADE from "../../../assets/dinasnexus/kegiatan/internal/FTI Parade.webp";
+import Technofest from "../../../assets/dinasnexus/kegiatan/eksternal/technofest.webp";
+import Hackathon from "../../../assets/dinasnexus/kegiatan/ristek/hackathon.webp";
+import BinaDesa from "../../../assets/dinasnexus/kegiatan/sosmasling/binadesa.webp";
+import Funtime from "../../../assets/dinasnexus/kegiatan/audkes/funtime.webp";
+import Nexmud from "../../../assets/dinasnexus/kegiatan/psdm/nexmud.webp";
+import Warnex from "../../../assets/dinasnexus/kegiatan/bistech/warnex.webp";
+import Sekawan from "../../../assets/dinasnexus/kegiatan/adkesma/sekawan.webp";
+import DiskusiStrategis from "../../../assets/dinasnexus/kegiatan/kastrat/diskusistrategis.webp";
+import NexusHighlight from "../../../assets/dinasnexus/kegiatan/medin/nexushighlight.webp";
 const programData = [
   {
     id: 1,

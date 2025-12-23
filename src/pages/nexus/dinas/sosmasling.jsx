@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import SOSMASLING from "../../../assets/dinas nexus/press release/sosmasling/sosmasling.webp";
-import SosmaslingLogo from "../../../assets/dinas nexus/logo/sosmas.webp";
+import SOSMASLING from "../../../assets/dinasnexus/press release/sosmasling/sosmasling.webp";
+import SosmaslingLogo from "../../../assets/dinasnexus/logo/sosmas.webp";
 import SosmaslingGrid from "../../../components/nexus/grid/sosmaslinggrid";
 import SosGrid from "../../../components/nexus/proker/sosgrid";
 import SosmaslingGaleri from "../../../components/nexus/galeri/sosmaslinggaleri";

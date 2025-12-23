@@ -1,12 +1,12 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/psdm/rhodes.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/psdm/bunga.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/psdm/khalda.webp";
-import Alfat from "../../../assets/dinas nexus/staff release/psdm/alfat.webp";
-import Nabila from "../../../assets/dinas nexus/staff release/psdm/nabila.webp";
-import Diva from "../../../assets/dinas nexus/staff release/psdm/diva.webp";
-import Rizky from "../../../assets/dinas nexus/staff release/psdm/rizky.webp";
-import Psdm from "../../../assets/dinas nexus/logo/psdm.webp";
+import Kadin from "../../../assets/dinasnexus/press release/psdm/rhodes.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/psdm/bunga.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/psdm/khalda.webp";
+import Alfat from "../../../assets/dinasnexus/staff release/psdm/alfat.webp";
+import Nabila from "../../../assets/dinasnexus/staff release/psdm/nabila.webp";
+import Diva from "../../../assets/dinasnexus/staff release/psdm/diva.webp";
+import Rizky from "../../../assets/dinasnexus/staff release/psdm/rizky.webp";
+import Psdm from "../../../assets/dinasnexus/logo/psdm.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

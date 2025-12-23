@@ -1,12 +1,12 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/internal/haikal.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/internal/keysa.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/internal/mariska.webp";
-import Dawi from "../../../assets/dinas nexus/staff release/internal/dawi.webp";
-import Aufa from "../../../assets/dinas nexus/staff release/internal/aufa.webp";
-import Febi from "../../../assets/dinas nexus/staff release/internal/febi.webp";
-import Quenn from "../../../assets/dinas nexus/staff release/internal/quenn.webp";
-import Internal from "../../../assets/dinas nexus/logo/internal.webp";
+import Kadin from "../../../assets/dinasnexus/press release/internal/haikal.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/internal/keysa.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/internal/mariska.webp";
+import Dawi from "../../../assets/dinasnexus/staff release/internal/dawi.webp";
+import Aufa from "../../../assets/dinasnexus/staff release/internal/aufa.webp";
+import Febi from "../../../assets/dinasnexus/staff release/internal/febi.webp";
+import Quenn from "../../../assets/dinasnexus/staff release/internal/quenn.webp";
+import Internal from "../../../assets/dinasnexus/logo/internal.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

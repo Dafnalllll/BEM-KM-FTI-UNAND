@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Dump from "../../../assets/dinas nexus/nexus dump/internal/dump.webp";
-import Dump1 from "../../../assets/dinas nexus/nexus dump/internal/dump1.webp";
-import Dump2 from "../../../assets/dinas nexus/nexus dump/internal/dump2.webp";
-import Dump3 from "../../../assets/dinas nexus/nexus dump/internal/dump3.webp";
+import Dump from "../../../assets/dinasnexus/nexus dump/internal/dump.webp";
+import Dump1 from "../../../assets/dinasnexus/nexus dump/internal/dump1.webp";
+import Dump2 from "../../../assets/dinasnexus/nexus dump/internal/dump2.webp";
+import Dump3 from "../../../assets/dinasnexus/nexus dump/internal/dump3.webp";
 
 const images = [Dump, Dump1, Dump2, Dump3];
 const IMAGE_WIDTH = 900;

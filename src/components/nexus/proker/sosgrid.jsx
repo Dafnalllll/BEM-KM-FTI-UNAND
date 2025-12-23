@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
-import SOTM from "../../../assets/dinas nexus/kegiatan/audkes/sotm.webp";
-import BinaDesa from "../../../assets/dinas nexus/kegiatan/sosmasling/binadesa.webp";
-import EdukasiMuda from "../../../assets/dinas nexus/kegiatan/sosmasling/edukasimuda.webp";
-import FtiAksiPeduli from "../../../assets/dinas nexus/kegiatan/sosmasling/aksipeduli.webp";
-import RamdahanBerkah from "../../../assets/dinas nexus/kegiatan/sosmasling/ramadhanberkah.webp";
-import CiptaDunia from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia.webp";
-import CiptaDunia1 from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia1.webp";
-import CiptaDunia2 from "../../../assets/dinas nexus/kegiatan/sosmasling/ciptadunia2.webp";
-import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
-import SosmasConnect from "../../../assets/dinas nexus/kegiatan/sosmasling/connect.webp";
-import SosmasConnect1 from "../../../assets/dinas nexus/kegiatan/sosmasling/connect1.webp";
-import HijauBersamaFti from "../../../assets/dinas nexus/kegiatan/sosmasling/hijaubersamafti.webp";
+import BinaDesa from "../../../assets/dinasnexus/kegiatan/sosmasling/binadesa.webp";
+import EdukasiMuda from "../../../assets/dinasnexus/kegiatan/sosmasling/edukasimuda.webp";
+import FtiAksiPeduli from "../../../assets/dinasnexus/kegiatan/sosmasling/aksipeduli.webp";
+import RamdahanBerkah from "../../../assets/dinasnexus/kegiatan/sosmasling/ramadhanberkah.webp";
+import CiptaDunia from "../../../assets/dinasnexus/kegiatan/sosmasling/ciptadunia.webp";
+import CiptaDunia1 from "../../../assets/dinasnexus/kegiatan/sosmasling/ciptadunia1.webp";
+import CiptaDunia2 from "../../../assets/dinasnexus/kegiatan/sosmasling/ciptadunia2.webp";
+import SosmasConnect from "../../../assets/dinasnexus/kegiatan/sosmasling/connect.webp";
+import SosmasConnect1 from "../../../assets/dinasnexus/kegiatan/sosmasling/connect1.webp";
+import HijauBersamaFti from "../../../assets/dinasnexus/kegiatan/sosmasling/hijaubersamafti.webp";
 
 const prokerList = [
   {

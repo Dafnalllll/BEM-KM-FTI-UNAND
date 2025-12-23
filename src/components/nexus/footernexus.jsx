@@ -7,7 +7,7 @@ import Tiktok from "../../assets/socialmedia/tiktok.webp";
 import X from "../../assets/socialmedia/x.webp";
 import Youtube from "../../assets/socialmedia/youtube.webp";
 import Nexus from "../../assets/kabinet/nexusinspirasi.webp";
-import Ristek from "../../assets/dinas nexus/logo/ristek.webp";
+import Ristek from "../../assets/dinasnexus/logo/ristek.webp";
 
 const quickLinks = [
   { label: "Beranda", section: "beranda" },

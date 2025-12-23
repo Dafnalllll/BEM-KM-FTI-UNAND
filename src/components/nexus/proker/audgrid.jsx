@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import SOTM from "../../../assets/dinas nexus/kegiatan/audkes/sotm.webp";
-import SertifikatPengurus from "../../../assets/dinas nexus/kegiatan/audkes/sertifpengurus.webp";
-import PerpisahanPengurus from "../../../assets/dinas nexus/kegiatan/audkes/perpisahanpengurus.webp";
-import SOPPAP from "../../../assets/dinas nexus/kegiatan/audkes/soppap.webp";
-import NexusShifter from "../../../assets/dinas nexus/kegiatan/audkes/nexusshifter.webp";
-import InspirasiUpgrade from "../../../assets/dinas nexus/kegiatan/audkes/inspirasiupgrade.webp";
-import NexusArchive from "../../../assets/dinas nexus/kegiatan/audkes/nexusarchive.webp";
-import EvalPengurus from "../../../assets/dinas nexus/kegiatan/audkes/evalpengurus.webp";
-import FunTime from "../../../assets/dinas nexus/kegiatan/audkes/funtime.webp";
-import FunTime1 from "../../../assets/dinas nexus/kegiatan/audkes/funtime1.webp";
+import SOTM from "../../../assets/dinasnexus/kegiatan/audkes/sotm.webp";
+import SertifikatPengurus from "../../../assets/dinasnexus/kegiatan/audkes/sertifpengurus.webp";
+import PerpisahanPengurus from "../../../assets/dinasnexus/kegiatan/audkes/perpisahanpengurus.webp";
+import SOPPAP from "../../../assets/dinasnexus/kegiatan/audkes/soppap.webp";
+import NexusShifter from "../../../assets/dinasnexus/kegiatan/audkes/nexusshifter.webp";
+import InspirasiUpgrade from "../../../assets/dinasnexus/kegiatan/audkes/inspirasiupgrade.webp";
+import NexusArchive from "../../../assets/dinasnexus/kegiatan/audkes/nexusarchive.webp";
+import EvalPengurus from "../../../assets/dinasnexus/kegiatan/audkes/evalpengurus.webp";
+import FunTime from "../../../assets/dinasnexus/kegiatan/audkes/funtime.webp";
+import FunTime1 from "../../../assets/dinasnexus/kegiatan/audkes/funtime1.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 
 const prokerList = [

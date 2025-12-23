@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import IIT from "../../../assets/dinas nexus/kegiatan/eksternal/iit.webp";
-import MedPart from "../../../assets/dinas nexus/kegiatan/eksternal/medpart.webp";
-import MedPart1 from "../../../assets/dinas nexus/kegiatan/eksternal/medpart1.webp";
-import MedPart2 from "../../../assets/dinas nexus/kegiatan/eksternal/medpart2.webp";
-import BemVisit from "../../../assets/dinas nexus/kegiatan/eksternal/bemvisit.webp";
-import BemVisit1 from "../../../assets/dinas nexus/kegiatan/eksternal/bemvisit1.webp";
-import RamdahanBerkah from "../../../assets/dinas nexus/kegiatan/sosmasling/ramadhanberkah.webp";
-import YouthImpact from "../../../assets/dinas nexus/kegiatan/eksternal/youthimpact.webp";
-import AlumniInsight from "../../../assets/dinas nexus/kegiatan/eksternal/alumniinsight.webp";
-import Technofest from "../../../assets/dinas nexus/kegiatan/eksternal/technofest.webp";
+import IIT from "../../../assets/dinasnexus/kegiatan/eksternal/iit.webp";
+import MedPart from "../../../assets/dinasnexus/kegiatan/eksternal/medpart.webp";
+import MedPart1 from "../../../assets/dinasnexus/kegiatan/eksternal/medpart1.webp";
+import MedPart2 from "../../../assets/dinasnexus/kegiatan/eksternal/medpart2.webp";
+import BemVisit from "../../../assets/dinasnexus/kegiatan/eksternal/bemvisit.webp";
+import BemVisit1 from "../../../assets/dinasnexus/kegiatan/eksternal/bemvisit1.webp";
+import YouthImpact from "../../../assets/dinasnexus/kegiatan/eksternal/youthimpact.webp";
+import AlumniInsight from "../../../assets/dinasnexus/kegiatan/eksternal/alumniinsight.webp";
+import Technofest from "../../../assets/dinasnexus/kegiatan/eksternal/technofest.webp";
 import Spotify from "../../../assets/socialmedia/spotify.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 

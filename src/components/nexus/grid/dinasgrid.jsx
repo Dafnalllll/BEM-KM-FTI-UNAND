@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Nexus from "../../../assets/kabinet/nexusinspirasi.webp";
-import Audkes from "../../../assets/dinas nexus/logo/audkes.webp";
-import Adkesma from "../../../assets/dinas nexus/logo/adkesma.webp";
-import Bistech from "../../../assets/dinas nexus/logo/bistech.webp";
-import Eksternal from "../../../assets/dinas nexus/logo/eksternal.webp";
-import Internal from "../../../assets/dinas nexus/logo/internal.webp";
-import Kastrat from "../../../assets/dinas nexus/logo/kastrat.webp";
-import Medinkraf from "../../../assets/dinas nexus/logo/medin.webp";
-import PSDM from "../../../assets/dinas nexus/logo/psdm.webp";
-import Ristek from "../../../assets/dinas nexus/logo/ristek.webp";
-import Sosmas from "../../../assets/dinas nexus/logo/sosmas.webp";
+import Audkes from "../../../assets/dinasnexus/logo/audkes.webp";
+import Adkesma from "../../../assets/dinasnexus/logo/adkesma.webp";
+import Bistech from "../../../assets/dinasnexus/logo/bistech.webp";
+import Eksternal from "../../../assets/dinasnexus/logo/eksternal.webp";
+import Internal from "../../../assets/dinasnexus/logo/internal.webp";
+import Kastrat from "../../../assets/dinasnexus/logo/kastrat.webp";
+import Medinkraf from "../../../assets/dinasnexus/logo/medin.webp";
+import PSDM from "../../../assets/dinasnexus/logo/psdm.webp";
+import Ristek from "../../../assets/dinasnexus/logo/ristek.webp";
+import Sosmas from "../../../assets/dinasnexus/logo/sosmas.webp";
 
 // Data galeri
 const galleryImages = [

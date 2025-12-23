@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import FooterNexus from "../../../components/nexus/footernexus";
-import AUDKES from "../../../assets/dinas nexus/press release/audkes/audkes.webp";
+import AUDKES from "../../../assets/dinasnexus/press release/audkes/audkes.webp";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
-import AudkesLogo from "../../../assets/dinas nexus/logo/audkes.webp";
+import AudkesLogo from "../../../assets/dinasnexus/logo/audkes.webp";
 import AudkesGrid from "../../../components/nexus/grid/audkesgrid";
 import AudGrid from "../../../components/nexus/proker/audgrid";
 import AudkesGaleri from "../../../components/nexus/galeri/audkesgaleri";

@@ -1,13 +1,13 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/eksternal/ijon.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/eksternal/kiya.webp";
-import Rintan from "../../../assets/dinas nexus/staff release/eksternal/rintan.webp";
-import Rapip from "../../../assets/dinas nexus/staff release/eksternal/rapip.webp";
-import Ima from "../../../assets/dinas nexus/staff release/eksternal/ima.webp";
-import Diaz from "../../../assets/dinas nexus/staff release/eksternal/diaz.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/eksternal/ghina.webp";
-import Hapsa from "../../../assets/dinas nexus/staff release/eksternal/hapsa.webp";
-import Eksternal from "../../../assets/dinas nexus/logo/eksternal.webp";
+import Kadin from "../../../assets/dinasnexus/press release/eksternal/ijon.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/eksternal/kiya.webp";
+import Rintan from "../../../assets/dinasnexus/staff release/eksternal/rintan.webp";
+import Rapip from "../../../assets/dinasnexus/staff release/eksternal/rapip.webp";
+import Ima from "../../../assets/dinasnexus/staff release/eksternal/ima.webp";
+import Diaz from "../../../assets/dinasnexus/staff release/eksternal/diaz.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/eksternal/ghina.webp";
+import Hapsa from "../../../assets/dinasnexus/staff release/eksternal/hapsa.webp";
+import Eksternal from "../../../assets/dinasnexus/logo/eksternal.webp";
 import Social from "../../social"; // Tambahkan import ini
 
 const gridData = [

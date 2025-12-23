@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import INTERNAL from "../../../assets/dinas nexus/press release/internal/internal.webp";
-import InternalLogo from "../../../assets/dinas nexus/logo/internal.webp";
+import INTERNAL from "../../../assets/dinasnexus/press release/internal/internal.webp";
+import InternalLogo from "../../../assets/dinasnexus/logo/internal.webp";
 import InternalGrid from "../../../components/nexus/grid/internalgrid";
 import IntGrid from "../../../components/nexus/proker/intgrid";
 import InternalGaleri from "../../../components/nexus/galeri/internalgaleri";

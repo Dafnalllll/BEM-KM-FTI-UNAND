@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import EKSTERNAL from "../../../assets/dinas nexus/press release/eksternal/eksternal.webp";
-import EksternalLogo from "../../../assets/dinas nexus/logo/eksternal.webp";
+import EKSTERNAL from "../../../assets/dinasnexus/press release/eksternal/eksternal.webp";
+import EksternalLogo from "../../../assets/dinasnexus/logo/eksternal.webp";
 import EksternalGrid from "../../../components/nexus/grid/eksternalgrid";
 import EksGrid from "../../../components/nexus/proker/eksgrid";
 import EksternalGaleri from "../../../components/nexus/galeri/eksternalgaleri";

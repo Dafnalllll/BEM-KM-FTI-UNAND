@@ -1,12 +1,12 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/kastrat/okta.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/kastrat/anggun.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/kastrat/afelia.webp";
-import Wahid from "../../../assets/dinas nexus/staff release/kastrat/wahid.webp";
-import Ahmad from "../../../assets/dinas nexus/staff release/kastrat/ahmad.webp";
-import Bayu from "../../../assets/dinas nexus/staff release/kastrat/bayu.webp";
-import Faiz from "../../../assets/dinas nexus/staff release/kastrat/faiz.webp";
-import Kastrat from "../../../assets/dinas nexus/logo/kastrat.webp";
+import Kadin from "../../../assets/dinasnexus/press release/kastrat/okta.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/kastrat/anggun.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/kastrat/afelia.webp";
+import Wahid from "../../../assets/dinasnexus/staff release/kastrat/wahid.webp";
+import Ahmad from "../../../assets/dinasnexus/staff release/kastrat/ahmad.webp";
+import Bayu from "../../../assets/dinasnexus/staff release/kastrat/bayu.webp";
+import Faiz from "../../../assets/dinasnexus/staff release/kastrat/faiz.webp";
+import Kastrat from "../../../assets/dinasnexus/logo/kastrat.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

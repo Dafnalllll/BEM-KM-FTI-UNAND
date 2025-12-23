@@ -1,17 +1,17 @@
 import React from "react";
-import Alkha from "../../../assets/dinas nexus/nexmudristek/Alkha.webp";
-import Davina from "../../../assets/dinas nexus/nexmudristek/Davina.webp";
-import Ammar from "../../../assets/dinas nexus/nexmudristek/ammar.webp";
-import Luthfi from "../../../assets/dinas nexus/nexmudristek/Luthfi.webp";
-import Mutia from "../../../assets/dinas nexus/nexmudristek/mutia.webp";
-import Radho from "../../../assets/dinas nexus/nexmudristek/radho.webp";
-import Yazem from "../../../assets/dinas nexus/nexmudristek/yazem.webp";
-import Habib from "../../../assets/dinas nexus/nexmudristek/habib.webp";
-import Nanda from "../../../assets/dinas nexus/nexmudristek/nanda.webp";
-import Rendi from "../../../assets/dinas nexus/nexmudristek/rendi.webp";
-import Jiwa from "../../../assets/dinas nexus/nexmudristek/jiwa.webp";
-import Nabila from "../../../assets/dinas nexus/nexmudristek/nabila.webp";
-import Ristek from "../../../assets/dinas nexus/logo/ristek.webp";
+import Alkha from "../../../assets/dinasnexus/nexmudristek/Alkha.webp";
+import Davina from "../../../assets/dinasnexus/nexmudristek/Davina.webp";
+import Ammar from "../../../assets/dinasnexus/nexmudristek/ammar.webp";
+import Luthfi from "../../../assets/dinasnexus/nexmudristek/Luthfi.webp";
+import Mutia from "../../../assets/dinasnexus/nexmudristek/mutia.webp";
+import Radho from "../../../assets/dinasnexus/nexmudristek/radho.webp";
+import Yazem from "../../../assets/dinasnexus/nexmudristek/yazem.webp";
+import Habib from "../../../assets/dinasnexus/nexmudristek/habib.webp";
+import Nanda from "../../../assets/dinasnexus/nexmudristek/nanda.webp";
+import Rendi from "../../../assets/dinasnexus/nexmudristek/rendi.webp";
+import Jiwa from "../../../assets/dinasnexus/nexmudristek/jiwa.webp";
+import Nabila from "../../../assets/dinasnexus/nexmudristek/nabila.webp";
+import Ristek from "../../../assets/dinasnexus/logo/ristek.webp";
 import Social from "../../social";
 
 const gridData = [

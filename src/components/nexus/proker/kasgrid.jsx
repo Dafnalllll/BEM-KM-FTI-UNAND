@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Restart from "../../../assets/dinas nexus/kegiatan/kastrat/restart.webp";
-import WomenCare from "../../../assets/dinas nexus/kegiatan/kastrat/womencare.webp";
-import WomenCare1 from "../../../assets/dinas nexus/kegiatan/kastrat/womencare1.webp";
-import WomenCare2 from "../../../assets/dinas nexus/kegiatan/kastrat/womencare2.webp";
-import Kajian from "../../../assets/dinas nexus/kegiatan/kastrat/kajian.webp";
-import Kajian1 from "../../../assets/dinas nexus/kegiatan/kastrat/kajian1.webp";
-import Kajian2 from "../../../assets/dinas nexus/kegiatan/kastrat/kajian2.webp";
-import DiskusiStrategis from "../../../assets/dinas nexus/kegiatan/kastrat/diskusistrategis.webp";
-import Kpk from "../../../assets/dinas nexus/kegiatan/kastrat/kpk.webp";
+import Restart from "../../../assets/dinasnexus/kegiatan/kastrat/restart.webp";
+import WomenCare from "../../../assets/dinasnexus/kegiatan/kastrat/womencare.webp";
+import WomenCare1 from "../../../assets/dinasnexus/kegiatan/kastrat/womencare1.webp";
+import WomenCare2 from "../../../assets/dinasnexus/kegiatan/kastrat/womencare2.webp";
+import Kajian from "../../../assets/dinasnexus/kegiatan/kastrat/kajian.webp";
+import Kajian1 from "../../../assets/dinasnexus/kegiatan/kastrat/kajian1.webp";
+import Kajian2 from "../../../assets/dinasnexus/kegiatan/kastrat/kajian2.webp";
+import DiskusiStrategis from "../../../assets/dinasnexus/kegiatan/kastrat/diskusistrategis.webp";
+import Kpk from "../../../assets/dinasnexus/kegiatan/kastrat/kpk.webp";
 
 const prokerList = [
   {

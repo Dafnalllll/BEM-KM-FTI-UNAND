@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavbarNexus from "../../../components/nexus/navbarnexus";
 import FooterNexus from "../../../components/nexus/footernexus";
-import RISTEK from "../../../assets/dinas nexus/press release/ristek/rizztek.webp";
-import RistekLogo from "../../../assets/dinas nexus/logo/ristek.webp";
+import RISTEK from "../../../assets/dinasnexus/press release/ristek/rizztek.webp";
+import RistekLogo from "../../../assets/dinasnexus/logo/ristek.webp";
 import RistekGrid from "../../../components/nexus/grid/ristekgrid";
 import Risgrid from "../../../components/nexus/proker/risgrid";
 import NexmudRistekGrid from "../../../components/nexus/grid/nexmudristekgrid";

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Partnership from "../../../assets/dinas nexus/kegiatan/bistech/partnership.webp";
-import BisGenius from "../../../assets/dinas nexus/kegiatan/bistech/bisgenius.webp";
-import BisGenius1 from "../../../assets/dinas nexus/kegiatan/bistech/bisgenius1.webp";
-import BisGenius2 from "../../../assets/dinas nexus/kegiatan/bistech/bisgenius2.webp";
-import WarNex from "../../../assets/dinas nexus/kegiatan/bistech/warnex.webp";
-import NexId from "../../../assets/dinas nexus/kegiatan/bistech/nexid.webp";
-import Merchandise from "../../../assets/dinas nexus/kegiatan/bistech/merchandise.webp";
-import GraduationNeeds from "../../../assets/dinas nexus/kegiatan/bistech/graduationneeds.webp";
-import BeTechnopreneur from "../../../assets/dinas nexus/kegiatan/bistech/betechnopreneur.webp";
+import Partnership from "../../../assets/dinasnexus/kegiatan/bistech/partnership.webp";
+import BisGenius from "../../../assets/dinasnexus/kegiatan/bistech/bisgenius.webp";
+import BisGenius1 from "../../../assets/dinasnexus/kegiatan/bistech/bisgenius1.webp";
+import BisGenius2 from "../../../assets/dinasnexus/kegiatan/bistech/bisgenius2.webp";
+import WarNex from "../../../assets/dinasnexus/kegiatan/bistech/warnex.webp";
+import NexId from "../../../assets/dinasnexus/kegiatan/bistech/nexid.webp";
+import Merchandise from "../../../assets/dinasnexus/kegiatan/bistech/merchandise.webp";
+import GraduationNeeds from "../../../assets/dinasnexus/kegiatan/bistech/graduationneeds.webp";
+import BeTechnopreneur from "../../../assets/dinasnexus/kegiatan/bistech/betechnopreneur.webp";
 import Instagram from "../../../assets/socialmedia/instagram.webp";
 
 const prokerList = [

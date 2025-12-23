@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Hackathon from "../../../assets/dinas nexus/kegiatan/ristek/hackathon.webp";
-import TechHub from "../../../assets/dinas nexus/kegiatan/ristek/techhub.webp";
-import Italk from "../../../assets/dinas nexus/kegiatan/ristek/italk.webp";
-import CompeteHub from "../../../assets/dinas nexus/kegiatan/ristek/competehub.webp";
-import CompeteHub1 from "../../../assets/dinas nexus/kegiatan/ristek/competehub1.webp";
-import CompeteHub2 from "../../../assets/dinas nexus/kegiatan/ristek/competehub2.webp";
-import Techtonic from "../../../assets/dinas nexus/kegiatan/ristek/techtonic.webp";
-import Techtonic1 from "../../../assets/dinas nexus/kegiatan/ristek/techtonic1.webp";
-import ITSpectrum from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum.webp";
-import ITSpectrum1 from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum1.webp";
-import ITSpectrum2 from "../../../assets/dinas nexus/kegiatan/ristek/itspectrum2.webp";
+import Hackathon from "../../../assets/dinasnexus/kegiatan/ristek/hackathon.webp";
+import TechHub from "../../../assets/dinasnexus/kegiatan/ristek/techhub.webp";
+import Italk from "../../../assets/dinasnexus/kegiatan/ristek/italk.webp";
+import CompeteHub from "../../../assets/dinasnexus/kegiatan/ristek/competehub.webp";
+import CompeteHub1 from "../../../assets/dinasnexus/kegiatan/ristek/competehub1.webp";
+import CompeteHub2 from "../../../assets/dinasnexus/kegiatan/ristek/competehub2.webp";
+import Techtonic from "../../../assets/dinasnexus/kegiatan/ristek/techtonic.webp";
+import Techtonic1 from "../../../assets/dinasnexus/kegiatan/ristek/techtonic1.webp";
+import ITSpectrum from "../../../assets/dinasnexus/kegiatan/ristek/itspectrum.webp";
+import ITSpectrum1 from "../../../assets/dinasnexus/kegiatan/ristek/itspectrum1.webp";
+import ITSpectrum2 from "../../../assets/dinasnexus/kegiatan/ristek/itspectrum2.webp";
 import Spotify from "../../../assets/socialmedia/spotify.webp";
 import Gdrive from "../../../assets/socialmedia/gdrive.webp";
 

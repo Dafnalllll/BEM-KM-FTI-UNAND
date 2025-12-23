@@ -1,12 +1,12 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/ristek/dafa.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/ristek/fella.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/ristek/nisa.webp";
-import Farid from "../../../assets/dinas nexus/staff release/ristek/farid.webp";
-import Zikri from "../../../assets/dinas nexus/staff release/ristek/zikri.webp";
-import Hafid from "../../../assets/dinas nexus/staff release/ristek/hafid.webp";
-import Arib from "../../../assets/dinas nexus/staff release/ristek/arib.webp";
-import Ristek from "../../../assets/dinas nexus/logo/ristek.webp";
+import Kadin from "../../../assets/dinasnexus/press release/ristek/dafa.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/ristek/fella.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/ristek/nisa.webp";
+import Farid from "../../../assets/dinasnexus/staff release/ristek/farid.webp";
+import Zikri from "../../../assets/dinasnexus/staff release/ristek/zikri.webp";
+import Hafid from "../../../assets/dinasnexus/staff release/ristek/hafid.webp";
+import Arib from "../../../assets/dinasnexus/staff release/ristek/arib.webp";
+import Ristek from "../../../assets/dinasnexus/logo/ristek.webp";
 import Social from "../../social";
 
 const gridData = [

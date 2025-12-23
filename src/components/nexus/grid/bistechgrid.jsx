@@ -1,12 +1,12 @@
 import React from "react";
-import Kadin from "../../../assets/dinas nexus/press release/bistech/vira.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/bistech/manda.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/bistech/nayla.webp";
-import Fuad from "../../../assets/dinas nexus/staff release/bistech/fuad.webp";
-import Ghezy from "../../../assets/dinas nexus/staff release/bistech/ghezy.webp";
-import Ochi from "../../../assets/dinas nexus/staff release/bistech/ochi.webp";
-import Kevin from "../../../assets/dinas nexus/staff release/bistech/kevin.webp";
-import Bistech from "../../../assets/dinas nexus/logo/bistech.webp";
+import Kadin from "../../../assets/dinasnexus/press release/bistech/vira.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/bistech/manda.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/bistech/nayla.webp";
+import Fuad from "../../../assets/dinasnexus/staff release/bistech/fuad.webp";
+import Ghezy from "../../../assets/dinasnexus/staff release/bistech/ghezy.webp";
+import Ochi from "../../../assets/dinasnexus/staff release/bistech/ochi.webp";
+import Kevin from "../../../assets/dinasnexus/staff release/bistech/kevin.webp";
+import Bistech from "../../../assets/dinasnexus/logo/bistech.webp";
 import Social from "../../social"; // Import Social component
 
 const gridData = [

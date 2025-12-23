@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import FtiParade from "../../../assets/dinas nexus/kegiatan/internal/FTI Parade.webp";
-import Bakti from "../../../assets/dinas nexus/kegiatan/internal/bakti.webp";
-import JelajahLembaga from "../../../assets/dinas nexus/kegiatan/internal/jelajahlembaga.webp";
-import TemuKoordinasi from "../../../assets/dinas nexus/kegiatan/internal/temukoordinasi.webp";
-import JelajahLembaga1 from "../../../assets/dinas nexus/kegiatan/internal/jelajahlembaga1.webp";
-import NexGO from "../../../assets/dinas nexus/kegiatan/internal/nexgo.webp";
-import NexGo1 from "../../../assets/dinas nexus/kegiatan/internal/nexgo1.webp";
+import FtiParade from "../../../assets/dinasnexus/kegiatan/internal/FTI Parade.webp";
+import Bakti from "../../../assets/dinasnexus/kegiatan/internal/bakti.webp";
+import JelajahLembaga from "../../../assets/dinasnexus/kegiatan/internal/jelajahlembaga.webp";
+import TemuKoordinasi from "../../../assets/dinasnexus/kegiatan/internal/temukoordinasi.webp";
+import JelajahLembaga1 from "../../../assets/dinasnexus/kegiatan/internal/jelajahlembaga1.webp";
+import NexGO from "../../../assets/dinasnexus/kegiatan/internal/nexgo.webp";
+import NexGo1 from "../../../assets/dinasnexus/kegiatan/internal/nexgo1.webp";
 
 const prokerList = [
   {

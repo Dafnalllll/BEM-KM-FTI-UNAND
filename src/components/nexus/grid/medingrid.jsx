@@ -1,14 +1,14 @@
 import React from "react";
-import Medinkraf from "../../../assets/dinas nexus/logo/medin.webp";
+import Medinkraf from "../../../assets/dinasnexus/logo/medin.webp";
 import Social from "../../social";
-import Kadin from "../../../assets/dinas nexus/press release/medinkraf/adli.webp";
-import Sekdin from "../../../assets/dinas nexus/press release/medinkraf/abe.webp";
-import Bendin from "../../../assets/dinas nexus/staff release/medinkraf/vanes.webp";
-import Aldo from "../../../assets/dinas nexus/staff release/medinkraf/aldo.webp";
-import Alya from "../../../assets/dinas nexus/staff release/medinkraf/alya.webp";
-import King from "../../../assets/dinas nexus/staff release/medinkraf/king.webp";
-import Alvin from "../../../assets/dinas nexus/staff release/medinkraf/alvin.webp";
-import Asyqor from "../../../assets/dinas nexus/staff release/medinkraf/asyqor.webp";
+import Kadin from "../../../assets/dinasnexus/press release/medinkraf/adli.webp";
+import Sekdin from "../../../assets/dinasnexus/press release/medinkraf/abe.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/medinkraf/vanes.webp";
+import Aldo from "../../../assets/dinasnexus/staff release/medinkraf/aldo.webp";
+import Alya from "../../../assets/dinasnexus/staff release/medinkraf/alya.webp";
+import King from "../../../assets/dinasnexus/staff release/medinkraf/king.webp";
+import Alvin from "../../../assets/dinasnexus/staff release/medinkraf/alvin.webp";
+import Asyqor from "../../../assets/dinasnexus/staff release/medinkraf/asyqor.webp";
 
 const gridData = [
   {
