@@ -39,7 +39,7 @@ export const Kabinet = () => {
           <img
             src={Sinergi}
             alt="Sinergi"
-            className="w-4/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer animate-pulse rounded-xl shadow-lg"
+            className="w-2/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer "
           />
         </button>
         <button
@@ -51,7 +51,7 @@ export const Kabinet = () => {
           <img
             src={Nexus}
             alt="Nexus"
-            className="w-4/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer animate-pulse rounded-xl shadow-lg"
+            className="w-2/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer "
           />
         </button>
       </div>

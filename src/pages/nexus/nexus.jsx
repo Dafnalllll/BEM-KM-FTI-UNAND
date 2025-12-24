@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Footer } from "../../components/nexus/footernexus";
+import { FooterNexus } from "../../components/nexus/footernexus";
 import NavbarNexus from "../../components/nexus/navbarnexus";
 import Pelantikan from "../../assets/dinasnexus/kegiatan/pelantikan.webp";
 import Studio from "../../assets/dinasnexus/kegiatan/studio.webp";
@@ -136,7 +136,7 @@ export const Nexus = () => {
         <GaleriNexus />
       </section>
       {/* Footer */}
-      <Footer />
+      <FooterNexus />
     </div>
   );
 };

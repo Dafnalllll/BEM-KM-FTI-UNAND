@@ -33,7 +33,7 @@ export const Bemfti = () => {
           <img
             src={bem}
             alt="BEM"
-            className="max-w-xs mb-5 cursor-pointer hover:scale-105 duration-300 transition-all animate-pulse"
+            className="max-w-xs mb-5 cursor-pointer hover:scale-105 duration-300 transition-all "
           />
         </button>
       </div>

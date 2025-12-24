@@ -146,7 +146,7 @@ export const NavbarNexus = () => {
         {/* Logo dan Info */}
         <div className="flex items-center gap-3">
           <img src={Nexus} alt="Logo BEM KM FTI" className="w-12 h-12" />
-          <div>
+          <div className="hidden md:block">
             <h1 className="font-bold text-xl text-white font-[Sans] tracking-wide">
               BEM KM FTI
             </h1>

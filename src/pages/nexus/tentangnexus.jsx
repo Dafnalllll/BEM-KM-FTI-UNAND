@@ -11,7 +11,7 @@ export const TentangNexus = () => {
       {/* DESKTOP: tetap seperti semula */}
       <div className="hidden md:flex flex-row items-start justify-center flex-grow px-8 py-12 gap-16">
         {/* Logo di kiri */}
-        <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[8rem]">
+        <div className="flex-shrink-0 flex justify-center items-center w-[28rem] mt-[12rem]">
           <img
             src={Nexus}
             alt="Logo Nexus"
@@ -79,7 +79,7 @@ export const TentangNexus = () => {
       {/* MOBILE: terpisah, tidak mengubah desktop */}
       <div className="md:hidden flex flex-col items-center px-6 py-10 gap-8">
         <div
-          className="w-full flex justify-center"
+          className="w-full flex justify-center mt-10  "
           data-aos="zoom-in"
           data-aos-duration="900"
         >
