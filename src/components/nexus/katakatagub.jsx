@@ -8,7 +8,7 @@ const KataKataGub = () => (
     {/* DESKTOP: tetap sama seperti semula */}
     <div className="hidden md:flex flex-row items-center w-full mx-auto bg-white px-4 md:px-16 py-12">
       {/* Kolom kiri: Teks */}
-      <div className="flex-1">
+      <div className="flex-1 max-w-2xl md:ml-16">
         <h2
           className="text-4xl font-bold font-[Carena] text-[#243A1A] mb-2"
           data-aos="fade-down"
@@ -55,18 +55,15 @@ const KataKataGub = () => (
           dan memelihara keharmonisan di lingkungan Fakultas Teknologi
           Informasi. Kabinet Nexus Inspirasi menjadi rumah bagi jiwa-jiwa muda
           yang bersemangat akan inovasi, haus akan perubahan bermakna, dan siap
-          berkolaborasi dalam perjalanan bersama menuju kemajuan.
+          berkolaborasi dalam perjalanan bersama menuju kemajuan. Dengan 9 Dinas
+          dan 1 Biro, Kabinet Nexus Inspirasi berkomitmen menjadi garda terdepan
+          dalam tiga pilar utama: gerakan perubahan, pelayanan prima, dan
+          pengabdian nyata di lingkungan Fakultas Teknologi Informasi.
           <br />
           <br />
-          Dengan 9 Dinas dan 1 Biro, Kabinet Nexus Inspirasi berkomitmen menjadi
-          garda terdepan dalam tiga pilar utama: gerakan perubahan, pelayanan
-          prima, dan pengabdian nyata di lingkungan Fakultas Teknologi
-          Informasi.
+          Ketika inspirasi bertemu dengan aksi, di situlah perubahan
+          sejati dimulai.
           <br /> <br />
-          Ketika inspirasi bertemu dengan aksi, di situlah perubahan sejati
-          dimulai. Mari bersama kita rapatkan barisan, kobarkan semangat, dan
-          jadikan BEM KM FTI Unand sebagai mercusuar pergerakan mahasiswa.
-          Karena di tangan kitalah masa depan itu dititipkan." <br /> <br />
           Wassalamu’alaikum Warahmatullahi Wabarakatuh.
         </div>
         {/* Sosial media */}
@@ -98,14 +95,14 @@ const KataKataGub = () => (
 
       {/* Kolom kanan: Foto */}
       <div
-        className="flex-1 flex justify-end mb-[14rem]"
-        data-aos="fade-right"
+        className="flex-1 flex justify-end ml-4 mb-[14rem]"
+        data-aos="zoom-in"
         data-aos-duration="1000"
       >
         <img
           src={KataGub}
           alt="Kata Gubernur"
-          className="w-[550px] h-auto object-cover"
+          className="w-[600px] h-auto object-cover"
         />
       </div>
     </div>

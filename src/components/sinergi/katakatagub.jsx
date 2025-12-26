@@ -2,24 +2,27 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Gubernur from "../../assets/dinassinergi/press release/inti/Gub.webp";
 
 const KatakataGub = () => (
-  <div className="flex flex-col md:flex-row items-center justify-between w-full px-10 py-[200px] bg-white">
+  <div className="flex flex-col md:flex-row items-center justify-between w-full px-4 md:px-10 py-10 md:py-[120px] bg-white">
     {/* Kiri: Teks */}
     <div className="flex-1 max-w-2xl md:ml-16">
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1
-          className="text-4xl md:text-5xl font-bold mb-2"
+          className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-2"
           style={{ fontFamily: "'Fredoka One', cursive", color: "#223614" }}
         >
           Ikhwanul Hakim
         </h1>
-        <h2 className="text-xl font-semibold mb-4" style={{ color: "#b57a2a" }}>
+        <h2
+          className="text-lg sm:text-xl font-semibold mb-4"
+          style={{ color: "#b57a2a" }}
+        >
           GUBERNUR BEM KM FTI
         </h2>
-        <div className="relative w-34 h-2 bg-[#b57a2a] mb-6 rounded">
+        <div className="relative w-24 h-2 bg-[#b57a2a] mb-6 rounded">
           <span className="absolute left-0 top-2/2 w-3 h-2 bg-[#e0a100] rounded-full -translate-y-1/2 shadow-[0_0_8px_2px_rgba(224,161,0,0.5)] animate-dot-move-alternate" />
         </div>
         <div
-          className="text-base md:text-lg mb-6 "
+          className="text-sm sm:text-base md:text-lg mb-6"
           style={{ color: "#223614" }}
         >
           <p>
@@ -66,23 +69,23 @@ const KatakataGub = () => (
           href="https://www.instagram.com/ikhwannnn___/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#b57a2a] hover:bg-[#a06a23] text-white p-4 rounded transition btn-fill-center instagram"
+          className="bg-[#b57a2a] hover:bg-[#a06a23] text-white p-3 sm:p-4 rounded transition btn-fill-center instagram"
         >
-          <FaInstagram size={24} />
+          <FaInstagram size={22} />
         </a>
         <a
           href="https://www.linkedin.com/in/ikhwanul-hakim-b41246222/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#b57a2a] hover:bg-[#a06a23] text-white p-4 rounded transition btn-fill-center linkedin"
+          className="bg-[#b57a2a] hover:bg-[#a06a23] text-white p-3 sm:p-4 rounded transition btn-fill-center linkedin"
         >
-          <FaLinkedinIn size={24} />
+          <FaLinkedinIn size={22} />
         </a>
       </div>
     </div>
     {/* Kanan: Foto */}
     <div
-      className="flex-1 flex justify-end mr-10 mt-10 md:mt-0"
+      className="flex-1 flex justify-center md:justify-end md:mr-10 mt-10 md:mt-0 w-full"
       data-aos="zoom-in"
       data-aos-duration="800"
       data-aos-delay="400"
@@ -90,7 +93,7 @@ const KatakataGub = () => (
       <img
         src={Gubernur}
         alt="Gubernur KM FTI"
-        className="w-[540px] md:w-[600px] object-contain"
+        className="w-60 xs:w-72 sm:w-96 md:w-[540px] lg:w-[600px] object-contain"
         draggable={false}
       />
     </div>

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import KatakataGub from "../../components/sinergi/katakatagub";
+import Himpunan from "../../pages/sinergi/himpunan";
+import DinasSinergi from "../../pages/sinergi/dinassinergi";
+import UKM from "../../pages/sinergi/ukm";
 import NavbarSinergi from "../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../components/sinergi/footersinergi";
 import StatsSinergi from "../../components/sinergi/statssinergi";
@@ -102,7 +105,7 @@ export const Sinergi = () => {
               data-aos="fade-left"
               data-aos-delay="400"
               data-aos-duration="800"
-              href="#about"
+              href="/tentangsinergi"
               className="btn-fill-center mt-4 px-14 py-5 border border-yellow-200 text-sm font-bold text-yellow-200 bg-transparent transition-all duration-300 ease-in-out hover:text-black"
             >
               About Us
@@ -156,7 +159,17 @@ export const Sinergi = () => {
         </div>
       </div>
 
+      {/* KatakataGub Section */}
       <KatakataGub />
+
+      {/* Dinas Sinergi Section */}
+      <DinasSinergi />
+
+      {/* Himpunan Section */}
+      <Himpunan />
+
+      {/* UKM Section */}
+      <UKM />
 
       {/* Section 2: Konten berikutnya */}
       <section className="relative z-10">

@@ -50,6 +50,14 @@
   background: #ff0000;
 }
 
+.btn-fill-center.linkedin::before {
+  background: #0a66c2;
+}
+
+.btn-fill-center.globe::before {
+  background: #b57a2a;
+}
+
 .btn-fill-center:hover::before {
   left: 0;
   width: 100%;

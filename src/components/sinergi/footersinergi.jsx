@@ -121,7 +121,18 @@ return (
               &rarr;
             </span>
             <a
-              href="#"
+              href="/sinergi"
+              className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
+            >
+              Home
+            </a>
+          </li>
+          <li className="group flex items-center gap-2 text-[#e0a100]">
+            <span className="transition-transform duration-200 group-hover:translate-x-2">
+              &rarr;
+            </span>
+            <a
+              href="/tentangsinergi"
               className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
             >
               About Us
@@ -136,17 +147,6 @@ return (
               className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
             >
               Dinas
-            </a>
-          </li>
-          <li className="group flex items-center gap-2 text-[#e0a100]">
-            <span className="transition-transform duration-200 group-hover:translate-x-2">
-              &rarr;
-            </span>
-            <a
-              href="#"
-              className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
-            >
-              Home
             </a>
           </li>
           <li className="group flex items-center gap-2 text-[#e0a100]">

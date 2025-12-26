@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Sinergi from "../../assets/kabinet/sinergi.webp";
 
 const menus = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Dinas", href: "#" },
+  { name: "Home", href: "/sinergi" },
+  { name: "About", href: "/tentangsinergi" }, // ubah di sini
+  { name: "Dinas", href: "/dinas" },
   { name: "Galeri", href: "#" },
 ];
 
@@ -68,7 +68,6 @@ const NavbarSinergi = () => {
               ${isScrolled ? "text-black" : "text-white"}
               after:content-[''] after:block after:w-0 hover:after:w-8 after:h-1 after:bg-yellow-400 after:mx-auto after:rounded after:transition-all after:duration-300 after:mt-4
             `}
-            
           >
             {menu.name}
           </a>

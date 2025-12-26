@@ -104,7 +104,7 @@ export const KataKataWagub = () => {
         {/* Foto dulu */}
         <div
           className="w-full flex justify-center"
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-duration="900"
         >
           <img

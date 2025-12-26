@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Bemfti from "./bemfti";
 import Kabinet from "./kabinet";
 import Sinergi from "./pages/sinergi/sinergi";
+import TentangSinergi from "./pages/sinergi/tentangsinergi";
 import Nexus from "./pages/nexus/nexus";
 import Inti from "./pages/nexus/dinas/inti";
 import Ristek from "./pages/nexus/dinas/ristek";
@@ -55,6 +56,9 @@ function App() {
         <Route path="/dinasnexus/bistech" element={<Bistech />} />
         <Route path="/dinasnexus/medinkraf" element={<Medinkraf />} />
         <Route path="/dinasnexus/eksternal" element={<Eksternal />} />
+
+        {/* Kabinet Sinergi */}
+        <Route path="/tentangsinergi" element={<TentangSinergi />} />
 
         {/* 404 Not Found - harus di paling bawah */}
         <Route path="*" element={<NotFound />} />
