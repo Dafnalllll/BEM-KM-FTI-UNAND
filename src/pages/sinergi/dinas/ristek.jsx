@@ -10,7 +10,7 @@ import Tifani from "../../../assets/dinassinergi/press release/ristek/tifani.web
 import Azzu from "../../../assets/dinassinergi/staff release/ristek/azzu.webp";
 import Haleef from "../../../assets/dinassinergi/staff release/ristek/haleef.webp";
 import Dafa from "../../../assets/dinassinergi/staff release/ristek/dafa.webp";
-import Uun from "../../../assets/dinassinergi/staff release/ristek/uun.webp";
+import Uun from "../../../assets/dinassinergi/staff release/ristek/Uun.webp";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const eksekutifList = [
