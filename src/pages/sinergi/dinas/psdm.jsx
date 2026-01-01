@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import PsdmProkerGrid from "../../../components/sinergi/proker/psdmproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import PSDM from "../../../assets/dinassinergi/logo/psdm.png";
 import Omar from "../../../assets/dinassinergi/press release/psdm/omar.webp";
@@ -186,6 +187,8 @@ const PsdmSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <PsdmProkerGrid />
       </div>
 
       <FooterSinergi />

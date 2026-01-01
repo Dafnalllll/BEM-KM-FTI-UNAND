@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import KastratProkerGrid from "../../../components/sinergi/proker/kastratproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Kastrat from "../../../assets/dinassinergi/logo/kastrat.png";
 import Bayu from "../../../assets/dinassinergi/press release/kastrat/bayu.webp";
@@ -174,6 +175,8 @@ const KastratSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <KastratProkerGrid />
       </div>
 
       <FooterSinergi />

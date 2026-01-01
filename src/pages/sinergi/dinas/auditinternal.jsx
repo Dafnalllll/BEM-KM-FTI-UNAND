@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import AIProkerGrid from "../../../components/sinergi/proker/aiproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import AI from "../../../assets/dinassinergi/logo/ai.png";
 import Rian from "../../../assets/dinassinergi/press release/ai/rian.webp";
@@ -193,6 +194,8 @@ const AuditInternalSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <AIProkerGrid />
       </div>
 
       <FooterSinergi />

@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import AdkesmaProkerGrid from "../../../components/sinergi/proker/adkesmaproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Adkesma from "../../../assets/dinassinergi/logo/adkesma.png";
 import Fajri from "../../../assets/dinassinergi/press release/adkesma/fajri.webp";
@@ -167,6 +168,8 @@ const AdkesmaSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <AdkesmaProkerGrid />
       </div>
 
       <FooterSinergi />

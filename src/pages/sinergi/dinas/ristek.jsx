@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import RistekProkerGrid from "../../../components/sinergi/proker/ristekproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Ristek from "../../../assets/dinassinergi/logo/ristek.png";
 import Teguh from "../../../assets/dinassinergi/press release/ristek/teguh.webp";
@@ -162,6 +163,8 @@ const RistekSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <RistekProkerGrid />
       </div>
 
       <FooterSinergi />

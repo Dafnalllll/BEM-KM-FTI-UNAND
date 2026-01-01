@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
 import DPM from "../../assets/ukm/dpm.webp";
@@ -39,14 +39,42 @@ const ukmList = [
   },
 ];
 
+const UkmCard = ({ ukm }) => (
+  <div className="flex flex-col items-center text-center">
+    <button
+      type="button"
+      className="focus:outline-none"
+      style={{ background: "none", border: "none", padding: 0 }}
+    >
+      <img
+        src={ukm.logo}
+        alt={ukm.name}
+        className="w-28 h-28 md:w-32 md:h-32 object-contain mb-2 -mt-2 hover:scale-105 active:scale-110 transition-transform duration-200 cursor-pointer"
+      />
+    </button>
+    <div className="text-[#223614] font-bold text-lg mb-1">{ukm.name}</div>
+    <div className="text-[#263A29] text-sm mb-2">{ukm.desc}</div>
+    {ukm.instagram && (
+      <a
+        href={ukm.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#a06a23] text-white text-2xl border p-1 rounded btn-fill-center instagram"
+        title="Instagram"
+      >
+        <FaInstagram />
+      </a>
+    )}
+  </div>
+);
+
 const UKM = () => {
-  const [activeIdx, setActiveIdx] = useState(null);
-
-  // Deteksi mobile
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-
   return (
-    <div className="min-h-screen flex flex-col items-center bg-white py-10 px-4 overflow-x-hidden">
+    <div
+      className="min-h-screen flex flex-col items-center bg-white py-10 overflow-x-hidden"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
       <div className="text-center mb-10">
         <div className="text-[#b57a2a] font-bold text-lg mb-1 tracking-wide">
           BERKENALAN DENGAN
@@ -55,7 +83,6 @@ const UKM = () => {
           Unit Kegiatan Mahasiswa <br />
           Fakultas Teknologi Informasi
         </div>
-        {/* Garis dan dot animasi, dot di tengah garis */}
         <div className="flex justify-center mt-2 mb-4">
           <div className="relative flex items-center justify-center w-24 h-5">
             <div className="w-full h-2 bg-[#b57a2a] rounded" />
@@ -63,50 +90,55 @@ const UKM = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl grid grid-cols-1 gap-8 items-center md:grid-cols-3 md:gap-12">
-        {ukmList.map((ukm, idx) => (
-          <div
-            key={ukm.name}
-            className="flex flex-col items-center text-center mx-auto"
-            onClick={() =>
-              isMobile && setActiveIdx(activeIdx === idx ? null : idx)
-            }
-            onMouseEnter={() => !isMobile && setActiveIdx(idx)}
-            onMouseLeave={() => !isMobile && setActiveIdx(null)}
-            style={{ cursor: "pointer" }}
-          >
-            <img
-              src={ukm.logo}
-              alt={ukm.name}
-              className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain mb-2 -mt-2 transition-transform duration-300
-                ${
-                  isMobile
-                    ? activeIdx === idx
-                      ? "scale-110"
-                      : "scale-100"
-                    : "hover:scale-105"
-                }
-              `}
-            />
-            <div className="text-[#223614] font-bold text-base sm:text-lg mb-1">
-              {ukm.name}
-            </div>
-            <div className="text-[#263A29] text-xs sm:text-sm mb-2">
-              {ukm.desc}
-            </div>
-            {ukm.instagram && (
-              <a
-                href={ukm.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#a06a23] text-white text-xl sm:text-2xl border p-1 rounded btn-fill-center instagram"
-                title="Instagram"
-              >
-                <FaInstagram />
-              </a>
-            )}
-          </div>
-        ))}
+
+      {/* MOBILE: BEM paling atas */}
+      <div className="w-full max-w-5xl grid grid-cols-1 gap-6 md:hidden">
+        {/* BEM */}
+        <div className="flex flex-col items-center text-center">
+          <img
+            src={ukmList[1].logo}
+            alt={ukmList[1].name}
+            className="w-28 h-28 object-contain mb-2 -mt-2 hover:scale-105 active:scale-110 transition-transform duration-300 cursor-pointer"
+          />
+        </div>
+        {/* Lainnya */}
+        {ukmList
+          .filter((_, idx) => idx !== 1)
+          .map((ukm) => (
+            <UkmCard ukm={ukm} key={ukm.name} />
+          ))}
+      </div>
+
+      {/* DESKTOP: urutan asli */}
+      <div className="w-full max-w-5xl hidden md:grid grid-cols-3 gap-12 items-center">
+        {/* DPM */}
+        <div data-aos="fade-right" data-aos-delay="100">
+          <UkmCard ukm={ukmList[0]} />
+        </div>
+        {/* BEM */}
+        <div
+          className="md:row-span-2 flex flex-col items-center justify-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <img
+            src={ukmList[1].logo}
+            alt={ukmList[1].name}
+            className="w-56 h-56 object-contain mb-2 -mt-2 hover:scale-105 active:scale-110 transition-transform duration-300 cursor-pointer"
+          />
+        </div>
+        {/* FSI */}
+        <div data-aos="fade-left" data-aos-delay="300">
+          <UkmCard ukm={ukmList[2]} />
+        </div>
+        {/* TECTONA */}
+        <div data-aos="fade-up-right" data-aos-delay="400">
+          <UkmCard ukm={ukmList[3]} />
+        </div>
+        {/* UKOS */}
+        <div data-aos="fade-up-left" data-aos-delay="500">
+          <UkmCard ukm={ukmList[4]} />
+        </div>
       </div>
     </div>
   );

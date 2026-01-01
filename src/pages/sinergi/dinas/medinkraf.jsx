@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import MedinkrafProkerGrid from "../../../components/sinergi/proker/medinkrafproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Medinkraf from "../../../assets/dinassinergi/logo/medinkraf.png";
 import Harsya from "../../../assets/dinassinergi/press release/medinkraf/harsya.webp";
@@ -186,6 +187,8 @@ const MedinkrafSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <MedinkrafProkerGrid />
       </div>
 
       <FooterSinergi />

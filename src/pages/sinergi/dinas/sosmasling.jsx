@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import SosmaslingProkerGrid from "../../../components/sinergi/proker/sosmaslingproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Sosmas from "../../../assets/dinassinergi/logo/sosmas.png";
 import Rifqi from "../../../assets/dinassinergi/press release/sosmasling/rifqi.webp";
@@ -191,6 +192,8 @@ const SosmaslingSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <SosmaslingProkerGrid />
       </div>
 
       <FooterSinergi />

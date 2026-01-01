@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import InternalProkerGrid from "../../../components/sinergi/proker/internalproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Internal from "../../../assets/dinassinergi/logo/internal.png";
 import Arif from "../../../assets/dinassinergi/press release/internal/arif.webp";
@@ -191,6 +192,8 @@ const InternalSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <InternalProkerGrid />
       </div>
 
       <FooterSinergi />

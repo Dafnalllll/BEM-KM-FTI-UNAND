@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import BistechProkerGrid from "../../../components/sinergi/proker/bistechproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Bistech from "../../../assets/dinassinergi/logo/bistech.png";
 import Ghifari from "../../../assets/dinassinergi/press release/bistech/ghifari.webp";
@@ -163,6 +164,8 @@ const BistechSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <BistechProkerGrid />
       </div>
 
       <FooterSinergi />

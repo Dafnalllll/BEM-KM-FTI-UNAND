@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
+import KestariProkerGrid from "../../../components/sinergi/proker/kestariproker";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
 import Kestari from "../../../assets/dinassinergi/logo/kestari.png";
 import Ririn from "../../../assets/dinassinergi/press release/kestari/ririn.webp";
@@ -159,6 +160,8 @@ const KestariSinergi = () => {
             </div>
           </div>
         </div>
+        {/* Program Kerja */}
+        <KestariProkerGrid />
       </div>
 
       <FooterSinergi />
