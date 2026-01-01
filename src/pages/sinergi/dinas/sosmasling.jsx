@@ -183,6 +183,8 @@ const SosmaslingSinergi = () => {
               <div className="flex justify-center md:mr-54">
                 <EksekutifCard {...eksekutifList[7]} />
               </div>
+              {/* Gap  di mobile */}
+              <div className="h-8 md:hidden" />
               <div className="flex justify-center md:ml-54">
                 <EksekutifCard {...eksekutifList[8]} />
               </div>

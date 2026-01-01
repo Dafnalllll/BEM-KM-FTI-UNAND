@@ -91,20 +91,40 @@ export const Dinassinergi = () => {
         {dinasList.map((dinas, idx) => (
           <div
             key={dinas.name}
-            className="relative bg-[#f6e6b2] flex flex-col items-center justify-center border rounded shadow min-h-[50px] py-4 group overflow-hidden"
+            className="relative bg-[#f6e6b2] flex flex-col items-center justify-center border rounded shadow min-h-[40px] py-2 px-2 md:py-4 md:px-4 group overflow-hidden max-w-xs w-full mx-auto md:max-w-full"
             data-aos="fade-up"
             data-aos-delay={idx * 60}
+            onClick={() => {
+              if (window.innerWidth < 768) {
+                // Routing sesuai nama dinas
+                const name = dinas.name.toLowerCase();
+                if (name === "inti") navigate("/dinassinergi/inti");
+                if (name === "ristek") navigate("/dinassinergi/ristek");
+                if (name === "adkesma") navigate("/dinassinergi/adkesma");
+                if (name === "sosmasling") navigate("/dinassinergi/sosmasling");
+                if (name === "eksternal") navigate("/dinassinergi/eksternal");
+                if (name === "internal") navigate("/dinassinergi/internal");
+                if (name === "kastrat") navigate("/dinassinergi/kastrat");
+                if (name === "kestari") navigate("/dinassinergi/kestari");
+                if (name === "medinkraf") navigate("/dinassinergi/medinkraf");
+                if (name === "psdm") navigate("/dinassinergi/psdm");
+                if (name === "bistech") navigate("/dinassinergi/bistech");
+                if (name === "audit internal")
+                  navigate("/dinassinergi/auditinternal");
+              }
+            }}
+            style={{ cursor: "pointer" }}
           >
             <img
               src={dinas.logo}
               alt={dinas.name}
-              className="w-52 h-52 object-contain mb-4"
+              className="w-24 h-24 md:w-52 md:h-52 object-contain mb-2 md:mb-4"
               draggable={false}
             />
-            <div className="text-[#223614] font-bold text-xl mb-1">
+            <div className="text-[#223614] font-bold text-base md:text-xl mb-1">
               {dinas.name}
             </div>
-            <div className="text-[#263A29] text-sm text-center font-[500] italic font-serif">
+            <div className="text-[#263A29] text-xs md:text-sm text-center font-[500] italic font-serif">
               {dinas.desc}
             </div>
             {/* Hover Arrow from Bottom */}

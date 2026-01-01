@@ -72,6 +72,13 @@ const getColorClasses = (color, type) => {
 const HimpunanGrid = () => {
   const [activeCard, setActiveCard] = useState(null);
 
+  // Handler untuk mobile/desktop
+  const handleCardAction = (id) => {
+    if (window.innerWidth < 768) {
+      setActiveCard(activeCard === id ? null : id); // toggle di mobile
+    }
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
       {himpunanData.map((item, idx) => (
@@ -87,7 +94,8 @@ const HimpunanGrid = () => {
             className={`relative bg-white border-3 rounded-3xl p-12 transition-all duration-500 cursor-pointer mx-auto mb-6
               ${getColorClasses(item.color, "border")} 
               ${getColorClasses(item.color, "hover")}
-              hover:shadow-xl ${
+              hover:shadow-xl
+              ${
                 activeCard === item.id
                   ? `${getColorClasses(
                       item.color,
@@ -95,21 +103,40 @@ const HimpunanGrid = () => {
                     )} shadow-2xl scale-105`
                   : "hover:-translate-y-2"
               }`}
-            onMouseEnter={() => setActiveCard(item.id)}
-            onMouseLeave={() => setActiveCard(null)}
+            onMouseEnter={() => {
+              if (window.innerWidth >= 768) setActiveCard(item.id);
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth >= 768) setActiveCard(null);
+            }}
+            onClick={() => handleCardAction(item.id)}
           >
             {/* Background Pattern */}
             <div
-              className={`absolute inset-0 rounded-3xl transition-all duration-500 opacity-0 group-hover:opacity-100
+              className={`absolute inset-0 rounded-3xl transition-all duration-500
+                ${
+                  (window.innerWidth < 768 && activeCard === item.id) ||
+                  (window.innerWidth >= 768 && activeCard === item.id)
+                    ? "opacity-100"
+                    : "opacity-0 group-hover:opacity-100"
+                }
                 ${getColorClasses(item.color, "bg")}`}
             ></div>
 
             {/* Logo */}
-            <div className="relative z-10 w-32 h-32 mx-auto transition-all duration-500 group-hover:scale-110">
+            <div
+              className={`relative z-10 w-32 h-32 mx-auto transition-all duration-500
+              ${
+                (window.innerWidth < 768 && activeCard === item.id) ||
+                (window.innerWidth >= 768 && activeCard === item.id)
+                  ? "scale-110"
+                  : "group-hover:scale-110"
+              }`}
+            >
               <img
                 src={item.logo}
                 alt={item.nama}
-                className="w-full h-full object-contain drop-shadow-lg "
+                className="w-full h-full object-contain drop-shadow-lg"
               />
             </div>
 
@@ -137,13 +164,13 @@ const HimpunanGrid = () => {
               {item.nama}
             </h2>
 
-            {/* Social Media Icons - di bawah nama */}
+            {/* Social Media Icons */}
             <div className="flex justify-center gap-4 mb-4">
               <a
                 href={item.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex items-center justify-center  hover:scale-110  transition-all duration-200 "
+                className="flex items-center justify-center hover:scale-110 transition-all duration-200"
               >
                 <img
                   src={Instagram}
@@ -159,7 +186,7 @@ const HimpunanGrid = () => {
                 href={item.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex items-center justify-center hover:scale-110  transition-all duration-200 "
+                className="flex items-center justify-center hover:scale-110 transition-all duration-200"
               >
                 <img
                   src={LinkedIn}
@@ -176,7 +203,7 @@ const HimpunanGrid = () => {
                   href={item.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" flex items-center justify-center hover:scale-110  transition-all duration-200 "
+                  className="flex items-center justify-center hover:scale-110 transition-all duration-200"
                 >
                   <img
                     src={Web}

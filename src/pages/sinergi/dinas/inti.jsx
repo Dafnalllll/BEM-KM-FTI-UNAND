@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
@@ -7,6 +7,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Gub1 from "../../../assets/dinassinergi/press release/inti/ikhwan.webp";
 import Wagub from "../../../assets/dinassinergi/press release/inti/yusuf.webp";
 import Bendahara from "../../../assets/dinassinergi/press release/inti/najla.webp";
+import Sekretaris from "../../../assets/dinassinergi/press release/inti/dinda.webp";
 
 // Contoh data eksekutif
 const eksekutifList = [
@@ -19,12 +20,12 @@ const eksekutifList = [
     linkedin: "https://www.linkedin.com/in/ikhwanul-hakim-b41246222/",
   },
   {
-    name: "Mutiara Maharani",
-    photo: "/path/to/foto2.jpg",
+    name: "Dinda Mestika",
+    photo: Sekretaris,
     desc: "Sekretaris Umum",
-    jurusan: "Sistem Informasi 2021",
-    instagram: "https://www.instagram.com/mutiaramaharani__/",
-    linkedin: "https://www.linkedin.com/in/mutiaramaharani19/",
+    jurusan: "Teknik Komputer 2021",
+    instagram: "https://www.instagram.com/dindamstkaaa/",
+    linkedin: "https://www.linkedin.com/in/dindamestika//",
   },
   {
     name: "Najla Humaira Desni",
@@ -58,7 +59,7 @@ const Inti = () => {
     >
       <NavbarSinergi />
 
-      <div className="min-h-screen flex flex-col items-center justify-start bg-black/60 py-10">
+      <div className="min-h-screen flex flex-col items-center justify-start bg-black/60 py-6 px-2 md:py-10">
         {/* Judul */}
         <div
           className="text-center mt-10"
@@ -118,7 +119,7 @@ const Inti = () => {
             </div>
             {/* Tengah */}
             <div
-              className="flex flex-row justify-center gap-12"
+              className="flex flex-col md:flex-row justify-center gap-6 md:gap-12"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -157,33 +158,33 @@ const jurusanColor = (jurusan = "") => {
 
 // Komponen Card Eksekutif
 const EksekutifCard = ({ name, photo, desc, jurusan, instagram, linkedin }) => (
-  <div className="flex flex-col md:flex-row rounded-2xl shadow-xl p-0 w-full max-w-4xl items-center transition hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-br from-[#fffbe6] via-[#f6e6b2] to-[#f9e0c7] border border-[#e0a100]">
+  <div className="flex flex-col md:flex-row rounded-2xl shadow-xl p-0 w-full max-w-xs md:max-w-4xl items-center transition hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-br from-[#fffbe6] via-[#f6e6b2] to-[#f9e0c7] border border-[#e0a100]">
     {/* Foto */}
-    <div className="flex flex-col items-center justify-center p-8 min-w-[180px]">
+    <div className="flex flex-col items-center justify-center p-4 md:p-8 min-w-[120px] md:min-w-[180px]">
       <img
         src={photo}
         alt={name}
-        className="w-40 h-40 object-cover rounded-xl"
+        className="w-28 h-28 md:w-40 md:h-40 object-cover rounded-xl"
         draggable={false}
       />
     </div>
     {/* Garis pembatas vertikal */}
     <div className="hidden md:block h-40 border-l-2 border-dashed border-[#e0a100] mx-4"></div>
     {/* Garis pembatas horizontal untuk mobile */}
-    <div className="block md:hidden w-32 border-t-2 border-dashed border-[#e0a100] my-2"></div>
+    <div className="block md:hidden w-24 border-t-2 border-dashed border-[#e0a100] my-2"></div>
     {/* Deskripsi */}
-    <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left p-8 pt-0 md:pt-8">
-      <div className="text-[#223614] font-bold text-2xl md:text-3xl mb-2 font-sans whitespace-nowrap truncate w-full text-left md:text-left">
+    <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-8 pt-0 md:pt-8">
+      <div className="text-[#223614] font-bold text-lg md:text-2xl mb-2 font-sans w-full">
         {name}
       </div>
-      <div className="text-[#263A29] text-base md:text-lg mb-4 font-serif">
+      <div className="text-[#263A29] text-sm md:text-lg mb-4 font-serif">
         {desc}
       </div>
       {/* Jurusan: styled badge with color */}
       {jurusan && (
         <div className="mb-3">
           <span
-            className={`inline-block font-semibold px-4 py-2 rounded-full text-sm md:text-base  ${jurusanColor(
+            className={`inline-block font-semibold px-3 py-1 rounded-full text-xs md:text-base  ${jurusanColor(
               jurusan
             )}`}
           >
@@ -191,25 +192,25 @@ const EksekutifCard = ({ name, photo, desc, jurusan, instagram, linkedin }) => (
           </span>
         </div>
       )}
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row gap-2 md:gap-3">
         <a
           href={instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[#e0a100] border border-[#e0a100] text-[#223614] font-semibold hover:shadow-lg transition-all duration-200 btn-fill-center instagram"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#e0a100] border border-[#e0a100] text-[#223614] font-semibold hover:shadow-lg transition-all duration-200 btn-fill-center instagram"
           title="Instagram"
         >
-          <FaInstagram className="text-white text-xl" />
+          <FaInstagram className="text-white text-lg md:text-xl" />
         </a>
         {linkedin && (
           <a
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[#e0a100] border border-[#e0a100] text-white font-semibold shadow  hover:shadow-lg transition-all duration-200 btn-fill-center linkedin"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#e0a100] border border-[#e0a100] text-white font-semibold shadow  hover:shadow-lg transition-all duration-200 btn-fill-center linkedin"
             title="LinkedIn"
           >
-            <FaLinkedin className="text-white text-xl" />
+            <FaLinkedin className="text-white text-lg md:text-xl" />
           </a>
         )}
       </div>

@@ -33,6 +33,9 @@ const himpunanList = [
 const Himpunan = () => {
   const [hovered, setHovered] = useState(null);
 
+  // Deteksi mobile
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   return (
     <div className="min-h-screen flex flex-col items-center bg-white py-10">
       <div className="text-center mb-10" data-aos="fade-down">
@@ -56,31 +59,41 @@ const Himpunan = () => {
           <div
             key={himp.name}
             className="flex flex-col items-center w-80"
-            onMouseEnter={() => setHovered(idx)}
-            onMouseLeave={() => setHovered(null)}
+            onMouseEnter={() => !isMobile && setHovered(idx)}
+            onMouseLeave={() => !isMobile && setHovered(null)}
+            onClick={() => isMobile && setHovered(hovered === idx ? null : idx)}
             data-aos="fade-up"
             data-aos-delay={100 * idx}
           >
-            <div className="relative flex justify-center items-center w-60 h-60 bg-white mb-4 cursor-pointer hover:scale-105 transition-transform duration-300 rounded-full overflow-hidden">
+            {/* Logo */}
+            <div
+              className={`relative flex justify-center items-center w-60 h-60 bg-white mb-2 cursor-pointer rounded-full overflow-hidden transition-transform duration-300
+              ${isMobile && hovered === idx ? "scale-110" : "scale-100"}
+              ${!isMobile ? "hover:scale-105" : ""}
+            `}
+            >
               <img
                 src={himp.logo}
                 alt={himp.name}
                 className="w-52 h-52 object-contain"
                 draggable={false}
               />
+              {/* Sosmed overlay (desktop only) */}
               <div
-                className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
-                  hovered === idx
-                    ? "opacity-100"
-                    : "opacity-0 pointer-events-none"
-                }`}
+                className={`absolute inset-0 items-center justify-center transition-all duration-300 hidden md:flex
+                  ${
+                    hovered === idx
+                      ? "opacity-100"
+                      : "opacity-0 pointer-events-none"
+                  }`}
               >
                 <div
-                  className={`flex flex-row gap-6 transition-all duration-300 ${
-                    hovered === idx
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-8 opacity-0"
-                  }`}
+                  className={`flex flex-row gap-6 transition-all duration-300
+                    ${
+                      hovered === idx
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-8 opacity-0"
+                    }`}
                 >
                   <a
                     href={himp.website}
@@ -103,6 +116,28 @@ const Himpunan = () => {
                 </div>
               </div>
             </div>
+            {/* Sosmed bawah logo (mobile only, langsung tampil) */}
+            <div className="flex flex-row gap-6 mb-2 md:hidden">
+              <a
+                href={himp.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-[#b57a2a] hover:bg-[#a06a23] p-3 rounded-full transition-all duration-200 btn-fill-center globe"
+                title="Website"
+              >
+                <FaGlobe size={28} />
+              </a>
+              <a
+                href={himp.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-[#b57a2a] hover:bg-[#a06a23] p-3 rounded-full transition-all btn-fill-center instagram duration-200"
+                title="Instagram"
+              >
+                <FaInstagram size={28} />
+              </a>
+            </div>
+            {/* Nama dan deskripsi */}
             <div className="bg-[#F6E6C2] px-8 py-4 rounded-b-lg rounded-t-none w-full text-center shadow">
               <div className="text-[#b57a2a] font-bold text-xl mb-1">
                 {himp.name}

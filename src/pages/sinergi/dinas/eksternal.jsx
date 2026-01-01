@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NavbarSinergi from "../../../components/sinergi/navbarsinergi";
 import FooterSinergi from "../../../components/sinergi/footersinergi";
 import Pelantikan from "../../../assets/dinassinergi/kegiatan/pelantikan.webp";
@@ -85,9 +85,9 @@ const eksekutifList = [
 ];
 
 const EksternalSinergi = () => {
-   useEffect(() => {
-      document.title = "Eksternal || Sinergi";
-    }, []); 
+  useEffect(() => {
+    document.title = "Eksternal || Sinergi";
+  }, []);
   return (
     <div
       className="flex flex-col min-h-screen"
@@ -184,6 +184,8 @@ const EksternalSinergi = () => {
               <div className="flex justify-center md:mr-54">
                 <EksekutifCard {...eksekutifList[7]} />
               </div>
+              {/* Gap  di mobile */}
+              <div className="h-8 md:hidden" />
               <div className="flex justify-center md:ml-54">
                 <EksekutifCard {...eksekutifList[8]} />
               </div>

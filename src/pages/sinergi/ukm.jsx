@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 
 import DPM from "../../assets/ukm/dpm.webp";
@@ -40,12 +40,13 @@ const ukmList = [
 ];
 
 const UKM = () => {
+  const [activeIdx, setActiveIdx] = useState(null);
+
+  // Deteksi mobile
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   return (
-    <div
-      className="min-h-screen flex flex-col items-center bg-white py-10"
-      data-aos="fade-down"
-      data-aos-duration="800"
-    >
+    <div className="min-h-screen flex flex-col items-center bg-white py-10 px-4 overflow-x-hidden">
       <div className="text-center mb-10">
         <div className="text-[#b57a2a] font-bold text-lg mb-1 tracking-wide">
           BERKENALAN DENGAN
@@ -62,124 +63,50 @@ const UKM = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
-        {/* Baris 1 */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-left"
-          data-aos-duration="800"
-        >
-          <img
-            src={ukmList[0].logo}
-            alt={ukmList[0].name}
-            className="w-32 h-32 object-contain mb-2 -mt-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
-          <div className="text-[#223614] font-bold text-lg mb-1">
-            {ukmList[0].name}
+      <div className="w-full max-w-5xl grid grid-cols-1 gap-8 items-center md:grid-cols-3 md:gap-12">
+        {ukmList.map((ukm, idx) => (
+          <div
+            key={ukm.name}
+            className="flex flex-col items-center text-center mx-auto"
+            onClick={() =>
+              isMobile && setActiveIdx(activeIdx === idx ? null : idx)
+            }
+            onMouseEnter={() => !isMobile && setActiveIdx(idx)}
+            onMouseLeave={() => !isMobile && setActiveIdx(null)}
+            style={{ cursor: "pointer" }}
+          >
+            <img
+              src={ukm.logo}
+              alt={ukm.name}
+              className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain mb-2 -mt-2 transition-transform duration-300
+                ${
+                  isMobile
+                    ? activeIdx === idx
+                      ? "scale-110"
+                      : "scale-100"
+                    : "hover:scale-105"
+                }
+              `}
+            />
+            <div className="text-[#223614] font-bold text-base sm:text-lg mb-1">
+              {ukm.name}
+            </div>
+            <div className="text-[#263A29] text-xs sm:text-sm mb-2">
+              {ukm.desc}
+            </div>
+            {ukm.instagram && (
+              <a
+                href={ukm.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#a06a23] text-white text-xl sm:text-2xl border p-1 rounded btn-fill-center instagram"
+                title="Instagram"
+              >
+                <FaInstagram />
+              </a>
+            )}
           </div>
-          <div className="text-[#263A29] text-sm mb-2 ">{ukmList[0].desc}</div>
-          {ukmList[0].instagram && (
-            <a
-              href={ukmList[0].instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" bg-[#a06a23] text-white text-2xl border p-1 rounded btn-fill-center instagram"
-              title="Instagram"
-            >
-              <FaInstagram />
-            </a>
-          )}
-        </div>
-        <div
-          className="row-span-2 flex flex-col items-center justify-center"
-          data-aos="zoom-in"
-          data-aos-duration="800"
-        >
-          <img
-            src={ukmList[1].logo}
-            alt={ukmList[1].name}
-            className="w-56 h-56 object-contain mb-2 -mt-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
-        </div>
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-right"
-          data-aos-duration="800"
-        >
-          <img
-            src={ukmList[2].logo}
-            alt={ukmList[2].name}
-            className="w-32 h-32 object-contain mb-2 -mt-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
-          <div className="text-[#223614] font-bold text-lg mb-1">
-            {ukmList[2].name}
-          </div>
-          <div className="text-[#263A29] text-sm mb-2">{ukmList[2].desc}</div>
-          {ukmList[2].instagram && (
-            <a
-              href={ukmList[2].instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#a06a23] text-white text-2xl border p-1 rounded btn-fill-center instagram"
-              title="Instagram"
-            >
-              <FaInstagram />
-            </a>
-          )}
-        </div>
-        {/* Baris 2 */}
-        <div
-          className="flex flex-col items-center text-center col-start-1"
-          data-aos="fade-left"
-          data-aos-duration="800"
-        >
-          <img
-            src={ukmList[3].logo}
-            alt={ukmList[3].name}
-            className="w-32 h-32 object-contain mb-2 -mt-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
-          <div className="text-[#223614] font-bold text-lg mb-1">
-            {ukmList[3].name}
-          </div>
-          <div className="text-[#263A29] text-sm mb-2">{ukmList[3].desc}</div>
-          {ukmList[3].instagram && (
-            <a
-              href={ukmList[3].instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" bg-[#a06a23] text-white text-2xl border p-1 rounded btn-fill-center instagram"
-              title="Instagram"
-            >
-              <FaInstagram />
-            </a>
-          )}
-        </div>
-        <div
-          className="flex flex-col items-center text-center col-start-3"
-          data-aos="fade-right"
-          data-aos-duration="800"
-        >
-          <img
-            src={ukmList[4].logo}
-            alt={ukmList[4].name}
-            className="w-32 h-32 object-contain mb-2 -mt-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
-          <div className="text-[#223614] font-bold text-lg mb-1">
-            {ukmList[4].name}
-          </div>
-          <div className="text-[#263A29] text-sm mb-2">{ukmList[4].desc}</div>
-          {ukmList[4].instagram && (
-            <a
-              href={ukmList[4].instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" bg-[#a06a23] text-white text-2xl border p-1 rounded btn-fill-center instagram"
-              title="Instagram"
-            >
-              <FaInstagram />
-            </a>
-          )}
-        </div>
+        ))}
       </div>
     </div>
   );
