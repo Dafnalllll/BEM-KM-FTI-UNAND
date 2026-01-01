@@ -1,83 +1,73 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import Adkesma from "../../assets/dinassinergi/adkesma.png";
-import Eksternal from "../../assets/dinassinergi/eksternal.png";
-import Internal from "../../assets/dinassinergi/internal.png";
-import Bistech from "../../assets/dinassinergi/bistech.png";
-import AI from "../../assets/dinassinergi/ai.png";
-import Medinkraf from "../../assets/dinassinergi/medinkraf.png";
-import PSDM from "../../assets/dinassinergi/psdm.png";
-import Ristek from "../../assets/dinassinergi/ristek.png";
-import Sosmas from "../../assets/dinassinergi/sosmas.png";
-import Kastrat from "../../assets/dinassinergi/kastrat.png";
-import Inti from "../../assets/dinassinergi/inti.png";
-import Kestari from "../../assets/dinassinergi/kestari.png";
+import { useNavigate } from "react-router-dom";
+import Adkesma from "../../assets/dinassinergi/logo/adkesma.png";
+import Eksternal from "../../assets/dinassinergi/logo/eksternal.png";
+import Internal from "../../assets/dinassinergi/logo/internal.png";
+import Bistech from "../../assets/dinassinergi/logo/bistech.png";
+import AI from "../../assets/dinassinergi/logo/ai.png";
+import Medinkraf from "../../assets/dinassinergi/logo/medinkraf.png";
+import PSDM from "../../assets/dinassinergi/logo/psdm.png";
+import Ristek from "../../assets/dinassinergi/logo/ristek.png";
+import Sosmas from "../../assets/dinassinergi/logo/sosmas.png";
+import Kastrat from "../../assets/dinassinergi/logo/kastrat.png";
+import Inti from "../../assets/dinassinergi/logo/inti.png";
+import Kestari from "../../assets/dinassinergi/logo/kestari.png";
 
 const dinasList = [
   {
     name: "INTI",
-    desc: "Poros manajerial dan eksekutif yang menjamin keberlangsungan fungsi organisasi secara administratif, finansial, dan strategis.",
     logo: Inti,
   },
   {
     name: "ADKESMA",
-    desc: "Berfokus menampung serta membantu KM FTI yang terkendala perkuliahan,menjadi wadah untuk KM FTI yang mengalami kesulitan yang akan di audisikan ke pihak pimpinan fakultas.",
     logo: Adkesma,
   },
   {
     name: "AUDIT INTERNAL",
-    desc: "Menjaga kedisiplinan pengurus, serta mempererat hubungan internal organisasi, menjaga keharmonisan antar anggota.",
     logo: AI,
   },
   {
     name: "BISTECH",
-    desc: "Berfokus pada pengelolaan kewirausahaan dan penggalangan dana mandiri,mendukung mahasiswa serta membangun kemandirian organisasi dengan menciptakan peluang bisnis yang inovatif.",
     logo: Bistech,
   },
   {
     name: "EKSTERNAL",
-    desc: "Meningkatkan eksistensi FTI dan membangun relasi dengan pihak luar serta menjadi jembatan yang memperkuat relasi dan kolaborasi BEM KM FTI serta merepresentasikan wajah BEM KM FTI dengan profesionalisme dan inovasi.",
     logo: Eksternal,
   },
   {
     name: "INTERNAL",
-    desc: "Bergerak di bidang sosial dengan fokus utama pada masyarakat Fakultas Teknologi Informasi Universitas Andalas, meningkatkan jiwa sosial mahasiswa FTI agar mampu membangun komunikasi yang baik.",
     logo: Internal,
   },
   {
     name: "KASTRAT",
-    desc: "Bertanggung jawab sebagai motor penggerak kajian intelektual dan aksi strategis mahasiswa, bergerak di bidang analisis isu, pemberdayaan mahasiswa dan perempuan.",
     logo: Kastrat,
   },
   {
     name: "KESTARI",
-    desc: "Mengelola administrasi kelembagaan, dan memastikan sekretariat tetap nyaman dan tertata.",
     logo: Kestari,
   },
   {
     name: "MEDINKRAF",
-    desc: "Mengelola seluruh aspek komunikasi visual dan digital serta menyediakan platform untuk publikasi informasi",
     logo: Medinkraf,
   },
   {
     name: "PSDM",
-    desc: "Mengembangkan potensi mahasiswa, merancang, melaksanakan, dan mengevaluasi program-program yang bertujuan untuk meningkatkan kapasitas mahasiswa",
     logo: PSDM,
   },
   {
     name: "RISTEK",
-    desc: "Motor penggerak dalam penelitian dan pengembangan serta mendorong pengembangan potensi mahasiswa di bidang teknologi informasi.",
     logo: Ristek,
   },
   {
     name: "SOSMASLING",
-    desc: "Bergerak dalam bidang sosial dan lingkungan serta mendukung tujuan pembangunan yang berkelanjutan untuk kehidupan masyarakat yang lebih baik.",
     logo: Sosmas,
   },
 ];
 
 export const Dinassinergi = () => {
   const [arrowHoverIdx, setArrowHoverIdx] = useState(null);
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-white py-10">
@@ -123,6 +113,44 @@ export const Dinassinergi = () => {
                 className="bg-[#b57a2a] rounded-md p-4 flex items-center justify-center shadow-lg cursor-pointer"
                 onMouseEnter={() => setArrowHoverIdx(idx)}
                 onMouseLeave={() => setArrowHoverIdx(null)}
+                onClick={() => {
+                  if (dinas.name.toLowerCase() === "inti") {
+                    navigate("/dinassinergi/inti");
+                  }
+                  if (dinas.name.toLowerCase() === "ristek") {
+                    navigate("/dinassinergi/ristek");
+                  }
+                  if (dinas.name.toLowerCase() === "adkesma") {
+                    navigate("/dinassinergi/adkesma");
+                  }
+                  if (dinas.name.toLowerCase() === "sosmasling") {
+                    navigate("/dinassinergi/sosmasling");
+                  }
+                  if (dinas.name.toLowerCase() === "eksternal") {
+                    navigate("/dinassinergi/eksternal");
+                  }
+                  if (dinas.name.toLowerCase() === "internal") {
+                    navigate("/dinassinergi/internal");
+                  }
+                  if (dinas.name.toLowerCase() === "kastrat") {
+                    navigate("/dinassinergi/kastrat");
+                  }
+                  if (dinas.name.toLowerCase() === "kestari") {
+                    navigate("/dinassinergi/kestari");
+                  }
+                  if (dinas.name.toLowerCase() === "medinkraf") {
+                    navigate("/dinassinergi/medinkraf");
+                  }
+                  if (dinas.name.toLowerCase() === "psdm") {
+                    navigate("/dinassinergi/psdm");
+                  }
+                  if (dinas.name.toLowerCase() === "bistech") {
+                    navigate("/dinassinergi/bistech");
+                  }
+                  if (dinas.name.toLowerCase() === "audit internal") {
+                    navigate("/dinassinergi/auditinternal");
+                  }
+                }}
               >
                 <FaArrowRight
                   className={`text-white text-2xl transition-all duration-300 ${

@@ -1,10 +1,11 @@
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Gubernur from "../../assets/dinassinergi/press release/inti/Gub.webp";
+import React from "react";
 
 const KatakataGub = () => (
-  <div className="flex flex-col md:flex-row items-center justify-between w-full px-4 md:px-10 py-10 md:py-[120px] bg-white">
+  <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full px-4 md:px-10 py-10 md:py-[120px] bg-white">
     {/* Kiri: Teks */}
-    <div className="flex-1 max-w-2xl md:ml-16">
+    <div className="flex-1 max-w-2xl md:ml-16 flex flex-col items-center md:items-start text-center md:text-left">
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1
           className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-2"
@@ -18,7 +19,7 @@ const KatakataGub = () => (
         >
           GUBERNUR BEM KM FTI
         </h2>
-        <div className="relative w-24 h-2 bg-[#b57a2a] mb-6 rounded">
+        <div className="relative w-24 h-2 bg-[#b57a2a] mb-6 rounded mx-auto md:mx-0 md:mr-auto">
           <span className="absolute left-0 top-2/2 w-3 h-2 bg-[#e0a100] rounded-full -translate-y-1/2 shadow-[0_0_8px_2px_rgba(224,161,0,0.5)] animate-dot-move-alternate" />
         </div>
         <div
@@ -85,7 +86,7 @@ const KatakataGub = () => (
     </div>
     {/* Kanan: Foto */}
     <div
-      className="flex-1 flex justify-center md:justify-end md:mr-10 mt-10 md:mt-0 w-full"
+      className="flex-1 flex justify-center md:justify-end md:mr-10 mt-6 md:mt-0 w-full"
       data-aos="zoom-in"
       data-aos-duration="800"
       data-aos-delay="400"
@@ -93,7 +94,7 @@ const KatakataGub = () => (
       <img
         src={Gubernur}
         alt="Gubernur KM FTI"
-        className="w-60 xs:w-72 sm:w-96 md:w-[540px] lg:w-[600px] object-contain"
+        className="w-40 xs:w-52 sm:w-72 md:w-[540px] lg:w-[600px] object-contain"
         draggable={false}
       />
     </div>

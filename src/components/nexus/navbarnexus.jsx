@@ -49,7 +49,7 @@ export const NavbarNexus = () => {
       ],
     },
     {
-      label: "Dinas",
+      label: "Dinas & Biro",
       isDropdown: true,
       dropdown: [
         { label: "Audkes", path: "/dinasnexus/audkes" },
@@ -72,7 +72,7 @@ export const NavbarNexus = () => {
   const handleMenuClick = (item) => {
     // jika item dropdown dan label == 'Dinas', treat label click as navigate/scroll ke section
     if (item.isDropdown) {
-      if (item.label === "Dinas") {
+      if (item.label === "Dinas & Biro") {
         // kalau sedang di /nexus, scroll; kalau tidak, navigasi dengan state untuk scroll nanti
         if (currentPath === "/nexus") {
           const section = document.getElementById("dinasnexus");

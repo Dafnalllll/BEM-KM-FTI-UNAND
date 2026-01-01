@@ -163,7 +163,9 @@ export const Sinergi = () => {
       <KatakataGub />
 
       {/* Dinas Sinergi Section */}
-      <DinasSinergi />
+      <div id="sinergi">
+        <DinasSinergi />
+      </div>
 
       {/* Himpunan Section */}
       <Himpunan />

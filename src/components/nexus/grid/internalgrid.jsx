@@ -26,7 +26,6 @@ const gridData = [
     desc: "Teknik Komputer 2023",
     border: "border-green-500",
     instagram: "https://www.instagram.com/keysa_naylaputri/",
-    linkedin: "https://www.linkedin.com/in/febiola-ramli-a111b821a/",
   },
   {
     img: Kadin,
@@ -35,7 +34,6 @@ const gridData = [
     desc: "Teknik Komputer 2022",
     border: "border-green-500",
     instagram: "https://www.instagram.com/kalfaiz__/",
-    linkedin: "https://www.linkedin.com/in/febiola-ramli-a111b821a/",
   },
   {
     img: Febi,

@@ -71,11 +71,17 @@ const Himpunan = () => {
               <div
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                   hovered === idx
-                    ? "opacity-100 "
-                    : "bg-black/0 opacity-0 pointer-events-none"
+                    ? "opacity-100"
+                    : "opacity-0 pointer-events-none"
                 }`}
               >
-                <div className="flex flex-row gap-6">
+                <div
+                  className={`flex flex-row gap-6 transition-all duration-300 ${
+                    hovered === idx
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-8 opacity-0"
+                  }`}
+                >
                   <a
                     href={himp.website}
                     target="_blank"

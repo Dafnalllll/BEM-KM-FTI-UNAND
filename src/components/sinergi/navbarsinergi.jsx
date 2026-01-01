@@ -3,9 +3,8 @@ import Sinergi from "../../assets/kabinet/sinergi.webp";
 
 const menus = [
   { name: "Home", href: "/sinergi" },
-  { name: "About", href: "/tentangsinergi" }, // ubah di sini
-  { name: "Dinas", href: "/dinas" },
-  { name: "Galeri", href: "#" },
+  { name: "About", href: "/tentangsinergi" },
+  { name: "Dinas & Biro", href: "/sinergi" }, // ubah dari "#sinergi" menjadi "/sinergi"
 ];
 
 const NavbarSinergi = () => {
@@ -29,6 +28,30 @@ const NavbarSinergi = () => {
       setClosing(false);
     }, 200); // durasi animasi fadeOut
   };
+
+  const handleMenuClick = (menu) => (e) => {
+    if (menu.name === "Dinas & Biro") {
+      e.preventDefault();
+      if (window.location.pathname === "/sinergi") {
+        // Sudah di halaman /sinergi, scroll ke section
+        const section = document.getElementById("sinergi");
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Pindah ke /sinergi dengan hash khusus agar bisa scroll setelah load
+        window.location.href = "/sinergi#dinas";
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (window.location.hash === "#dinas") {
+      setTimeout(() => {
+        const section = document.getElementById("sinergi");
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+        history.replaceState(null, "", "/sinergi");
+      }, 400);
+    }
+  }, []);
 
   return (
     <nav
@@ -68,6 +91,7 @@ const NavbarSinergi = () => {
               ${isScrolled ? "text-black" : "text-white"}
               after:content-[''] after:block after:w-0 hover:after:w-8 after:h-1 after:bg-yellow-400 after:mx-auto after:rounded after:transition-all after:duration-300 after:mt-4
             `}
+            onClick={handleMenuClick(menu)}
           >
             {menu.name}
           </a>
@@ -110,7 +134,10 @@ const NavbarSinergi = () => {
                 key={menu.name}
                 href={menu.href}
                 className="text-2xl font-montserrat text-black font-medium"
-                onClick={handleClose}
+                onClick={(e) => {
+                  handleMenuClick(menu)(e);
+                  handleClose();
+                }}
               >
                 {menu.name}
               </a>

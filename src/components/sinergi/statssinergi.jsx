@@ -1,3 +1,4 @@
+import React from "react";
 import { FaUsers, FaCheck, FaAward } from "react-icons/fa";
 
 const stats = [

@@ -17,7 +17,6 @@ const gridData = [
     desc: "Teknik Komputer 2023",
     border: "border-green-500",
     instagram: "https://www.instagram.com/khaldarhdtll/",
-    linkedin: "https://www.linkedin.com/in/sundarpichai/",
   },
   {
     img: Sekdin,
@@ -44,7 +43,6 @@ const gridData = [
     desc: "Teknik Komputer 2023",
     border: "border-green-500",
     instagram: "https://www.instagram.com/bunshinalpat/",
-    linkedin: "https://www.linkedin.com/in/cooktim/",
   },
   {
     img: Nabila,

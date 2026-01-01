@@ -34,7 +34,7 @@ export const NotFound = () => {
       >
         Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.
       </p>
-      <a href="/nexus" data-aos="fade-up" data-aos-delay="400" className="group">
+      <a href="/kabinet" data-aos="fade-up" data-aos-delay="400" className="group">
         <span className="px-6 py-2 rounded-lg bg-[#A7C7A3] text-white font-semibold transition-all duration-500 group-hover:bg-[#8fb892] group-hover:scale-110 cursor-pointer inline-block">
           Kembali ke Beranda
         </span>
