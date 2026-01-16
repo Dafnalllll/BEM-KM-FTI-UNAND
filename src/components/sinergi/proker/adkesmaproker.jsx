@@ -3,35 +3,35 @@ import React from "react";
 const data = [
   {
     title: "Database Adkesma",
-    desc: "Pertemuan diantara semua pengurus BEM KM FTI UNAND 2023/2024 pada tempat yang disepakati bersama.",
+    desc: "Media layanan dalam menampung data (permasalahan UKT, KIP-K dan beasiswa ) mahasiswa FTI.",
   },
   {
     title: "SEKAWAN (Seminar Kemahasiswaan)",
-    desc: "Kegiatan nonformal sebagai sarana refreshing dan memberikan hiburan untuk seluruh pengurus.",
+    desc: "Kegiatan seminar yang dilakukan untuk mahasiswa FTI terkait persiapan mengikuti program beasiswa dan seminar terkait prospek kerja lulusan FTI serta menyebar informasi seminar seputar kemahasiswaan.",
   },
   {
     title: "Public Hearing",
-    desc: "Memberikan rewatd kepada pengurus yang terpilih dilihat dari kinerjanya.",
+    desc: "Menyampaikan aspirasinya secara langsung kepada pihak dekanat.",
   },
   {
     title: "InterScholar",
-    desc: "Memonitor setiap anggota dinas/biro dan mencatat poin-poin pengurus selama bulan tersebut. Serta membuat SOP (Standar Operasional Prosedur) yang berlaku untuk seluruh pengurus BEM KM FTI 2023/2024.",
+    desc: "Membagikan dan mensosialisasikan Info-info terkait beasiswa dan magang, baik dari dalam maupun luar universitas negeri ataupun swasta. Serta mendata mahasiswa FTI yang mengikuti program terkait.",
   },
   {
     title: "IPK+",
-    desc: "Kegiatan-kegiatan hiburan demi terciptanya komunikasi yang baik dan mempererat kedekatan diantara pengurus setiap dinas/biro.",
+    desc: "Sarana penyimpanan soal-soal ujian, e-book, cheatsheet, dan materi untuk membantu mahasiswa FTI dalam perkuliahan.",
   },
   {
     title: "Sahabat FTI",
-    desc: "Mengadakan kegiatan berupa seminar untuk seluruh pengurus BEM KM FTI 2023/2024.",
+    desc: "Layanan untuk mahasiswa FTI bisa menyampaikan permasalahan atau keluh kesah yang menghambat perkuliahan.",
   },
   {
     title: "Maba Care",
-    desc: "Memperingati hari kelahiran pengurus dengan memberikan ucapan dan kado yang telah ditentukan.",
+    desc: "Media layanan dengan melakukan pendataan mahasiswa baru, dan memberikan bantuan serta edukasi mengenai hal-hal yang berkaitan dengan Fakultas Teknologi Informasi kepada Mahasiswa Baru.",
   },
   {
     title: "Advotalk",
-    desc: "Mengadakan kegiatan untuk memberikan satu momen di akhir kepengurusan yang tak terlupakan untuk pengurus BEM KM FTI 2023/2024",
+    desc: "Sarana advokasi permasalahan mahasiswa dan audiensi terkait informasi-informasi akademik yang akan disampaikan kepada mahasiswa Teknologi Informasi.",
   },
 ];
 
