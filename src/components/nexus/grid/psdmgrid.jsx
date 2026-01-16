@@ -1,10 +1,10 @@
 import React from "react";
 import Kadin from "../../../assets/dinasnexus/press release/psdm/rhodes.webp";
 import Sekdin from "../../../assets/dinasnexus/press release/psdm/bunga.webp";
-import Bendin from "../../../assets/dinasnexus/staff release/psdm/khalda.webp";
+import Bendin from "../../../assets/dinasnexus/staff release/psdm/diva.webp";
 import Alfat from "../../../assets/dinasnexus/staff release/psdm/alfat.webp";
 import Nabila from "../../../assets/dinasnexus/staff release/psdm/nabila.webp";
-import Diva from "../../../assets/dinasnexus/staff release/psdm/diva.webp";
+import Khalda from "../../../assets/dinasnexus/staff release/psdm/khalda.webp";
 import Rizky from "../../../assets/dinasnexus/staff release/psdm/rizky.webp";
 import Psdm from "../../../assets/dinasnexus/logo/psdm.webp";
 import Social from "../../social"; // Import Social component
@@ -13,10 +13,11 @@ const gridData = [
   {
     img: Bendin,
     title: "Bendahara Dinas",
-    nama: "Khalda Rahadatul Azima",
-    desc: "Teknik Komputer 2023",
+    nama: "Putri Diva Riyanti",
+    desc: "Sistem Informasi 2023",
     border: "border-green-500",
-    instagram: "https://www.instagram.com/khaldarhdtll/",
+    instagram: "https://www.instagram.com/divavela_/",
+    linkedin: "https://www.linkedin.com/in/pdivar/",
   },
   {
     img: Sekdin,
@@ -54,13 +55,12 @@ const gridData = [
     linkedin: "https://www.linkedin.com/in/nabilatriha052005/",
   },
   {
-    img: Diva,
+    img: Khalda,
     title: "Staff Dinas",
-    nama: "Putri Diva Riyanti",
-    desc: "Sistem Informasi 2023",
+    nama: "Khalda Rahadatul Azima",
+    desc: "Teknik Komputer 2023",
     border: "border-green-500",
-    instagram: "https://www.instagram.com/divavela_/",
-    linkedin: "https://www.linkedin.com/in/pdivar/",
+    instagram: "https://www.instagram.com/khaldarhdtll/",
   },
   {
     img: Rizky,
