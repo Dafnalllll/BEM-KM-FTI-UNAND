@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Nexus from "../../../assets/kabinet/nexusinspirasi.webp";
 import Audkes from "../../../assets/dinasnexus/logo/audkes.webp";
@@ -87,7 +87,7 @@ const galleryImages = [
   {
     id: 11,
     src: Sosmas,
-    alt: "Sosmas",
+    alt: "Sosmasling",
     gridClass: "md:col-start-3 md:row-start-4",
     route: "/dinasnexus/sosmasling",
   },
@@ -95,6 +95,16 @@ const galleryImages = [
 
 const DinasGrid = () => {
   const navigate = useNavigate();
+  const [activeId, setActiveId] = useState(null);
+
+  const handleCardClick = (image) => {
+    if (activeId === image.id) {
+      navigate(image.route);
+      setActiveId(null);
+    } else {
+      setActiveId(image.id);
+    }
+  };
 
   return (
     <>
@@ -180,7 +190,6 @@ const DinasGrid = () => {
             data-aos-duration="900"
             data-aos-delay={index * 80}
           >
-            {/* Card khusus mobile: lebih pendek, image object-contain agar tidak terpotong */}
             <div
               className="
                 relative overflow-hidden rounded-2xl
@@ -195,7 +204,7 @@ const DinasGrid = () => {
               <button
                 type="button"
                 className="w-full h-full flex items-center justify-center bg-transparent border-none outline-none cursor-pointer"
-                onClick={() => navigate(image.route)}
+                onClick={() => handleCardClick(image)}
               >
                 <img
                   src={image.src}
@@ -221,24 +230,38 @@ const DinasGrid = () => {
                 />
               </button>
 
-              <div
-                className="
-                  absolute inset-x-0 bottom-0 w-full p-1 text-center text-[#F6EDDD] font-['Titan_One'] text-sm
-                  bg-gray-700/36 backdrop-blur-sm
-                  opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0
-                  transition-all duration-250 ease-in-out
-                "
-                style={{
-                  borderBottomLeftRadius: "1rem",
-                  borderBottomRightRadius: "1rem",
-                }}
-              >
-                {image.alt}
-              </div>
+              {/* Title pop-up */}
+              {activeId === image.id && (
+                <div
+                  className="
+                    absolute inset-x-0 bottom-0 w-full p-2 text-center text-[#F6EDDD] font-['Titan_One'] text-base
+                    bg-gray-900/70 backdrop-blur-md rounded-b-2xl
+                    animate-fadeIn
+                  "
+                  style={{
+                    borderBottomLeftRadius: "1rem",
+                    borderBottomRightRadius: "1rem",
+                  }}
+                >
+                  {image.alt}
+                  <div className="text-xs text-yellow-200 mt-1">
+                    Find More
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
       </div>
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px);}
+          to { opacity: 1; transform: translateY(0);}
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.25s;
+        }
+      `}</style>
     </>
   );
 };

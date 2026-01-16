@@ -14,15 +14,25 @@ const backgrounds = [kegiatan, kegiatan2];
 export const Sinergi = () => {
   useEffect(() => {
     document.title = "Sinergi || BEM KM FTI UNAND";
+    // Scroll otomatis jika ada hash #dinas&biro
+    if (window.location.hash === "#dinas&biro") {
+      setTimeout(() => {
+        const section = document.getElementById("dinas&biro");
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+        history.replaceState(null, "", "/sinergi");
+      }, 400);
+    }
   }, []);
 
   const [bgIndex, setBgIndex] = useState(0);
   const [prevBgIndex, setPrevBgIndex] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
 
   const changeBg = (newIndex) => {
     setPrevBgIndex(bgIndex);
-    setBgIndex(newIndex); // Langsung ganti background baru
+    setBgIndex(newIndex);
     setIsTransitioning(true);
     setTimeout(() => {
       setIsTransitioning(false);
@@ -32,12 +42,21 @@ export const Sinergi = () => {
           window.AOS.refreshHard();
         }
       }, 50);
-    }, 500); // durasi crossfade (ms)
+    }, 500);
   };
 
   const prevBg = () =>
     changeBg((bgIndex - 1 + backgrounds.length) % backgrounds.length);
   const nextBg = () => changeBg((bgIndex + 1) % backgrounds.length);
+
+  // Fungsi untuk handle tutup dengan animasi
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      setMenuOpen(false);
+      setClosing(false);
+    }, 200);
+  };
 
   return (
     <>
@@ -71,7 +90,12 @@ export const Sinergi = () => {
         <div className="absolute inset-0 bg-gray-900/80 z-10 pointer-events-none" />
         {/* Konten utama */}
         <div className="relative z-20">
-          <NavbarSinergi />
+          <NavbarSinergi
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            closing={closing}
+            handleClose={handleClose}
+          />
           <div
             key={bgIndex}
             className="h-screen flex flex-col items-center justify-center -mt-24 text-center"
@@ -113,40 +137,44 @@ export const Sinergi = () => {
           </div>
         </div>
         {/* Arrow Controls */}
-        <button
-          onClick={prevBg}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 text-gray-300 rounded-full p-10 cursor-pointer"
-          aria-label="Previous Background"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M15 18l-6-6 6-6" />
-          </svg>
-        </button>
-        <button
-          onClick={nextBg}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 text-gray-300 rounded-full p-10 cursor-pointer"
-          aria-label="Next Background"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M9 6l6 6-6 6" />
-          </svg>
-        </button>
+        {!menuOpen && !closing && (
+          <>
+            <button
+              onClick={prevBg}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-30 text-gray-300 rounded-full p-10 cursor-pointer"
+              aria-label="Previous Background"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button
+              onClick={nextBg}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-30 text-gray-300 rounded-full p-10 cursor-pointer"
+              aria-label="Next Background"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </>
+        )}
       </div>
 
       {/* StatsSinergi mengambang di antara section */}
@@ -163,7 +191,7 @@ export const Sinergi = () => {
       <KatakataGub />
 
       {/* Dinas Sinergi Section */}
-      <div id="sinergi">
+      <div id="dinas&biro">
         <DinasSinergi />
       </div>
 

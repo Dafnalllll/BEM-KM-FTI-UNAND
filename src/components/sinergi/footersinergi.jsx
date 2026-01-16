@@ -119,12 +119,19 @@ export const FooterSinergi = () => {
               <span className="transition-transform duration-200 group-hover:translate-x-2">
                 &rarr;
               </span>
-              <a
-                href="/sinergi"
-                className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
+              <button
+                type="button"
+                className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2 bg-transparent border-none outline-none cursor-pointer"
+                onClick={() => {
+                  if (window.location.pathname === "/sinergi") {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  } else {
+                    window.location.href = "/sinergi";
+                  }
+                }}
               >
                 Home
-              </a>
+              </button>
             </li>
             <li className="group flex items-center gap-2 text-[#e0a100]">
               <span className="transition-transform duration-200 group-hover:translate-x-2">
@@ -142,21 +149,10 @@ export const FooterSinergi = () => {
                 &rarr;
               </span>
               <a
-                href="#"
+                href="/sinergi#dinas&biro"
                 className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
               >
-                Dinas
-              </a>
-            </li>
-            <li className="group flex items-center gap-2 text-[#e0a100]">
-              <span className="transition-transform duration-200 group-hover:translate-x-2">
-                &rarr;
-              </span>
-              <a
-                href="#"
-                className="text-[#fff9d6] font-bold transition-transform duration-300 group-hover:translate-x-2"
-              >
-                Galeri
+                Dinas & Biro
               </a>
             </li>
           </ul>
