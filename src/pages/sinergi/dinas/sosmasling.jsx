@@ -35,7 +35,7 @@ const eksekutifList = [
     name: "Muhammad Daffa",
     photo: Daffa,
     desc: "Staff Ahli",
-    jurusan: "Teknik Komputer 2021",
+    jurusan: "Teknik Komputer 2022",
     instagram: "https://www.instagram.com/mhddaffa._/",
   },
   {
