@@ -16,7 +16,7 @@ export function FooterVismayakriya({ onTabChange }) {
       <div className="footer-glow"></div>
 
       <div className="container">
-        <div className="footer-grid">
+        <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
           {/* Col 1: Brand & Philosophy */}
           <div className="footer-brand">
             <div className="footer-logo-group">
@@ -33,53 +33,10 @@ export function FooterVismayakriya({ onTabChange }) {
               <a href={cabinetInfo.contact.instagram} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Instagram">
                 <img src={resolveAsset('/vismayakriya/socialmedia/instagram.webp')} alt="Instagram" />
               </a>
-              <a href={cabinetInfo.contact.tiktok} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="TikTok">
-                <img src={resolveAsset('/vismayakriya/socialmedia/tiktok.webp')} alt="TikTok" />
-              </a>
-              <a href={cabinetInfo.contact.youtube} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="YouTube">
-                <img src={resolveAsset('/vismayakriya/socialmedia/youtube.webp')} alt="YouTube" />
-              </a>
-              <a href={cabinetInfo.contact.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="LinkedIn">
-                <img src={resolveAsset('/vismayakriya/socialmedia/linkedln.webp')} alt="LinkedIn" />
-              </a>
-              <a href={cabinetInfo.contact.spotify} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Spotify">
-                <img src={resolveAsset('/vismayakriya/socialmedia/spotify.webp')} alt="Spotify" />
-              </a>
-              <a href={cabinetInfo.contact.github} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="GitHub">
-                <img src={resolveAsset('/vismayakriya/socialmedia/github.webp')} alt="GitHub" />
-              </a>
             </div>
           </div>
 
-          {/* Col 2: Navigasi Cepat */}
-          <div>
-            <h4 className="footer-heading">Navigasi</h4>
-            <div className="footer-links">
-              <a href="#/" className="footer-link" onClick={handleNavClick('beranda')}>Beranda</a>
-              <a href="#/tentang" className="footer-link" onClick={handleNavClick('tentang')}>Tentang Kabinet</a>
-              <a href="#/dinas" className="footer-link" onClick={handleNavClick('dinas')}>Dinas & Biro</a>
-              <a href="#/program-kerja" className="footer-link" onClick={handleNavClick('program-kerja')}>Program Kerja</a>
-              <a href="#/galeri" className="footer-link" onClick={handleNavClick('galeri')}>Dokumentasi Galeri</a>
-              <a href="#/aspirasi" className="footer-link" onClick={handleNavClick('aspirasi')}>Sampaikan Aspirasi</a>
-            </div>
-          </div>
-
-          {/* Col 3: Dinas & Biro */}
-          <div>
-            <h4 className="footer-heading">Dinas & Biro</h4>
-            <div className="footer-links">
-              {departmentsData.slice(0, 6).map(d => (
-                <a key={d.id} href={`#/dinas?slug=${d.slug}`} className="footer-link" onClick={handleNavClick('dinas', d.slug)}>
-                  &bull; {d.shortName}
-                </a>
-              ))}
-              <a href="#/dinas" className="footer-link" style={{ color: '#60a5fa', fontWeight: 600 }} onClick={handleNavClick('dinas')}>
-                Lihat Semua ({departmentsData.length})
-              </a>
-            </div>
-          </div>
-
-          {/* Col 4: Kontak & Sekretariat */}
+          {/* Col 2: Kontak & Sekretariat */}
           <div>
             <h4 className="footer-heading">Sekretariat</h4>
             <div className="footer-contact-item">
@@ -105,12 +62,7 @@ export function FooterVismayakriya({ onTabChange }) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="footer-bottom">
-          <div className="footer-bottom-logos">
-            <img src={resolveAsset(cabinetInfo.logo)} alt="Kabinet Vismayakriya" className="footer-bottom-logo" title="Kabinet Vismayakriya" />
-            <img src={resolveAsset(cabinetInfo.bemLogo)} alt="BEM KM FTI" className="footer-bottom-logo" title="BEM KM FTI" />
-            <img src={resolveAsset(cabinetInfo.ftiLogo)} alt="FTI UNAND" className="footer-bottom-logo" title="Fakultas Teknologi Informasi Universitas Andalas" />
-          </div>
+        <div className="footer-bottom" style={{ justifyContent: 'center', textAlign: 'center' }}>
           <div>
             &copy; 2026 BEM KM FTI &mdash; {cabinetInfo.cabinet}. Universitas Andalas.
           </div>

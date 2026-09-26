@@ -71,67 +71,36 @@ export function NavbarVismayakriya({ activeTab, onTabChange, onOpenAspirationMod
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </a>
-              <div className="dropdown-menu dropdown-menu-wide">
-                <div className="dropdown-grid">
-                  {/* Left Col: Profil Kabinet */}
-                  <div className="dropdown-col">
-                    <a
-                      href="#/tentang"
-                      className="dropdown-item dropdown-item-featured"
-                      onClick={handleNavClick('tentang')}
-                    >
-                      <div className="dropdown-item-meta">
-                        <span className="dropdown-item-name" style={{ color: '#60a5fa', fontWeight: 700 }}>
-                          Profil Kabinet Vismaya Kriya
-                        </span>
-                        <span className="dropdown-item-desc">Visi, Misi & Struktur BEM KM FTI</span>
-                      </div>
-                    </a>
+              <div className="dropdown-menu dropdown-menu-narrow">
+                <a
+                  href="#/tentang"
+                  className="dropdown-item"
+                  onClick={(e) => {
+                    handleNavClick('tentang')(e);
+                  }}
+                >
+                  <div className="dropdown-item-meta">
+                    <span className="dropdown-item-name" style={{ color: '#60a5fa', fontWeight: 700 }}>
+                      Profil Kabinet
+                    </span>
                   </div>
-
-                  {/* Right Col: Ormawa (Himpunan & UKM) */}
-                  <div className="dropdown-col">
-                    <div className="dropdown-header-title">HIMPUNAN MAHASISWA</div>
-                    {ormawaData.filter(o => o.type === 'Himpunan').map(o => (
-                      <a
-                        key={o.id}
-                        href="#/tentang"
-                        className="dropdown-item dropdown-item-sm"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleNavClick('tentang')(e);
-                          if (onOpenOrmawaModal) onOpenOrmawaModal(o.id);
-                        }}
-                      >
-                        <img src={resolveAsset(o.logo)} alt={o.shortName} className="dropdown-ormawa-icon" />
-                        <div className="dropdown-item-meta">
-                          <span className="dropdown-item-name">{o.shortName}</span>
-                          <span className="dropdown-item-desc">{o.name}</span>
-                        </div>
-                      </a>
-                    ))}
-
-                    <div className="dropdown-header-title" style={{ marginTop: '0.75rem' }}>UNIT KEGIATAN MAHASISWA (UKM)</div>
-                    {ormawaData.filter(o => o.type !== 'Himpunan').map(o => (
-                      <a
-                        key={o.id}
-                        href="#/tentang"
-                        className="dropdown-item dropdown-item-sm"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleNavClick('tentang')(e);
-                          if (onOpenOrmawaModal) onOpenOrmawaModal(o.id);
-                        }}
-                      >
-                        <img src={resolveAsset(o.logo)} alt={o.shortName} className="dropdown-ormawa-icon" />
-                        <div className="dropdown-item-meta">
-                          <span className="dropdown-item-name">{o.shortName}</span>
-                          <span className="dropdown-item-desc">{o.name}</span>
-                        </div>
-                      </a>
-                    ))}
+                </a>
+                <a
+                  href="#/tentang#ormawa-fti"
+                  className="dropdown-item"
+                  onClick={(e) => {
+                    handleNavClick('tentang')(e);
+                    setTimeout(() => {
+                      document.getElementById('ormawa-fti')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
+                >
+                  <div className="dropdown-item-meta">
+                    <span className="dropdown-item-name" style={{ fontWeight: 700 }}>
+                      Himpunan & UKM
+                    </span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 

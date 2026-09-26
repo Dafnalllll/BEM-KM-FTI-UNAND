@@ -109,26 +109,6 @@ export const partnersData = [
     }
   },
   {
-    id: "ukos",
-    slug: "ukos",
-    name: "Unit Kegiatan Olahraga & Seni FTI",
-    shortName: "UKOS FTI",
-    category: "Unit Kegiatan Mahasiswa (UKM)",
-    department: "Fakultas Teknologi Informasi",
-    logo: "./src/assets/ukm/ukos.webp",
-    summary: "Wadah penyaluran bakat, kebugaran fisik, kreativitas seni, dan minat keolahragaan mahasiswa FTI UNAND.",
-    description: "UKOS FTI UNAND adalah wadah resmi bagi mahasiswa FTI untuk mengasah bakat non-akademik di bidang olahraga (futsal, basket, bulutangkis, e-sports) serta kesenian (musik, tari, desain grafis). UKOS rutin mewakili FTI dalam ajang Pekan Olahraga & Seni kampus.",
-    vision: "Mewujudkan UKOS FTI UNAND sebagai wadah apresiasi bakat olahraga dan seni yang sporty, kreatif, dan berprestasi.",
-    missions: [
-      "Memfasilitasi latihan rutin dan pembinaan cabang olahraga serta seni bagi civitas FTI.",
-      "Menciptakan iklim kompetisi yang sehat dan menjunjung tinggi sportivitas.",
-      "Mengharumkan nama FTI dalam kejuaraan olahraga dan perlombaan seni tingkat universitas maupun regional."
-    ],
-    socials: {
-      instagram: "https://www.instagram.com/ukos_ftiunand/"
-    }
-  },
-  {
     id: "tectona",
     slug: "tectona",
     name: "Tectona FTI UNAND",

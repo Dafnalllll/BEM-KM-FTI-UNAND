@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { api } from '../utils/api.js';
 import { departmentsData } from '../../../../../data/VismayaKriya/departments.js';
-import { getStatusBadgeClass } from '../utils/helpers.js';
+import { getStatusBadgeClass, matchesStatus, matchesCategory } from '../utils/helpers.js';
 import { ProgramModalVismayakriya } from '../modals/programmodalvismayakriya.jsx';
 
 export function ProkerVismayakriya({ initialProkerId, onClearInitialProkerId }) {
@@ -49,13 +49,17 @@ export function ProkerVismayakriya({ initialProkerId, onClearInitialProkerId }) 
     let result = [...allPrograms];
 
     if (dept !== 'all') {
-      result = result.filter(p => p.departmentSlug?.toLowerCase() === dept.toLowerCase());
+      const qDept = dept.toLowerCase().trim();
+      result = result.filter(p =>
+        p.departmentSlug?.toLowerCase() === qDept ||
+        p.department?.toLowerCase().includes(qDept)
+      );
     }
     if (category !== 'all') {
-      result = result.filter(p => p.category?.toLowerCase() === category.toLowerCase());
+      result = result.filter(p => matchesCategory(p.category, category));
     }
     if (status !== 'all') {
-      result = result.filter(p => p.status?.toLowerCase() === status.toLowerCase());
+      result = result.filter(p => matchesStatus(p.status, status));
     }
     if (search.trim() !== '') {
       const q = search.toLowerCase().trim();
@@ -135,9 +139,9 @@ export function ProkerVismayakriya({ initialProkerId, onClearInitialProkerId }) 
                 onChange={(e) => setStatus(e.target.value)}
               >
                 <option value="all">Semua Status</option>
-                <option value="Selesai">Selesai (Terlaksana)</option>
-                <option value="Sedang Berjalan">Sedang Berjalan</option>
-                <option value="Akan Datang">Akan Datang</option>
+                <option value="on progress">On Progress (Sedang Berlangsung)</option>
+                <option value="selesai">Selesai (Terlaksana)</option>
+                <option value="belum">Belum / Dalam Perancangan</option>
               </select>
             </div>
 
@@ -210,7 +214,6 @@ export function ProkerVismayakriya({ initialProkerId, onClearInitialProkerId }) 
                         }}
                       >
                         <span>Detail</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                       </button>
                     </div>
                   </div>

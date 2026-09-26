@@ -88,9 +88,9 @@ export function ProgramsPage() {
                 onChange={(e) => setSelectedStatus(e.target.value)}
               >
                 <option value="all">Semua Status</option>
-                <option value="Selesai">Selesai (Terlaksana)</option>
-                <option value="Sedang Berjalan">Sedang Berjalan</option>
-                <option value="Akan Datang">Akan Datang</option>
+                <option value="on progress">On Progress (Sedang Berlangsung)</option>
+                <option value="selesai">Selesai (Terlaksana)</option>
+                <option value="belum">Belum / Dalam Perancangan</option>
               </select>
             </div>
 

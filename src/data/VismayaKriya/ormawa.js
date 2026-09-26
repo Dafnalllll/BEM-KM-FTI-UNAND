@@ -20,8 +20,7 @@ export const ormawaData = [
     ],
     socials: {
       instagram: "https://instagram.com/hmifunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+      
     }
   },
   {
@@ -41,8 +40,7 @@ export const ormawaData = [
     ],
     socials: {
       instagram: "https://instagram.com/hmsiunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+     
     }
   },
   {
@@ -61,9 +59,7 @@ export const ormawaData = [
       "Mendorong partisipasi mahasiswa dalam ajang kompetisi teknologi nasional dan internasional."
     ],
     socials: {
-      instagram: "https://instagram.com/himatekomunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+      instagram: "https://instagram.com/himatekomunand"
     }
   },
   {
@@ -83,8 +79,7 @@ export const ormawaData = [
     ],
     socials: {
       instagram: "https://instagram.com/dpmftiunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+     
     }
   },
   {
@@ -104,29 +99,7 @@ export const ormawaData = [
     ],
     socials: {
       instagram: "https://instagram.com/fsiftiunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
-    }
-  },
-  {
-    id: "ukos",
-    name: "Unit Kegiatan Olahraga & Seni FTI",
-    shortName: "UKOS FTI UNAND",
-    type: "UKM",
-    logo: "/vismayakriya/ukm/ukos.webp",
-    banner: "/vismayakriya/dinasnexus/kegiatan/internal/FTI Parade.webp",
-    scope: "Unit Kegiatan Mahasiswa Minat Bakat Olahraga & Seni",
-    description: "Wadah ekspresi non-akademik bagi mahasiswa FTI yang memiliki minat dan bakat di bidang cabang olahraga (futsal, basket, badminton, e-sports) serta kesenian (musik, tari, fotografi).",
-    vision: "Mewujudkan UKOS FTI sebagai sarana pengembangan bakat olahraga dan seni yang sportif, kreatif, dan berprestasi.",
-    missions: [
-      "Fasilitasi latihan rutin dan pembinaan atlet serta seniman mahasiswa FTI.",
-      "Menyelenggarakan turnamen olahraga dan panggung ekspresi seni antarjurusan.",
-      "Mencetak prestasi kontingen FTI pada ajang kompetisi di tingkat universitas."
-    ],
-    socials: {
-      instagram: "https://instagram.com/ukosftiunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+      
     }
   },
   {
@@ -146,8 +119,7 @@ export const ormawaData = [
     ],
     socials: {
       instagram: "https://instagram.com/tectonaftiunand",
-      youtube: "https://youtube.com",
-      linkedin: "https://linkedin.com"
+     
     }
   }
 ];

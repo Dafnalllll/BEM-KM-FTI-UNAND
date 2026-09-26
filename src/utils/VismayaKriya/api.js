@@ -11,6 +11,8 @@ import { galleryData } from '../data/gallery.js';
 import { newsData } from '../data/news.js';
 import { partnersData } from '../data/partners.js';
 
+import { matchesStatus, matchesCategory } from './helpers.js';
+
 const LOCAL_STORAGE_ASPIRASI_KEY = 'bem_fti_aspirations_history';
 
 export const api = {
@@ -119,11 +121,11 @@ export const api = {
     }
 
     if (category && category !== 'all') {
-      filtered = filtered.filter(p => p.category?.toLowerCase() === category.toLowerCase().trim());
+      filtered = filtered.filter(p => matchesCategory(p.category, category));
     }
 
     if (status && status !== 'all') {
-      filtered = filtered.filter(p => p.status?.toLowerCase() === status.toLowerCase().trim());
+      filtered = filtered.filter(p => matchesStatus(p.status, status));
     }
 
     if (search && search.trim() !== '') {

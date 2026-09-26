@@ -7,7 +7,7 @@ import { departmentsData } from '../../../../../data/VismayaKriya/departments.js
 import { programsData } from '../../../../../data/VismayaKriya/programs.js';
 import { galleryData } from '../../../../../data/VismayaKriya/gallery.js';
 import { newsData } from '../../../../../data/VismayaKriya/news.js';
-import { resolveAsset } from './helpers.js';
+import { resolveAsset, matchesStatus, matchesCategory } from './helpers.js';
 
 const LOCAL_STORAGE_ASPIRASI_KEY = 'vismayakriya_aspirations_history';
 
@@ -83,18 +83,19 @@ export const api = {
     let filtered = [...programsData];
 
     if (dept && dept !== 'all') {
+      const qDept = dept.toLowerCase().trim();
       filtered = filtered.filter(p =>
-        p.departmentSlug?.toLowerCase() === dept.toLowerCase() ||
-        p.department?.toLowerCase().includes(dept.toLowerCase())
+        p.departmentSlug?.toLowerCase() === qDept ||
+        p.department?.toLowerCase().includes(qDept)
       );
     }
 
     if (category && category !== 'all') {
-      filtered = filtered.filter(p => p.category?.toLowerCase() === category.toLowerCase());
+      filtered = filtered.filter(p => matchesCategory(p.category, category));
     }
 
     if (status && status !== 'all') {
-      filtered = filtered.filter(p => p.status?.toLowerCase() === status.toLowerCase());
+      filtered = filtered.filter(p => matchesStatus(p.status, status));
     }
 
     if (search && search.trim() !== '') {
@@ -102,6 +103,7 @@ export const api = {
       filtered = filtered.filter(p =>
         p.title.toLowerCase().includes(q) ||
         p.description?.toLowerCase().includes(q) ||
+        p.summary?.toLowerCase().includes(q) ||
         p.department?.toLowerCase().includes(q) ||
         p.tags?.some(tag => tag.toLowerCase().includes(q))
       );
@@ -113,24 +115,35 @@ export const api = {
   async getProgramById(idOrTitle) {
     if (!idOrTitle) return null;
     const searchKey = String(idOrTitle).toLowerCase().trim();
+    const searchNorm = searchKey.replace(/[-_\s]/g, '');
 
-    // 1. Try exact ID match
-    let proker = programsData.find(p => p.id.toLowerCase() === searchKey);
+    // 1. Try exact ID match or normalized ID match
+    let proker = programsData.find(p => p.id.toLowerCase() === searchKey || p.id.toLowerCase().replace(/[-_\s]/g, '') === searchNorm);
 
-    // 2. Try title match or partial match
+    // 2. Try title match or normalized title match
     if (!proker) {
-      proker = programsData.find(p => p.title.toLowerCase().includes(searchKey) || searchKey.includes(p.title.toLowerCase()));
+      proker = programsData.find(p => {
+        const pTitleLow = p.title.toLowerCase();
+        const pTitleNorm = pTitleLow.replace(/[-_\s]/g, '');
+        return pTitleLow.includes(searchKey) || searchKey.includes(pTitleLow) || pTitleNorm.includes(searchNorm) || searchNorm.includes(pTitleNorm);
+      });
     }
 
-    // 3. Fallback: construct full valid proker object if string passed
+    // 3. Try tags match
     if (!proker) {
+      proker = programsData.find(p => (p.tags || []).some(t => t.toLowerCase().includes(searchKey) || searchKey.includes(t.toLowerCase())));
+    }
+
+    // 4. Fallback: construct full valid proker object if string passed
+    if (!proker) {
+      const isRistek = searchKey.includes('hack') || searchKey.includes('code') || searchKey.includes('tech') || searchKey.includes('ristek');
       proker = {
         id: searchKey.replace(/\s+/g, '-'),
         title: typeof idOrTitle === 'string' ? idOrTitle : 'Program Kerja BEM FTI',
-        department: 'Dinas / Biro BEM KM FTI',
-        departmentSlug: 'vismayakriya',
+        department: isRistek ? 'Dinas Riset dan Teknologi' : 'Dinas BEM KM FTI',
+        departmentSlug: isRistek ? 'ristek' : 'vismayakriya',
         category: 'Pendidikan & Riset',
-        status: 'Sedang Berjalan',
+        status: 'On Progress',
         date: 'Sepanjang Periode',
         tags: ['Vismayakriya', 'BEM FTI', 'Sinergi'],
         image: '/vismayakriya/dinasnexus/kegiatan/pelantikan.webp',

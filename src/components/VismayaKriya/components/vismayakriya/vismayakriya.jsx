@@ -204,8 +204,8 @@ export default function Vismayakriya({ initialPath = '/' }) {
                   <canvas ref={heroCanvasRef} id="hero-particles" className="hero-canvas"></canvas>
 
                   {/* Background Image with Dark Navy Gradient Overlay */}
-                  <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${info.heroTeamImage}')`, backgroundSize: 'cover', backgroundPosition: 'center top', filter: 'saturate(0.85)', opacity: 0.38 }}></div>
-                  <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, rgba(11, 18, 36, 0.6) 0%, rgba(7, 12, 24, 0.95) 100%), linear-gradient(180deg, rgba(7, 12, 24, 0.4) 0%, #070c18 100%)' }}></div>
+                  <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${resolveAsset(info.heroTeamImage)}')`, backgroundSize: 'cover', backgroundPosition: 'center top', filter: 'saturate(0.9)', opacity: 0.65 }}></div>
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(7, 12, 24, 0.45) 0%, rgba(7, 12, 24, 0.8) 100%)' }}></div>
 
                   {/* Atmospheric Glows */}
                   <div className="cosmic-glow-blob glow-blue" style={{ width: '500px', height: '500px', top: '15%', left: '10%' }}></div>
@@ -213,11 +213,6 @@ export default function Vismayakriya({ initialPath = '/' }) {
 
                   {/* Hero Content */}
                   <div className="container" style={{ position: 'relative', zIndex: 10, textAlign: 'center', paddingTop: '6rem', paddingBottom: '4rem' }}>
-                    {/* Official Cabinet Logo */}
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '110px', height: '110px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(111,143,203,0.18) 0%, transparent 70%)', marginBottom: '1.5rem', filter: 'drop-shadow(0 0 20px rgba(56, 189, 248, 0.4))', animation: 'celestialFloat 6s ease-in-out infinite' }}>
-                      <img src={info.logo} alt="Logo Kabinet Vismayakriya" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                    </div>
-
                     <div className="section-tag" style={{ marginBottom: '1.25rem' }}>
                       <span>FTI &bull; Universitas Andalas</span>
                     </div>
@@ -229,9 +224,11 @@ export default function Vismayakriya({ initialPath = '/' }) {
                       </span>
                     </h1>
 
-                    <p className="hero-tagline">
-                      "{info.tagline}"
-                    </p>
+                    {info.tagline && info.tagline.trim() !== '' && (
+                      <p className="hero-tagline">
+                        {info.tagline}
+                      </p>
+                    )}
 
                     {/* Dual Call to Action Buttons */}
                     <div className="hero-cta-group" style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -245,7 +242,6 @@ export default function Vismayakriya({ initialPath = '/' }) {
                         }}
                       >
                         <span>Jelajahi Kabinet</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
                       </a>
                       <a
                         href="#/tentang"
@@ -256,7 +252,6 @@ export default function Vismayakriya({ initialPath = '/' }) {
                         }}
                       >
                         <span>Kenali Kami</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                       </a>
                     </div>
                   </div>
@@ -556,10 +551,6 @@ export default function Vismayakriya({ initialPath = '/' }) {
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }} title="Forum Studi Islam FTI" onClick={() => handleOpenOrmawaModalById('fsi')}>
                         <img src={resolveAsset('/vismayakriya/ukm/fsi.webp')} alt="FSI FTI" style={{ height: '48px', objectFit: 'contain' }} />
                         <span style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 600 }}>FSI FTI</span>
-                      </div>
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }} title="Unit Kegiatan Olahraga & Seni FTI" onClick={() => handleOpenOrmawaModalById('ukos')}>
-                        <img src={resolveAsset('/vismayakriya/ukm/ukos.webp')} alt="UKOS FTI" style={{ height: '48px', objectFit: 'contain' }} />
-                        <span style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 600 }}>UKOS FTI</span>
                       </div>
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }} title="Tectona FTI" onClick={() => handleOpenOrmawaModalById('tectona')}>
                         <img src={resolveAsset('/vismayakriya/ukm/tectona.webp')} alt="TECTONA FTI" style={{ height: '48px', objectFit: 'contain' }} />

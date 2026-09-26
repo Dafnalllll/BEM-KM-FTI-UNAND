@@ -118,19 +118,19 @@ export function TentangVismayakriya() {
             <div>
               <div className="section-tag" style={{ marginBottom: '0.75rem' }}>Identitas & Landasan Filosofis</div>
               <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#ffffff', marginBottom: '1.25rem', lineHeight: 1.2 }}>
-                Simpul Pertemuan, Percikan Perubahan
+                {info.philosophy?.title || "Simpul Pertemuan, Percikan Perubahan"}
               </h2>
               <p style={{ color: '#cbd5e1', fontSize: '1rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                {info.philosophy.concept}
+                {info.philosophy?.concept}
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {info.philosophy.symbolism.map((sym, idx) => (
+                {info.philosophy?.symbolism?.map((sym, idx) => (
                   <div key={idx} style={{ padding: '1rem 1.25rem', background: 'rgba(7,12,24,0.5)', borderLeft: '3px solid #38bdf8', borderRadius: '0 10px 10px 0', borderTop: '1px solid rgba(175,203,238,0.1)', borderRight: '1px solid rgba(175,203,238,0.1)', borderBottom: '1px solid rgba(175,203,238,0.1)' }}>
                     <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.95rem', marginBottom: '0.25rem' }}>{sym.element}</div>
                     <div style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.5 }}>{sym.meaning}</div>
                   </div>
-                ))}
+                )) || null}
               </div>
             </div>
           </div>
@@ -156,16 +156,16 @@ export function TentangVismayakriya() {
         <div className="container">
           <div className="section-header">
             <div className="section-tag">Rencana Strategis</div>
-            <h2 className="section-title">5 Pilar Misi Vismayakriya</h2>
+            <h2 className="section-title">{info.missions?.length || 3} Pilar Misi Vismayakriya</h2>
             <p className="section-subtitle">
-              Lima langkah nyata dan terukur dalam merealisasikan marwah pergerakan, advokasi, dan kemajuan ekosistem mahasiswa FTI.
+              Langkah nyata dan terukur dalam merealisasikan marwah pergerakan, advokasi, dan kemajuan ekosistem mahasiswa FTI.
             </p>
             <div className="section-divider"></div>
           </div>
 
           {/* Timeline Misi */}
           <div className="mission-timeline">
-            {info.missions.map(m => (
+            {info.missions?.map(m => (
               <div key={m.id} className="mission-item">
                 <div className="mission-number-node">{m.id}</div>
                 <div className="mission-card">
@@ -173,7 +173,7 @@ export function TentangVismayakriya() {
                   <p className="mission-text">{m.desc}</p>
                 </div>
               </div>
-            ))}
+            )) || null}
           </div>
         </div>
       </section>
@@ -233,12 +233,12 @@ export function TentangVismayakriya() {
                 onClick={() => handleMemberClick(info.leaders.secretariat)}
               >
                 <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
-                  <img src={resolveAsset(info.leaders.secretariat.image)} alt="Sekretaris Daerah" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={resolveAsset(info.leaders.secretariat.image)} alt={info.leaders.secretariat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
                   <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Sekretariat</div>
                   <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>{info.leaders.secretariat.name}</div>
-                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>Sekretaris Daerah</div>
+                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>{info.leaders.secretariat?.title || "Sekretaris Daerah"}</div>
                 </div>
               </div>
 
@@ -247,12 +247,12 @@ export function TentangVismayakriya() {
                 onClick={() => handleMemberClick(info.leaders.finance)}
               >
                 <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
-                  <img src={resolveAsset(info.leaders.finance.image)} alt="Bendahara Umum" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={resolveAsset(info.leaders.finance.image)} alt={info.leaders.finance.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
                   <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Keuangan</div>
                   <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>{info.leaders.finance.name}</div>
-                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>Bendahara Umum</div>
+                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>{info.leaders.finance?.title || "Bendahara Daerah"}</div>
                 </div>
               </div>
             </div>
@@ -304,7 +304,7 @@ export function TentangVismayakriya() {
             <div className="section-tag">Keluarga Mahasiswa FTI</div>
             <h2 className="section-title">Himpunan & UKM di FTI UNAND</h2>
             <p className="section-subtitle">
-              Sinergi 3 Himpunan Mahasiswa Jurusan dan 4 Unit Kegiatan Mahasiswa. Klik pada kartu Himpunan atau UKM untuk melihat profil lengkap, naungan jurusan, visi, misi, dan sosial media.
+              Sinergi 3 Himpunan Mahasiswa Jurusan dan 3 Unit Kegiatan Mahasiswa. Klik pada kartu Himpunan atau UKM untuk melihat profil lengkap, naungan jurusan, visi, misi, dan sosial media.
             </p>
             <div className="section-divider"></div>
           </div>
@@ -316,7 +316,7 @@ export function TentangVismayakriya() {
               type="button"
               onClick={() => setOrmawaFilter('all')}
             >
-              Semua Lembaga (7)
+              Semua Lembaga (6)
             </button>
             <button
               className={`pill-btn ${ormawaFilter === 'Himpunan' ? 'active' : ''}`}
@@ -330,7 +330,7 @@ export function TentangVismayakriya() {
               type="button"
               onClick={() => setOrmawaFilter('UKM')}
             >
-              4 UKM FTI
+              3 UKM FTI
             </button>
           </div>
 
@@ -366,7 +366,6 @@ export function TentangVismayakriya() {
                 <div style={{ marginTop: 'auto', width: '100%' }}>
                   <button className="btn btn-outline btn-sm" style={{ width: '100%' }} type="button">
                     <span>Lihat Profil & Visi Misi</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                   </button>
                 </div>
               </div>

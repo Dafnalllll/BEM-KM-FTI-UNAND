@@ -35,7 +35,7 @@ import KestariSinergi from "./pages/sinergi/dinas/kestari";
 
 import Vismayakriya from "./components/VismayaKriya/components/vismayakriya/vismayakriya";
 
-function App() {
+export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -43,7 +43,6 @@ function App() {
       duration: 1000,
       once: false,
     });
-    // Tampilkan loading selama 1.5 detik
     const timer = setTimeout(() => setIsLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
@@ -87,15 +86,10 @@ function App() {
         <Route path="/dinassinergi/kastrat" element={<KastratSinergi />} />
         <Route path="/dinassinergi/auditinternal" element={<AuditInternalSinergi />} />
         <Route path="/dinassinergi/kestari" element={<KestariSinergi />} />
-        
 
-        
-
-        {/* 404 Not Found - harus di paling bawah */}
+        {/* 404 Not Found */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
 }
-
-export default App;

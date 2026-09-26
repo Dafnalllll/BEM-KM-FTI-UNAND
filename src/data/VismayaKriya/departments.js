@@ -9,48 +9,49 @@ export const departmentsData = [
     name: "Audit & Kesekretariatan",
     type: "Biro",
     shortName: "Audkes",
-    logo: "/vismayakriya/dinasnexus/logo/audkes.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Audkes.png",
     banner: "/vismayakriya/dinasnexus/press release/audkes/audkes.webp",
-    headName: "Miftahul Jannah & Ajo",
+    headName: "Equilibrilio Adilia & Monica Cania",
     headRole: "Kepala Biro Audkes",
     staffCount: 8,
     summary: "Mengelola tata kelola administrasi surat-menyurat, pengarsipan digital kabinet, dan audit internal demi transparansi.",
-    description: "Biro Audit dan Kesekretariatan (Audkes) bertindak sebagai pusat denyut nadi operasional internal BEM KM FTI. Biro ini bertanggung jawab mengawal standardisasi tata kelola administrasi surat, pengarsipan dokumen digital terpusat, pengadaan inventaris, serta melakukan audit keorganisasian secara berkala guna menjamin akuntabilitas serta ketertiban organisasi.",
-    vision: "Mewujudkan tata kelola kesekretariatan dan administrasi yang tertib, modern berbasis digital, serta sistem audit kelembagaan yang transparan dan akuntabel.",
+    description: "Biro Audit Internal dan Kestari berperan dalam menjaga ketertiban, administrasi, dan keberlangsungan internal BEM KM FTI UNAND. Kestari mengelola administrasi, arsip, inventaris, serta sekretariat, sementara Audit Internal memantau dan mengevaluasi kinerja pengurus dan program kerja. Keduanya bersinergi menciptakan organisasi yang tertib, transparan, efisien, dan harmonis.",
+    vision: "Menjadi biro yang profesional, transparan, dan akuntabel dalam pengelolaan administrasi serta pengawasan internal, guna mendukung kinerja organisasi BEM KM FTI yang efektif, tertib, dan berintegritas.",
     missions: [
-      "Mengintegrasikan sistem kearsipan dan surat-menyurat berbasis cloud secara terpadu.",
-      "Melakukan pengawasan dan evaluasi berkala terhadap inventaris serta administrasi dinas.",
-      "Menciptakan ruang kerja sekretariat yang representatif, nyaman, dan mendukung produktivitas."
+      "Membangun lingkungan organisasi yang solid dan harmonis.",
+      "Menjalankan monitoring dan evaluasi secara konsisten.",
+      "Menghadirkan program inovatif yang mendorong partisipasi pengurus.",
+      "Menanamkan nilai kebersamaan, kepedulian, dan sinergi.",
+      "Membangun komunikasi yang terbuka dan konstruktif.",
+      "Memastikan setiap pengurus memahami peran dan tanggung jawabnya."
     ],
     leaders: [
       {
-        name: "Miftahul Jannah",
+        name: "Equilibrilio Adilia",
         role: "Kepala Biro Audkes",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/audkes/miftah.webp",
-        quote: "Ketertiban administrasi adalah wujud profesionalisme tertinggi sebuah organisasi.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Ajo",
-        role: "Wakil Kepala Biro Audkes",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        name: "Monica Cania",
+        role: "Sekretaris Biro Audkes",
+        jurusan: "Teknik Komputer",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/audkes/ajo.webp",
-        quote: "Mengawal transparansi dokumen untuk menjaga kepercayaan seluruh pengurus.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Alya", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/alya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Fadhi", role: "Staf Biro Audkes", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/fadhi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Farhan", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/farhan.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ferdian", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/ferdian.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Sasya", role: "Staf Biro Audkes", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/sasya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Shyra", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/shyra.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Naira Ramadhani Halil", role: "Bendahara Biro Audkes", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/alya.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Rafi Saddiq", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/fadhi.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Aliyah Zahratul Salsa Dira", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/farhan.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Habbiel Zidanu Arsa", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/ferdian.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Shofiya Naura Jannah", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/sasya.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Rifdah Adela Putri", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/shyra.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["nexus-archive", "BE TECHNOPRENEUR", "SOP & PAP REGULATION", "STAFF OF THE MONTH (SOTM)", "EVALUASI PENGURUS"],
+    programs: ["Maternal (Manajemen Kinerja Internal)", "Sentra Arsip", "Internal Performance Review", "Harmoni Vismayakriya", "Staff of The Month", "Ornament (Organizational Development)", "Jejak Pengabdian", "Certificate of Service", "VisMart"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Audkes", image: "/vismayakriya/dinasnexus/press release/audkes/audkes.webp", date: "Periode 2025/2026" },
       { title: "Pengarsipan Digital Nexus Archive", image: "/vismayakriya/dinasnexus/kegiatan/audkes/nexusarchive.webp", date: "Sepanjang Periode" },
@@ -65,48 +66,48 @@ export const departmentsData = [
     name: "Advokasi & Kesejahteraan Mahasiswa",
     type: "Dinas",
     shortName: "Adkesma",
-    logo: "/vismayakriya/dinasnexus/logo/adkesma.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Adkesma.png",
     banner: "/vismayakriya/dinasnexus/press release/adkesma/aqila.webp",
-    headName: "Aqil & Imam",
+    headName: "Ahmad Faiz Batubara & Khalisah Iori Syakirah",
     headRole: "Kepala Dinas Adkesma",
-    staffCount: 9,
+    staffCount: 8,
     summary: "Garda terdepan dalam mengawal aspirasi, beasiswa, isu UKT, fasilitas kampus, dan kesehatan mental mahasiswa.",
-    description: "Dinas Advokasi dan Kesejahteraan Mahasiswa (Adkesma) adalah jembatan pelindung hak dan pemenuhan kebutuhan mahasiswa KM FTI. Berfokus pada pelayanan bantuan pembiayaan kuliah/UKT, penyaluran informasi beasiswa, advokasi sarana prasarana perkuliahan, serta penyediaan ruang konseling kesehatan mental dan pendampingan mahasiswa.",
-    vision: "Menjadikan BEM KM FTI sebagai rumah advokasi yang solutif, empatik, responsif, dan terpercaya dalam mewujudkan kesejahteraan komprehensif KM FTI.",
+    description: "Dinas Adkesma merupakan Dinas yang berfokus menampung serta membantu KM FTI yang terkendala perkuliahan. Dinas Adkesma menjadi wadah untuk KM FTI yang mengalami kesulitan yang akan di audisikan ke  pihak pimpinan fakultas.",
+    vision: "Mewujudkan profesionalitas dalam melayani dan menjadikan dinas yang aktif, totalitas serta advokatif dan edukatif dengan dedikasi sepenuh hati dalam mewujudkan keadilan dan kesejahteraan Mahasiswa Fakultas Teknologi Informasi.",
     missions: [
-      "Membuka kanal aspirasi dan pendampingan mahasiswa secara transparan dan berkesinambungan.",
-      "Mengawal transparansi penggolongan UKT serta memperluas akses bantuan beasiswa finansial.",
-      "Memfasilitasi perbaikan fasilitas dan sarana penunjang kegiatan perkuliahan di lingkungan FTI."
+      "Aktif menangani permasalahan mahasiswa FTI.",
+      "Memberikan pelayanan secara profesional dan totalitas.",
+      "Menyampaikan informasi dan kebijakan secara informatif.",
+      "Menampung dan memperjuangkan aspirasi mahasiswa.",
+      "Membangun hubungan baik dengan pimpinan fakultas untuk mendukung advokasi."
     ],
     leaders: [
       {
-        name: "Aqila",
+        name: "Ahmad Faiz Batubara",
         role: "Kepala Dinas Adkesma",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Sistem Informasi",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/adkesma/aqila.webp",
-        quote: "Setiap suara mahasiswa adalah amanah yang wajib kita perjuangkan hingga tuntas.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Imam",
+        name: "Khalisah Iori Syakirah",
         role: "Sekretaris Dinas Adkesma",
-        jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        jurusan: "Teknik Komputer",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/adkesma/imam.webp",
-        quote: "Advokasi empatik untuk memastikan tidak ada mahasiswa FTI yang tertinggal.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Adhit", role: "Staf Adkesma", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/adhit.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ael", role: "Staf Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/ael.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Alfa", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/alfa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Faiz", role: "Staf Adkesma", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Fariz", role: "Staf Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/fariz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Zahra", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/zahra.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Syakira Naura Jannah", role: "Bendahara Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/adhit.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Hana Rahmadini", role: "Staf Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/ael.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Dwi Sonnia Rahmadani", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/alfa.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Zahra Nurmaya", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/faiz.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhamad Fajri Aulia", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025",image: "/vismayakriya/dinasnexus/staff release/adkesma/fariz.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Abdul Jabbar", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/zahra.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["sahabat-fti", "ADVOTALK", "MABA CARE", "PUBLIC HEARING", "NEXCARE", "INTERSCHOLAR", "IPK PLUS"],
+    programs: ["DataBase", "Sekawan", "Interscholar", "IPK+", "Sahabat FTI", "Mabacare", "Advotalk", "Vismacare"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Adkesma", image: "/vismayakriya/dinasnexus/press release/adkesma/aqila.webp", date: "Periode 2025/2026" },
       { title: "Posko Pendampingan Sahabat FTI", image: "/vismayakriya/dinasnexus/kegiatan/adkesma/sahabatfti.webp", date: "Januari 2026" },
@@ -116,52 +117,53 @@ export const departmentsData = [
     ]
   },
   {
-    id: "bistech",
-    slug: "bistech",
-    name: "Bisnis & Teknologi",
-    type: "Dinas",
-    shortName: "Bistech",
-    logo: "/vismayakriya/dinasnexus/logo/bistech.webp",
+    id: "kso",
+    slug: "KSO",
+    name: "Kesenian & Olahraga",
+    type: "Biro",
+    shortName: "KSO",
+    logo: "/src/assets/dinasvismayakriya/logo/Bistech.png",
     banner: "/vismayakriya/dinasnexus/press release/bistech/bistech.webp",
-    headName: "Amanda & Vira",
-    headRole: "Kepala Dinas Bistech",
+    headName: "Muhammad Farrel Giovanni & Adila Bintang",
+    headRole: "Kepala Dinas KSO",
     staffCount: 8,
-    summary: "Penggerak kemandirian finansial kabinet dan inkubasi jiwa kewirausahaan berbasis teknologi bagi mahasiswa.",
-    description: "Dinas Bisnis dan Teknologi (Bistech) berorientasi pada penciptaan kemandirian dana organisasi melalui unit usaha kreatif, penjualan atribut & merchandise resmi FTI, penyediaan perlengkapan wisuda, serta memfasilitasi workshop kewirausahaan rintisan (startup) dan technopreneurship.",
-    vision: "Menciptakan ekosistem bisnis organisasi yang mandiri, produktif, inovatif, dan berdaya saing berbasis teknologi.",
+    summary: " Mendukung pengembangan minat dan bakat mahasiswa melalui kolaborasi di bidang seni dan olahraga, serta membangun lingkungan yang aktif, kreatif, sehat, dan sportif.",
+    description: " Biro dalam BEM KM FTI UNAND yang berperan dalam mendukung dan berkolaborasi dengan UKM yang bergerak di bidang seni dan olahraga. KSO berfokus pada pengembangan minat dan bakat mahasiswa melalui berbagai kegiatan kesenian seperti tari serta kegiatan olahraga seperti futsal dan basket. KSO diharapkan mampu menciptakan lingkungan yang aktif, kreatif, sehat, serta mempererat kebersamaan dan sportivitas di lingkungan BEM KM FTI UNAND",
+    vision: "Mewujudkan lingkungan yang aktif, kreatif, sehat, dan kolaboratif melalui pengembangan minat dan bakat di bidang kesenian dan olahraga dalam BEM KM FTI UNAND.",
     missions: [
-      "Mengoptimalkan lini bisnis kreatif merchandise dan produk digital mahasiswa FTI.",
-      "Menyediakan kebutuhan akademik mahasiswa secara mudah dan terjangkau.",
-      "Mengedukasi potensi ekonomi kreatif digital dan technopreneurship bagi KM FTI."
+      "Menyediakan wadah bagi anggota untuk mengembangkan minat dan bakat di bidang kesenian dan olahraga.",
+      "Menyelenggarakan kegiatan yang dapat meningkatkan kebersamaan dan solidaritas antar anggota.",
+      "Mengadakan program kerja yang inovatif, kreatif, dan bermanfaat bagi seluruh anggota BEM KM FTI.",
+      "Menanamkan nilai sportivitas, disiplin, dan kerjasama dalam setiap kegiatan.",
+      "Mendorong partisipasi aktif anggota dalam setiap kegiatan kesenian dan olahraga."
     ],
     leaders: [
       {
-        name: "Amanda",
-        role: "Kepala Dinas Bistech",
-        jurusan: "Sistem Informasi",
+        name: "Muhammad Farrel Giovanni",
+        role: "Kepala Biro KSO",
+        jurusan: "Informatika",
         angkatan: "Angkatan 2023",
         image: "/vismayakriya/dinasnexus/press release/bistech/manda.webp",
-        quote: "Kewirausahaan digital adalah kunci kemandirian ekonomi generasi muda.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Vira",
-        role: "Sekretaris Dinas Bistech",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        name: "Adila Bintang",
+        role: "Sekretaris Biro KSO",
+        jurusan: "Informatika",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/bistech/vira.webp",
-        quote: "Menghubungkan ide bisnis kreatif dengan kebutuhan nyata mahasiswa.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Fuad", role: "Staf Bistech", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/bistech/fuad.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ghezy", role: "Staf Bistech", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/bistech/ghezy.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Kevin", role: "Staf Bistech", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/bistech/kevin.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nayla", role: "Staf Bistech", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/bistech/nayla.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ochi", role: "Staf Bistech", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/bistech/ochi.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Aisyah Desti Mitalianti", role: "Bendahara KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/fuad.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Alexandra Beatrice Sjamsuardi", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ghezy.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Endy Pardilian", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/kevin.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Filzi Jelila Inda Robbani", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/nayla.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Fazwa Nisabila", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ochi.webp", socials: { instagram: "https://instagram.com" } },
+      {name: "Haziq Raihandira", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ochi.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["be-technopreneur", "BISGENIUS WORKSHOP", "MERCHANDISE FTI", "GRADUATION NEEDS", "PARTNERSHIP & SPONSORSHIP", "WARNEX STORE"],
+    programs: ["RUKES", "RUKO", "FTI CUP 2026", "FTI SPORT"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Bistech", image: "/vismayakriya/dinasnexus/press release/bistech/bistech.webp", date: "Periode 2025/2026" },
       { title: "Bazar Kreatif Warnex & Merchandise FTI", image: "/vismayakriya/dinasnexus/kegiatan/bistech/warnex.webp", date: "Desember 2025" },
@@ -176,48 +178,45 @@ export const departmentsData = [
     name: "Hubungan Eksternal",
     type: "Dinas",
     shortName: "Eksternal",
-    logo: "/vismayakriya/dinasnexus/logo/eksternal.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Eksternal.png",
     banner: "/vismayakriya/dinasnexus/press release/eksternal/eksternal.webp",
-    headName: "Ijon & Kiya",
+    headName: "Muhammad Farid Al Hafizh & Aisyah Widia Wati. H",
     headRole: "Kepala Dinas Eksternal",
-    staffCount: 10,
+    staffCount: 6,
     summary: "Membangun jejaring kolaborasi lintas kampus, alumni, industri teknologi, dan masyarakat luas.",
-    description: "Dinas Hubungan Eksternal mengemban amanah sebagai duta diplomasi BEM KM FTI. Berfungsi memperluas relasi kelembagaan dengan organisasi mahasiswa luar kampus, forum BEM se-Indonesia, ikatan alumni, instansi pemerintah, serta korporasi industri IT terkemuka.",
-    vision: "Memperluas jangkauan reputasi BEM KM FTI di tingkat regional, nasional, maupun internasional melalui kolaborasi berdampak nyata.",
+    description: "Dinas Eksternal merupakan salah satu bagian dalam struktur Kabinet Vismayakriya BEM KM FTI UNAND. Dinas ini dibentuk dengan tujuan untuk memperkuat eksistensi FTI sekaligus menjalin dan mengembangkan relasi dengan berbagai pihak di luar, seperti fakultas lain di UNAND, BEM KM UNAND, hingga pihak eksternal kampus. Dalam pelaksanaannya, Dinas Eksternal terdiri dari 8 orang anggota yang dipimpin oleh seorang kepala dinas.",
+    vision: "Menjadikan Dinas Eksternal sebagai pintu kolaborasi FTI yang aktif mencari peluang, menjaga relasi, dan membawa manfaat yang nyata bagi KM FTI.",
     missions: [
-      "Mengintensifkan kunjungan diplomasi studi banding antarkampus (BEM Visit).",
-      "Menjalin koneksi timbal balik yang erat dengan alumni FTI di dunia industri.",
-      "Menginisiasi forum teknologi berstandar nasional dan program kemitraan strategis."
+      "Menjaga hubungan dan komunikasi dengan pihak eksternal.",
+      "Membuka kolaborasi yang relevan dan bermanfaat bagi KM FTI.",
+      "Memperkuat citra positif FTI melalui kegiatan eksternal.",
+      "Menjadi jembatan komunikasi antara pihak eksternal dan internal."
     ],
     leaders: [
       {
-        name: "Ijon",
+        name: "Muhammad Farid Al Hafizh ",
         role: "Kepala Dinas Eksternal",
         jurusan: "Teknik Komputer",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/eksternal/ijon.webp",
-        quote: "Diplomasi organisasi adalah jembatan pembuka peluang emas bagi mahasiswa FTI.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Kiya",
+        name: "Aisyah Widia Wati. H",
         role: "Sekretaris Dinas Eksternal",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2025",
         image: "/vismayakriya/dinasnexus/press release/eksternal/kiya.webp",
-        quote: "Menjalin kemitraan strategis dengan industri dan jaringan kampus se-Indonesia.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Diaz", role: "Staf Eksternal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/diaz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ghina", role: "Staf Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/ghina.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Hapsa", role: "Staf Eksternal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/hapsa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ima", role: "Staf Eksternal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/ima.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Rapip", role: "Staf Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/rapip.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Rintan", role: "Staf Eksternal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/rintan.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Zaskya Marvira", role: "Bendahara Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/diaz.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Zaky Ilham", role: "Staf Eksternal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/ghina.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Keysa Ashilah Riyanto", role: "Staf Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/hapsa.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Weldia Novianda", role: "Staf Eksternal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/ima.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["technofest", "BEM VISIT", "ALUMNI INSIGHT", "YOUTH IMPACT FESTIVAL", "IIT COLLABORATION", "MEDIA PARTNERSHIP"],
+    programs: ["Explore FTI", "BEM VISIT", "FTI FutureLink", "FTI Reconnect", "Delegasi", "Media Partner"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Eksternal", image: "/vismayakriya/dinasnexus/press release/eksternal/eksternal.webp", date: "Periode 2025/2026" },
       { title: "Technofest FTI Tingkat Nasional", image: "/vismayakriya/dinasnexus/kegiatan/eksternal/technofest.webp", date: "November 2025" },
@@ -232,47 +231,45 @@ export const departmentsData = [
     name: "Hubungan Internal",
     type: "Dinas",
     shortName: "Internal",
-    logo: "/vismayakriya/dinasnexus/logo/internal.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Internal.png",
     banner: "/vismayakriya/dinasnexus/press release/internal/internal.webp",
-    headName: "Haikal & Keysa",
+    headName: "Ferdian Rahman & Adinda Queen Salsabilla",
     headRole: "Kepala Dinas Internal",
-    staffCount: 9,
+    staffCount: 7,
     summary: "Perekat keharmonisan, konsolidasi, dan sinergi bersama Himpunan dan UKM di lingkungan FTI.",
-    description: "Dinas Hubungan Internal memfokuskan perannya pada penciptaan iklim kekeluargaan yang guyub di FTI UNAND. Bertindak sebagai fasilitator komunikasi dan konsolidasi aktif bersama Himpunan Mahasiswa (HMIF, HMSI, HIMATEKOM) serta Unit Kegiatan Mahasiswa (DPM, FSI, Tectona, UKOS).",
-    vision: "Mewujudkan Keluarga Mahasiswa FTI yang solid, bersatu, suportif, dan bebas dari sekat ego sektoral.",
+    description: "Dinas Internal berperan menjaga keharmonisan dan solidaritas KM FTI melalui komunikasi, koordinasi, serta kegiatan yang mempererat hubungan antar mahasiswa, himpunan, dan UKMF. Dinas ini mendorong terciptanya lingkungan yang terbuka, kolaboratif, dan saling mendukung.",
+    vision: "Mewujudkan Dinas Internal yang mampu menyatukan langkah dan menjaga keterhubungan yang kuat di internal Keluarga Mahasiswa FTI, sehingga kehidupan KM FTI berjalan harmonis dan kolaboratif.",
     missions: [
-      "Menyelenggarakan ruang temu dan konsolidasi rutin bersama pimpinan lembaga mahasiswa FTI.",
-      "Mengadakan ajang apresiasi dan selebrasi kebersamaan mahasiswa FTI Parade.",
-      "Menjaga keterbukaan informasi dan harmonisasi agenda organisasi di internal fakultas."
+      "Membangun komunikasi internal yang efektif.",
+      "Memperkuat solidaritas dan kekeluargaan KM FTI.",
+      "Menciptakan lingkungan yang terbuka, suportif, dan harmonis."
     ],
     leaders: [
       {
-        name: "Haikal",
+        name: "Ferdian Rahman",
         role: "Kepala Dinas Internal",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/internal/haikal.webp",
-        quote: "Sinergi antarlembaga adalah kunci keutuhan Keluarga Mahasiswa FTI.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Keysa",
+        name: "Adinda Queen Salsabilla",
         role: "Sekretaris Dinas Internal",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Sistem Informasi",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/internal/keysa.webp",
-        quote: "Merawat kebersamaan dan rasa saling memiliki di lingkungan fakultas.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Aufa", role: "Staf Internal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/aufa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Dawi", role: "Staf Internal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/dawi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Febi", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/febi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Mariska", role: "Staf Internal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/mariska.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Quenn", role: "Staf Internal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/quenn.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Siti Kayla Reyhana", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/aufa.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ramadhani Amelia Putri", role: "Staf Internal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/dawi.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Sasya Zamora", role: "Staf Internal", jurusan: "Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/febi.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Yusuf", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/mariska.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Arief Nasril", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/quenn.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["fti-parade", "BAKTI FTI", "JELAJAH LEMBAGA", "TEMU KOORDINASI (TEMKO)", "NEXGO INTERNAL TOUR"],
+    programs: ["fti-parade", "BAKTI FTI", "InKor (Internal Koordinasi)", "SaMawa ( Sapa Ormawa)", "VisGo (Vismayakriya Goro)", "Kalender FTI", "Graduation Needs"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Internal", image: "/vismayakriya/dinasnexus/press release/internal/internal.webp", date: "Periode 2025/2026" },
       { title: "Karnaval FTI Parade Kebersamaan", image: "/vismayakriya/dinasnexus/kegiatan/internal/FTI Parade.webp", date: "Maret 2026" },
@@ -287,47 +284,47 @@ export const departmentsData = [
     name: "Kajian & Aksi Strategis",
     type: "Dinas",
     shortName: "Kastrat",
-    logo: "/vismayakriya/dinasnexus/logo/kastrat.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Kastrat.png",
     banner: "/vismayakriya/dinasnexus/press release/kastrat/kastrat.webp",
-    headName: "Anggun & Okta",
+    headName: "Bayu Mutawakkil & Rajel Novita",
     headRole: "Kepala Dinas Kastrat",
-    staffCount: 8,
+    staffCount: 7,
     summary: "Pusat analisis intelektual, telaah kebijakan publik, advokasi kesetaraan, dan pergerakan kritis mahasiswa.",
-    description: "Dinas Kajian dan Aksi Strategis (Kastrat) merupakan otak intelektual pergerakan BEM KM FTI. Membedah isu-isu strategis kampus dan kebijakan publik, menerbitkan kajian ilmiah, mengawal ruang aman kampus (Women Care), dan mengorganisir propaganda positif serta aksi pencerdasan massa.",
+    description: "Dinas Kastrat berperan sebagai pusat kajian dan penggerak advokasi melalui riset berbasis data, analisis kritis, serta strategi aksi yang responsif terhadap isu teknologi dan sosial. Dinas ini mendorong literasi, diskusi, dan kepedulian mahasiswa serta mengawal aspirasi di tingkat kampus hingga nasional.",
     vision: "Menjadi lokomotif pergerakan mahasiswa yang kritis, berbasis data dan riset, progresif, serta humanis.",
     missions: [
-      "Memproduksi riset dan rilis kajian kritis terhadap kebijakan yang menyangkut kepentingan mahasiswa.",
-      "Mengedukasi mahasiswa mengenai hak-hak sipil, literasi politik, dan ruang aman bebas kekerasan seksual.",
-      "Membangun aliansi pergerakan yang solid bersama seluruh elemen pergerakan mahasiswa UNAND."
+      "Menghasilkan kajian berbasis data dan objektif.",
+      "Mengembangkan advokasi dan gerakan digital.",
+      "Responsif terhadap isu teknologi dan sosial.",
+      "Membangun ruang diskusi dan sinergi intelektual.",
+      "Mengawal aspirasi mahasiswa secara strategis."
     ],
     leaders: [
       {
-        name: "Anggun",
+        name: "Bayu Mutawakkil",
         role: "Kepala Dinas Kastrat",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Sistem Informasi",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/kastrat/anggun.webp",
-        quote: "Nalar kritis dan kajian ilmiah adalah senjata utama pergerakan mahasiswa.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Okta",
+        name: "Rajel Novita",
         role: "Sekretaris Dinas Kastrat",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2025",
         image: "/vismayakriya/dinasnexus/press release/kastrat/okta.webp",
-        quote: "Mengawal keadilan sosial dan menciptakan ruang aman di lingkungan kampus.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Afelia", role: "Staf Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/afelia.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ahmad", role: "Staf Kastrat", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/ahmad.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Bayu", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/bayu.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Faiz", role: "Staf Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Wahid", role: "Staf Kastrat", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/wahid.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Nadya Ulya Ramdhani", role: "Bendahara Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/afelia.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Teguh Al Ihsan", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/ahmad.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Adam Maulana", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/bayu.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Nafil Makarim", role: "Staf Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/faiz.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Luthfi Khairan Fauzan", role: "Staf Kastrat", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/wahid.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["women-care", "DISKUSI STRATEGIS", "KAJIAN ISU KAMPUS", "RESTART PROPAGANDA", "KPK (KLINIK POLITIK KAMPUS)"],
+    programs: ["women-care", "DISKUSI STRATEGIS", "Kastrat Hypothetica", "RESTART ", "KPK (KLINIK POLITIK KAMPUS)"," Kajian Strategis", "Pergerakan dan Pemberdayaan Perempuan"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Kastrat", image: "/vismayakriya/dinasnexus/press release/kastrat/kastrat.webp", date: "Periode 2025/2026" },
       { title: "Diskusi Strategis Bedah Kebijakan", image: "/vismayakriya/dinasnexus/kegiatan/kastrat/diskusistrategis.webp", date: "Desember 2025" },
@@ -342,48 +339,48 @@ export const departmentsData = [
     name: "Media, Informasi, & Kreatif",
     type: "Dinas",
     shortName: "Medinkraf",
-    logo: "/vismayakriya/dinasnexus/logo/medin.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Medinkraf.png",
     banner: "/vismayakriya/dinasnexus/press release/medinkraf/medin.webp",
     headName: "Abe & Adli",
     headRole: "Kepala Dinas Medinkraf",
-    staffCount: 10,
+    staffCount: 7,
     summary: "Etalase visual, arsitek konten kreatif, videografi, dan manajemen saluran informasi digital kabinet.",
-    description: "Dinas Media, Informasi, dan Kreatif (Medinkraf) bertanggung jawab membangun citra visual (branding) BEM KM FTI. Mengelola saluran media sosial resmi, produksi video sinematik, desain publikasi interaktif, peliputan momen penting, dan penyebaran informasi kampus secara cepat, akurat, dan memikat.",
-    vision: "Menjadikan media BEM KM FTI sebagai referensi informasi digital yang modern, estetis, edukatif, dan inspiratif.",
+    description: "Dinas Media Informasi Kreatif merupakan salah satu unit kerja dinas dalam struktur BEM KM FTI UNAND yang bertugas mengelola seluruh aspek komunikasi visual dan digital serta menyediakan platform untuk publikasi informasi seputar kegiatan BEM KM FTI Universitas Andalas, kepada seluruh civitas akademika di dalam dan diluar lingkungan Fakultas Teknologi Informasi.",
+    vision: "Menjadi dinas yang proaktif dan inovatif dalam pengelolaan konten multimedia, serta menjadi pusat informasi terpercaya bagi masyarakat dan seluruh civitas akademika Fakultas Teknologi Informasi Universitas Andalas.",
     missions: [
-      "Mengembangkan identitas visual kabinet yang konsisten, berkarakter, dan berkelas dunia.",
-      "Menyajikan konten kreatif berbasis tren media masa kini yang relevan dengan Gen Z.",
-      "Meningkatkan interaktivitas dan keterlibatan (engagement) civitas akademika di media sosial."
+      "Menyediakan informasi yang akurat dan terkini.",
+      "Membangun citra positif BEM KM FTI.",
+      "Menghadirkan konten kreatif dan inspiratif.",
+      "Membangun sinergi dan kolaborasi dalam publikasi informasi.",
+      "Menampung aspirasi dan kritik mahasiswa.",
+      "Mengembangkan minat dan bakat mahasiswa di bidang media kreatif."
     ],
     leaders: [
       {
-        name: "Abe",
+        name: "Muhammad Ikhsan Pratama",
         role: "Kepala Dinas Medinkraf",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/medinkraf/abe.webp",
-        quote: "Desain visual dan konten kreatif adalah komunikasi visual penyampai pesan kabinet.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Adli",
+        name: "Fazira Naysa",
         role: "Sekretaris Dinas Medinkraf",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Sistem Informasi",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/medinkraf/adli.webp",
-        quote: "Menyampaikan informasi cepat dan estetis untuk seluruh civitas akademika.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Aldo", role: "Staf Medinkraf", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/aldo.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Alvin", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alvin.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Alya", role: "Staf Medinkraf", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Asyqor", role: "Staf Medinkraf", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/asyqor.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "King", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/king.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Vanes", role: "Staf Medinkraf", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/vanes.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Najma Hayett De Vitra", role: "Bendahara Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/aldo.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Adhitya Naufal", role: "Staf Medinkraf", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alvin.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Raditya Hafis Abyanka", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alya.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nazwa Mutiara Sabila", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/asyqor.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Neza Kurnia Lahimi", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/king.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["jendela-fti", "NEXUS HIGHLIGHT", "CREATIVE STUDIO", "ACTIVE MEDIA", "SPOTLIGHT KARYA", "MEDIA CONNECT"],
+    programs: ["FTI Spotlight", "Lensa Vismaya", "Visma Creative Studio", "FTI Active Media", "FTI Media Connect", "VisID", "Merchandise"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Medinkraf", image: "/vismayakriya/dinasnexus/press release/medinkraf/medin.webp", date: "Periode 2025/2026" },
       { title: "Liputan Media & Publikasi Jendela FTI", image: "/vismayakriya/dinasnexus/kegiatan/medin/jendelafti.webp", date: "Mingguan" },
@@ -398,47 +395,48 @@ export const departmentsData = [
     name: "Pengembangan Sumber Daya Mahasiswa",
     type: "Dinas",
     shortName: "PSDM",
-    logo: "/vismayakriya/dinasnexus/logo/psdm.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Psdm.png",
     banner: "/vismayakriya/dinasnexus/press release/psdm/psdm.webp",
-    headName: "Bunga & Rhodes",
+    headName: "Zaki Alfurqani & Adinda Najwa Otvatiani",
     headRole: "Kepala Dinas PSDM",
-    staffCount: 9,
+    staffCount: 8,
     summary: "Kawah candradimuka penempaan karakter, kepemimpinan, dan kaderisasi penerus estafet pergerakan.",
-    description: "Dinas Pengembangan Sumber Daya Mahasiswa (PSDM) bertugas merancang alur kaderisasi yang sistematis dan berakar pada nilai-nilai integritas. Menyelenggarakan latihan kepemimpinan manajemen mahasiswa, pembinaan staf muda (Nexmud), serta penyiapan talenta masa depan FTI.",
-    vision: "Membentuk kader mahasiswa FTI yang berintegritas, berjiwa kepemimpinan luhur, adaptif, dan siap menjadi penggerak perubahan.",
+    description: "Dinas PSDM berperan dalam mengembangkan potensi mahasiswa melalui program pembinaan, pengembangan hardskill, softskill, dan kepemimpinan. PSDM mendorong mahasiswa untuk aktif, berprestasi, adaptif, serta membangun kebersamaan di lingkungan KM FTI.",
+    vision: "Mewujudkan BEM KM FTI UNAND sebagai pusat pembentukan pribadi yang bertaqwa, berprestasi, mampu bekerja sama, dan inspiratif melalui upaya dalam meningkatkan potensi dan karakter mahasiswa sejati dalam organisasi demi mewujudkan Tridharma Perguruan Tinggi.",
     missions: [
-      "Mengawal orientasi dan kaderisasi mahasiswa baru dengan pendekatan humanis dan edukatif.",
-      "Menyelenggarakan pelatihan manajerial tingkat menengah dan dasar berkualitas tinggi.",
-      "Membina fungsionaris muda sebagai regenerasi kepengurusan kabinet yang unggul."
+      "Meningkatkan keaktifan mahasiswa dalam kegiatan dan organisasi.",
+      "Memfasilitasi pengembangan potensi dan kompetensi mahasiswa.",
+      "Mengembangkan kepemimpinan yang kolaboratif dan inspiratif.",
+      "Membangun kedekatan, kebersamaan, dan komunikasi dengan KM FTI."
     ],
     leaders: [
       {
-        name: "Bunga",
+        name: "Zaki Alfurqani",
         role: "Kepala Dinas PSDM",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/psdm/bunga.webp",
-        quote: "Membangun karakter kepemimpinan muda yang tangguh dan beretika.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Rhodes",
+        name: "Adinda Najwa Otvatiani",
         role: "Sekretaris Dinas PSDM",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Sistem Informasi",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/psdm/rhodes.webp",
-        quote: "Kaderisasi berkesinambungan untuk masa depan FTI yang gemilang.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Alfat", role: "Staf PSDM", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/alfat.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Diva", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/diva.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Khalda", role: "Staf PSDM", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/khalda.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nabila", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/nabila.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Rizky", role: "Staf PSDM", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/rizky.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Farrah Aulia", role: "Bendahara PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/alfat.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Lathifa Zahra", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/diva.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nabila Syahrani", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/khalda.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Rembrand Sardi", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/nabila.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Anatasya Noveralda", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/rizky.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ghinada Fathanawafa Algma", role: "Staf PSDM", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/rizky.webp", socials: { instagram: "https://instagram.com" } },
+
     ],
-    programs: ["lkmmtd-fti", "NEXMUD CADRE", "FAA (FORUM ALUMNI & AKTIVIS)", "WISUDA BAKTI APRESIASI"],
+    programs: ["vismuda", "lkmm-td-fti-2026", "visedu", "fti-aa", "bak"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf PSDM", image: "/vismayakriya/dinasnexus/press release/psdm/psdm.webp", date: "Periode 2025/2026" },
       { title: "Pelatihan Kepemimpinan LKMM-TD FTI", image: "/vismayakriya/dinasnexus/kegiatan/psdm/lkmmtd.webp", date: "Januari 2026" },
@@ -452,47 +450,47 @@ export const departmentsData = [
     name: "Riset & Teknologi",
     type: "Dinas",
     shortName: "Ristek",
-    logo: "/vismayakriya/dinasnexus/logo/ristek.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Ristek.png",
     banner: "/vismayakriya/dinasnexus/press release/ristek/rizztek.webp",
-    headName: "Dafa & Fella",
+    headName: "Arib Jilham & Ayesah Lutfiah Maharani",
     headRole: "Kepala Dinas Ristek",
-    staffCount: 9,
+    staffCount: 7,
     summary: "Katalisator riset inovatif, kompetisi IT, podcast teknologi, dan repositori karya ilmiah civitas akademika.",
-    description: "Dinas Riset dan Teknologi (Ristek) adalah motor penggerak penelitian dan pengembangan di FTI UNAND. Menjadi wadah bagi mahasiswa dalam menciptakan inovasi dan solusi perangkat lunak/keras, memperkuat basis data riset skripsi, menyelenggarakan kompetisi hackathon, serta mengedukasi literasi teknologi terkini.",
-    vision: "Menjadikan BEM KM FTI sebagai episentrum inovasi riset dan teknologi mahasiswa yang solutif dan kompetitif di tingkat global.",
+    description: "Dinas Ristek berperan mendorong budaya riset dan inovasi teknologi di FTI UNAND melalui kajian berbasis data, pengembangan pengetahuan, serta pemanfaatan teknologi untuk mendukung kemajuan akademik dan organisasi.",
+    vision: "Menjadikan Dinas Riset dan Teknologi BEM KM FTI UNAND sebagai pusat pengembangan riset dan kajian teknologi yang kritis, inovatif, dan berkelanjutan guna mendukung budaya akademik serta kemajuan intelektual KM FTI UNAND.",
     missions: [
-      "Menyelenggarakan kompetisi pemrograman, hackathon, dan inkubasi ide riset teknologi.",
-      "Membangun repositori tugas akhir dan database keilmuan digital yang mudah diakses mahasiswa.",
-      "Menyebarluaskan wawasan perkembangan kecerdasan buatan, keamanan siber, dan rekayasa data."
+      "Mengembangkan budaya riset dan berpikir ilmiah.",
+      "Menghasilkan kajian dan publikasi teknologi yang relevan.",
+      "Mendorong pemanfaatan teknologi untuk akademik dan organisasi.",
+      "Mengelola data, pengetahuan, dan arsip riset secara terstruktur.",
+      "Meningkatkan kapasitas riset dan penulisan ilmiah anggota."
     ],
     leaders: [
       {
-        name: "Dafa",
+        name: "Arib Jilham",
         role: "Kepala Dinas Ristek",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Teknik Komputer",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/ristek/dafa.webp",
-        quote: "Inovasi riset teknologi adalah pemecah solusi masalah nyata di masyarakat.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Fella",
+        name: "Ayesah Lutfiah Maharani",
         role: "Sekretaris Dinas Ristek",
         jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/ristek/fella.webp",
-        quote: "Membangun budaya riset komputasi yang kompetitif di tingkat internasional.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Arib", role: "Staf Ristek", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/arib.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Farid", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/farid.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Hafid", role: "Staf Ristek", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/hafid.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nisa", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/nisa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Zikri", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/zikri.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Dwimirza Intania Arsy", role: "Bendahara Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/arib.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Raffael Syahadat Fahlevi", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/farid.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Bintang Veraldi Nibraceae", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/hafid.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Salsabiil Aqiilah", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/ristek/nisa.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Davina Noerfazhira", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/ristek/zikri.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["hackathon-fti", "tech-research-hub", "italk-podcast", "IT SPECTRUM", "COMPETEHUB", "TECHTONIC WORKSHOP"],
+    programs: ["FOSI", "IT Development", "IT Competition Hub", "HACKTHON", "Techcorner", "Codevora"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Ristek", image: "/vismayakriya/dinasnexus/press release/ristek/rizztek.webp", date: "Periode 2025/2026" },
       { title: "Hackathon FTI 24 Jam Inovasi Digital", image: "/vismayakriya/dinasnexus/kegiatan/ristek/hackathon.webp", date: "Oktober 2025" },
@@ -507,45 +505,47 @@ export const departmentsData = [
     name: "Sosial Masyarakat & Lingkungan Hidup",
     type: "Dinas",
     shortName: "Sosmasling",
-    logo: "/vismayakriya/dinasnexus/logo/sosmas.webp",
+    logo: "/src/assets/dinasvismayakriya/logo/Sosmasling.png",
     banner: "/vismayakriya/dinasnexus/press release/sosmasling/sosmasling.webp",
-    headName: "Nori & Sovia",
+    headName: "Faiz Anargya & Zhafira Fatihah Oswiputri",
     headRole: "Kepala Dinas Sosmasling",
-    staffCount: 9,
+    staffCount: 8,
     summary: "Saluran dedikasi sosial, digitalisasi desa binaan, aksi tanggap kebencanaan, dan pelestarian lingkungan hidup.",
-    description: "Dinas Sosial Masyarakat dan Lingkungan Hidup (Sosmasling) menjadi manifestasi tridharma perguruan tinggi bidang pengabdian. Menggerakkan mahasiswa untuk terjun ke desa binaan, menghadirkan literasi digital ke pelosok, menyalurkan bantuan tanggap darurat bencana, dan merawat kelestarian alam.",
-    vision: "Mewujudkan pengabdian mahasiswa FTI yang berlandaskan empati, solutif berbasis teknologi ramah lingkungan, dan berdampak nyata bagi masyarakat.",
+    description: "Dinas Sosmasling berfokus pada pengabdian masyarakat serta kepedulian terhadap isu sosial dan lingkungan. Melalui program sosial, edukatif, dan berkelanjutan, Sosmasling mendorong empati, solidaritas, dan kepedulian mahasiswa melalui aksi nyata dan kolaborasi dengan berbagai pihak.",
+    vision: "Mewujudkan Dinas Sosial dan Masyarakat Lingkungan sebagai wadah yang aktif, peduli, dan responsif dalam meningkatkan kontribusi mahasiswa FTI terhadap isu sosial dan lingkungan.",
     missions: [
-      "Mengembangkan desa binaan dengan program pendampingan teknologi dan sosial berkelanjutan.",
-      "Merespons cepat situasi tanggap darurat dan bencana kemanusiaan di Sumatera Barat.",
-      "Mengkampanyekan kesadaran gaya hidup hijau, pengurangan sampah plastik, dan konservasi alam."
+      "Menyelenggarakan program kerja yang berfokus pada kepedulian sosial dan pelestarian lingkungan.",
+      "Menumbuhkan empati, solidaritas, dan kepekaan sosial mahasiswa FTI.",
+      "Membangun dan memperluas kerja sama dengan pihak internal maupun eksternal.",
+      "Mengedukasi mahasiswa terkait isu sosial dan lingkungan secara berkelanjutan"
     ],
     leaders: [
       {
-        name: "Nori",
+        name: "Faiz Anargya",
         role: "Kepala Dinas Sosmasling",
-        jurusan: "Sistem Informasi",
-        angkatan: "Angkatan 2023",
+        jurusan: "Teknik Komputer",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/sosmasling/nori.webp",
-        quote: "Teknologi ramah lingkungan untuk pengabdian sosial berdampak panjang.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
-        name: "Sovia",
+        name: "Zhafira Fatihah Oswiputri",
         role: "Sekretaris Dinas Sosmasling",
-        jurusan: "Teknik Informatika",
-        angkatan: "Angkatan 2023",
+        jurusan: "Teknik Komputer",
+        angkatan: "Angkatan 2024",
         image: "/vismayakriya/dinasnexus/press release/sosmasling/sovia.webp",
-        quote: "Mengabdi dengan empati, menghadirkan senyum perubahan di masyarakat.",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Faiz", role: "Staf Sosmasling", jurusan: "Teknik Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Shaza", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/shaza.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Zhafira", role: "Staf Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Alisha Zhahira Zulfis", role: "Bendahara Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/faiz.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Kevin Andhika", role: "Staf Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/shaza.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Yollin Irwan", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nadine Latisha Elanda", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ultan Pradipa Al Fitra", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "M. Ghaza Pratama", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } }
     ],
-    programs: ["fti-bina-desa", "AKSI PEDULI KEMANUSIAAN", "HIJAU BERSAMA FTI", "CIPTA DUNIA EDUKASI", "RAMADHAN BERKAH"],
+    programs: ["FTI Sosial Aid", "FTI Ramadhan Berbagi Asa (RABA FTI) ", "On This Day", "Social Connect", "Sosgreen FTI", "FTI Lentera Cakrawala (FTI LENCA)", "Bina Desa"],
     galleryImages: [
       { title: "Foto Bersama Pengurus & Staf Sosmasling", image: "/vismayakriya/dinasnexus/press release/sosmasling/sosmasling.webp", date: "Periode 2025/2026" },
       { title: "FTI Bina Desa Digitalisasi Nagari", image: "/vismayakriya/dinasnexus/kegiatan/sosmasling/binadesa.webp", date: "September 2025" },

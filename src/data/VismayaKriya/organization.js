@@ -10,8 +10,7 @@ export const cabinetInfo = {
   cabinet: "Kabinet Vismayakriya",
   faculty: "Fakultas Teknologi Informasi",
   university: "Universitas Andalas",
-  period: "2025/2026",
-  tagline: "Merajut Koneksi, Menggerakkan Inspirasi",
+  period: "2026",
   logo: vismayakriyaLogo,
   bemLogo: bemLogo,
   ftiLogo: ftiLogo,
@@ -22,51 +21,46 @@ export const cabinetInfo = {
 
   philosophy: {
     title: "Filosofi Vismayakriya",
-    concept: "Vismayakriya menggabungkan Vismaya (keajaiban & pencapaian luar biasa) dan Kriya (karya nyata & kreasi). BEM KM FTI hadir sebagai wadah yang merajut sinergi antarmahasiswa, dosen, alumni, dan dunia profesional teknologi untuk menghasilkan karya-karya luar biasa yang membawa dampak positif.",
+    concept: "Kabinet Vismaya Kriya berasal dari bahasa Sanskerta, yaitu Vismaya yang berarti menakjubkan dan Kriya yang berarti tindakan. Nama ini mencerminkan semangat untuk menghadirkan tindakan nyata yang luar biasa dan memberikan dampak positif bagi seluruh civitas akademika.",
     symbolism: [
       {
-        element: "Pusaran Gelombang & Lidah Api",
-        meaning: "Menggambarkan pergerakan dinamis, fluiditas beradaptasi dengan era digital, dan semangat pengabdian yang tidak pernah padam."
+        element: "Bentuk Api",
+        meaning: "Api melambangkan semangat, energi, dan tekad Kabinet Vismayakriya yang terus menyala. Api juga menjadi simbol transformasi dan perubahan positif, dengan harapan mampu menyalakan ide, menggerakkan mahasiswa, dan menghasilkan karya yang berdampak."
       },
       {
-        element: "Bintang Polaris / Bintang Kejora",
-        meaning: "Simbol arah penuntun moral, integritas intelektual, dan visi masa depan teknologi yang berorientasi kebaikan bersama."
+        element: "4 Lapisan Api",
+        meaning: "Empat lapis api melambangkan Visi, Inovasi, Kolaborasi, dan Eksekusi sebagai tahapan gerakan Kabinet Vismayakriya dalam mewujudkan perubahan yang progresif, solid, dan berdampak."
       },
       {
-        element: "Warna Deep Midnight Navy & Icy Blue",
-        meaning: "Navy melambangkan kedalaman ilmu, ketenangan, dan profesionalisme akademis; Icy Blue memancarkan kejernihan nalar, inovasi teknologi mutakhir, dan harapan segar."
+        element: "5 Bintang (Spark)",
+        meaning: "Lima bintang melambangkan tiga jurusan dan dua UKMF sebagai elemen utama FTI. Kelimanya mencerminkan semangat Kabinet Vismayakriya untuk merangkul seluruh elemen FTI dalam gerakan yang solid, kolaboratif, dan berdampak."
+      },
+      {
+        element: "Warna",
+        meaning: "Warna biru melambangkan kepercayaan, profesionalisme, intelektualitas, dan kepemimpinan. Sebagai identitas FTI, biru juga merepresentasikan teknologi, inovasi, serta proses pertumbuhan menuju karya dan dampak nyata."
       }
     ]
   },
 
-  vision: "Mewujudkan Badan Eksekutif Mahasiswa yang inovatif, inspiratif, dan progresif dalam mendorong pengembangan pelayanan dan pergerakan yang proaktif terhadap KM FTI.",
+  vision: "Mewujudkan BEM KM FTI sebagai rumah pergerakan yang adaptif, kolaboratif, dan bereksistensi",
 
   missions: [
     {
       id: 1,
-      title: "Mereformasi Marwah BEM KM FTI",
-      desc: "Menata ulang tata kelola organisasi yang profesional, akuntabel, adaptif terhadap perkembangan teknologi, dan berwibawa di lingkungan kampus maupun masyarakat luas."
+      title: "Pengawalan Aspirasi Mahasiswa",
+      desc: "Berperan aktif dalam mengawal isu, memperjuangkan aspirasi, serta menghadirkan gerakan yang kritis dan solutif bagi mahasiswa."
     },
     {
       id: 2,
-      title: "Garda Terdepan Advokasi & Perjuangan Hak Mahasiswa",
-      desc: "Menjadi garda terdepan dalam menyerap, mengawal aspirasi mahasiswa, serta secara gigih mengadvokasikan pemenuhan hak-hak akademik dan kesejahteraan KM FTI."
+      title: "Sinergi dan Kolaborasi",
+      desc: "Berkolaborasi dengan himpunan, UKM, dan elemen internal maupun eksternal dalam membangun gerakan yang solid, progresif, dan berdampak."
     },
     {
       id: 3,
-      title: "Eksplorasi Talent & Inkubasi Inovasi Teknologi",
-      desc: "Membangun ekosistem inkubasi talenta digital, karya riset terapan, dan minat bakat mahasiswa FTI untuk mampu bersaing secara nasional maupun internasional."
+      title: "Karya dan Prestasi",
+      desc: "Bereksistensi melalui karya, prestasi, dan program strategis yang mengharumkan nama FTI serta memperluas pengaruhnya di tingkat kampus maupun masyarakat luas."
     },
-    {
-      id: 4,
-      title: "Pengabdian Sosial & Kolaborasi Lintas Sektor",
-      desc: "Menghadirkan dampak nyata pengabdian masyarakat berbasis teknologi (tech-for-social-good) dan membangun sinergi strategis dengan alumni serta industri."
-    },
-    {
-      id: 5,
-      title: "Kritisisme Progresif & Eskalasi Isu Kebangsaan",
-      desc: "Menumbuhkan nalar kritis mahasiswa FTI terhadap dinamika sosial-politik, kebijakan teknologi nasional, dan isu-isu strategis kebangsaan."
-    }
+    
   ],
 
   values: [
@@ -93,19 +87,19 @@ export const cabinetInfo = {
   ],
 
   stats: [
-    { number: 9, label: "DINAS", suffix: "" },
-    { number: 1, label: "BIRO", suffix: "" },
-    { number: 40, label: "PROGRAM KERJA", suffix: "+" },
-    { number: 100, label: "PENGURUS & STAF", suffix: "+" }
+    { number: 8, label: "DINAS", suffix: "" },
+    { number: 2, label: "BIRO", suffix: "" },
+    { number: 65, label: "PROGRAM KERJA", suffix: "+" },
+    { number: 77, label: "PENGURUS & STAF", suffix: "+" }
   ],
 
   leaders: {
     governor: {
-      name: "Muhammad Rayhan Fitrah",
+      name: "Mujahid Adlis Salam ",
       title: "Gubernur Mahasiswa BEM KM FTI",
-      jurusan: "Teknik Informatika",
-      angkatan: "Angkatan 2022",
-      term: "Periode 2025/2026",
+      jurusan: "Teknik Komputer",
+      angkatan: "Angkatan 2023",
+      term: "Periode 2026",
       quote: "BEM bukan sekadar ruang rapat, melainkan simpul pengabdian dan ruang bertumbuh bagi setiap mimpi mahasiswa FTI.",
       message: "Sebagai organisasi mahasiswa di fakultas berbasis teknologi terdepan, kita dituntut untuk tidak hanya menjadi pengguna teknologi, tetapi juga pembawa solusi atas problematika masyarakat.",
       foto_fullbody: "/src/assets/dinasnexus/press release/inti/gub.webp",
@@ -117,11 +111,11 @@ export const cabinetInfo = {
       }
     },
     viceGovernor: {
-      name: "Ahmad Rizky Pratama",
+      name: "Muhammad Farid Junaidi",
       title: "Wakil Gubernur Mahasiswa BEM KM FTI",
       jurusan: "Sistem Informasi",
-      angkatan: "Angkatan 2022",
-      term: "Periode 2025/2026",
+      angkatan: "Angkatan 2023",
+      term: "Periode 2026",
       quote: "Kepemimpinan adalah pelayanan. Keberhasilan kita diukur dari seberapa besar manfaat yang dirasakan KM FTI.",
       message: "Bersama Kabinet Vismayakriya, kami berkomitmen menjaga keterbukaan, memperkuat asas kekeluargaan, dan memastikan setiap suara mahasiswa FTI terdengar hingga tingkat rektorat.",
       foto_fullbody: "/src/assets/dinasnexus/press release/inti/wagub.webp",
@@ -133,8 +127,8 @@ export const cabinetInfo = {
       }
     },
     secretariat: {
-      name: "Nabila Putri Salsabila",
-      title: "Sekretaris Daerah Kabinet",
+      name: "Alya Ananta Taufik",
+      title: "Sekretaris Daerah",
       jurusan: "Sistem Informasi",
       angkatan: "Angkatan 2023",
       quote: "Keteraturan administrasi adalah fondasi kokoh bagi keberlanjutan pergerakan organisasi.",
@@ -146,10 +140,10 @@ export const cabinetInfo = {
       }
     },
     finance: {
-      name: "Zahra Anindya Khairunnisa",
-      title: "Bendahara Umum Kabinet",
-      jurusan: "Teknik Komputer",
-      angkatan: "Angkatan 2023",
+      name: "Ashyra Prasiwi",
+      title: "Bendahara Daerah",
+      jurusan: "Sistem Informasi",
+      angkatan: "Angkatan 2024",
       quote: "Transparansi dan akuntabilitas keuangan adalah bentuk pertanggungjawaban tertinggi bagi amanah publik.",
       message: "Mengelola arus kas keorganisasian secara prudent, profesional, dan efisien untuk setiap kegiatan.",
       image: "/src/assets/dinasnexus/press release/inti/benda.webp",
@@ -157,18 +151,15 @@ export const cabinetInfo = {
         instagram: "https://instagram.com/zahraanindya",
         linkedin: "https://linkedin.com/in/zahraanindya"
       }
-    }
+    },
+    get Sekretaris() { return this.secretariat; },
+    get Bendahara() { return this.finance; }
   },
 
   contact: {
     address: "Gedung PKM FTI UNAND, Kampus Limau Manis, Padang, Sumatera Barat 25163",
     email: "bemkmfti.unand@gmail.com",
-    phone: "+62 812-3456-7890",
     instagram: "https://instagram.com/bemftiunand",
-    tiktok: "https://tiktok.com/@bemftiunand",
-    youtube: "https://youtube.com/@bemkmftiunand",
-    linkedin: "https://linkedin.com/company/bemftiunand",
-    spotify: "https://spotify.com",
-    github: "https://github.com/bemftiunand"
+    
   }
 };
