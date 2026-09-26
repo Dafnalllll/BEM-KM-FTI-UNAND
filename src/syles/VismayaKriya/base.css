@@ -1,0 +1,204 @@
+/** ==========================================================================
+   BASE & RESET STYLES - SCOPED FOR VISMAYAKRIYA
+   ========================================================================== */
+
+.vismayakriya-page {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark-base);
+  color: var(--text-light-primary);
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.vismayakriya-page *, 
+.vismayakriya-page *::before, 
+.vismayakriya-page *::after {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar */
+.vismayakriya-page ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.vismayakriya-page ::-webkit-scrollbar-track {
+  background: var(--color-navy-950);
+}
+
+.vismayakriya-page ::-webkit-scrollbar-thumb {
+  background: var(--color-navy-700);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-navy-950);
+}
+
+.vismayakriya-page ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-icy-300);
+}
+
+/* Text Selection */
+.vismayakriya-page ::selection {
+  background: var(--color-blue-500);
+  color: #ffffff;
+}
+
+/* Focus styles for keyboard accessibility */
+.vismayakriya-page :focus-visible {
+  outline: 2px solid var(--color-blue-400);
+  outline-offset: 3px;
+}
+
+/* Basic Typography */
+.vismayakriya-page h1, 
+.vismayakriya-page h2, 
+.vismayakriya-page h3, 
+.vismayakriya-page h4, 
+.vismayakriya-page h5, 
+.vismayakriya-page h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.25;
+  color: inherit;
+}
+
+.vismayakriya-page p {
+  margin-bottom: 1rem;
+}
+
+.vismayakriya-page p:last-child {
+  margin-bottom: 0;
+}
+
+.vismayakriya-page a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.vismayakriya-page img, 
+.vismayakriya-page svg, 
+.vismayakriya-page picture {
+  max-width: 100%;
+  display: block;
+  user-select: none;
+}
+
+.vismayakriya-page button, 
+.vismayakriya-page input, 
+.vismayakriya-page textarea, 
+.vismayakriya-page select {
+  font: inherit;
+  color: inherit;
+}
+
+.vismayakriya-page button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.vismayakriya-page ul, 
+.vismayakriya-page ol {
+  list-style: none;
+}
+
+/* Containers */
+.vismayakriya-page .container {
+  width: 100%;
+  max-width: var(--max-width-site);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.vismayakriya-page .container-narrow {
+  width: 100%;
+  max-width: var(--max-width-prose);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Section Wrapper Base */
+.vismayakriya-page .section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.vismayakriya-page .section-dark {
+  background-color: var(--bg-dark-base);
+  color: var(--text-light-primary);
+}
+
+.vismayakriya-page .section-dark-alt {
+  background-color: var(--bg-dark-surface);
+  color: var(--text-light-primary);
+}
+
+.vismayakriya-page .section-light {
+  background-color: var(--bg-light-primary);
+  color: var(--text-dark-primary);
+}
+
+.vismayakriya-page .section-light-alt {
+  background-color: var(--bg-light-surface);
+  color: var(--text-dark-primary);
+}
+
+/* Section Headers */
+.vismayakriya-page .section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.vismayakriya-page .section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-blue-400);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  margin-bottom: 1rem;
+}
+
+.vismayakriya-page .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.vismayakriya-page .section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-light-muted);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.vismayakriya-page .section-light .section-subtitle {
+  color: var(--text-dark-secondary);
+}
+
+/* Decorative divider line */
+.vismayakriya-page .section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-blue-500), var(--color-icy-200));
+  margin: 1.25rem auto 0;
+  border-radius: var(--radius-full);
+}

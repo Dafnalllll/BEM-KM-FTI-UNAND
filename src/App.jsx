@@ -33,6 +33,8 @@ import KastratSinergi from "./pages/sinergi/dinas/kastrat";
 import AuditInternalSinergi from "./pages/sinergi/dinas/auditinternal";
 import KestariSinergi from "./pages/sinergi/dinas/kestari";
 
+import Vismayakriya from "./components/VismayaKriya/components/vismayakriya/vismayakriya";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -55,6 +57,8 @@ function App() {
         <Route path="/kabinet" element={<Kabinet />} />
         <Route path="/sinergi" element={<Sinergi />} />
         <Route path="/nexus" element={<Nexus />} />
+        <Route path="/vismayakriya" element={<Vismayakriya />} />
+        <Route path="/vismakriya" element={<Vismayakriya />} />
 
         {/* Kabinet Nexus */}
         <Route path="/dinasnexus/inti" element={<Inti />} />

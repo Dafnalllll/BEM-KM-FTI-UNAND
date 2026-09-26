@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// Import Stylesheet Global
+import './syles/VismayaKriya/variables.css';
+import './syles/VismayaKriya/base.css';
+import './syles/VismayaKriya/layout.css';
+import './syles/VismayaKriya/components.css';
+import './syles/VismayaKriya/animations.css';
+import './syles/VismayaKriya/responsive.css';
+
+// Menjalankan App ke dalam HTML
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);

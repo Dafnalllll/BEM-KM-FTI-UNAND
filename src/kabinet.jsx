@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Nexus from "./assets/kabinet/nexusinspirasi.webp";
 import Sinergi from "./assets/kabinet/sinergi.webp";
+import Vismakriya from "./assets/kabinet/vismayakriya.webp";
 import Fakultas from "./assets/FTI.webp";
 
 export const Kabinet = () => {
@@ -18,6 +19,10 @@ export const Kabinet = () => {
     navigate("/nexus");
   };
 
+  const handleVismakriyaClick = () => {
+    navigate("/vismayakriya");
+  };
+
   return (
     <div
       className="relative flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat px-2 sm:px-0"
@@ -29,7 +34,7 @@ export const Kabinet = () => {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 w-full max-w-2xl py-8">
+      <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 w-full max-w-4xl py-8">
         <button
           onClick={handleSinergiClick}
           className="focus:outline-none w-full sm:w-auto"
@@ -51,6 +56,18 @@ export const Kabinet = () => {
           <img
             src={Nexus}
             alt="Nexus"
+            className="w-2/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer "
+          />
+        </button>
+        <button
+          onClick={handleVismakriyaClick}
+          className="focus:outline-none w-full sm:w-auto"
+          data-aos="zoom-in"
+          data-aos-duration="1400"
+        >
+          <img
+            src={Vismakriya}
+            alt="Vismakriya"
             className="w-2/5 max-w-xs sm:w-48 sm:max-w-xs mx-auto sm:mx-5 transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer "
           />
         </button>
