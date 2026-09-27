@@ -17,7 +17,7 @@ export function resolveAsset(path) {
   }
 
   // 2. Already built/bundled asset paths (e.g. "/assets/..." or "assets/...")
-  if (path.startsWith('/assets/') || path.startsWith('assets/') || path.includes('/assets/')) {
+  if (!path.startsWith('/src/') && (path.startsWith('/assets/') || path.startsWith('assets/'))) {
     return path;
   }
 
