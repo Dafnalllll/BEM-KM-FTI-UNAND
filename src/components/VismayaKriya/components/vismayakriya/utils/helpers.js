@@ -1,10 +1,27 @@
-const assetModules = import.meta.glob('/src/assets/**/*.{webp,png,jpg,jpeg,svg,gif}', { eager: true });
+const assetModules = import.meta.glob('/src/assets/**/*.{webp,png,jpg,jpeg,svg,gif,PNG,JPG,JPEG,WEBP,SVG}', { eager: true });
 
 export function resolveAsset(path) {
   if (!path) return '';
-  if (typeof path !== 'string') return path;
-  if (path.startsWith('http') || path.startsWith('data:') || path.startsWith('blob:')) return path;
 
+  // Handle ES module object if passed (e.g. { default: "..." })
+  if (typeof path === 'object' && path !== null) {
+    if (path.default) path = path.default;
+    else return path;
+  }
+
+  if (typeof path !== 'string') return path;
+
+  // 1. Direct URLs, data URIs, blob URIs
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:') || path.startsWith('blob:')) {
+    return path;
+  }
+
+  // 2. Already built/bundled asset paths (e.g. "/assets/..." or "assets/...")
+  if (path.startsWith('/assets/') || path.startsWith('assets/') || path.includes('/assets/')) {
+    return path;
+  }
+
+  // 3. Normalize string paths for source assets lookup
   let cleanPath = path;
   cleanPath = cleanPath.replace(/^\/vismayakriya\/dinasvismaya\//, '/src/assets/dinasvismaya/');
   cleanPath = cleanPath.replace(/^\/dinasvismaya\//, '/src/assets/dinasvismaya/');
@@ -14,17 +31,18 @@ export function resolveAsset(path) {
   cleanPath = cleanPath.replace(/^\/dinasnexus\//, '/src/assets/dinasnexus/');
   cleanPath = cleanPath.replace(/^\/vismayakriya\//, '/src/assets/');
 
-  if (!cleanPath.startsWith('/src/assets/')) {
-    cleanPath = '/src/assets/' + cleanPath.replace(/^\//, '');
-  }
-
   if (assetModules[cleanPath]) {
     return assetModules[cleanPath].default || assetModules[cleanPath];
   }
 
-  const lowerClean = cleanPath.toLowerCase();
+  const srcPath = cleanPath.startsWith('/src/assets/') ? cleanPath : '/src/assets/' + cleanPath.replace(/^\//, '');
+  if (assetModules[srcPath]) {
+    return assetModules[srcPath].default || assetModules[srcPath];
+  }
+
+  const lowerSrc = srcPath.toLowerCase();
   for (const key in assetModules) {
-    if (key.toLowerCase() === lowerClean) {
+    if (key.toLowerCase() === lowerSrc) {
       return assetModules[key].default || assetModules[key];
     }
   }
@@ -39,12 +57,12 @@ export function resolveAsset(path) {
   }
 
   // Special logo aliases fallback
-  if (lowerClean.includes('sosmas') && lowerClean.includes('logo')) {
+  if (cleanPath.toLowerCase().includes('sosmas') && cleanPath.toLowerCase().includes('logo')) {
     const sosmasKey = Object.keys(assetModules).find(k => k.includes('logo/sosmas.webp'));
     if (sosmasKey) return assetModules[sosmasKey].default || assetModules[sosmasKey];
   }
 
-  return cleanPath;
+  return path;
 }
 
 export function debounce(func, delay = 250) {
