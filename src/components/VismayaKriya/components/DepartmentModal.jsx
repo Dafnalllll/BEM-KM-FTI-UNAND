@@ -374,7 +374,7 @@ export function DepartmentModal({ dept, onClose }) {
                     <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.95rem' }}>{prog.title}</div>
                     {prog.summary && <div style={{ fontSize: '0.78rem', color: '#cbd5e1', lineHeight: 1.4 }}>{prog.summary}</div>}
                     <div style={{ color: '#60a5fa', fontWeight: 600, fontSize: '0.78rem', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                      Lihat Halaman Detail &rarr;
+                      Lihat Halaman Detail
                     </div>
                   </div>
                 ))}

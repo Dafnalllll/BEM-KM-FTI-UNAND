@@ -650,7 +650,7 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                       <div style={{ fontWeight: 600, color: '#ffffff', fontSize: '0.93rem', flexGrow: 1, textTransform: 'capitalize' }}>
                         {titleStr}
                       </div>
-                      <span style={{ fontSize: '0.82rem', color: '#60a5fa', fontWeight: 600 }}>Detail &rarr;</span>
+                      <span style={{ fontSize: '0.82rem', color: '#60a5fa', fontWeight: 600, whiteSpace: 'nowrap', flexShrink: 0 }}>Detail</span>
                     </div>
                   );
                 })}

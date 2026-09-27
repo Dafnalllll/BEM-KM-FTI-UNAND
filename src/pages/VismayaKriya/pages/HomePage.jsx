@@ -186,7 +186,7 @@ export function HomePage({ onOpenAspiration }) {
                   <div className="proker-footer">
                     <span>{p.date}</span>
                     <span style={{ color: '#60a5fa', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
-                      Detail &rarr;
+                      Detail
                     </span>
                   </div>
                 </div>
