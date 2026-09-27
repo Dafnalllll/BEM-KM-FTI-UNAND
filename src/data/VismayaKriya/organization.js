@@ -11,9 +11,9 @@ export const cabinetInfo = {
   faculty: "Fakultas Teknologi Informasi",
   university: "Universitas Andalas",
   period: "2026",
-  logo: vismayakriyaLogo,
-  bemLogo: bemLogo,
-  ftiLogo: ftiLogo,
+  logo: "/src/assets/kabinet/vismayakriya.webp",
+  bemLogo: "/src/assets/BEM.webp",
+  ftiLogo: "/src/assets/FTI.webp",
   heroTeamImage: "/src/assets/dinasnexus/kegiatan/studio.webp",
   heroAltImage: "/src/assets/dinasnexus/kegiatan/pelantikan.webp",
 

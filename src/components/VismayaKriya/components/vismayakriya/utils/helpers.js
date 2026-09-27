@@ -29,6 +29,8 @@ export function resolveAsset(path) {
   cleanPath = cleanPath.replace(/^\/dinasvismayakriya\//, '/src/assets/dinasvismayakriya/');
   cleanPath = cleanPath.replace(/^\/vismayakriya\/dinasnexus\//, '/src/assets/dinasnexus/');
   cleanPath = cleanPath.replace(/^\/dinasnexus\//, '/src/assets/dinasnexus/');
+  cleanPath = cleanPath.replace(/^\/vismayakriya\/kabinet\//, '/src/assets/kabinet/');
+  cleanPath = cleanPath.replace(/^\/kabinet\//, '/src/assets/kabinet/');
   cleanPath = cleanPath.replace(/^\/vismayakriya\//, '/src/assets/');
 
   if (assetModules[cleanPath]) {
