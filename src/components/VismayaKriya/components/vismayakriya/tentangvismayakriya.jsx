@@ -193,30 +193,30 @@ export function TentangVismayakriya() {
             {/* Top: Governor & Vice Governor */}
             <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <div
-                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-dark-card)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: 'var(--shadow-card-dark)', minWidth: '280px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
                 onClick={() => handleMemberClick(info.leaders.governor)}
               >
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #60a5fa', flexShrink: 0, background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={resolveAsset(info.leaders.governor.image)} alt={info.leaders.governor.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 700, textTransform: 'uppercase' }}>Gubernur Mahasiswa</div>
-                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff' }}>{info.leaders.governor.name}</div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '2px' }}>{info.leaders.governor.jurusan} &bull; {info.leaders.governor.angkatan}</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Gubernur Mahasiswa</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.governor.name}</div>
+                  <div style={{ fontSize: '0.72rem', color: '#334155', fontWeight: 600, marginTop: '2px' }}>{info.leaders.governor.jurusan} &bull; {info.leaders.governor.angkatan}</div>
                 </div>
               </div>
 
               <div
-                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-dark-card)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: 'var(--shadow-card-dark)', minWidth: '280px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
                 onClick={() => handleMemberClick(info.leaders.viceGovernor)}
               >
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #60a5fa', flexShrink: 0, background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={resolveAsset(info.leaders.viceGovernor.image)} alt={info.leaders.viceGovernor.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 700, textTransform: 'uppercase' }}>Wakil Gubernur</div>
-                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff' }}>{info.leaders.viceGovernor.name}</div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '2px' }}>{info.leaders.viceGovernor.jurusan} &bull; {info.leaders.viceGovernor.angkatan}</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Wakil Gubernur</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.viceGovernor.name}</div>
+                  <div style={{ fontSize: '0.72rem', color: '#334155', fontWeight: 600, marginTop: '2px' }}>{info.leaders.viceGovernor.jurusan} &bull; {info.leaders.viceGovernor.angkatan}</div>
                 </div>
               </div>
             </div>
@@ -227,30 +227,30 @@ export function TentangVismayakriya() {
             {/* Middle: Secretariat & Finance */}
             <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <div
-                style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: 'rgba(16,26,51,0.9)', border: '1px solid var(--border-dark)', borderRadius: '12px', padding: '1rem 1.5rem', minWidth: '230px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
                 onClick={() => handleMemberClick(info.leaders.secretariat)}
               >
-                <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={resolveAsset(info.leaders.secretariat.image)} alt={info.leaders.secretariat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Sekretariat</div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>{info.leaders.secretariat.name}</div>
-                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>{info.leaders.secretariat?.title || "Sekretaris Daerah"}</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Sekretariat</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.secretariat.name}</div>
+                  <div style={{ fontSize: '0.72rem', color: '#334155', fontWeight: 600, marginTop: '2px' }}>{info.leaders.secretariat?.title || "Sekretaris Daerah"}</div>
                 </div>
               </div>
 
               <div
-                style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: 'rgba(16,26,51,0.9)', border: '1px solid var(--border-dark)', borderRadius: '12px', padding: '1rem 1.5rem', minWidth: '230px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
                 onClick={() => handleMemberClick(info.leaders.finance)}
               >
-                <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={resolveAsset(info.leaders.finance.image)} alt={info.leaders.finance.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Keuangan</div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>{info.leaders.finance.name}</div>
-                  <div style={{ fontSize: '0.7rem', color: '#60a5fa' }}>{info.leaders.finance?.title || "Bendahara Daerah"}</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Keuangan</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.finance.name}</div>
+                  <div style={{ fontSize: '0.72rem', color: '#334155', fontWeight: 600, marginTop: '2px' }}>{info.leaders.finance?.title || "Bendahara Daerah"}</div>
                 </div>
               </div>
             </div>
@@ -260,8 +260,8 @@ export function TentangVismayakriya() {
 
             {/* Grid: 10 Dinas & Biro */}
             <div style={{ width: '100%', marginTop: '1rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '0.85rem', color: '#60a5fa', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                Jajaran Pelaksana: 9 Dinas &bull; 1 Biro
+              <div style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '0.85rem', color: '#2563eb', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                Jajaran Pelaksana: 8 Dinas &bull; 2 Biro
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1rem' }}>
@@ -271,22 +271,24 @@ export function TentangVismayakriya() {
                     className="org-node-card"
                     data-slug={d.slug}
                     style={{
-                      background: 'var(--bg-dark-card)',
-                      border: '1px solid var(--border-dark)',
+                      background: 'rgba(240, 246, 255, 0.85)',
+                      backdropFilter: 'blur(12px)',
+                      border: '1.5px solid #3b82f6',
                       borderRadius: '12px',
                       padding: '1.25rem 1rem',
                       textAlign: 'center',
                       cursor: 'pointer',
+                      boxShadow: '0 4px 12px rgba(37, 99, 235, 0.06)',
                       transition: 'all var(--transition-fast)'
                     }}
                     onClick={() => handleDeptClick(d.slug)}
                   >
-                    <div style={{ width: '48px', height: '48px', margin: '0 auto 0.75rem', borderRadius: '10px', background: 'rgba(255,255,255,0.03)', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div style={{ width: '52px', height: '52px', margin: '0 auto 0.75rem', borderRadius: '12px', background: '#ffffff', border: '1.5px solid #3b82f6', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(37, 99, 235, 0.1)' }}>
                       <img src={resolveAsset(d.logo)} alt={d.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
-                    <span className="badge" style={{ fontSize: '0.7rem', background: 'rgba(59,130,246,0.15)', color: '#60a5fa', marginBottom: '0.35rem' }}>{d.type}</span>
-                    <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.95rem' }}>{d.shortName}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.25rem' }}>{d.headName}</div>
+                    <span className="badge" style={{ fontSize: '0.7rem', background: 'rgba(37, 99, 235, 0.12)', color: '#2563eb', fontWeight: 800, marginBottom: '0.35rem' }}>{d.type}</span>
+                    <div style={{ fontWeight: 800, color: '#0f172a', fontSize: '0.95rem' }}>{d.shortName}</div>
+                    <div style={{ fontSize: '0.75rem', color: '#334155', fontWeight: 600, marginTop: '0.25rem' }}>{d.headName}</div>
                   </div>
                 ))}
               </div>
@@ -296,12 +298,12 @@ export function TentangVismayakriya() {
       </section>
 
       {/* SEKSI INTERAKTIF: HIMPUNAN & UKM DI LINGKUNGAN FTI */}
-      <section className="section section-dark-alt" id="ormawa-fti">
+      <section className="section section-dark-alt" id="ormawa-fti" style={{ background: '#f8fafc' }}>
         <div className="container">
           <div className="section-header">
             <div className="section-tag">Keluarga Mahasiswa FTI</div>
-            <h2 className="section-title">Himpunan & UKM di FTI UNAND</h2>
-            <p className="section-subtitle">
+            <h2 className="section-title" style={{ color: '#0f172a' }}>Himpunan & UKM di FTI UNAND</h2>
+            <p className="section-subtitle" style={{ color: '#334155' }}>
               Sinergi 3 Himpunan Mahasiswa Jurusan dan 3 Unit Kegiatan Mahasiswa. Klik pada kartu Himpunan atau UKM untuk melihat profil lengkap, naungan jurusan, visi, misi, dan sosial media.
             </p>
             <div className="section-divider"></div>
@@ -338,8 +340,9 @@ export function TentangVismayakriya() {
               <div
                 key={o.id}
                 style={{
-                  background: 'var(--bg-dark-card)',
-                  border: '1px solid var(--border-dark)',
+                  background: 'rgba(240, 246, 255, 0.85)',
+                  backdropFilter: 'blur(12px)',
+                  border: '2px solid #3b82f6',
                   borderRadius: '16px',
                   padding: '1.75rem 1.5rem',
                   display: 'flex',
@@ -347,22 +350,38 @@ export function TentangVismayakriya() {
                   alignItems: 'center',
                   textAlign: 'center',
                   cursor: 'pointer',
+                  boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)',
                   transition: 'all 0.25s ease'
                 }}
                 className="ormawa-interactive-card"
                 onClick={() => handleOrmawaClick(o)}
               >
-                <div style={{ width: '72px', height: '72px', borderRadius: '16px', background: 'rgba(7,12,24,0.6)', border: '1px solid rgba(175,203,238,0.2)', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 6px 16px rgba(0,0,0,0.3)' }}>
+                <div style={{ width: '72px', height: '72px', borderRadius: '16px', background: '#ffffff', border: '2px solid #3b82f6', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 4px 12px rgba(37, 99, 235, 0.12)' }}>
                   <img src={resolveAsset(o.logo)} alt={o.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </div>
-                <span className="badge" style={{ fontSize: '0.72rem', background: 'rgba(59,130,246,0.18)', color: '#60a5fa', marginBottom: '0.5rem' }}>{o.type}</span>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', marginBottom: '0.35rem' }}>{o.shortName}</h3>
-                <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginBottom: '1rem', lineHeight: 1.4 }}>{o.scope}</div>
-                <p style={{ fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.6, marginBottom: '1.25rem', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                <span className="badge" style={{ fontSize: '0.72rem', background: 'rgba(37, 99, 235, 0.12)', color: '#2563eb', fontWeight: 800, marginBottom: '0.5rem', padding: '0.3rem 0.8rem', borderRadius: '20px' }}>{o.type}</span>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.35rem' }}>{o.shortName}</h3>
+                <div style={{ fontSize: '0.82rem', color: '#2563eb', fontWeight: 700, marginBottom: '1rem', lineHeight: 1.4 }}>{o.scope}</div>
+                <p style={{ fontSize: '0.88rem', color: '#334155', fontWeight: 500, lineHeight: 1.6, marginBottom: '1.25rem', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                   {o.description}
                 </p>
                 <div style={{ marginTop: 'auto', width: '100%' }}>
-                  <button className="btn btn-outline btn-sm" style={{ width: '100%' }} type="button">
+                  <button
+                    className="btn btn-sm"
+                    style={{
+                      width: '100%',
+                      background: '#2563eb',
+                      color: '#ffffff',
+                      border: 'none',
+                      borderRadius: '10px',
+                      padding: '0.65rem 1rem',
+                      fontWeight: 700,
+                      fontSize: '0.85rem',
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 8px rgba(37, 99, 235, 0.25)'
+                    }}
+                    type="button"
+                  >
                     <span>Lihat Profil & Visi Misi</span>
                   </button>
                 </div>

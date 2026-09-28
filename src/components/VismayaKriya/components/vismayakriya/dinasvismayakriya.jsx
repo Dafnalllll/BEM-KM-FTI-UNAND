@@ -70,7 +70,7 @@ export function DinasVismayakriya({ initialSlug, onClearInitialSlug }) {
           <div className="section-tag">Struktur Pelaksana</div>
           <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#0f172a' }}>Dinas & Biro Kabinet</h1>
           <p className="section-subtitle" style={{ color: '#334155' }}>
-            Mengenal 9 Dinas dan 1 Biro yang mendedikasikan energi, keahlian, dan komitmen bagi kemaslahatan Keluarga Mahasiswa Fakultas Teknologi Informasi.
+            Mengenal 8 Dinas dan 2 Biro yang mendedikasikan energi, keahlian, dan komitmen bagi kemaslahatan Keluarga Mahasiswa Fakultas Teknologi Informasi.
           </p>
           <div className="section-divider"></div>
         </div>
@@ -95,7 +95,7 @@ export function DinasVismayakriya({ initialSlug, onClearInitialSlug }) {
               type="button"
               onClick={() => setActiveFilter('Dinas')}
             >
-              9 Dinas
+              8 Dinas
             </button>
             <button
               className={`pill-btn ${activeFilter === 'Biro' ? 'active' : ''} dept-filter-btn`}
@@ -103,7 +103,7 @@ export function DinasVismayakriya({ initialSlug, onClearInitialSlug }) {
               type="button"
               onClick={() => setActiveFilter('Biro')}
             >
-              1 Biro
+              2 Biro
             </button>
           </div>
 

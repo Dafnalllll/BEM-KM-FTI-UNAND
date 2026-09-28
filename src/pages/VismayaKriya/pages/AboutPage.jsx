@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { api } from '../utils/api.js';
 import { departmentsData } from '../data/departments.js';
 import { DepartmentModal } from '../components/DepartmentModal.jsx';
@@ -116,7 +116,7 @@ export function AboutPage() {
             <div className="section-tag">Hierarki Kelembagaan</div>
             <h2 className="section-title">Struktur Kabinet Nexus Inspirasi</h2>
             <p className="section-subtitle">
-              Bagan kepemimpinan terintegrasi: Gubernur & Wakil Gubernur, Sekretaris Kabinet, Bendahara Umum, serta 9 Dinas dan 1 Biro. Klik pada dinas untuk melihat profil lengkapnya.
+              Bagan kepemimpinan terintegrasi: Gubernur & Wakil Gubernur, Sekretaris Kabinet, Bendahara Umum, serta 8 Dinas dan 2 Biro. Klik pada dinas untuk melihat profil lengkapnya.
             </p>
             <div className="section-divider"></div>
           </div>
@@ -133,15 +133,15 @@ export function AboutPage() {
                   jurusan: 'Sistem Informasi',
                   sosmed: info.leaders.governor.socials
                 })}
-                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-dark-card)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: 'var(--shadow-card-dark)', minWidth: '280px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
               >
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #60a5fa', flexShrink: 0, background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={info.leaders.governor.image} alt={info.leaders.governor.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 700, textTransform: 'uppercase' }}>Gubernur Mahasiswa</div>
-                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff' }}>{info.leaders.governor.name}</div>
-                  <span style={{ fontSize: '0.7rem', color: '#60a5fa', fontWeight: 600 }}>Biodata &rarr;</span>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Gubernur Mahasiswa</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.governor.name}</div>
+                  <span style={{ fontSize: '0.72rem', color: '#2563eb', fontWeight: 700 }}>Biodata &rarr;</span>
                 </div>
               </div>
 
@@ -154,15 +154,15 @@ export function AboutPage() {
                   jurusan: 'Teknik Komputer',
                   sosmed: info.leaders.viceGovernor.socials
                 })}
-                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-dark-card)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: 'var(--shadow-card-dark)', minWidth: '280px', cursor: 'pointer' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
               >
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #60a5fa', flexShrink: 0, background: '#050811' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={info.leaders.viceGovernor.image} alt={info.leaders.viceGovernor.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.75rem', color: '#60a5fa', fontWeight: 700, textTransform: 'uppercase' }}>Wakil Gubernur</div>
-                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff' }}>{info.leaders.viceGovernor.name}</div>
-                  <span style={{ fontSize: '0.7rem', color: '#60a5fa', fontWeight: 600 }}>Biodata &rarr;</span>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Wakil Gubernur</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.viceGovernor.name}</div>
+                  <span style={{ fontSize: '0.72rem', color: '#2563eb', fontWeight: 700 }}>Biodata &rarr;</span>
                 </div>
               </div>
             </div>
@@ -172,23 +172,45 @@ export function AboutPage() {
 
             {/* Middle: Secretariat & Finance */}
             <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: 'rgba(16,26,51,0.9)', border: '1px solid var(--border-dark)', borderRadius: '12px', padding: '1rem 1.5rem', minWidth: '230px' }}>
-                <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
+              <div
+                onClick={() => setSelectedPerson({
+                  name: info.leaders.secretariat.name,
+                  role: info.leaders.secretariat.title || "Sekretaris Daerah",
+                  image: info.leaders.secretariat.image,
+                  angkatan: '2022',
+                  jurusan: 'Sistem Informasi',
+                  sosmed: info.leaders.secretariat.socials
+                })}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
+              >
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={info.leaders.secretariat.image} alt="Sekretaris Daerah" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Sekretariat</div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>Sekretaris Daerah</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Sekretariat</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.secretariat.name}</div>
+                  <span style={{ fontSize: '0.72rem', color: '#2563eb', fontWeight: 700 }}>Biodata &rarr;</span>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: 'rgba(16,26,51,0.9)', border: '1px solid var(--border-dark)', borderRadius: '12px', padding: '1rem 1.5rem', minWidth: '230px' }}>
-                <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #60a5fa', background: '#050811' }}>
+              <div
+                onClick={() => setSelectedPerson({
+                  name: info.leaders.finance.name,
+                  role: info.leaders.finance.title || "Bendahara Daerah",
+                  image: info.leaders.finance.image,
+                  angkatan: '2022',
+                  jurusan: 'Sistem Informasi',
+                  sosmed: info.leaders.finance.socials
+                })}
+                style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '2px solid #3b82f6', borderRadius: '16px', padding: '1.25rem 2rem', boxShadow: '0 4px 16px rgba(37, 99, 235, 0.08)', minWidth: '280px', cursor: 'pointer' }}
+              >
+                <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #3b82f6', flexShrink: 0, background: '#eff6ff' }}>
                   <img src={info.leaders.finance.image} alt="Bendahara Umum" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase' }}>Keuangan</div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff' }}>Bendahara Umum</div>
+                  <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 800, textTransform: 'uppercase' }}>Keuangan</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a' }}>{info.leaders.finance.name}</div>
+                  <span style={{ fontSize: '0.72rem', color: '#2563eb', fontWeight: 700 }}>Biodata &rarr;</span>
                 </div>
               </div>
             </div>
@@ -198,7 +220,7 @@ export function AboutPage() {
 
             {/* Grid: 10 Dinas & Biro */}
             <div style={{ width: '100%', marginTop: '1rem' }}>
-              <div style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '0.85rem', color: '#60a5fa', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              <div style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '0.85rem', color: '#2563eb', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                 Jajaran Pelaksana: 9 Dinas &bull; 1 Biro
               </div>
 
@@ -208,14 +230,14 @@ export function AboutPage() {
                     key={d.slug}
                     className="org-node-card"
                     onClick={() => setSelectedDept(d)}
-                    style={{ background: 'var(--bg-dark-card)', border: '1px solid var(--border-dark)', borderRadius: '12px', padding: '1.25rem 1rem', textAlign: 'center', cursor: 'pointer', transition: 'all var(--transition-fast)' }}
+                    style={{ background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '1.5px solid #3b82f6', borderRadius: '12px', padding: '1.25rem 1rem', textAlign: 'center', cursor: 'pointer', boxShadow: '0 4px 12px rgba(37, 99, 235, 0.06)', transition: 'all var(--transition-fast)' }}
                   >
-                    <div style={{ width: '48px', height: '48px', margin: '0 auto 0.75rem', borderRadius: '10px', background: 'rgba(255,255,255,0.03)', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div style={{ width: '52px', height: '52px', margin: '0 auto 0.75rem', borderRadius: '12px', background: '#ffffff', border: '1.5px solid #3b82f6', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(37, 99, 235, 0.1)' }}>
                       <img src={d.logo} alt={d.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
-                    <span className="badge" style={{ fontSize: '0.7rem', background: 'rgba(59,130,246,0.15)', color: '#60a5fa', marginBottom: '0.35rem' }}>{d.type}</span>
-                    <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.95rem' }}>{d.shortName}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.25rem' }}>{d.headName}</div>
+                    <span className="badge" style={{ fontSize: '0.7rem', background: 'rgba(37, 99, 235, 0.12)', color: '#2563eb', fontWeight: 800, marginBottom: '0.35rem' }}>{d.type}</span>
+                    <div style={{ fontWeight: 800, color: '#0f172a', fontSize: '0.95rem' }}>{d.shortName}</div>
+                    <div style={{ fontSize: '0.75rem', color: '#334155', fontWeight: 600, marginTop: '0.25rem' }}>{d.headName}</div>
                   </div>
                 ))}
               </div>
