@@ -85,8 +85,8 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
         style={{
           width: '100%',
           minHeight: '100vh',
-          background: '#050811',
-          color: '#ffffff',
+          background: '#ffffff',
+          color: '#0f172a',
           paddingTop: '6.5rem',
           paddingBottom: '4rem'
         }}
@@ -100,8 +100,8 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
               style={{
                 background: 'none',
                 border: 'none',
-                color: '#60a5fa',
-                fontWeight: 600,
+                color: '#2563eb',
+                fontWeight: 700,
                 fontSize: '0.95rem',
                 cursor: 'pointer',
                 display: 'inline-flex',
@@ -117,12 +117,13 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
           {/* Department Header Identity */}
           <div
             style={{
-              background: 'linear-gradient(135deg, rgba(16,25,46,0.95) 0%, rgba(11,18,36,0.98) 100%)',
-              border: '1px solid rgba(96, 165, 250, 0.25)',
+              background: 'rgba(240, 246, 255, 0.85)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(59, 130, 246, 0.25)',
               borderRadius: '20px',
               padding: '2rem 2.25rem',
               marginBottom: '2rem',
-              boxShadow: '0 12px 30px rgba(0,0,0,0.5)',
+              boxShadow: '0 4px 20px rgba(37, 99, 235, 0.08)',
               display: 'flex',
               alignItems: 'center',
               gap: '1.5rem',
@@ -134,13 +135,13 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                 width: '84px',
                 height: '84px',
                 borderRadius: '18px',
-                background: '#070c18',
-                border: '2px solid #38bdf8',
+                background: '#ffffff',
+                border: '2px solid #2563eb',
                 padding: '10px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 8px 24px rgba(56, 189, 248, 0.35)',
+                boxShadow: '0 4px 16px rgba(37, 99, 235, 0.2)',
                 flexShrink: 0
               }}
             >
@@ -151,19 +152,19 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
               <span
                 style={{
                   display: 'inline-block',
-                  background: 'rgba(37, 99, 235, 0.3)',
-                  color: '#60a5fa',
-                  border: '1px solid rgba(96, 165, 250, 0.3)',
+                  background: 'rgba(37, 99, 235, 0.12)',
+                  color: '#2563eb',
+                  border: '1px solid rgba(37, 99, 235, 0.3)',
                   borderRadius: '50px',
                   padding: '0.3rem 0.95rem',
                   fontSize: '0.82rem',
-                  fontWeight: 600,
+                  fontWeight: 700,
                   marginBottom: '0.5rem'
                 }}
               >
                 {dept.type} &bull; {cabinetInfo.cabinet}
               </span>
-              <h1 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, margin: 0 }}>
+              <h1 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 800, color: '#0f172a', lineHeight: 1.2, margin: 0 }}>
                 {dept.type} {dept.name}
               </h1>
             </div>
@@ -390,14 +391,16 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
             {/* 2. DESKRIPSI & PERAN CARD */}
             <div
               style={{
-                background: 'rgba(16, 26, 51, 0.5)',
-                border: '1px solid rgba(175, 203, 238, 0.15)',
+                background: 'rgba(240, 246, 255, 0.75)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(59, 130, 246, 0.2)',
                 borderRadius: '18px',
-                padding: '1.75rem'
+                padding: '1.75rem',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)'
               }}
             >
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="16" x2="12" y2="12"></line>
                   <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -405,30 +408,30 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                 Deskripsi & Peran
               </h3>
 
-              <p style={{ color: '#cbd5e1', fontSize: '1rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
+              <p style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.75, marginBottom: '1.5rem', fontWeight: 500 }}>
                 {dept.description}
               </p>
 
               {/* Visi & Misi Box */}
               <div
                 style={{
-                  background: 'rgba(7, 12, 24, 0.6)',
-                  border: '1px solid rgba(175, 203, 238, 0.12)',
+                  background: 'rgba(239, 246, 255, 0.9)',
+                  border: '1px solid rgba(59, 130, 246, 0.2)',
                   borderRadius: '14px',
                   padding: '1.5rem'
                 }}
               >
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#60a5fa', marginBottom: '0.4rem' }}>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#2563eb', marginBottom: '0.4rem' }}>
                     VISI DEPARTEMEN
                   </div>
-                  <div style={{ fontSize: '1.05rem', fontWeight: 600, color: '#ffffff', fontStyle: 'italic', lineHeight: 1.6 }}>
+                  <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0f172a', fontStyle: 'italic', lineHeight: 1.6 }}>
                     "{dept.vision}"
                   </div>
                 </div>
 
                 <div>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#60a5fa', marginBottom: '0.75rem' }}>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#2563eb', marginBottom: '0.75rem' }}>
                     MISI UTAMA
                   </div>
                   {(dept.missions || []).map((m, idx) => (
@@ -451,7 +454,7 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                       >
                         {idx + 1}
                       </div>
-                      <div style={{ fontSize: '0.95rem', color: '#dcebff', lineHeight: 1.65 }}>{m}</div>
+                      <div style={{ fontSize: '0.95rem', color: '#1e293b', lineHeight: 1.65, fontWeight: 500 }}>{m}</div>
                     </div>
                   ))}
                 </div>
@@ -461,10 +464,10 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
             {/* 3. JAJARAN PIMPINAN GRID */}
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                   Jajaran Pimpinan
                 </h3>
-                <span style={{ fontSize: '0.85rem', color: '#60a5fa' }}>(Klik untuk lihat biodata)</span>
+                <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik untuk lihat biodata)</span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
@@ -473,21 +476,23 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                     key={i}
                     onClick={() => handleMemberClick(l)}
                     style={{
-                      background: 'rgba(16, 26, 51, 0.6)',
-                      border: '1px solid rgba(175, 203, 238, 0.15)',
+                      background: 'rgba(240, 246, 255, 0.75)',
+                      backdropFilter: 'blur(12px)',
+                      border: '1px solid rgba(59, 130, 246, 0.2)',
                       borderRadius: '16px',
                       padding: '1.35rem 1rem',
                       textAlign: 'center',
                       cursor: 'pointer',
-                      transition: 'transform 0.2s, border-color 0.2s'
+                      transition: 'transform 0.2s, border-color 0.2s',
+                      boxShadow: '0 4px 14px rgba(0, 0, 0, 0.03)'
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.transform = 'translateY(-4px)';
-                      e.currentTarget.style.borderColor = '#38bdf8';
+                      e.currentTarget.style.borderColor = '#2563eb';
                     }}
                     onMouseOut={(e) => {
                       e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.borderColor = 'rgba(175, 203, 238, 0.15)';
+                      e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
                     }}
                   >
                     <div
@@ -496,17 +501,17 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                         height: '88px',
                         borderRadius: '50%',
                         overflow: 'hidden',
-                        border: '2px solid #38bdf8',
-                        boxShadow: '0 0 16px rgba(56, 189, 248, 0.45)',
+                        border: '2px solid #2563eb',
+                        boxShadow: '0 4px 12px rgba(37, 99, 235, 0.2)',
                         margin: '0 auto 0.85rem',
-                        background: '#050811'
+                        background: '#ffffff'
                       }}
                     >
                       <img src={resolveAsset(l.image)} alt={l.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
 
-                    <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.98rem', marginBottom: '0.25rem' }}>{l.name}</div>
-                    <div style={{ fontSize: '0.8rem', color: '#93c5fd', marginBottom: '0.65rem' }}>{l.role}</div>
+                    <div style={{ fontWeight: 800, color: '#0f172a', fontSize: '0.98rem', marginBottom: '0.25rem' }}>{l.name}</div>
+                    <div style={{ fontSize: '0.8rem', color: '#2563eb', fontWeight: 700, marginBottom: '0.65rem' }}>{l.role}</div>
 
                     <button
                       type="button"
@@ -515,13 +520,13 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                         handleMemberClick(l);
                       }}
                       style={{
-                        background: 'rgba(37, 99, 235, 0.25)',
-                        color: '#60a5fa',
-                        border: '1px solid rgba(96, 165, 250, 0.3)',
+                        background: 'rgba(37, 99, 235, 0.12)',
+                        color: '#2563eb',
+                        border: '1px solid rgba(37, 99, 235, 0.3)',
                         borderRadius: '50px',
                         padding: '0.25rem 0.85rem',
                         fontSize: '0.78rem',
-                        fontWeight: 600,
+                        fontWeight: 700,
                         cursor: 'pointer'
                       }}
                     >
@@ -536,10 +541,10 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
             {dept.staff && dept.staff.length > 0 && (
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                     Fungsionaris & Staf
                   </h3>
-                  <span style={{ fontSize: '0.85rem', color: '#60a5fa' }}>(Klik staf untuk lihat biodata)</span>
+                  <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik staf untuk lihat biodata)</span>
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '1rem' }}>
@@ -548,21 +553,23 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                       key={i}
                       onClick={() => handleMemberClick(s)}
                       style={{
-                        background: 'rgba(16, 26, 51, 0.6)',
-                        border: '1px solid rgba(175, 203, 238, 0.15)',
+                        background: 'rgba(240, 246, 255, 0.75)',
+                        backdropFilter: 'blur(12px)',
+                        border: '1px solid rgba(59, 130, 246, 0.2)',
                         borderRadius: '14px',
                         padding: '1.15rem 0.75rem',
                         textAlign: 'center',
                         cursor: 'pointer',
-                        transition: 'transform 0.2s, border-color 0.2s'
+                        transition: 'transform 0.2s, border-color 0.2s',
+                        boxShadow: '0 4px 14px rgba(0, 0, 0, 0.03)'
                       }}
                       onMouseOver={(e) => {
                         e.currentTarget.style.transform = 'translateY(-3px)';
-                        e.currentTarget.style.borderColor = '#38bdf8';
+                        e.currentTarget.style.borderColor = '#2563eb';
                       }}
                       onMouseOut={(e) => {
                         e.currentTarget.style.transform = 'translateY(0)';
-                        e.currentTarget.style.borderColor = 'rgba(175, 203, 238, 0.15)';
+                        e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
                       }}
                     >
                       <div
@@ -571,17 +578,17 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                           height: '72px',
                           borderRadius: '50%',
                           overflow: 'hidden',
-                          border: '2px solid #38bdf8',
-                          boxShadow: '0 0 12px rgba(56, 189, 248, 0.35)',
+                          border: '2px solid #2563eb',
+                          boxShadow: '0 4px 12px rgba(37, 99, 235, 0.2)',
                           margin: '0 auto 0.75rem',
-                          background: '#050811'
+                          background: '#ffffff'
                         }}
                       >
                         <img src={resolveAsset(s.image)} alt={s.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       </div>
 
-                      <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.2rem' }}>{s.name}</div>
-                      <div style={{ fontSize: '0.75rem', color: '#93c5fd', marginBottom: '0.55rem' }}>{s.role || `Staf ${dept.shortName}`}</div>
+                      <div style={{ fontSize: '0.88rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.2rem' }}>{s.name}</div>
+                      <div style={{ fontSize: '0.75rem', color: '#2563eb', fontWeight: 700, marginBottom: '0.55rem' }}>{s.role || `Staf ${dept.shortName}`}</div>
 
                       <button
                         type="button"
@@ -590,13 +597,13 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                           handleMemberClick(s);
                         }}
                         style={{
-                          background: 'rgba(37, 99, 235, 0.25)',
-                          color: '#60a5fa',
-                          border: '1px solid rgba(96, 165, 250, 0.3)',
+                          background: 'rgba(37, 99, 235, 0.12)',
+                          color: '#2563eb',
+                          border: '1px solid rgba(37, 99, 235, 0.3)',
                           borderRadius: '50px',
                           padding: '0.2rem 0.75rem',
                           fontSize: '0.75rem',
-                          fontWeight: 600,
+                          fontWeight: 700,
                           cursor: 'pointer'
                         }}
                       >
@@ -611,10 +618,10 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
             {/* 5. PROGRAM KERJA YANG DIKELOLA GRID */}
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                   Program Kerja yang Dikelola ({(dept.programs || []).length} Proker)
                 </h3>
-                <span style={{ fontSize: '0.85rem', color: '#60a5fa' }}>(Klik proker untuk lihat detail penuh)</span>
+                <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik proker untuk lihat detail penuh)</span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
@@ -630,27 +637,28 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                         gap: '0.85rem',
                         padding: '1rem 1.25rem',
                         borderRadius: '14px',
-                        background: 'rgba(22, 36, 69, 0.6)',
-                        border: '1px solid rgba(175, 203, 238, 0.18)',
+                        background: 'rgba(240, 246, 255, 0.85)',
+                        border: '1px solid rgba(59, 130, 246, 0.2)',
                         cursor: 'pointer',
-                        transition: 'all 0.2s ease'
+                        transition: 'all 0.2s ease',
+                        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)'
                       }}
                       onMouseOver={(e) => {
-                        e.currentTarget.style.background = 'rgba(37, 99, 235, 0.25)';
-                        e.currentTarget.style.borderColor = '#38bdf8';
+                        e.currentTarget.style.background = 'rgba(224, 238, 255, 0.95)';
+                        e.currentTarget.style.borderColor = '#2563eb';
                         e.currentTarget.style.transform = 'translateY(-2px)';
                       }}
                       onMouseOut={(e) => {
-                        e.currentTarget.style.background = 'rgba(22, 36, 69, 0.6)';
-                        e.currentTarget.style.borderColor = 'rgba(175, 203, 238, 0.18)';
+                        e.currentTarget.style.background = 'rgba(240, 246, 255, 0.85)';
+                        e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
                         e.currentTarget.style.transform = 'translateY(0)';
                       }}
                     >
-                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#38bdf8', boxShadow: '0 0 8px #38bdf8', flexShrink: 0 }}></div>
-                      <div style={{ fontWeight: 600, color: '#ffffff', fontSize: '0.93rem', flexGrow: 1, textTransform: 'capitalize' }}>
+                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#2563eb', boxShadow: '0 0 6px rgba(37, 99, 235, 0.5)', flexShrink: 0 }}></div>
+                      <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '0.93rem', flexGrow: 1, textTransform: 'capitalize' }}>
                         {titleStr}
                       </div>
-                      <span style={{ fontSize: '0.82rem', color: '#60a5fa', fontWeight: 600, whiteSpace: 'nowrap', flexShrink: 0 }}>Detail</span>
+                      <span style={{ fontSize: '0.82rem', color: '#2563eb', fontWeight: 700, whiteSpace: 'nowrap', flexShrink: 0 }}>Detail</span>
                     </div>
                   );
                 })}

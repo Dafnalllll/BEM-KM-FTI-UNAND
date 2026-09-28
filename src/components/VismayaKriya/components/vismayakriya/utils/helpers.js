@@ -51,8 +51,11 @@ export function resolveAsset(path) {
 
   const filename = cleanPath.split('/').pop()?.toLowerCase();
   if (filename) {
+    const filenameHyphen = filename.replace(/\s+/g, '-');
+    const filenameSpace = filename.replace(/-/g, ' ');
     for (const key in assetModules) {
-      if (key.toLowerCase().endsWith('/' + filename)) {
+      const keyLower = key.toLowerCase();
+      if (keyLower.endsWith('/' + filename) || keyLower.endsWith('/' + filenameHyphen) || keyLower.endsWith('/' + filenameSpace)) {
         return assetModules[key].default || assetModules[key];
       }
     }

@@ -1,4 +1,4 @@
-﻿/***
+/***
  * HomePage Component (Beranda)
  * Hero Section, Nilai Utama, Statistik Interaktif, Profil Pimpinan Editorial,
  * Program Unggulan, Informasi Terkini, & Mitra Ormawa FTI
@@ -241,17 +241,17 @@ export async function renderHomePage() {
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
             ${newsList.map(n => `
               <div class="card card-dark home-news-card" data-id="${n.id}" style="cursor: pointer; display: flex; flex-direction: column;">
-                <div style="position: relative; width: 100%; height: 210px; overflow: hidden; background: #050811;">
+                <div style="position: relative; width: 100%; height: 210px; overflow: hidden; background: #f1f5f9;">
                   <img src="${n.thumbnail}" alt="${n.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-smooth);" class="news-thumb">
-                  <span class="badge" style="position: absolute; top: 1rem; left: 1rem; background: rgba(11,18,36,0.85); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3);">
+                  <span class="badge" style="position: absolute; top: 1rem; left: 1rem; background: rgba(37,99,235,0.15); color: #2563eb; border: 1px solid rgba(37,99,235,0.3); font-weight: 700;">
                     ${n.category}
                   </span>
                 </div>
                 <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-                  <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.5rem;">${n.date} &bull; ${n.readTime}</div>
-                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem; line-height: 1.4;">${n.title}</h3>
-                  <p style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">${n.excerpt}</p>
-                  <div style="color: #60a5fa; font-weight: 600; font-size: 0.875rem; display: flex; align-items: center; gap: 4px;">
+                  <div style="font-size: 0.8rem; color: #2563eb; font-weight: 700; margin-bottom: 0.5rem;">${n.date} &bull; ${n.readTime}</div>
+                  <h3 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.4;">${n.title}</h3>
+                  <p style="font-size: 0.875rem; color: #334155; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1; font-weight: 500;">${n.excerpt}</p>
+                  <div style="color: #2563eb; font-weight: 700; font-size: 0.875rem; display: flex; align-items: center; gap: 4px;">
                     Baca Selengkapnya &rarr;
                   </div>
                 </div>
@@ -262,13 +262,13 @@ export async function renderHomePage() {
       </section>
 
       {/* ASPIRASI MAHASISWA QUICK BANNER */}
-      <section class="section section-dark" style="background: linear-gradient(180deg, #070c18 0%, #0b1224 100%);">
+      <section class="section section-dark" style="background: #ffffff;">
         <div class="container">
-          <div style="background: linear-gradient(135deg, rgba(22,36,69,0.9), rgba(16,26,51,0.95)); border: 1px solid var(--border-dark-hover); border-radius: var(--radius-xl); padding: 3.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap; box-shadow: var(--shadow-card-dark), var(--glow-subtle);">
+          <div style="background: rgba(240, 246, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: var(--radius-xl); padding: 3.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap; box-shadow: 0 8px 30px rgba(37, 99, 235, 0.08);">
             <div style="max-width: 600px;">
               <span class="badge badge-status-ongoing" style="margin-bottom: 0.75rem;">Ruang Aspirasi Mahasiswa</span>
-              <h2 style="font-size: 2rem; font-weight: 800; color: #ffffff; line-height: 1.2; margin-bottom: 0.75rem;">Punya Aspirasi atau Keluhan Perkuliahan?</h2>
-              <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7;">
+              <h2 style="font-size: 2rem; font-weight: 800; color: #0f172a; line-height: 1.2; margin-bottom: 0.75rem;">Punya Aspirasi atau Keluhan Perkuliahan?</h2>
+              <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; font-weight: 500;">
                 BEM KM FTI menyediakan kanal terbuka dan aman untuk mendengar aspirasimu. Kamu dapat memilih untuk mengirimkannya secara anonim. Mari bersama kita wujudkan kampus yang lebih baik.
               </p>
             </div>
@@ -389,7 +389,7 @@ export function initHomePageEvents() {
                 <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,12,24,0.2) 0%, rgba(11,18,36,0.95) 100%);"></div>
                 <button class="modal-close-btn" id="news-modal-close" aria-label="Tutup"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
                 <div style="position: absolute; bottom: 1.5rem; left: 2rem; right: 2rem;">
-                  <span class="badge" style="background: #2563eb; color: #fff; margin-bottom: 0.5rem;">${article.category}</span>
+                  <span class="badge" style="background: #2564eb; color: #fff; margin-bottom: 0.5rem;">${article.category}</span>
                   <h2 style="font-size: 1.6rem; font-weight: 800; color: #fff; line-height: 1.2;">${article.title}</h2>
                 </div>
               </div>

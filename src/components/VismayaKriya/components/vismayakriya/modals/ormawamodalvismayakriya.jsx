@@ -20,8 +20,8 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
       style={{
         width: '100%',
         minHeight: '100vh',
-        background: '#050811',
-        color: '#ffffff',
+        background: '#ffffff',
+        color: '#0f172a',
         paddingTop: '6.5rem',
         paddingBottom: '4rem'
       }}
@@ -35,8 +35,8 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
             style={{
               background: 'none',
               border: 'none',
-              color: '#60a5fa',
-              fontWeight: 600,
+              color: '#2563eb',
+              fontWeight: 700,
               fontSize: '0.95rem',
               cursor: 'pointer',
               display: 'inline-flex',
@@ -52,12 +52,13 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
         {/* Ormawa Header Identity */}
         <div
           style={{
-            background: 'linear-gradient(135deg, rgba(16,25,46,0.95) 0%, rgba(11,18,36,0.98) 100%)',
-            border: '1px solid rgba(96, 165, 250, 0.25)',
+            background: 'rgba(240, 246, 255, 0.85)',
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(59, 130, 246, 0.25)',
             borderRadius: '20px',
             padding: '2rem 2.25rem',
             marginBottom: '2rem',
-            boxShadow: '0 12px 30px rgba(0,0,0,0.5)',
+            boxShadow: '0 4px 20px rgba(37, 99, 235, 0.08)',
             display: 'flex',
             alignItems: 'center',
             gap: '1.5rem',
@@ -69,13 +70,13 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
               width: '84px',
               height: '84px',
               borderRadius: '18px',
-              background: '#070c18',
-              border: '2px solid #38bdf8',
+              background: '#ffffff',
+              border: '2px solid #2563eb',
               padding: '10px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 8px 24px rgba(56, 189, 248, 0.35)',
+              boxShadow: '0 4px 16px rgba(37, 99, 235, 0.2)',
               flexShrink: 0
             }}
           >
@@ -86,22 +87,22 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
             <span
               style={{
                 display: 'inline-block',
-                background: 'rgba(37, 99, 235, 0.3)',
-                color: '#60a5fa',
-                border: '1px solid rgba(96, 165, 250, 0.3)',
+                background: 'rgba(37, 99, 235, 0.12)',
+                color: '#2563eb',
+                border: '1px solid rgba(37, 99, 235, 0.3)',
                 borderRadius: '50px',
                 padding: '0.3rem 0.95rem',
                 fontSize: '0.82rem',
-                fontWeight: 600,
+                fontWeight: 700,
                 marginBottom: '0.5rem'
               }}
             >
               {ormawa.type} &bull; {ormawa.scope}
             </span>
-            <h1 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, margin: '0 0 0.35rem 0' }}>
+            <h1 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 800, color: '#0f172a', lineHeight: 1.2, margin: '0 0 0.35rem 0' }}>
               {ormawa.name} ({ormawa.shortName})
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1rem', margin: 0, lineHeight: 1.6 }}>
+            <p style={{ color: '#334155', fontSize: '1rem', margin: 0, lineHeight: 1.6, fontWeight: 500 }}>
               {defaultSummary}
             </p>
           </div>
@@ -114,14 +115,16 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
             {/* Profil Singkat Card */}
             <div
               style={{
-                background: 'rgba(16, 26, 51, 0.5)',
-                border: '1px solid rgba(175, 203, 238, 0.15)',
+                background: 'rgba(240, 246, 255, 0.75)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(59, 130, 246, 0.2)',
                 borderRadius: '18px',
-                padding: '1.75rem'
+                padding: '1.75rem',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)'
               }}
             >
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="16" x2="12" y2="12"></line>
                   <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -129,7 +132,7 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
                 Profil Singkat
               </h3>
 
-              <p style={{ color: '#cbd5e1', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
+              <p style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.8, margin: 0, fontWeight: 500 }}>
                 {ormawa.description}
               </p>
             </div>
@@ -137,14 +140,16 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
             {/* Kanal Resmi & Media Sosial Card */}
             <div
               style={{
-                background: 'rgba(16, 26, 51, 0.5)',
-                border: '1px solid rgba(175, 203, 238, 0.15)',
+                background: 'rgba(240, 246, 255, 0.75)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(59, 130, 246, 0.2)',
                 borderRadius: '18px',
-                padding: '1.75rem'
+                padding: '1.75rem',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)'
               }}
             >
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#ffffff', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                 </svg>
@@ -222,24 +227,26 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
           {/* Right Column: Visi & Misi */}
           <div
             style={{
-              background: 'rgba(16, 26, 51, 0.5)',
-              border: '1px solid rgba(175, 203, 238, 0.15)',
+              background: 'rgba(240, 246, 255, 0.75)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(59, 130, 246, 0.2)',
               borderRadius: '18px',
               padding: '1.75rem',
-              height: 'fit-content'
+              height: 'fit-content',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)'
             }}
           >
             <div style={{ marginBottom: '1.75rem' }}>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#60a5fa', marginBottom: '0.5rem' }}>
+              <div style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#2563eb', marginBottom: '0.5rem' }}>
                 VISI LEMBAGA
               </div>
-              <div style={{ fontSize: '1.05rem', fontWeight: 600, color: '#ffffff', fontStyle: 'italic', lineHeight: 1.6 }}>
+              <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0f172a', fontStyle: 'italic', lineHeight: 1.6 }}>
                 "{ormawa.vision}"
               </div>
             </div>
 
             <div>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#60a5fa', marginBottom: '0.85rem' }}>
+              <div style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#2563eb', marginBottom: '0.85rem' }}>
                 MISI UTAMA
               </div>
 
@@ -264,7 +271,7 @@ export function OrmawaModalVismayakriya({ ormawa, isOpen, onClose }) {
                     >
                       {idx + 1}
                     </div>
-                    <div style={{ fontSize: '0.98rem', color: '#dcebff', lineHeight: 1.65 }}>{m}</div>
+                    <div style={{ fontSize: '0.98rem', color: '#1e293b', lineHeight: 1.65, fontWeight: 500 }}>{m}</div>
                   </div>
                 ))}
               </div>

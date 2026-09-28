@@ -169,7 +169,7 @@ export default function Vismayakriya({ initialPath = '/' }) {
   };
 
   return (
-    <div className="vismayakriya-page vismayakriya-app-root" style={{ background: '#050811', minHeight: '100vh', color: '#fff', width: '100%', overflowX: 'hidden' }}>
+    <div className="vismayakriya-page vismayakriya-app-root" style={{ background: 'var(--bg-dark-base)', minHeight: '100vh', color: '#fff', width: '100%', overflowX: 'hidden' }}>
       <NavbarVismayakriya
         activeTab={activeTab}
         onTabChange={(tab, slug) => {
@@ -199,13 +199,13 @@ export default function Vismayakriya({ initialPath = '/' }) {
             {activeTab === 'beranda' && (
               <div className="homepage">
                 {/* HERO SECTION */}
-                <section className="hero-section" id="hero" style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', backgroundColor: '#050811' }}>
+                <section className="hero-section" id="hero" style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', backgroundColor: 'var(--bg-dark-base)' }}>
                   {/* Canvas Star Particles */}
                   <canvas ref={heroCanvasRef} id="hero-particles" className="hero-canvas"></canvas>
 
-                  {/* Background Image with Dark Navy Gradient Overlay */}
-                  <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${resolveAsset(info.heroTeamImage)}')`, backgroundSize: 'cover', backgroundPosition: 'center top', filter: 'saturate(0.9)', opacity: 0.65 }}></div>
-                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(7, 12, 24, 0.45) 0%, rgba(7, 12, 24, 0.8) 100%)' }}></div>
+                  {/* Background Image with Lightened Overlay for Clarity */}
+                  <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${resolveAsset(info.heroTeamImage)}')`, backgroundSize: 'cover', backgroundPosition: 'center top', filter: 'saturate(1.05)', opacity: 0.85 }}></div>
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(7, 12, 24, 0.2) 0%, rgba(7, 12, 24, 0.55) 100%)' }}></div>
 
                   {/* Atmospheric Glows */}
                   <div className="cosmic-glow-blob glow-blue" style={{ width: '500px', height: '500px', top: '15%', left: '10%' }}></div>
@@ -309,93 +309,87 @@ export default function Vismayakriya({ initialPath = '/' }) {
                   </div>
                 </section>
 
-                {/* LEADERSHIP EDITORIAL SECTION (Gubernur & Wagub - Klik Buka Biodata) */}
-                <section className="section section-dark-alt">
+                {/* LEADERSHIP EDITORIAL SECTION (Kata Sambutan Gubernur & Wagub - Unboxed Clean Layout) */}
+                <section className="section section-dark-alt" style={{ background: '#f8fafc', padding: '5rem 0' }}>
                   <div className="container">
-                    <div className="section-header">
+                    <div className="section-header" style={{ marginBottom: '4rem' }}>
                       <div className="section-tag">PIMPINAN EKSEKUTIF</div>
-                      <h2 className="section-title">Nakhoda Kabinet</h2>
+                      <h2 className="section-title">Kata Sambutan Pimpinan</h2>
                       <p className="section-subtitle">
-                        Gubernur dan Wakil Gubernur Mahasiswa BEM KM FTI UNAND Periode 2025/2026.
+                        Pesan dan komitmen pergerakan dari Gubernur dan Wakil Gubernur Mahasiswa BEM KM FTI UNAND Periode 2026.
                       </p>
                       <div className="section-divider"></div>
                     </div>
 
-                    <div className="leadership-grid">
-                      {/* Governor Card (Full Body Cutout Design) */}
-                      <div className="leader-card-cutout" style={{ cursor: 'pointer' }} onClick={() => handleOpenMemberModal(info.leaders.governor)}>
-                        <div className="leader-cutout-body">
-                          <span className="badge badge-status-ongoing leader-badge" style={{ marginBottom: '0.75rem', alignSelf: 'flex-start' }}>{info.leaders.governor.term}</span>
-                          <h3 className="leader-name">{info.leaders.governor.name}</h3>
-                          <div className="leader-role">{info.leaders.governor.title} &bull; {info.leaders.governor.jurusan}</div>
-                          <div className="leader-cutout-quote">"{info.leaders.governor.quote}"</div>
-                          <p className="leader-cutout-msg">{info.leaders.governor.message}</p>
+                    {/* Governor Editorial Block */}
+                    <div className="leadership-editorial-item" style={{ display: 'flex', flexDirection: 'row', gap: '3.5rem', alignItems: 'center', marginBottom: '5rem', flexWrap: 'wrap' }}>
+                      <div className="editorial-text-content" style={{ flex: '1 1 500px' }}>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, fontFamily: 'var(--font-editorial)', color: '#0f172a', margin: 0, lineHeight: 1.2 }}>
+                          {info.leaders.governor.name}
+                        </h2>
+                        <div style={{ fontSize: '1rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: '0.5rem' }}>
+                          {info.leaders.governor.title} &bull; {info.leaders.governor.jurusan}
+                        </div>
+                        <div style={{ width: '100px', height: '4px', background: '#d97706', borderRadius: '2px', margin: '0.75rem 0 1.75rem' }}></div>
+
+                        <p style={{ fontSize: '1.05rem', fontWeight: 600, color: '#1e293b', marginBottom: '1.25rem' }}>
+                          Assalamualaikum Warahmatullahi Wabarakatuh
+                        </p>
+
+                        <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#334155', fontStyle: 'italic', lineHeight: '1.7', marginBottom: '1.5rem', paddingLeft: '1rem', borderLeft: '3px solid #2563eb' }}>
+                          "Hidup Mahasiswa"<br />
+                          "Hidup Rakyat Indonesia"<br />
+                          "Hidup Perempuan Indonesia"<br />
+                          "Hidup FTI"
                         </div>
 
-                        <div className="leader-cutout-footer">
-                          <div className="leader-cutout-socials" onClick={(e) => e.stopPropagation()}>
-                            <a href={info.leaders.governor.socials.instagram} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Instagram Gubernur">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                              </svg>
-                            </a>
-                            <a href={info.leaders.governor.socials.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="LinkedIn Gubernur">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                              </svg>
-                            </a>
-                          </div>
-
-                          <div className="leader-cutout-photo-wrap">
-                            <img
-                              src={info.leaders.governor.foto_fullbody || info.leaders.governor.image}
-                              alt={info.leaders.governor.name}
-                              className="leader-cutout-photo"
-                            />
-                          </div>
-                        </div>
+                        <p style={{ fontSize: '1.05rem', color: '#334155', lineHeight: '1.8', margin: 0 }}>
+                          {info.leaders.governor.message || info.leaders.governor.quote}
+                        </p>
                       </div>
 
-                      {/* Vice Governor Card (Full Body Cutout Design) */}
-                      <div className="leader-card-cutout" style={{ cursor: 'pointer' }} onClick={() => handleOpenMemberModal(info.leaders.viceGovernor)}>
-                        <div className="leader-cutout-body">
-                          <span className="badge badge-status-ongoing leader-badge" style={{ marginBottom: '0.75rem', alignSelf: 'flex-start' }}>{info.leaders.viceGovernor.term}</span>
-                          <h3 className="leader-name">{info.leaders.viceGovernor.name}</h3>
-                          <div className="leader-role">{info.leaders.viceGovernor.title} &bull; {info.leaders.viceGovernor.jurusan}</div>
-                          <div className="leader-cutout-quote">"{info.leaders.viceGovernor.quote}"</div>
-                          <p className="leader-cutout-msg">{info.leaders.viceGovernor.message}</p>
+                      <div className="editorial-photo-wrap" style={{ flex: '0 0 320px', textAlign: 'center' }}>
+                        <img
+                          src={info.leaders.governor.foto_fullbody || info.leaders.governor.image}
+                          alt={info.leaders.governor.name}
+                          style={{ maxHeight: '380px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.12))' }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Vice Governor Editorial Block */}
+                    <div className="leadership-editorial-item" style={{ display: 'flex', flexDirection: 'row', gap: '3.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                      <div className="editorial-text-content" style={{ flex: '1 1 500px' }}>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, fontFamily: 'var(--font-editorial)', color: '#0f172a', margin: 0, lineHeight: 1.2 }}>
+                          {info.leaders.viceGovernor.name}
+                        </h2>
+                        <div style={{ fontSize: '1rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: '0.5rem' }}>
+                          {info.leaders.viceGovernor.title} &bull; {info.leaders.viceGovernor.jurusan}
+                        </div>
+                        <div style={{ width: '100px', height: '4px', background: '#d97706', borderRadius: '2px', margin: '0.75rem 0 1.75rem' }}></div>
+
+                        <p style={{ fontSize: '1.05rem', fontWeight: 600, color: '#1e293b', marginBottom: '1.25rem' }}>
+                          Assalamualaikum Warahmatullahi Wabarakatuh
+                        </p>
+
+                        <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#334155', fontStyle: 'italic', lineHeight: '1.7', marginBottom: '1.5rem', paddingLeft: '1rem', borderLeft: '3px solid #2563eb' }}>
+                          "Hidup Mahasiswa"<br />
+                          "Hidup Rakyat Indonesia"<br />
+                          "Hidup Perempuan Indonesia"<br />
+                          "Hidup FTI"
                         </div>
 
-                        <div className="leader-cutout-footer">
-                          <div className="leader-cutout-socials" onClick={(e) => e.stopPropagation()}>
-                            <a href={info.leaders.viceGovernor.socials.instagram} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Instagram Wagub">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                              </svg>
-                            </a>
-                            <a href={info.leaders.viceGovernor.socials.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="LinkedIn Wagub">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                              </svg>
-                            </a>
-                          </div>
+                        <p style={{ fontSize: '1.05rem', color: '#334155', lineHeight: '1.8', margin: 0 }}>
+                          {info.leaders.viceGovernor.message || info.leaders.viceGovernor.quote}
+                        </p>
+                      </div>
 
-                          <div className="leader-cutout-photo-wrap">
-                            <img
-                              src={info.leaders.viceGovernor.foto_fullbody || info.leaders.viceGovernor.image}
-                              alt={info.leaders.viceGovernor.name}
-                              className="leader-cutout-photo"
-                            />
-                          </div>
-                        </div>
+                      <div className="editorial-photo-wrap" style={{ flex: '0 0 320px', textAlign: 'center' }}>
+                        <img
+                          src={info.leaders.viceGovernor.foto_fullbody || info.leaders.viceGovernor.image}
+                          alt={info.leaders.viceGovernor.name}
+                          style={{ maxHeight: '380px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.12))' }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -425,7 +419,7 @@ export default function Vismayakriya({ initialPath = '/' }) {
                             <img src={p.image} alt={p.title} className="proker-thumb" loading="lazy" />
                             <div className="proker-overlay-badges">
                               <span className={`badge ${getStatusBadgeClass(p.status)}`}>{p.status}</span>
-                              <span className="tag-dept" style={{ background: 'rgba(11,18,36,0.85)' }}>{p.category}</span>
+                              <span className="tag-dept">{p.category}</span>
                             </div>
                           </div>
                           <div className="proker-body">
@@ -434,8 +428,8 @@ export default function Vismayakriya({ initialPath = '/' }) {
                             <p className="proker-desc">{p.summary}</p>
                             <div className="proker-footer">
                               <span>{p.date}</span>
-                              <span style={{ color: '#60a5fa', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                Detail
+                              <span style={{ color: '#2563eb', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                Detail &rarr;
                               </span>
                             </div>
                           </div>
@@ -459,7 +453,7 @@ export default function Vismayakriya({ initialPath = '/' }) {
                 </section>
 
                 {/* LATEST NEWS & INFORMASI TERKINI */}
-                <section className="section section-dark-alt">
+                <section className="section section-dark-alt" style={{ background: '#f8fafc' }}>
                   <div className="container">
                     <div className="section-header">
                       <div className="section-tag">Warta Kampus</div>
@@ -479,18 +473,18 @@ export default function Vismayakriya({ initialPath = '/' }) {
                           style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
                           onClick={() => handleOpenNewsModal(n.id)}
                         >
-                          <div style={{ position: 'relative', width: '100%', height: '210px', overflow: 'hidden', background: '#050811' }}>
+                          <div style={{ position: 'relative', width: '100%', height: '210px', overflow: 'hidden', background: '#f1f5f9' }}>
                             <img src={n.thumbnail} alt={n.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform var(--transition-smooth)' }} className="news-thumb" />
-                            <span className="badge" style={{ position: 'absolute', top: '1rem', left: '1rem', background: 'rgba(11,18,36,0.85)', color: '#60a5fa', border: '1px solid rgba(96,165,250,0.3)' }}>
+                            <span className="badge" style={{ position: 'absolute', top: '1rem', left: '1rem', background: 'rgba(37, 99, 235, 0.15)', color: '#2563eb', border: '1px solid rgba(37, 99, 235, 0.3)', fontWeight: 700 }}>
                               {n.category}
                             </span>
                           </div>
                           <div style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-                            <div style={{ fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.5rem' }}>{n.date} &bull; {n.readTime}</div>
-                            <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem', lineHeight: 1.4 }}>{n.title}</h3>
-                            <p style={{ fontSize: '0.875rem', color: '#cbd5e1', lineHeight: 1.6, marginBottom: '1.25rem', flexGrow: 1 }}>{n.excerpt}</p>
-                            <div style={{ color: '#60a5fa', fontWeight: 600, fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                              Baca Selengkapnya
+                            <div style={{ fontSize: '0.8rem', color: '#2563eb', fontWeight: 700, marginBottom: '0.5rem' }}>{n.date} &bull; {n.readTime}</div>
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.75rem', lineHeight: 1.4 }}>{n.title}</h3>
+                            <p style={{ fontSize: '0.875rem', color: '#334155', lineHeight: 1.6, marginBottom: '1.25rem', flexGrow: 1, fontWeight: 500 }}>{n.excerpt}</p>
+                            <div style={{ color: '#2563eb', fontWeight: 700, fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                              Baca Selengkapnya &rarr;
                             </div>
                           </div>
                         </div>
@@ -500,13 +494,13 @@ export default function Vismayakriya({ initialPath = '/' }) {
                 </section>
 
                 {/* ASPIRASI MAHASISWA QUICK BANNER */}
-                <section className="section section-dark" style={{ background: 'linear-gradient(180deg, #070c18 0%, #0b1224 100%)' }}>
+                <section className="section section-dark" style={{ background: '#ffffff' }}>
                   <div className="container">
-                    <div style={{ background: 'linear-gradient(135deg, rgba(22,36,69,0.9), rgba(16,26,51,0.95))', border: '1px solid var(--border-dark-hover)', borderRadius: 'var(--radius-xl)', padding: '3.5rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2.5rem', flexWrap: 'wrap', boxShadow: 'var(--shadow-card-dark), var(--glow-subtle)' }}>
+                    <div style={{ background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: 'var(--radius-xl)', padding: '3.5rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2.5rem', flexWrap: 'wrap', boxShadow: '0 8px 30px rgba(37, 99, 235, 0.08)' }}>
                       <div style={{ maxWidth: '600px' }}>
                         <span className="badge badge-status-ongoing" style={{ marginBottom: '0.75rem' }}>Ruang Aspirasi Mahasiswa</span>
-                        <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '0.75rem' }}>Punya Aspirasi atau Keluhan Perkuliahan?</h2>
-                        <p style={{ color: '#cbd5e1', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                        <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#0f172a', lineHeight: 1.2, marginBottom: '0.75rem' }}>Punya Aspirasi atau Keluhan Perkuliahan?</h2>
+                        <p style={{ color: '#334155', fontSize: '0.95rem', lineHeight: 1.7, fontWeight: 500 }}>
                           BEM KM FTI menyediakan kanal terbuka dan aman untuk mendengar aspirasimu. Kamu dapat memilih untuk mengirimkannya secara anonim. Mari bersama kita wujudkan kampus yang lebih baik.
                         </p>
                       </div>

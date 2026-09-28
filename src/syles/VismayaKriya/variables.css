@@ -4,45 +4,61 @@
    ========================================================================== */
 
 :root {
-  /* --- Primary Palettes (Deep Navy & Midnight) --- */
-  --color-navy-darkest: #050811;
-  --color-navy-950: #070c18;
-  --color-navy-900: #0b1224;
-  --color-navy-850: #101a33;
-  --color-navy-800: #162445;
-  --color-navy-700: #1e3158;
-  --color-navy-600: #263b69;
+  /* --- Primary Palettes (Clean White & Navy Text) --- */
+  --color-navy-darkest: #0f172a;
+  --color-navy-950: #1e293b;
+  --color-navy-900: #334155;
+  --color-navy-850: #475569;
+  --color-navy-800: #64748b;
+  --color-navy-700: #94a3b8;
+  --color-navy-600: #cbd5e1;
 
-  /* --- Secondary & Mid Tones (Icy Blues & Atmospheric Tones) --- */
-  --color-blue-500: #3b82f6;
-  --color-blue-400: #60a5fa;
-  --color-icy-300: #6f8fcb;
-  --color-icy-200: #afcbee;
-  --color-icy-100: #dcebff;
-  --color-icy-50: #f0f6ff;
+  /* --- Secondary & Mid Tones (Vibrant Blues) --- */
+  --color-blue-600: #1d4ed8;
+  --color-blue-500: #2563eb;
+  --color-blue-400: #3b82f6;
+  --color-blue-300: #60a5fa;
+  --color-icy-300: #93c5fd;
+  --color-icy-200: #bfdbfe;
+  --color-icy-100: #dbeafe;
+  --color-icy-50: #eff6ff;
 
   /* --- Light Content & Backgrounds --- */
-  --bg-light-primary: #f8fafc;
-  --bg-light-surface: #ffffff;
+  --bg-light-primary: #ffffff;
+  --bg-light-surface: #f8fafc;
   --bg-light-muted: #f1f5f9;
   --border-light: #e2e8f0;
 
-  /* --- Dark Backgrounds & Surfaces --- */
-  --bg-dark-base: #070c18;
-  --bg-dark-surface: #0b1224;
-  --bg-dark-elevated: #101a33;
-  --bg-dark-card: #14203d;
-  --border-dark: rgba(175, 203, 238, 0.15);
-  --border-dark-hover: rgba(175, 203, 238, 0.35);
+  /* --- Main Backgrounds & Surfaces (Clean White Theme) --- */
+  --bg-dark-base: #ffffff;
+  --bg-dark-surface: #f8fafc;
+  --bg-dark-elevated: #f1f5f9;
+  --bg-dark-card: rgba(240, 246, 255, 0.75);
+  --border-dark: rgba(59, 130, 246, 0.2);
+  --border-dark-hover: rgba(37, 99, 235, 0.45);
 
-  /* --- Text Colors --- */
-  --text-dark-primary: #0b1224;
-  --text-dark-secondary: #475569;
+  /* --- Glassmorphism Surfaces (Light Transparan Glasses) --- */
+  --glass-bg-primary: rgba(240, 246, 255, 0.75);
+  --glass-bg-hover: rgba(224, 238, 255, 0.92);
+  --glass-backdrop: blur(12px);
+  --glass-border: 1px solid rgba(59, 130, 246, 0.22);
+  --glass-border-hover: 1px solid rgba(37, 99, 235, 0.45);
+  --glass-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  --glass-shadow-hover: 0 12px 36px rgba(37, 99, 235, 0.12);
+
+  /* --- Button Active & Transition Effects --- */
+  --btn-blue-active: #2563eb;
+  --btn-blue-glow: 0 4px 14px rgba(37, 99, 235, 0.25);
+
+  /* --- Text Colors & High Contrast Font Accents --- */
+  --text-dark-primary: #0f172a;
+  --text-dark-secondary: #334155;
   --text-dark-muted: #64748b;
 
-  --text-light-primary: #ffffff;
-  --text-light-secondary: #dcebff;
-  --text-light-muted: #94a3b8;
+  --text-light-primary: #0f172a;
+  --text-light-secondary: #334155;
+  --text-light-muted: #64748b;
+  --text-accent-blue: #2563eb;
 
   /* --- Status Colors --- */
   --status-success: #10b981;

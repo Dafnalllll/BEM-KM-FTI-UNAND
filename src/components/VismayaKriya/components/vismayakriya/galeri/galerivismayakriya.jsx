@@ -34,11 +34,11 @@ export function GaleriVismayakriya() {
   return (
     <div className="gallery-page">
       {/* Sub-Hero Banner */}
-      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'radial-gradient(circle at top, #101a33 0%, #070c18 100%)' }}>
+      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)' }}>
         <div className="container text-center" style={{ textAlign: 'center' }}>
           <div className="section-tag">Jejak Langkah & Dokumentasi</div>
-          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Galeri Vismayakriya</h1>
-          <p className="section-subtitle">
+          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#0f172a' }}>Galeri Vismayakriya</h1>
+          <p className="section-subtitle" style={{ color: '#334155' }}>
             Rekaman visual dedikasi, kebersamaan, dan dinamika pergerakan fungsionaris BEM KM FTI Universitas Andalas.
           </p>
           <div className="section-divider"></div>
@@ -46,7 +46,7 @@ export function GaleriVismayakriya() {
       </section>
 
       {/* GALLERY SECTION */}
-      <section className="section section-dark-alt">
+      <section className="section section-dark-alt" style={{ background: '#f8fafc' }}>
         <div className="container">
           {/* Category Filter Tabs */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
@@ -66,8 +66,8 @@ export function GaleriVismayakriya() {
           {/* Gallery Grid */}
           <div className="gallery-grid" id="gallery-grid-container">
             {items.length === 0 ? (
-              <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '4rem 1.5rem', background: 'rgba(16,26,51,0.5)', borderRadius: '16px' }}>
-                <p style={{ color: '#94a3b8' }}>Belum ada dokumentasi pada kategori ini.</p>
+              <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '4rem 1.5rem', background: 'rgba(240, 246, 255, 0.75)', border: '1px solid rgba(59, 130, 246, 0.2)', borderRadius: '16px' }}>
+                <p style={{ color: '#334155', fontWeight: 600 }}>Belum ada dokumentasi pada kategori ini.</p>
               </div>
             ) : (
               items.map((item, index) => (

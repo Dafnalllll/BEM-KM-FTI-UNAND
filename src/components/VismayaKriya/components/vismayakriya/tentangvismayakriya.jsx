@@ -86,11 +86,11 @@ export function TentangVismayakriya() {
   return (
     <div className="about-page">
       {/* Sub-Hero Banner */}
-      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'radial-gradient(circle at top, #101a33 0%, #070c18 100%)' }}>
+      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)' }}>
         <div className="container text-center" style={{ textAlign: 'center' }}>
           <div className="section-tag">Mengenal Lebih Dekat</div>
-          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Tentang {info.cabinet}</h1>
-          <p className="section-subtitle">
+          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#0f172a' }}>Tentang {info.cabinet}</h1>
+          <p className="section-subtitle" style={{ color: '#334155' }}>
             Merajut potensi mahasiswa, menghidupkan percikan inspirasi, dan menakhodai transformasi Fakultas Teknologi Informasi Universitas Andalas.
           </p>
           <div className="section-divider"></div>
@@ -98,14 +98,13 @@ export function TentangVismayakriya() {
       </section>
 
       {/* PROFIL & FILOSOFI LOGO */}
-      <section className="section section-dark-alt">
+      <section className="section section-dark-alt" style={{ background: '#f8fafc' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
             {/* Logo Visual Showcase */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-              <div style={{ position: 'absolute', width: '320px', height: '320px', background: 'radial-gradient(circle, rgba(56,189,248,0.2) 0%, transparent 70%)', filter: 'blur(50px)' }}></div>
-              <div style={{ width: '280px', height: '280px', borderRadius: '50%', background: 'rgba(16,26,51,0.6)', border: '2px solid var(--border-dark-hover)', padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-card-dark), var(--glow-subtle)', position: 'relative', zIndex: 2 }}>
-                <img src={resolveAsset(info.logo)} alt="Logo Vismayakriya" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 0 15px rgba(56, 189, 248, 0.4))' }} />
+              <div style={{ width: '280px', height: '280px', borderRadius: '50%', background: '#ffffff', border: '2px solid #2563eb', padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 30px rgba(37, 99, 235, 0.15)', position: 'relative', zIndex: 2 }}>
+                <img src={resolveAsset(info.logo)} alt="Logo Vismayakriya" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
                 <span className="badge badge-status-ongoing" style={{ fontSize: '0.85rem', padding: '0.4rem 1rem' }}>
@@ -117,18 +116,18 @@ export function TentangVismayakriya() {
             {/* Narasi Filosofi */}
             <div>
               <div className="section-tag" style={{ marginBottom: '0.75rem' }}>Identitas & Landasan Filosofis</div>
-              <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#ffffff', marginBottom: '1.25rem', lineHeight: 1.2 }}>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '1.25rem', lineHeight: 1.2 }}>
                 {info.philosophy?.title || "Simpul Pertemuan, Percikan Perubahan"}
               </h2>
-              <p style={{ color: '#cbd5e1', fontSize: '1rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+              <p style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.8, marginBottom: '1.5rem', fontWeight: 500 }}>
                 {info.philosophy?.concept}
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {info.philosophy?.symbolism?.map((sym, idx) => (
-                  <div key={idx} style={{ padding: '1rem 1.25rem', background: 'rgba(7,12,24,0.5)', borderLeft: '3px solid #38bdf8', borderRadius: '0 10px 10px 0', borderTop: '1px solid rgba(175,203,238,0.1)', borderRight: '1px solid rgba(175,203,238,0.1)', borderBottom: '1px solid rgba(175,203,238,0.1)' }}>
-                    <div style={{ fontWeight: 700, color: '#ffffff', fontSize: '0.95rem', marginBottom: '0.25rem' }}>{sym.element}</div>
-                    <div style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.5 }}>{sym.meaning}</div>
+                  <div key={idx} style={{ padding: '1rem 1.25rem', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', borderLeft: '4px solid #2563eb', borderRadius: '0 10px 10px 0', borderTop: '1px solid rgba(59,130,246,0.2)', borderRight: '1px solid rgba(59,130,246,0.2)', borderBottom: '1px solid rgba(59,130,246,0.2)' }}>
+                    <div style={{ fontWeight: 800, color: '#0f172a', fontSize: '0.95rem', marginBottom: '0.25rem' }}>{sym.element}</div>
+                    <div style={{ fontSize: '0.88rem', color: '#334155', lineHeight: 1.5, fontWeight: 500 }}>{sym.meaning}</div>
                   </div>
                 )) || null}
               </div>
@@ -138,13 +137,12 @@ export function TentangVismayakriya() {
       </section>
 
       {/* VISI KABINET */}
-      <section className="section section-dark">
+      <section className="section section-dark" style={{ background: '#ffffff' }}>
         <div className="container">
-          <div style={{ maxWidth: '920px', margin: '0 auto', textAlign: 'center', background: 'linear-gradient(135deg, rgba(22,36,69,0.7) 0%, rgba(16,26,51,0.95) 100%)', border: '1px solid var(--border-dark-hover)', borderRadius: 'var(--radius-xl)', padding: '3.5rem 2.5rem', boxShadow: 'var(--shadow-card-dark), var(--glow-subtle)', position: 'relative', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '200px', height: '200px', background: 'radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%)' }}></div>
+          <div style={{ maxWidth: '920px', margin: '0 auto', textAlign: 'center', background: 'rgba(240, 246, 255, 0.85)', backdropFilter: 'blur(12px)', border: '1px solid rgba(59,130,246,0.25)', borderRadius: 'var(--radius-xl)', padding: '3.5rem 2.5rem', boxShadow: '0 8px 30px rgba(37,99,235,0.06)', position: 'relative', overflow: 'hidden' }}>
             <div className="section-tag" style={{ marginBottom: '1.25rem' }}>Visi Besar</div>
-            <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#ffffff', marginBottom: '1.5rem' }}>VISI KABINET</h2>
-            <blockquote style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.2rem, 2.5vw, 1.65rem)', color: 'var(--color-icy-100)', lineHeight: 1.6, fontStyle: 'italic', position: 'relative' }}>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '1.5rem' }}>VISI KABINET</h2>
+            <blockquote style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.2rem, 2.5vw, 1.65rem)', color: '#1e3a8a', lineHeight: 1.6, fontStyle: 'italic', fontWeight: 600, position: 'relative' }}>
               "{info.vision}"
             </blockquote>
           </div>

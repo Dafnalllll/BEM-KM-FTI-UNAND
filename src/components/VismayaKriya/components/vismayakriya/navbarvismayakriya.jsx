@@ -80,7 +80,7 @@ export function NavbarVismayakriya({ activeTab, onTabChange, onOpenAspirationMod
                   }}
                 >
                   <div className="dropdown-item-meta">
-                    <span className="dropdown-item-name" style={{ color: '#60a5fa', fontWeight: 700 }}>
+                    <span className="dropdown-item-name" style={{ color: '#0f172a', fontWeight: 700 }}>
                       Profil Kabinet
                     </span>
                   </div>
@@ -96,7 +96,7 @@ export function NavbarVismayakriya({ activeTab, onTabChange, onOpenAspirationMod
                   }}
                 >
                   <div className="dropdown-item-meta">
-                    <span className="dropdown-item-name" style={{ fontWeight: 700 }}>
+                    <span className="dropdown-item-name" style={{ color: '#0f172a', fontWeight: 700 }}>
                       Himpunan & UKM
                     </span>
                   </div>

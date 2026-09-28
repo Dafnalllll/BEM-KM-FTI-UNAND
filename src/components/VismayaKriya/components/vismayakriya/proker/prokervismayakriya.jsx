@@ -88,11 +88,11 @@ export function ProkerVismayakriya({ initialProkerId, onClearInitialProkerId }) 
   return (
     <div className="programs-page">
       {/* Sub-Hero Banner */}
-      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'radial-gradient(circle at top, #101a33 0%, #070c18 100%)' }}>
+      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)' }}>
         <div className="container text-center" style={{ textAlign: 'center' }}>
           <div className="section-tag">Agenda & Realisasi</div>
-          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Program Kerja Kabinet</h1>
-          <p className="section-subtitle">
+          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#0f172a' }}>Program Kerja Kabinet</h1>
+          <p className="section-subtitle" style={{ color: '#334155' }}>
             Eksplorasi seluruh inisiatif pergerakan, pengabdian, kompetisi, dan pelayanan BEM KM FTI Kabinet Vismayakriya.
           </p>
           <div className="section-divider"></div>

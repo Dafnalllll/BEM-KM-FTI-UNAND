@@ -65,11 +65,11 @@ export function DinasVismayakriya({ initialSlug, onClearInitialSlug }) {
   return (
     <div className="departments-page">
       {/* Sub-Hero Banner */}
-      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'radial-gradient(circle at top, #101a33 0%, #070c18 100%)' }}>
+      <section className="section section-dark" style={{ paddingTop: '7rem', paddingBottom: '3.5rem', background: 'linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)' }}>
         <div className="container text-center" style={{ textAlign: 'center' }}>
           <div className="section-tag">Struktur Pelaksana</div>
-          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>Dinas & Biro Kabinet</h1>
-          <p className="section-subtitle">
+          <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#0f172a' }}>Dinas & Biro Kabinet</h1>
+          <p className="section-subtitle" style={{ color: '#334155' }}>
             Mengenal 9 Dinas dan 1 Biro yang mendedikasikan energi, keahlian, dan komitmen bagi kemaslahatan Keluarga Mahasiswa Fakultas Teknologi Informasi.
           </p>
           <div className="section-divider"></div>

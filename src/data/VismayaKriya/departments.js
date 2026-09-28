@@ -29,9 +29,9 @@ export const departmentsData = [
       {
         name: "Equilibrilio Adilia",
         role: "Kepala Biro Audkes",
-        jurusan: "Sistem Informasi",
+        jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/audkes/miftah.webp",
+        image: "/vismayakriya/dinasvismayakriya/staff release/audkes/Audkes_Equilibrilio Adilia.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -39,17 +39,17 @@ export const departmentsData = [
         role: "Sekretaris Biro Audkes",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/audkes/ajo.webp",
+        image: "/vismayakriya/dinasnexus/press release/audkes/Audkes_Monica Cania.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Naira Ramadhani Halil", role: "Bendahara Biro Audkes", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/alya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Rafi Saddiq", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/fadhi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Aliyah Zahratul Salsa Dira", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/farhan.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Habbiel Zidanu Arsa", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/audkes/ferdian.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Shofiya Naura Jannah", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/sasya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Rifdah Adela Putri", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/audkes/shyra.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Naira Ramadhani Halil", role: "Bendahara Biro Audkes", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/staff release/audkes/Audkes_Naira Ramadhani Halil.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Rafi Saddiq", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/press release/audkes/Audkes_Muhammad Rafi Saddiq.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Aliyah Zahratul Salsa Dira", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasvismayakriya/press release/audkes/Audkes_Aliyah Zahratul Salsa Dira.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Habbiel Zidanu Arsa", role: "Staf Biro Audkes", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasvismayakriya/press release/audkes/Audkes_Habbiel Zidanu Arsa.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Shofiya Naura Jannah", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/press release/audkes/Audkes_Shofiya Naura Jannah.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Rifdah Adela Putri", role: "Staf Biro Audkes", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/press release/audkes/Audkes_Rifdah Adela Putri.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["Maternal (Manajemen Kinerja Internal)", "Sentra Arsip", "Internal Performance Review", "Harmoni Vismayakriya", "Staff of The Month", "Ornament (Organizational Development)", "Jejak Pengabdian", "Certificate of Service", "VisMart"],
     galleryImages: [
@@ -87,7 +87,7 @@ export const departmentsData = [
         role: "Kepala Dinas Adkesma",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/adkesma/aqila.webp",
+        image: "/vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Ahmad Faiz Batubara.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -95,17 +95,17 @@ export const departmentsData = [
         role: "Sekretaris Dinas Adkesma",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/adkesma/imam.webp",
+        image: "src/assets/dinasvismayakriya/staff release/adkesma/Adkesma_Khalisah Iori Syakira.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Syakira Naura Jannah", role: "Bendahara Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/adhit.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Hana Rahmadini", role: "Staf Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/ael.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Dwi Sonnia Rahmadani", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/adkesma/alfa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Zahra Nurmaya", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhamad Fajri Aulia", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025",image: "/vismayakriya/dinasnexus/staff release/adkesma/fariz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Abdul Jabbar", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/adkesma/zahra.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Syakira Naura Jannah", role: "Bendahara Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Syakira Naura Jannah.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Hana Rahmadini", role: "Staf Adkesma", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Hana Rahmadini.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Dwi Sonnia Rahmadani", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Dwi Sonnia Rahmadani.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Zahra Nurmaya", role: "Staf Adkesma", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Zahra Nurmaya.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhamad Fajri Aulia", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025",image: "src/assets/dinasvismayakriya/staff release/adkesma/Adkesma_M.Fajri Aulia.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Abdul Jabbar", role: "Staf Adkesma", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya//vismayakriya/dinasvismayakriya/staff release/adkesma/adkesma_Abdul Jabbar.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["DataBase", "Sekawan", "Interscholar", "IPK+", "Sahabat FTI", "Mabacare", "Advotalk", "Vismacare"],
     galleryImages: [
@@ -198,7 +198,7 @@ export const departmentsData = [
         role: "Kepala Dinas Eksternal",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/eksternal/ijon.webp",
+        image: "/vismayakriya/dinasvismayakriya/staff release/eksternal/Eksternal_Muhammad Farid Al Hafizh.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -206,15 +206,15 @@ export const departmentsData = [
         role: "Sekretaris Dinas Eksternal",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2025",
-        image: "/vismayakriya/dinasnexus/press release/eksternal/kiya.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Eksternal/Eksternal_Aisyah Widia Wati.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Zaskya Marvira", role: "Bendahara Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/diaz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Zaky Ilham", role: "Staf Eksternal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/eksternal/ghina.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Keysa Ashilah Riyanto", role: "Staf Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/hapsa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Weldia Novianda", role: "Staf Eksternal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/eksternal/ima.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Zaskya Marvira", role: "Bendahara Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Eksternal/Eksternal_Zaskya Marvira.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Zaky Ilham", role: "Staf Eksternal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Eksternal/Eksternal_Muhammad Zaky Ilham.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Keysa Ashilah Riyanto", role: "Staf Eksternal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Eksternal/Eksternal_Keysa Ashilah Riyanti.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Weldia Novianda", role: "Staf Eksternal", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Eksternal/Eksternal_Weldia Novianda.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["Explore FTI", "BEM VISIT", "FTI FutureLink", "FTI Reconnect", "Delegasi", "Media Partner"],
     galleryImages: [
@@ -250,7 +250,7 @@ export const departmentsData = [
         role: "Kepala Dinas Internal",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/internal/haikal.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Ferdian Rahman.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -258,16 +258,16 @@ export const departmentsData = [
         role: "Sekretaris Dinas Internal",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/internal/keysa.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Adinda Queen Salsabilla.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Siti Kayla Reyhana", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/aufa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ramadhani Amelia Putri", role: "Staf Internal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/dawi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Sasya Zamora", role: "Staf Internal", jurusan: "Informatika", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/febi.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Yusuf", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/internal/mariska.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Arief Nasril", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/internal/quenn.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Siti Kayla Reyhana", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Siti Kayla Reyhana.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ramadhani Amelia Putri", role: "Staf Internal", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Ramadhani Amelia Putri.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Sasya Zamora", role: "Staf Internal", jurusan: "Informatika", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Sasya Zamora.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Yusuf", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Muhammad Yusuf.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Arief Nasril", role: "Staf Internal", jurusan: "Teknik Komputer", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Internal/Internal_Muhammad Arief Nasril.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["fti-parade", "BAKTI FTI", "InKor (Internal Koordinasi)", "SaMawa ( Sapa Ormawa)", "VisGo (Vismayakriya Goro)", "Kalender FTI", "Graduation Needs"],
     galleryImages: [

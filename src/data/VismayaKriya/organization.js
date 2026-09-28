@@ -14,7 +14,7 @@ export const cabinetInfo = {
   logo: "/src/assets/kabinet/vismayakriya.webp",
   bemLogo: "/src/assets/BEM.webp",
   ftiLogo: "/src/assets/FTI.webp",
-  heroTeamImage: "/src/assets/dinasnexus/kegiatan/studio.webp",
+  heroTeamImage: "/src/assets/dinasvismayakriya/kegiatan/foto-bersama.webp",
   heroAltImage: "/src/assets/dinasnexus/kegiatan/pelantikan.webp",
 
   description: "Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Teknologi Informasi Universitas Andalas (BEM KM FTI UNAND) adalah lembaga eksekutif tertinggi di tingkat fakultas yang menjadi episentrum kolaborasi, pergerakan, dan pelayanan mahasiswa FTI.",
@@ -96,15 +96,15 @@ export const cabinetInfo = {
   leaders: {
     governor: {
       name: "Mujahid Adlis Salam ",
-      title: "Gubernur Mahasiswa BEM KM FTI",
+      title: "Gubernur BEM KM FTI",
       jurusan: "Teknik Komputer",
       angkatan: "Angkatan 2023",
       term: "Periode 2026",
       quote: "BEM bukan sekadar ruang rapat, melainkan simpul pengabdian dan ruang bertumbuh bagi setiap mimpi mahasiswa FTI.",
       message: "Sebagai organisasi mahasiswa di fakultas berbasis teknologi terdepan, kita dituntut untuk tidak hanya menjadi pengguna teknologi, tetapi juga pembawa solusi atas problematika masyarakat.",
-      foto_fullbody: "/src/assets/dinasnexus/press release/inti/gub.webp",
-      foto_thumbnail: "/src/assets/dinasnexus/press release/inti/gub.webp",
-      image: "/src/assets/dinasnexus/press release/inti/gub.webp",
+      foto_fullbody: "/src/assets/dinasvismayakriya/press release/inti_Mujahid Adlis Salam.webp",
+      foto_thumbnail: "/src/assets/dinasvismayakriya/press release/inti_Mujahid Adlis Salam.webp",
+      image: "/src/assets/dinasvismayakriya/press release/inti_Mujahid Adlis Salam.webp",
       socials: {
         instagram: "https://instagram.com/rayhanfitrah",
         linkedin: "https://linkedin.com/in/rayhanfitrah"
@@ -112,15 +112,15 @@ export const cabinetInfo = {
     },
     viceGovernor: {
       name: "Muhammad Farid Junaidi",
-      title: "Wakil Gubernur Mahasiswa BEM KM FTI",
+      title: "Wakil Gubernur BEM KM FTI",
       jurusan: "Sistem Informasi",
       angkatan: "Angkatan 2023",
       term: "Periode 2026",
       quote: "Kepemimpinan adalah pelayanan. Keberhasilan kita diukur dari seberapa besar manfaat yang dirasakan KM FTI.",
       message: "Bersama Kabinet Vismayakriya, kami berkomitmen menjaga keterbukaan, memperkuat asas kekeluargaan, dan memastikan setiap suara mahasiswa FTI terdengar hingga tingkat rektorat.",
-      foto_fullbody: "/src/assets/dinasnexus/press release/inti/wagub.webp",
-      foto_thumbnail: "/src/assets/dinasnexus/press release/inti/wagub.webp",
-      image: "/src/assets/dinasnexus/press release/inti/wagub.webp",
+      foto_fullbody: "/src/assets/dinasvismayakriya/press release/inti_Muhammad Farid Junaidi.webp",
+      foto_thumbnail: "/src/assets/dinasvismayakriya/press release/inti_Muhammad Farid Junaidi.webp",
+      image: "/src/assets/dinasvismayakriya/press release/inti_Muhammad Farid Junaidi.webp",
       socials: {
         instagram: "https://instagram.com/ahmadrizky",
         linkedin: "https://linkedin.com/in/ahmadrizky"
@@ -133,7 +133,7 @@ export const cabinetInfo = {
       angkatan: "Angkatan 2023",
       quote: "Keteraturan administrasi adalah fondasi kokoh bagi keberlanjutan pergerakan organisasi.",
       message: "Mengawal kerapian arsip dan alur komunikasi kesekretariatan agar seluruh program kerja berjalan efektif.",
-      image: "/src/assets/dinasnexus/press release/inti/sekda.webp",
+      image: "/src/assets/dinasvismayakriya/press release/inti_Alya Ananta Taufik.webp",
       socials: {
         instagram: "https://instagram.com/nabilaputri",
         linkedin: "https://linkedin.com/in/nabilaputri"
@@ -146,7 +146,7 @@ export const cabinetInfo = {
       angkatan: "Angkatan 2024",
       quote: "Transparansi dan akuntabilitas keuangan adalah bentuk pertanggungjawaban tertinggi bagi amanah publik.",
       message: "Mengelola arus kas keorganisasian secara prudent, profesional, dan efisien untuk setiap kegiatan.",
-      image: "/src/assets/dinasnexus/press release/inti/benda.webp",
+      image: "/src/assets/dinasvismayakriya/press release/inti_Ashyra Prasiwi.webp",
       socials: {
         instagram: "https://instagram.com/zahraanindya",
         linkedin: "https://linkedin.com/in/zahraanindya"
