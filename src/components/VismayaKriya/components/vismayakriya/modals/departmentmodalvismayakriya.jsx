@@ -467,7 +467,6 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                 <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                   Jajaran Pimpinan
                 </h3>
-                <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik untuk lihat biodata)</span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
@@ -544,7 +543,6 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                   <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                     Fungsionaris & Staf
                   </h3>
-                  <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik staf untuk lihat biodata)</span>
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '1rem' }}>
@@ -621,7 +619,6 @@ export function DepartmentModalVismayakriya({ dept, isOpen, onClose }) {
                 <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
                   Program Kerja yang Dikelola ({(dept.programs || []).length} Proker)
                 </h3>
-                <span style={{ fontSize: '0.85rem', color: '#2563eb', fontWeight: 600 }}>(Klik proker untuk lihat detail penuh)</span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>

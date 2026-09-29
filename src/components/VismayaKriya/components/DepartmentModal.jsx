@@ -221,7 +221,6 @@ export function DepartmentModal({ dept, onClose }) {
             <div style={{ marginBottom: '2rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                 <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>Jajaran Pimpinan</h4>
-                <span style={{ fontSize: '0.78rem', color: '#60a5fa' }}>(Klik untuk lihat biodata)</span>
               </div>
               <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
                 {(dept.leaders || []).map((l, idx) => (
@@ -275,7 +274,6 @@ export function DepartmentModal({ dept, onClose }) {
               <div style={{ marginBottom: '2rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                   <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>Fungsionaris & Staf</h4>
-                  <span style={{ fontSize: '0.78rem', color: '#60a5fa' }}>(Klik staf untuk lihat biodata)</span>
                 </div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))', gap: '0.75rem' }}>
                   {dept.staff.map((s, idx) => (
@@ -330,7 +328,6 @@ export function DepartmentModal({ dept, onClose }) {
                 <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
                   Program Kerja yang Dikelola ({resolvedPrograms.length} Proker)
                 </h4>
-                <span style={{ fontSize: '0.78rem', color: '#60a5fa' }}>(Klik proker untuk lihat detail penuh)</span>
               </div>
               
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '0.85rem' }}>

@@ -213,9 +213,11 @@ export function Navbar({ onOpenAspiration }) {
             <div className={`mobile-sub-menu ${mobileDinasOpen ? 'open' : ''}`}>
               <Link to="/dinas" style={{ padding: '0.4rem 0', fontSize: '0.9rem', color: '#60a5fa', fontWeight: 600 }}>Lihat Semua Dinas & Biro &rarr;</Link>
               {departmentsData.map(d => (
-                <Link key={d.slug} to={`/dinas?slug=${d.slug}`} style={{ padding: '0.35rem 0', fontSize: '0.85rem', color: '#afcbee', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <img src={d.logo} style={{ width: '18px', height: '18px', objectFit: 'contain' }} alt={d.shortName} />
-                  <span>{d.shortName}</span>
+                <Link key={d.slug} to={`/dinas?slug=${d.slug}`} style={{ padding: '0.4rem 0.5rem', fontSize: '0.88rem', color: '#f1f5f9', display: 'flex', alignItems: 'center', gap: '0.65rem', borderRadius: '8px' }}>
+                  <div style={{ width: '26px', height: '26px', borderRadius: '7px', background: '#ffffff', border: '1px solid rgba(56, 189, 248, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '3px', flexShrink: 0, boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}>
+                    <img src={d.logo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt={d.shortName} />
+                  </div>
+                  <span style={{ fontWeight: 600 }}>{d.shortName}</span>
                 </Link>
               ))}
             </div>

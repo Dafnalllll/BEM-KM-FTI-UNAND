@@ -247,11 +247,15 @@ export function NavbarVismayakriya({ activeTab, onTabChange, onOpenAspirationMod
                 <a
                   key={d.id}
                   href={`#/dinas?slug=${d.slug}`}
-                  style={{ padding: '0.35rem 0', fontSize: '0.85rem', color: '#afcbee', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                  style={{ padding: '0.4rem 0.5rem', fontSize: '0.88rem', color: '#f1f5f9', display: 'flex', alignItems: 'center', gap: '0.65rem', borderRadius: '8px', transition: 'background 0.2s' }}
                   onClick={handleNavClick('dinas', d.slug)}
+                  onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)'; e.currentTarget.style.color = '#38bdf8'; }}
+                  onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#f1f5f9'; }}
                 >
-                  <img src={resolveAsset(d.logo)} alt={d.shortName} style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
-                  <span>{d.shortName}</span>
+                  <div style={{ width: '26px', height: '26px', borderRadius: '7px', background: '#ffffff', border: '1px solid rgba(56, 189, 248, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '3px', flexShrink: 0, boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}>
+                    <img src={resolveAsset(d.logo)} alt={d.shortName} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  </div>
+                  <span style={{ fontWeight: 600 }}>{d.shortName}</span>
                 </a>
               ))}
             </div>

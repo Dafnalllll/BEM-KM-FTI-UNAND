@@ -122,7 +122,7 @@ export const departmentsData = [
     name: "Kesenian & Olahraga",
     type: "Biro",
     shortName: "KSO",
-    logo: "/src/assets/dinasvismayakriya/logo/Bistech.png",
+    logo: "/src/assets/dinasvismayakriya/logo/kso.png",
     banner: "/vismayakriya/dinasnexus/press release/bistech/bistech.webp",
     headName: "Muhammad Farrel Giovanni & Adila Bintang",
     headRole: "Kepala Dinas KSO",

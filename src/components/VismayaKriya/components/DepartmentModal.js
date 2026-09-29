@@ -28,9 +28,10 @@ export function renderStaffModal(staff, deptShortName) {
 
   return `
     <div class="modal-overlay open" id="staff-modal-overlay" style="z-index: 1100;">
-      <div class="modal-dialog" style="max-width: 420px; padding: 0; overflow: hidden; border-radius: 20px; background: #0b1224; border: 1px solid rgba(96,165,250,0.35); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+      <div class="modal-dialog" style="max-width: 420px; padding: 0; overflow: hidden; border-radius: 20px; background: #0b1224; border:1px solid rgba(96, 165, 250, 0.45); box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25), var(--glow-subtle);
+  ...">
         {/* Modal Header / Cover */}
-        <div style="position: relative; padding: 2.2rem 1.5rem 1.5rem; text-align: center; background: linear-gradient(180deg, #162445 0%, #0b1224 100%);">
+        <div style="position: relative; padding: 2.2rem 1.5rem 1.5rem; text-align: center; background: linear-gradient(180deg, rgba(24, 46, 102, 0.88), rgba(18, 36, 79, 0.92));">
           <button class="modal-close-btn" id="staff-modal-close" aria-label="Tutup Biodata" style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.4); color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
           </button>

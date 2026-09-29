@@ -52,7 +52,7 @@ export function AspirationModalVismayakriya({ isOpen, onClose }) {
 
   return (
     <div className="modal-overlay open" id="aspiration-modal-overlay" onClick={(e) => { if (e.target.id === 'aspiration-modal-overlay') onClose(); }}>
-      <div className="modal-dialog" style={{ maxWidth: '680px' }}>
+      <div className="modal-dialog" style={{ maxWidth: '680px', background: '#0f172a', border: '1px solid rgba(59, 130, 246, 0.35)', color: '#ffffff', boxShadow: '0 25px 60px rgba(0,0,0,0.8)' }}>
         <div className="modal-header-banner" style={{ height: '100px', background: 'linear-gradient(135deg, #101a33 0%, #1e3158 100%)' }}>
           <button className="modal-close-btn" id="aspiration-modal-close" aria-label="Tutup Formulir" onClick={onClose}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
