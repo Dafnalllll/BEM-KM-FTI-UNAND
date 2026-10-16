@@ -123,7 +123,7 @@ export const departmentsData = [
     type: "Biro",
     shortName: "KSO",
     logo: "/src/assets/dinasvismayakriya/logo/kso.png",
-    banner: "/vismayakriya/dinasnexus/press release/bistech/bistech.webp",
+    banner: "",
     headName: "Muhammad Farrel Giovanni & Adila Bintang",
     headRole: "Kepala Dinas KSO",
     staffCount: 8,
@@ -143,7 +143,7 @@ export const departmentsData = [
         role: "Kepala Biro KSO",
         jurusan: "Informatika",
         angkatan: "Angkatan 2023",
-        image: "/vismayakriya/dinasnexus/press release/bistech/manda.webp",
+        image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Muhammad Farrel Giovanni.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -151,25 +151,25 @@ export const departmentsData = [
         role: "Sekretaris Biro KSO",
         jurusan: "Informatika",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/bistech/vira.webp",
+        image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Adila Bintang.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Aisyah Desti Mitalianti", role: "Bendahara KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/fuad.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Alexandra Beatrice Sjamsuardi", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ghezy.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Endy Pardilian", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/kevin.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Filzi Jelila Inda Robbani", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/nayla.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Fazwa Nisabila", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ochi.webp", socials: { instagram: "https://instagram.com" } },
-      {name: "Haziq Raihandira", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/bistech/ochi.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Aisyah Desti Mitalianti", role: "Bendahara KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Aisyah Desti Mitalianti.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Alexandra Beatrice Sjamsuardi", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Alexandra Beatrice S..webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Endy Pardilian", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Endy Pardilian.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Filzi Jelila Inda Robbani", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Filzi Jelila Inda Robbani.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Fazwa Nisabila", role: "Staf KSO", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Fazwa Nisabila.webp", socials: { instagram: "https://instagram.com" } },
+      {name: "Haziq Raihandira", role: "Staf KSO", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/KSO/KSO_Haziq Raihandira.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["RUKES", "RUKO", "FTI CUP 2026", "FTI SPORT"],
     galleryImages: [
-      { title: "Foto Bersama Pengurus & Staf Bistech", image: "/vismayakriya/dinasnexus/press release/bistech/bistech.webp", date: "Periode 2025/2026" },
-      { title: "Bazar Kreatif Warnex & Merchandise FTI", image: "/vismayakriya/dinasnexus/kegiatan/bistech/warnex.webp", date: "Desember 2025" },
-      { title: "Workshop Be Technopreneur", image: "/vismayakriya/dinasnexus/kegiatan/bistech/betechnopreneur.webp", date: "November 2025" },
-      { title: "BisGenius Masterclass Digital", image: "/vismayakriya/dinasnexus/kegiatan/bistech/bisgenius.webp", date: "Januari 2026" },
-      { title: "Layanan Graduation Needs FTI", image: "/vismayakriya/dinasnexus/kegiatan/bistech/graduationneeds.webp", date: "Wisuda Periodik" }
+      { title: "Foto Bersama Pengurus & Staf Bistech", image: "", date: "Periode 2025/2026" },
+      { title: "Bazar Kreatif Warnex & Merchandise FTI", image: "", date: "Desember 2025" },
+      { title: "Workshop Be Technopreneur", image: "", date: "November 2025" },
+      { title: "BisGenius Masterclass Digital", image: "", date: "Januari 2026" },
+      { title: "Layanan Graduation Needs FTI", image: "", date: "Wisuda Periodik" }
     ]
   },
   {
@@ -285,7 +285,7 @@ export const departmentsData = [
     type: "Dinas",
     shortName: "Kastrat",
     logo: "/src/assets/dinasvismayakriya/logo/Kastrat.png",
-    banner: "/vismayakriya/dinasnexus/press release/kastrat/kastrat.webp",
+    banner: "",
     headName: "Bayu Mutawakkil & Rajel Novita",
     headRole: "Kepala Dinas Kastrat",
     staffCount: 7,
@@ -305,7 +305,7 @@ export const departmentsData = [
         role: "Kepala Dinas Kastrat",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/kastrat/anggun.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Bayu Mutawakkil.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -313,24 +313,24 @@ export const departmentsData = [
         role: "Sekretaris Dinas Kastrat",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2025",
-        image: "/vismayakriya/dinasnexus/press release/kastrat/okta.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Rajel Novita.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Nadya Ulya Ramdhani", role: "Bendahara Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/afelia.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Teguh Al Ihsan", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/ahmad.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Adam Maulana", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/kastrat/bayu.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Muhammad Nafil Makarim", role: "Staf Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Luthfi Khairan Fauzan", role: "Staf Kastrat", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/kastrat/wahid.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Nadya Ulya Ramdhani", role: "Bendahara Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Nadya Ulya Ramdhani.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Teguh Al Ihsan", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Muhammad Teguh Al Ihsan.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Adam Maulana", role: "Staf Kastrat", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Adam Maulana.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Muhammad Nafil Makarim", role: "Staf Kastrat", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Muhammad Nafil Makarim.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Luthfi Khairan Fauzan", role: "Staf Kastrat", jurusan: "Teknik Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Kastrat/Kastrat_Luthfi Khairan Fauzan.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["women-care", "DISKUSI STRATEGIS", "Kastrat Hypothetica", "RESTART ", "KPK (KLINIK POLITIK KAMPUS)"," Kajian Strategis", "Pergerakan dan Pemberdayaan Perempuan"],
     galleryImages: [
-      { title: "Foto Bersama Pengurus & Staf Kastrat", image: "/vismayakriya/dinasnexus/press release/kastrat/kastrat.webp", date: "Periode 2025/2026" },
-      { title: "Diskusi Strategis Bedah Kebijakan", image: "/vismayakriya/dinasnexus/kegiatan/kastrat/diskusistrategis.webp", date: "Desember 2025" },
-      { title: "Kajian Kritis Isu Pendidikan", image: "/vismayakriya/dinasnexus/kegiatan/kastrat/kajian.webp", date: "November 2025" },
-      { title: "Women Care Campaign Kampus Aman", image: "/vismayakriya/dinasnexus/kegiatan/kastrat/womencare.webp", date: "Oktober 2025" },
-      { title: "Klinik Politik Kampus (KPK)", image: "/vismayakriya/dinasnexus/kegiatan/kastrat/kpk.webp", date: "Januari 2026" }
+      { title: "Foto Bersama Pengurus & Staf Kastrat", image: "", date: "Periode 2025/2026" },
+      { title: "Diskusi Strategis Bedah Kebijakan", image: "", date: "Desember 2025" },
+      { title: "Kajian Kritis Isu Pendidikan", image: "", date: "November 2025" },
+      { title: "Women Care Campaign Kampus Aman", image: "", date: "Oktober 2025" },
+      { title: "Klinik Politik Kampus (KPK)", image: "", date: "Januari 2026" }
     ]
   },
   {
@@ -340,8 +340,8 @@ export const departmentsData = [
     type: "Dinas",
     shortName: "Medinkraf",
     logo: "/src/assets/dinasvismayakriya/logo/Medinkraf.png",
-    banner: "/vismayakriya/dinasnexus/press release/medinkraf/medin.webp",
-    headName: "Abe & Adli",
+    banner: "",
+    headName: "Muhammad Ikhsan Pratama & Fazira Naysa",
     headRole: "Kepala Dinas Medinkraf",
     staffCount: 7,
     summary: "Etalase visual, arsitek konten kreatif, videografi, dan manajemen saluran informasi digital kabinet.",
@@ -361,7 +361,7 @@ export const departmentsData = [
         role: "Kepala Dinas Medinkraf",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/medinkraf/abe.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Muhammad Ikhsan Pratama.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -369,16 +369,16 @@ export const departmentsData = [
         role: "Sekretaris Dinas Medinkraf",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/medinkraf/adli.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Fazira Naysa.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Najma Hayett De Vitra", role: "Bendahara Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/aldo.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Adhitya Naufal", role: "Staf Medinkraf", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alvin.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Raditya Hafis Abyanka", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/alya.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nazwa Mutiara Sabila", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/asyqor.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Neza Kurnia Lahimi", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/medinkraf/king.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Najma Hayett De Vitra", role: "Bendahara Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Najma Hayett De Vitra.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Adhitya Naufal", role: "Staf Medinkraf", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Adhitya Naufal.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Raditya Hafis Abyanka", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Raditya Hafis Abyanka.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nazwa Mutiara Sabila", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Nazwa Mutiara Sabila.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Neza Kurnia Lahimi", role: "Staf Medinkraf", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Medinkraf/Medinkraf_Neza Kurnia Lahimi.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["FTI Spotlight", "Lensa Vismaya", "Visma Creative Studio", "FTI Active Media", "FTI Media Connect", "VisID", "Merchandise"],
     galleryImages: [
@@ -415,7 +415,7 @@ export const departmentsData = [
         role: "Kepala Dinas PSDM",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/psdm/bunga.webp",
+        image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Zaki Alfurqani.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -423,17 +423,17 @@ export const departmentsData = [
         role: "Sekretaris Dinas PSDM",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/psdm/rhodes.webp",
+        image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Adinda Najwa Otvatiani.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Farrah Aulia", role: "Bendahara PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/psdm/alfat.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Lathifa Zahra", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/diva.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nabila Syahrani", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/khalda.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Rembrand Sardi", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/nabila.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Anatasya Noveralda", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/rizky.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ghinada Fathanawafa Algma", role: "Staf PSDM", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/psdm/rizky.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Farrah Aulia", role: "Bendahara PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Farrah Aulia.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Lathifa Zahra", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Lathifa Zahra.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nabila Syahrani", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Nabila Syahrani.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Rembrand Sardi", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Rembrand Sardi.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Anatasya Noveralda", role: "Staf PSDM", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Anatasya Noveralda.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ghinada Fathanawafa Algma", role: "Staf PSDM", jurusan: "Informatika", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/PSDM/PSDM_Ghinada Fathanawafa Algma.webp", socials: { instagram: "https://instagram.com" } },
 
     ],
     programs: ["vismuda", "lkmm-td-fti-2026", "visedu", "fti-aa", "bak"],
@@ -471,7 +471,7 @@ export const departmentsData = [
         role: "Kepala Dinas Ristek",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/ristek/dafa.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Arib Jilham.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -479,16 +479,16 @@ export const departmentsData = [
         role: "Sekretaris Dinas Ristek",
         jurusan: "Sistem Informasi",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/ristek/fella.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Ayesah Lutfiah Maharani.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Dwimirza Intania Arsy", role: "Bendahara Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/arib.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Raffael Syahadat Fahlevi", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/farid.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Bintang Veraldi Nibraceae", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/ristek/hafid.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Salsabiil Aqiilah", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/ristek/nisa.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Davina Noerfazhira", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/ristek/zikri.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Dwimirza Intania Arsy", role: "Bendahara Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Dwimirza Intania Arsy.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Raffael Syahadat Fahlevi", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Raffael Syahadat Fahlevi.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Bintang Veraldi Nibraceae", role: "Staf Ristek", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Bintang Veraldi Nibraceae.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Salsabiil Aqiilah", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Salsabiil Aqiilah.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Davina Noerfazhira", role: "Staf Ristek", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Ristek/Ristek_Davina Noerfazhira.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["FOSI", "IT Development", "IT Competition Hub", "HACKTHON", "Techcorner", "Codevora"],
     galleryImages: [
@@ -525,7 +525,7 @@ export const departmentsData = [
         role: "Kepala Dinas Sosmasling",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/sosmasling/nori.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Faiz Anargya.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       },
       {
@@ -533,17 +533,17 @@ export const departmentsData = [
         role: "Sekretaris Dinas Sosmasling",
         jurusan: "Teknik Komputer",
         angkatan: "Angkatan 2024",
-        image: "/vismayakriya/dinasnexus/press release/sosmasling/sovia.webp",
+        image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Zhafira Fatihah Oswiputri.webp",
         socials: { instagram: "https://instagram.com", linkedin: "https://linkedin.com" }
       }
     ],
     staff: [
-      { name: "Alisha Zhahira Zulfis", role: "Bendahara Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/faiz.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Kevin Andhika", role: "Staf Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "/vismayakriya/dinasnexus/staff release/sosmasling/shaza.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Yollin Irwan", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Nadine Latisha Elanda", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "Ultan Pradipa Al Fitra", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } },
-      { name: "M. Ghaza Pratama", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "/vismayakriya/dinasnexus/staff release/sosmasling/zhafira.webp", socials: { instagram: "https://instagram.com" } }
+      { name: "Alisha Zhahira Zulfis", role: "Bendahara Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Alisha Zhahira Zulfis.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Kevin Andhika", role: "Staf Sosmasling", jurusan: "Teknik Komputer", angkatan: "Angkatan 2024", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Kevin Andhika.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Yollin Irwan", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Yollin Irawan.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Nadine Latisha Elanda", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Nadine Latisha Elanda.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "Ultan Pradipa Al Fitra", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_Ultan Pradipa Al Fitra.webp", socials: { instagram: "https://instagram.com" } },
+      { name: "M. Ghaza Pratama", role: "Staf Sosmasling", jurusan: "Sistem Informasi", angkatan: "Angkatan 2025", image: "src/assets/dinasvismayakriya/staff release/Sosmas/Sosmas_M. Ghaza Pratama.webp", socials: { instagram: "https://instagram.com" } }
     ],
     programs: ["FTI Sosial Aid", "FTI Ramadhan Berbagi Asa (RABA FTI) ", "On This Day", "Social Connect", "Sosgreen FTI", "FTI Lentera Cakrawala (FTI LENCA)", "Bina Desa"],
     galleryImages: [
